@@ -1,0 +1,5 @@
+package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.enums;
+
+public enum Types {
+    NORMAL,FIGHTING,FLYING,POISON,GROUND,ROCK,BUG,GHOST,STEEL,FIRE,WATER,GRASS,ELECTRIC,PSYCHIC,ICE,DRAGON,DARK,FAIRY
+}
