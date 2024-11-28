@@ -1,41 +1,41 @@
-@mixin trans-duration($time) {
-    -webkit-transition-duration: $time;
-    transition-duration: $time;
+@mixin trans-duration(P¥time) {
+    -webkit-transition-duration: P¥time;
+    transition-duration: P¥time;
 }
 
-@mixin transition($value) {
-    -webkit-transition: $value;
-    transition: $value;
+@mixin transition(P¥value) {
+    -webkit-transition: P¥value;
+    transition: P¥value;
 }
 
-@mixin transform($value) {
-    -webkit-transform: $value;
-    transform: $value;
+@mixin transform(P¥value) {
+    -webkit-transform: P¥value;
+    transform: P¥value;
 }
 
-@mixin animation($value) {
-    -webkit-animation: $value;
-    animation: $value;
+@mixin animation(P¥value) {
+    -webkit-animation: P¥value;
+    animation: P¥value;
 }
 
-@mixin flex-direction($value) {
+@mixin flex-direction(P¥value) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: $value;
-    flex-direction: $value;
+    -ms-flex-direction: P¥value;
+    flex-direction: P¥value;
 }
 
-@mixin align-items($value) {
-    -webkit-box-align: $value;
-    -ms-flex-align: $value;
-    -ms-grid-row-align: $value;
-    align-items: $value;
+@mixin align-items(P¥value) {
+    -webkit-box-align: P¥value;
+    -ms-flex-align: P¥value;
+    -ms-grid-row-align: P¥value;
+    align-items: P¥value;
 }
 
-@mixin display-flex($value) {
+@mixin display-flex(P¥value) {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: $value;
+    display: P¥value;
 }
 
 @mixin justify-content-between {
@@ -50,13 +50,13 @@
     justify-content: center;
 }
 
-@mixin flex($value) {
+@mixin flex(P¥value) {
     -webkit-box-flex: 0;
-    -ms-flex: $value;
-    flex: $value;
+    -ms-flex: P¥value;
+    flex: P¥value;
 }
 
-@mixin flex-wrap($value) {
-    -ms-flex-wrap: $value;
-      flex-wrap: $value;
+@mixin flex-wrap(P¥value) {
+    -ms-flex-wrap: P¥value;
+      flex-wrap: P¥value;
 }
