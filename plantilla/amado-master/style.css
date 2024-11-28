@@ -19,14 +19,21 @@
 
     }
 
+    .single-products-catagory{
+        background-image: url(https://pics.craiyon.com/2023-07-12/e20250e46b9c4cc486ca3cae1d66d064.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .single-products-catagory > a{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .imagenes_modificar img{
         height: 50%; 
-
+        filter: drop-shadow(0 0 20px rgb(212, 212, 212, 0.7));
     }
