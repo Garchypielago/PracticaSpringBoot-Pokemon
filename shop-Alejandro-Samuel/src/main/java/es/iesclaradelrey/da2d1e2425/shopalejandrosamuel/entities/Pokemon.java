@@ -18,4 +18,5 @@ public class Pokemon {
     private Types type1;
     private Types type2;
     private Regions region;
+    private boolean legendary;
 }
