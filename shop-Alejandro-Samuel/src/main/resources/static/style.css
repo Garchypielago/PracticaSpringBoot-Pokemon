@@ -48,3 +48,7 @@
         height: 10rem; 
         filter: drop-shadow(0 0 20px rgb(212, 212, 212, 0.7));
     }
+
+    .main-content-wrapper .header-area .logo{
+        margin-bottom: 10px;
+    }
