@@ -1,5 +1,6 @@
-package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
+package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.products;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Entity;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.enums.Regions;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.enums.Types;
 import lombok.AllArgsConstructor;
@@ -10,8 +11,8 @@ import java.util.Map;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Pokemon {
-    private int id;
+public class Pokemon implements Entity<Long> {
+    private Long id;
     private String nombre;
     private String descripcion;
     private Map<String,Integer> stats;
