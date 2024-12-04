@@ -17,23 +17,24 @@ public class CategoryServiceImpl implements CategoryService {
         this.categoryRespository = categoryRespository;
     }
 
+
     @Override
     public long count() {
-        return 0;
+       return categoryRespository.count();
     }
 
     @Override
     public void save(Category t) {
-
+        categoryRespository.save(t);
     }
 
     @Override
     public Collection<Category> findAll() {
-        return List.of();
+        return categoryRespository.findAll();
     }
 
     @Override
     public Optional<Category> findById(Long id) {
-        return Optional.empty();
+       return categoryRespository.findById(id);
     }
 }

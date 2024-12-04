@@ -17,7 +17,7 @@ public class RepositoryImpl<T extends Entity<ID>, ID> implements Repository<T, I
 
     @Override
     public long count() {
-        return 0;
+        return map.size();
     }
 
     @Override

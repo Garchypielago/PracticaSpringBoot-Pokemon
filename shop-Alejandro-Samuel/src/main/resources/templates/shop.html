@@ -106,15 +106,11 @@
 
                 <!--  Catagories  -->
                 <div class="catagories-menu">
-                    <ul>
-                        <li class="active"><a href="#">Chairs</a></li>
-                        <li><a href="#">Beds</a></li>
-                        <li><a href="#">Accesories</a></li>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Home Deco</a></li>
-                        <li><a href="#">Dressings</a></li>
-                        <li><a href="#">Tables</a></li>
-                    </ul>
+                    <ul >
+
+                   <li th:if() class="active" th:each="category : ${categories}" ><a th:href="${category.getId()}" th:text="${category.getId()}">Chairs</a></li>
+
+                   </ul>
                 </div>
             </div>
 
