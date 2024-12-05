@@ -1,13 +1,17 @@
-package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.generic;
+package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.categories.Category;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.products.Pokemon;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.base.Repository;
 
 import java.util.Collection;
 import java.util.Optional;
 
-public interface PokemonRepository extends Repository<Pokemon, Long> {
-
+public interface PokemonService {
+    long count();
+    void save(Pokemon t);
+    Collection<Pokemon> findAll();
+    Optional<Pokemon> findById(Long id);
     Collection<Pokemon> findByCategory(Optional<Category> category);
+
+
 }

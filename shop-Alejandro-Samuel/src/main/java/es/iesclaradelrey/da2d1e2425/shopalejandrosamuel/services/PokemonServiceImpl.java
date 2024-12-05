@@ -1,0 +1,43 @@
+package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
+
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.categories.Category;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.products.Pokemon;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.generic.PokemonRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.Collection;
+import java.util.Optional;
+
+@Service
+public class PokemonServiceImpl implements PokemonService {
+    private final PokemonRepository pokemonRepository;
+
+    public PokemonServiceImpl(PokemonRepository pokemonRepository) {
+        this.pokemonRepository = pokemonRepository;
+    }
+
+    @Override
+    public long count() {
+        return pokemonRepository.count();
+    }
+
+    @Override
+    public void save(Pokemon t) {
+        pokemonRepository.save(t);
+    }
+
+    @Override
+    public Collection<Pokemon> findAll() {
+        return pokemonRepository.findAll();
+    }
+
+    @Override
+    public Optional<Pokemon> findById(Long id) {
+        return pokemonRepository.findById(id);
+    }
+
+    @Override
+    public Collection<Pokemon> findByCategory(Optional<Category> category) {
+        return pokemonRepository.findByCategory(category);
+    }
+}

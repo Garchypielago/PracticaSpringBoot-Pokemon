@@ -13,7 +13,6 @@ public class HomeController {
         return "index";
     }
 
-
     @GetMapping
     @RequestMapping("/checkout")
     public String checkoutPage() {
