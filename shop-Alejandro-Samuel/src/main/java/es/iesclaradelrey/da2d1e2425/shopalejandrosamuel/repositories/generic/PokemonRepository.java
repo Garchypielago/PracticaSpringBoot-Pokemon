@@ -1,13 +1,11 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.generic;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.categories.Category;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.products.Pokemon;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.base.Repository;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Collection;
 import java.util.Optional;
 
-public interface PokemonRepository extends Repository<Pokemon, Long> {
+public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
-    Collection<Pokemon> findByCategory(Optional<Category> category);
 }

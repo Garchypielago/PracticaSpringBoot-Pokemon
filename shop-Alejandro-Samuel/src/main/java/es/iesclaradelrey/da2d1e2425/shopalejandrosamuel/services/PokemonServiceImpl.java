@@ -1,7 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.categories.Category;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.products.Pokemon;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.generic.PokemonRepository;
 import org.springframework.stereotype.Service;
 
@@ -36,8 +35,4 @@ public class PokemonServiceImpl implements PokemonService {
         return pokemonRepository.findById(id);
     }
 
-    @Override
-    public Collection<Pokemon> findByCategory(Optional<Category> category) {
-        return pokemonRepository.findByCategory(category);
-    }
 }
