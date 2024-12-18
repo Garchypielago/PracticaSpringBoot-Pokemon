@@ -12,8 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table(name="types")
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Type {
+public class Type extends Category{
     @Id
     private int id;
 
