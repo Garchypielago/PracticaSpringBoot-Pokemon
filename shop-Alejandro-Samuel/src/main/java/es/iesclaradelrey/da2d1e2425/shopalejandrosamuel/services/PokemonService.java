@@ -11,5 +11,5 @@ public interface PokemonService {
     Collection<Pokemon> findAll();
     Optional<Pokemon> findById(Long id);
     Collection<Pokemon> findByRegion(int id);
-
+    Collection<Pokemon> findByType(int id);
 }

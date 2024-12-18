@@ -44,4 +44,14 @@ public class PokemonServiceImpl implements PokemonService {
         }
         return filtro;
     }
+    public Collection<Pokemon> findByType(int typeId){
+        Collection<Pokemon> todos=this.findAll();
+        Collection<Pokemon> filtro= new ArrayList<>();
+        for(Pokemon p:todos){
+            if(p.getType1().getId()==typeId || p.getType2().getId()==typeId){
+                filtro.add(p);
+            }
+        }
+        return filtro;
+    }
 }
