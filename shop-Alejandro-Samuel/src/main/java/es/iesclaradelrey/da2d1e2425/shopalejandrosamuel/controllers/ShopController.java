@@ -29,6 +29,9 @@ public class ShopController {
     @GetMapping("/category/{id}")
     public ModelAndView getAllCategories(@PathVariable int id) {
 
+        Collection<Pokemon> pokemones = pokemonService.findByRegion(id);
+
+        ModelAndView modelAndView = new ModelAndView("shop/category");
         return new ModelAndView("shop");
     }
 
