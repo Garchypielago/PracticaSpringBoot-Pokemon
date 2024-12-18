@@ -1,7 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.generic.PokemonRepository;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import org.springframework.stereotype.Service;
 
 import java.text.CollationElementIterator;

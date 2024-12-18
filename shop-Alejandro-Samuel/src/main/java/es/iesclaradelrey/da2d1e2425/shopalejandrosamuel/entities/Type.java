@@ -12,7 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table(name="types")
-public class Type extends Category{
+public class Type{
     @Id
     private int id;
 

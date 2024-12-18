@@ -14,7 +14,7 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table(name="regions")
-public class Region extends Category{
+public class Region{
     @Id
     private int id;
     @Column
