@@ -10,6 +10,4 @@ public interface PokemonService {
     void save(Pokemon t);
     Collection<Pokemon> findAll();
     Optional<Pokemon> findById(Long id);
-
-
 }

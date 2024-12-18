@@ -9,20 +9,28 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(2)
 public class PokemonRepoCommandLineRunner implements CommandLineRunner {
-    private final PokemonService pokemonService;
+//    private final PokemonService pokemonService;
 
-    public PokemonRepoCommandLineRunner(PokemonService pokemonService) {
-        this.pokemonService = pokemonService;
+    public PokemonRepoCommandLineRunner() {
     }
 
     @Override
     public void run(String... args) throws Exception {
-        pokemonService.save(new Pokemon((long)1, "Charmander"));
-        pokemonService.save(new Pokemon((long)2, "Bulbasaur"));
-        pokemonService.save(new Pokemon((long)3, "Squirtle"));
-        pokemonService.save(new Pokemon((long)4, "hola"));
-        pokemonService.save(new Pokemon((long)5, "Adios"));
-        pokemonService.save(new Pokemon((long)6, "sioque"));
+
     }
+
+//    public PokemonRepoCommandLineRunner(PokemonService pokemonService) {
+//        this.pokemonService = pokemonService;
+//    }
+//
+//    @Override
+//    public void run(String... args) throws Exception {
+//        pokemonService.save(new Pokemon((long)1, "Charmander"));
+//        pokemonService.save(new Pokemon((long)2, "Bulbasaur"));
+//        pokemonService.save(new Pokemon((long)3, "Squirtle"));
+//        pokemonService.save(new Pokemon((long)4, "hola"));
+//        pokemonService.save(new Pokemon((long)5, "Adios"));
+//        pokemonService.save(new Pokemon((long)6, "sioque"));
+//    }
 }
 
