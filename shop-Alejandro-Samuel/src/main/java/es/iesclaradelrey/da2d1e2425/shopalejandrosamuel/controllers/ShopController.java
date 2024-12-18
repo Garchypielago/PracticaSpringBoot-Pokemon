@@ -1,6 +1,10 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,9 +19,13 @@ import java.util.Optional;
 public class ShopController {
 
     private final PokemonService pokemonService;
+    private final RegionService regionService;
+    private final TypeService typeService;
 
-    public ShopController(PokemonService pokemonService) {
+    public ShopController(PokemonService pokemonService, RegionService regionService, TypeService typeService) {
         this.pokemonService = pokemonService;
+        this.regionService = regionService;
+        this.typeService = typeService;
     }
 
 
@@ -29,10 +37,14 @@ public class ShopController {
     @GetMapping("/category/{id}")
     public ModelAndView getAllCategories(@PathVariable int id) {
 
+        Collection<Region> regiones = regionService.findAll();
         Collection<Pokemon> pokemones = pokemonService.findByRegion(id);
 
-        ModelAndView modelAndView = new ModelAndView("shop/category");
-        return new ModelAndView("shop");
+        ModelAndView modelAndView = new ModelAndView("shop");
+        modelAndView.addObject("regiones", regiones);
+        modelAndView.addObject("pokemones", pokemones);
+
+        return modelAndView;
     }
 
 

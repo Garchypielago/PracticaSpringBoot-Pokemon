@@ -4,7 +4,6 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import org.springframework.stereotype.Service;
 
-import java.text.CollationElementIterator;
 import java.util.*;
 
 @Service

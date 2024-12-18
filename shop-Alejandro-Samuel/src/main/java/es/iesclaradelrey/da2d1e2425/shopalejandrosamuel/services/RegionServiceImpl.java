@@ -2,10 +2,12 @@ package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RegionRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.Optional;
 
+@Service
 public class RegionServiceImpl implements RegionService {
     private final RegionRepository regionRepository;
 
