@@ -1,12 +1,11 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Category;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.Optional;
+import java.text.CollationElementIterator;
+import java.util.*;
 
 @Service
 public class PokemonServiceImpl implements PokemonService {
@@ -35,9 +34,14 @@ public class PokemonServiceImpl implements PokemonService {
     public Optional<Pokemon> findById(Long id) {
         return pokemonRepository.findById(id);
     }
-
-    @Override
-    public Collection<Pokemon> findByCategory(Optional<Category> category) {
-        return pokemonRepository.findByCategory(category);
+    public Collection<Pokemon> findByRegion(int regId){
+        Collection<Pokemon> todos=this.findAll();
+        Collection<Pokemon> filtro= new ArrayList<>();
+        for(Pokemon p:todos){
+            if(p.getRegion().getId()==regId){
+                filtro.add(p);
+            }
+        }
+        return filtro;
     }
 }
