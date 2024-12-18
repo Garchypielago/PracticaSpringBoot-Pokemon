@@ -1,12 +1,8 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.enums.Regions;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.enums.Types;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+import java.util.Set;
 
 @NoArgsConstructor
 @Setter
@@ -20,4 +16,6 @@ public class Region{
     @Column
     private String name;
 
+    @OneToMany(mappedBy = "regions")
+    Set<Pokemon> pokemonSet;
 }

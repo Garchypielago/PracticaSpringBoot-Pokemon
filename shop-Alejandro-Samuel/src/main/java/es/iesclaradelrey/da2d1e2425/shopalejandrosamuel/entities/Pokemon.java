@@ -30,15 +30,15 @@ public class Pokemon {
     @JoinColumn(name="stats", nullable = false)
     private Collection<StatValue> stats;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="type1", nullable = false)
     private Type type1;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="type2")
     private Type type2;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="region", nullable = false)
     private Region region;
 
