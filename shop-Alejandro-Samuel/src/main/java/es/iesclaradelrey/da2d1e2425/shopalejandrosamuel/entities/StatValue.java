@@ -20,6 +20,7 @@ public class StatValue {
     private int idPokemon;
     @Id
     private int idStat;
+
     @Column(unique=true, nullable = false)
     private int value;
 }

@@ -18,4 +18,7 @@ public class Type{
 
     @Column
     private String name;
+
+    @Column
+    private String background;
 }
