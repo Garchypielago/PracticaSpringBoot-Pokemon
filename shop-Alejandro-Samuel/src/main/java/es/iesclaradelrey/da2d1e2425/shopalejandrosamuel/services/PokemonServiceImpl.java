@@ -33,24 +33,29 @@ public class PokemonServiceImpl implements PokemonService {
     public Optional<Pokemon> findById(Long id) {
         return pokemonRepository.findById(id);
     }
+
     public Collection<Pokemon> findByRegion(int regId){
-        Collection<Pokemon> todos=this.findAll();
-        Collection<Pokemon> filtro= new ArrayList<>();
-        for(Pokemon p:todos){
-            if(p.getRegion().getId()==regId){
-                filtro.add(p);
-            }
-        }
-        return filtro;
+//        Collection<Pokemon> todos=this.findAll();
+//        Collection<Pokemon> filtro= new ArrayList<>();
+//        for(Pokemon p:todos){
+//            if(p.getRegion().getId()==regId){
+//                filtro.add(p);
+//            }
+//        }
+//        return filtro;
+
+        return pokemonRepository.findByRegion_Id(regId);
     }
     public Collection<Pokemon> findByType(int typeId){
-        Collection<Pokemon> todos=this.findAll();
-        Collection<Pokemon> filtro= new ArrayList<>();
-        for(Pokemon p:todos){
-            if(p.getType1().getId()==typeId || p.getType2().getId()==typeId){
-                filtro.add(p);
-            }
-        }
-        return filtro;
+//        Collection<Pokemon> todos=this.findAll();
+//        Collection<Pokemon> filtro= new ArrayList<>();
+//        for(Pokemon p:todos){
+//            if(p.getType1().getId()==typeId || p.getType2().getId()==typeId){
+//                filtro.add(p);
+//            }
+//        }
+//        return filtro;
+
+        return pokemonRepository.findByType1_Id_orType2_Id(typeId);
     }
 }
