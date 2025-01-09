@@ -43,6 +43,7 @@ public class ShopController {
         ModelAndView modelAndView = new ModelAndView("shop");
         modelAndView.addObject("regiones", regiones);
         modelAndView.addObject("pokemones", pokemones);
+        modelAndView.addObject("current", id);
 
         return modelAndView;
     }
