@@ -16,6 +16,6 @@ public class Region{
     @Column
     private String name;
 
-    @OneToMany(mappedBy = "regions")
+    @OneToMany(mappedBy = "region")
     Set<Pokemon> pokemonSet;
 }

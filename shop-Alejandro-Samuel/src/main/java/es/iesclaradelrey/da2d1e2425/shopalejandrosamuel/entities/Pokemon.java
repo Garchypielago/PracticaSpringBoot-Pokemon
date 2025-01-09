@@ -26,8 +26,7 @@ public class Pokemon {
     @Column(nullable = false, length = 100)
     private String descripcion;
 
-    @OneToMany
-    @JoinColumn(name="stats", nullable = false)
+    @OneToMany(mappedBy = "pokemon")
     private Collection<StatValue> stats;
 
     @ManyToOne

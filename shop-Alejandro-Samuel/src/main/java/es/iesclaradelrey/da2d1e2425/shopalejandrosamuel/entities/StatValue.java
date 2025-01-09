@@ -1,9 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,13 +11,20 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @Entity
-@Table(name="statValues")
+@Table(name="stat_values", uniqueConstraints = {@UniqueConstraint(columnNames = {"pokemon_id", "stat_id"})})
 public class StatValue {
     @Id
-    private int idPokemon;
-    @Id
-    private int idStat;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    @Column(unique=true, nullable = false)
-    private int value;
+    @ManyToOne
+    @JoinColumn(name = "pokemon_id")
+    private Pokemon pokemon;
+
+    @ManyToOne
+    @JoinColumn(name = "stat_id")
+    private Stat stat;
+
+    @Column(nullable = false)
+    private int statValue;
 }

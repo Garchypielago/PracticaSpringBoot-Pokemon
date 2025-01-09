@@ -56,6 +56,6 @@ public class PokemonServiceImpl implements PokemonService {
 //        }
 //        return filtro;
 
-        return pokemonRepository.findByType1_Id_orType2_Id(typeId);
+        return pokemonRepository.findPokemonByType1_IdOrType2_Id(typeId, typeId);
     }
 }

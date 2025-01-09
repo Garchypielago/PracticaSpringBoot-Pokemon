@@ -16,6 +16,7 @@ import lombok.*;
 public class Stat {
     @Id
     private int id;
+
     @Column(unique=true, nullable = false)
     private String name;
 }
