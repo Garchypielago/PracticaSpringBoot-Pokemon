@@ -228,7 +228,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row imagenes_modificar">
 
                     <!-- Single Product Area -->
 <!--                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">-->
@@ -267,14 +267,15 @@
 <!--                        </div>-->
 <!--                    </div>-->
 
-                            <div th:each="pokemon : ${pokemones}"  class="single-products-catagory clearfix" style='background-image: url(th:text="${pokemon.getType1().get}");' >
+                            <div th:each="pokemon : ${pokemones}"  class="single-products-catagory clearfix" th:style="'background-image: url(' + ${pokemon.getType1().getBackground()} + ');'" >
                                 <a href="shop.html">
                                     <!-- <img src="img/bg-img/2.jpg" alt=""> -->
-                                    <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charmeleon.gif" alt="" style="width: auto;" >
+<!--                                    <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charmeleon.gif" alt="" style="width: auto;" >-->
+                                    <img th:src="'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/' + ${pokemon.getName().toLowerCase()} + '.gif'" alt="" style="width: auto;" >
                                     <!-- Hover Content -->
                                     <div class="hover-content">
                                         <div class="line"></div>
-                                        <h4>Charmeleon</h4>
+                                        <h4 th:text="${pokemon.getName()}">Charmeleon</h4>
                                         <p>From P¥180</p>
                                     </div>
                                 </a>
