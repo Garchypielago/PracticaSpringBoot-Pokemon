@@ -19,11 +19,11 @@ public class HomeController {
         return "checkout";
     }
 
-    @GetMapping
-    @RequestMapping("/product-details")
-    public String productDetailsPage() {
-        return "product-details";
-    }
+//    @GetMapping
+//    @RequestMapping("/product-details")
+//    public String productDetailsPage() {
+//        return "product-details";
+//    }
 
     @GetMapping
     @RequestMapping("/cart")
