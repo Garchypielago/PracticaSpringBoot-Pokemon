@@ -136,7 +136,7 @@
 <!--                                        <a class="gallery_img" href="/img/product-img/pro-big-1.jpg">-->
                                         <a class="gallery_img" href="/img/product-img/pro-big-1.jpg">
 <!--                                            <img class="d-block w-100" src="/img/product-img/pro-big-1.jpg" alt="First slide">-->
-                                            <img th:src="'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/' + ${pokemon.getName().toLowerCase()} + '.gif'" alt="" style="width: auto;" >
+                                            <img th:src="'https://img.pokemondb.net/sprites/scarlet-violet/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
                                         </a>
                                     </div>
                                     <div class="carousel-item">
@@ -181,8 +181,7 @@
                                         <div class="inner-review">
                                             <h2>Write your Review</h2>
                                             <div class="rating-stars-wrapper">
-
-                                                <div id="pokemonDiv" th:value="${pokemon.getId()}" class="rating-stars">
+                                                <div id="pokemonJSId" th:attr="data-id=${pokemon.getId()}" class="rating-stars">
                                                 <span data-rating="5"  class="fa-solid fa-star fa-2xl"></span>
                                                 <span data-rating="4"  class="fa-solid fa-star fa-2xl"></span>
                                                 <span data-rating="3"  class="fa-solid fa-star fa-2xl"></span>

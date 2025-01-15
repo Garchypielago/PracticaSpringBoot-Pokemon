@@ -4,6 +4,8 @@ const openBtn = document.getElementById("open-review");
 const closeBtn =document.getElementById("close-review");
 const review =document.getElementById("review")
 const reviewinner =document.getElementById("inner-review")
+const pokemonJSId = document.getElementById("pokemonJSId")
+
 openBtn.addEventListener("click",()=>{
     review.style.visibility="visible";
     document.body.style.overflow = "hidden";
@@ -18,6 +20,7 @@ closeBtn.addEventListener("click",()=>{
 
 //sistema de estrellas
 let stars = document.querySelectorAll(".rating-stars span")
+let rating
 
 for(let star of stars){
     star.addEventListener("click",function (){
@@ -33,15 +36,10 @@ for(let star of stars){
         }
 
         this.setAttribute("data-clicked","true")
-        let rating=this.dataset.rating;
-        let productId= document.getElementById("pokemonDiv")
-        console.log(rating);
-        console.log(productId.value);
+        rating=this.dataset.rating;
     })
 }
 
 function sendData(){
-    let rating=this.dataset.rating;
-    let productId=this.dataset.productid;
-    console.log(rating,productId);
+    console.log(rating, pokemonJSId.getAttribute('data-id'));
 }
