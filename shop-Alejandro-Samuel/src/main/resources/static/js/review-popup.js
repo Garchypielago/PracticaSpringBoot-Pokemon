@@ -34,13 +34,14 @@ for(let star of stars){
 
         this.setAttribute("data-clicked","true")
         let rating=this.dataset.rating;
-        let productId=this.dataset.productid;
-        console.log(rating,productId);
+        let productId= document.getElementById("pokemonDiv")
+        console.log(rating);
+        console.log(productId.value);
     })
 }
 
 function sendData(){
     let rating=this.dataset.rating;
-    let productId=this.dataset.productId;
+    let productId=this.dataset.productid;
     console.log(rating,productId);
 }
