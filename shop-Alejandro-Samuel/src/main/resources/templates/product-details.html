@@ -180,8 +180,16 @@
                                     <div class="review" id="review">
                                         <div class="inner-review">
                                             <h2>Write your Review</h2>
-                                            <p>texto de ejemplo</p>
-                                            <button id="close-review">Close Review</button>
+                                            <div class="rating-stars-wrapper">
+                                                <div th:attr="data-productid=${pokemon.getId()}" class="rating-stars">
+                                                <span data-rating="5"  class="fa-solid fa-star fa-2xl"></span>
+                                                <span data-rating="4"  class="fa-solid fa-star fa-2xl"></span>
+                                                <span data-rating="3"  class="fa-solid fa-star fa-2xl"></span>
+                                                <span data-rating="2"  class="fa-solid fa-star fa-2xl"></span>
+                                                <span data-rating="1"  class="fa-solid fa-star fa-2xl"></span>
+                                                </div>
+                                            </div>
+                                            <button id="close-review">Send Review</button>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +312,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="/js/active.js"></script>
 
     <script src="/js/review-popup.js"></script>
-
+    <script src="https://kit.fontawesome.com/c892b143ac.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

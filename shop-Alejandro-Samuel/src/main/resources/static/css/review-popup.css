@@ -20,3 +20,29 @@
     height: 20%;
     width: 30%;
 }
+.rating-stars-wrapper{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.rating-stars span{
+    cursor: pointer;
+    transition: color.2s, transform .2s;
+}
+.rating-stars span:hover{
+    color: #dcbb0f;
+    transform:scale(1.3);
+}
+.rating-stars span:hover ~ span{
+    color: #dcbb0f;
+}
+.rating-stars{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rating-stars span[data-clicked]{
+     color: #dcbb0f;;
+}
+.rating-stars span[data-clicked] ~ span{
+    color: #dcbb0f;
+}
