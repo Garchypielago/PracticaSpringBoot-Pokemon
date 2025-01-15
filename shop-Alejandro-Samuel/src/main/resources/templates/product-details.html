@@ -181,7 +181,7 @@
                                         <div class="inner-review">
                                             <h2>Write your Review</h2>
                                             <div class="rating-stars-wrapper">
-                                                <div th:attr="data-productid=${pokemon.getId()}" class="rating-stars">
+                                                <div id="pokemonJSId" th:attr="data-id=${pokemon.getId()}" class="rating-stars">
                                                 <span data-rating="5"  class="fa-solid fa-star fa-2xl"></span>
                                                 <span data-rating="4"  class="fa-solid fa-star fa-2xl"></span>
                                                 <span data-rating="3"  class="fa-solid fa-star fa-2xl"></span>
@@ -198,7 +198,7 @@
                             </div>
 
                             <div class="short_overview my-5">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quae eveniet culpa officia quidem mollitia impedit iste asperiores nisi reprehenderit consequatur, autem, nostrum pariatur enim?</p>
+                                <p th:text="${pokemon.getDescripcion()}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quae eveniet culpa officia quidem mollitia impedit iste asperiores nisi reprehenderit consequatur, autem, nostrum pariatur enim?</p>
                             </div>
 
                             <!-- Add to Cart Form -->
