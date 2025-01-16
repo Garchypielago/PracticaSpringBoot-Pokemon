@@ -23,7 +23,7 @@ public class Pokemon {
     @Column(nullable = false, length = 25)
     private String name;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 200)
     private String descripcion;
 
     @OneToMany(mappedBy = "pokemon")
