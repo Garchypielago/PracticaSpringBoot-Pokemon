@@ -45,7 +45,6 @@
     }
 
     .imagenes_modificar img{
-        height: 10rem; 
         filter: drop-shadow(0 0 20px rgb(212, 212, 212, 0.7));
     }
 
