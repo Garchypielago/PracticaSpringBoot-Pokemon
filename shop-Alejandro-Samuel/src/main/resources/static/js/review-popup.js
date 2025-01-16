@@ -41,5 +41,10 @@ for(let star of stars){
 }
 
 function sendData(){
-    console.log(rating, pokemonJSId.getAttribute('data-id'));
+    let pokemonid=pokemonJSId.getAttribute('data-id')
+    let ratingArray={rating,pokemonid}
+    fetch("../templates/product-details",{
+        method:"POST", body:ratingArray
+    })
+        .then(text=>console.log(text))
 }
