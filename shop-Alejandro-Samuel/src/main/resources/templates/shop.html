@@ -270,7 +270,7 @@
                             <div th:each="pokemon : ${pokemones}"  class="single-products-catagory clearfix" th:style="'background-image: url(' + ${pokemon.getType1().getBackground()} + ');'" >
                                 <a th:href="'../../product-details/pokemon/' + ${pokemon.getId()} ">
                                     <!-- <img src="img/bg-img/2.jpg" alt=""> -->
-                                    <img th:src="'https://img.pokemondb.net/sprites/scarlet-violet/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
+                                    <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
 <!--                                    <img th:src="'https://projectpokemon.org/images/normal-sprite/' + ${pokemon.getName().toLowerCase()} + '.gif'" alt="" style="width: auto;" >-->
                                     <!-- Hover Content -->
                                     <div class="hover-content">
