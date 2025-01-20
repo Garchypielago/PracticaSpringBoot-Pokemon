@@ -12,7 +12,7 @@ import lombok.*;
 @Table(name="ratings")
 public class Rating {
     @Id
-    private int id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "pokemon_id")
@@ -20,5 +20,11 @@ public class Rating {
 
     @Column(nullable = false)
     private Float mark;
+
+    @Column(unique = true ,nullable = false)
+    private String userName;
+
+    @Column
+    private String review;
 
 }

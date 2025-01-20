@@ -7,7 +7,7 @@ import java.util.Collection;
 
 public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
-    Collection<Pokemon> findByRegion_Id(int region);
-    Collection<Pokemon> findPokemonByType1_IdOrType2_Id(int type1_id, int type2_id);
+    Collection<Pokemon> findByRegion_Id(Long region);
+    Collection<Pokemon> findPokemonByType1_IdOrType2_Id(Long type1_id, Long type2_id);
 
 }

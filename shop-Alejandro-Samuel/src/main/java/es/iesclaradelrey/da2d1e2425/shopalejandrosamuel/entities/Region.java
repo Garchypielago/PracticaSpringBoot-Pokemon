@@ -12,7 +12,7 @@ import java.util.Set;
 @Table(name="regions")
 public class Region{
     @Id
-    private int id;
+    private Long id;
     @Column
     private String name;
 

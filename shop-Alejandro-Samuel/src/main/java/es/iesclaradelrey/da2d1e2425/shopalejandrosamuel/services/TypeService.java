@@ -7,6 +7,6 @@ import java.util.Optional;
 
 public interface TypeService {
     Collection<Type> findAll();
-    Optional<Type> findById(int id);
+    Optional<Type> findById(Long id);
     Type save(Type type);
 }

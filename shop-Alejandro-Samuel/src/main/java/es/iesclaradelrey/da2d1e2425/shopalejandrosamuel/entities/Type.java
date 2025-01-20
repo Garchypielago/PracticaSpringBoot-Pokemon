@@ -14,7 +14,7 @@ import lombok.*;
 @Table(name="types")
 public class Type{
     @Id
-    private int id;
+    private Long id;
 
     @Column
     private String name;

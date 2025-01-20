@@ -34,10 +34,10 @@ public class PokemonServiceImpl implements PokemonService {
         return pokemonRepository.findById(id);
     }
 
-    public Collection<Pokemon> findByRegion(int regId){
+    public Collection<Pokemon> findByRegion(Long regId){
         return pokemonRepository.findByRegion_Id(regId);
     }
-    public Collection<Pokemon> findByType(int typeId){
+    public Collection<Pokemon> findByType(Long typeId){
         return pokemonRepository.findPokemonByType1_IdOrType2_Id(typeId, typeId);
     }
 }

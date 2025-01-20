@@ -7,6 +7,6 @@ import java.util.Optional;
 
 public interface RegionService {
     Collection<Region> findAll();
-    Optional<Region> findById(int id);
+    Optional<Region> findById(Long id);
     Region save(Region region);
 }

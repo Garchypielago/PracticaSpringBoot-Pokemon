@@ -26,7 +26,7 @@ public class RatingServiceImpl implements RatingService {
     }
 
     @Override
-    public Optional<Rating> findById(int id) {
+    public Optional<Rating> findById(Long id) {
         return this.ratingRepository.findById(id);
     }
 

@@ -9,6 +9,6 @@ public interface RatingService {
     long count();
     void save(Rating t);
     Collection<Rating> findAll();
-    Optional<Rating> findById(int id);
+    Optional<Rating> findById(Long id);
     Collection<Rating> findByPokemon_Id(Long pokemonId);
 }
