@@ -1,4 +1,4 @@
--- Inserciï¿½n para Bulbasaur
+-- Inserción para Bulbasaur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bulbasaur'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Bulbasaur'), 2, 49),
@@ -7,7 +7,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bulbasaur'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Bulbasaur'), 6, 45);
 
--- Inserciï¿½n para Ivysaur
+-- Inserción para Ivysaur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ivysaur'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Ivysaur'), 2, 62),
@@ -16,7 +16,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ivysaur'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Ivysaur'), 6, 60);
 
--- Inserciï¿½n para Venusaur
+-- Inserción para Venusaur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venusaur'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Venusaur'), 2, 82),
@@ -25,7 +25,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venusaur'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Venusaur'), 6, 80);
 
--- Inserciï¿½n para Charmander
+-- Inserción para Charmander
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charmander'), 1, 39),
 ((SELECT id FROM pokemones WHERE name = 'Charmander'), 2, 52),
@@ -34,7 +34,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charmander'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Charmander'), 6, 65);
 
--- Inserciï¿½n para Charmeleon
+-- Inserción para Charmeleon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charmeleon'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Charmeleon'), 2, 64),
@@ -43,7 +43,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charmeleon'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Charmeleon'), 6, 80);
 
--- Inserciï¿½n para Charizard
+-- Inserción para Charizard
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charizard'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Charizard'), 2, 84),
@@ -52,7 +52,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charizard'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Charizard'), 6, 100);
 
--- Inserciï¿½n para Squirtle
+-- Inserción para Squirtle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Squirtle'), 1, 44),
 ((SELECT id FROM pokemones WHERE name = 'Squirtle'), 2, 48),
@@ -61,7 +61,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Squirtle'), 5, 64),
 ((SELECT id FROM pokemones WHERE name = 'Squirtle'), 6, 43);
 
--- Inserciï¿½n para Wartortle
+-- Inserción para Wartortle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wartortle'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Wartortle'), 2, 63),
@@ -70,7 +70,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wartortle'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Wartortle'), 6, 58);
 
--- Inserciï¿½n para Blastoise
+-- Inserción para Blastoise
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blastoise'), 1, 79),
 ((SELECT id FROM pokemones WHERE name = 'Blastoise'), 2, 83),
@@ -79,7 +79,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blastoise'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Blastoise'), 6, 78);
 
--- Inserciï¿½n para Caterpie
+-- Inserción para Caterpie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Caterpie'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Caterpie'), 2, 30),
@@ -88,7 +88,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Caterpie'), 5, 20),
 ((SELECT id FROM pokemones WHERE name = 'Caterpie'), 6, 45);
 
--- Inserciï¿½n para Metapod
+-- Inserción para Metapod
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Metapod'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Metapod'), 2, 20),
@@ -97,7 +97,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Metapod'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Metapod'), 6, 30);
 
--- Inserciï¿½n para Butterfree
+-- Inserción para Butterfree
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Butterfree'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Butterfree'), 2, 45),
@@ -106,7 +106,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Butterfree'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Butterfree'), 6, 70);
 
--- Inserciï¿½n para Weedle
+-- Inserción para Weedle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weedle'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Weedle'), 2, 35),
@@ -115,7 +115,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weedle'), 5, 20),
 ((SELECT id FROM pokemones WHERE name = 'Weedle'), 6, 50);
 
--- Inserciï¿½n para Kakuna
+-- Inserción para Kakuna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kakuna'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Kakuna'), 2, 25),
@@ -124,7 +124,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kakuna'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Kakuna'), 6, 35);
 
--- Inserciï¿½n para Beedrill
+-- Inserción para Beedrill
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beedrill'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Beedrill'), 2, 90),
@@ -133,7 +133,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beedrill'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Beedrill'), 6, 75);
 
--- Inserciï¿½n para Pidgey
+-- Inserción para Pidgey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidgey'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Pidgey'), 2, 45),
@@ -142,7 +142,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidgey'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Pidgey'), 6, 56);
 
--- Inserciï¿½n para Pidgeotto
+-- Inserción para Pidgeotto
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidgeotto'), 1, 63),
 ((SELECT id FROM pokemones WHERE name = 'Pidgeotto'), 2, 60),
@@ -151,7 +151,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidgeotto'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Pidgeotto'), 6, 71);
 
--- Inserciï¿½n para Pidgeot
+-- Inserción para Pidgeot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidgeot'), 1, 83),
 ((SELECT id FROM pokemones WHERE name = 'Pidgeot'), 2, 80),
@@ -160,7 +160,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidgeot'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Pidgeot'), 6, 101);
 
--- Inserciï¿½n para Rattata
+-- Inserción para Rattata
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rattata'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Rattata'), 2, 56),
@@ -169,7 +169,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rattata'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Rattata'), 6, 72);
 
--- Inserciï¿½n para Raticate
+-- Inserción para Raticate
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raticate'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Raticate'), 2, 81),
@@ -178,7 +178,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raticate'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Raticate'), 6, 97);
 
--- Inserciï¿½n para Spearow
+-- Inserción para Spearow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spearow'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Spearow'), 2, 60),
@@ -187,7 +187,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spearow'), 5, 31),
 ((SELECT id FROM pokemones WHERE name = 'Spearow'), 6, 70);
 
--- Inserciï¿½n para Fearow
+-- Inserción para Fearow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fearow'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Fearow'), 2, 90),
@@ -196,7 +196,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fearow'), 5, 61),
 ((SELECT id FROM pokemones WHERE name = 'Fearow'), 6, 100);
 
--- Inserciï¿½n para Ekans
+-- Inserción para Ekans
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ekans'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Ekans'), 2, 60),
@@ -205,7 +205,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ekans'), 5, 54),
 ((SELECT id FROM pokemones WHERE name = 'Ekans'), 6, 55);
 
--- Inserciï¿½n para Arbok
+-- Inserción para Arbok
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arbok'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Arbok'), 2, 95),
@@ -214,7 +214,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arbok'), 5, 79),
 ((SELECT id FROM pokemones WHERE name = 'Arbok'), 6, 80);
 
--- Inserciï¿½n para Pikachu
+-- Inserción para Pikachu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pikachu'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Pikachu'), 2, 55),
@@ -223,7 +223,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pikachu'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Pikachu'), 6, 90);
 
--- Inserciï¿½n para Raichu
+-- Inserción para Raichu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raichu'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Raichu'), 2, 90),
@@ -232,7 +232,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raichu'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Raichu'), 6, 110);
 
--- Inserciï¿½n para Sandshrew
+-- Inserción para Sandshrew
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandshrew'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Sandshrew'), 2, 75),
@@ -241,7 +241,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandshrew'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Sandshrew'), 6, 40);
 
--- Inserciï¿½n para Sandslash
+-- Inserción para Sandslash
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandslash'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Sandslash'), 2, 100),
@@ -250,7 +250,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandslash'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Sandslash'), 6, 65);
 
--- Inserciï¿½n para Nidoran-f
+-- Inserción para Nidoran-f
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-f'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-f'), 2, 47),
@@ -259,7 +259,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-f'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-f'), 6, 41);
 
--- Inserciï¿½n para Nidorina
+-- Inserción para Nidorina
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidorina'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Nidorina'), 2, 62),
@@ -268,7 +268,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidorina'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Nidorina'), 6, 56);
 
--- Inserciï¿½n para Nidoqueen
+-- Inserción para Nidoqueen
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoqueen'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Nidoqueen'), 2, 92),
@@ -277,7 +277,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoqueen'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Nidoqueen'), 6, 76);
 
--- Inserciï¿½n para Nidoran-m
+-- Inserción para Nidoran-m
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-m'), 1, 46),
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-m'), 2, 57),
@@ -286,7 +286,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-m'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Nidoran-m'), 6, 50);
 
--- Inserciï¿½n para Nidorino
+-- Inserción para Nidorino
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidorino'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Nidorino'), 2, 72),
@@ -295,7 +295,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidorino'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Nidorino'), 6, 65);
 
--- Inserciï¿½n para Nidoking
+-- Inserción para Nidoking
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoking'), 1, 81),
 ((SELECT id FROM pokemones WHERE name = 'Nidoking'), 2, 102),
@@ -304,7 +304,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nidoking'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Nidoking'), 6, 85);
 
--- Inserciï¿½n para Clefairy
+-- Inserción para Clefairy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clefairy'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Clefairy'), 2, 45),
@@ -313,7 +313,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clefairy'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Clefairy'), 6, 35);
 
--- Inserciï¿½n para Clefable
+-- Inserción para Clefable
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clefable'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Clefable'), 2, 70),
@@ -322,7 +322,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clefable'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Clefable'), 6, 60);
 
--- Inserciï¿½n para Vulpix
+-- Inserción para Vulpix
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vulpix'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Vulpix'), 2, 41),
@@ -331,7 +331,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vulpix'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Vulpix'), 6, 65);
 
--- Inserciï¿½n para Ninetales
+-- Inserción para Ninetales
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ninetales'), 1, 73),
 ((SELECT id FROM pokemones WHERE name = 'Ninetales'), 2, 76),
@@ -340,7 +340,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ninetales'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Ninetales'), 6, 100);
 
--- Inserciï¿½n para Jigglypuff
+-- Inserción para Jigglypuff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jigglypuff'), 1, 115),
 ((SELECT id FROM pokemones WHERE name = 'Jigglypuff'), 2, 45),
@@ -349,7 +349,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jigglypuff'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Jigglypuff'), 6, 20);
 
--- Inserciï¿½n para Wigglytuff
+-- Inserción para Wigglytuff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wigglytuff'), 1, 140),
 ((SELECT id FROM pokemones WHERE name = 'Wigglytuff'), 2, 70),
@@ -358,7 +358,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wigglytuff'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Wigglytuff'), 6, 45);
 
--- Inserciï¿½n para Zubat
+-- Inserción para Zubat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zubat'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Zubat'), 2, 45),
@@ -367,7 +367,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zubat'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Zubat'), 6, 55);
 
--- Inserciï¿½n para Golbat
+-- Inserción para Golbat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golbat'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Golbat'), 2, 80),
@@ -376,7 +376,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golbat'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Golbat'), 6, 90);
 
--- Inserciï¿½n para Oddish
+-- Inserción para Oddish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oddish'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Oddish'), 2, 50),
@@ -385,7 +385,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oddish'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Oddish'), 6, 30);
 
--- Inserciï¿½n para Gloom
+-- Inserción para Gloom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gloom'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Gloom'), 2, 65),
@@ -394,7 +394,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gloom'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Gloom'), 6, 40);
 
--- Inserciï¿½n para Vileplume
+-- Inserción para Vileplume
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vileplume'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Vileplume'), 2, 80),
@@ -403,7 +403,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vileplume'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Vileplume'), 6, 50);
 
--- Inserciï¿½n para Paras
+-- Inserción para Paras
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Paras'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Paras'), 2, 70),
@@ -412,7 +412,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Paras'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Paras'), 6, 25);
 
--- Inserciï¿½n para Parasect
+-- Inserción para Parasect
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Parasect'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Parasect'), 2, 95),
@@ -421,7 +421,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Parasect'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Parasect'), 6, 30);
 
--- Inserciï¿½n para Venonat
+-- Inserción para Venonat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venonat'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Venonat'), 2, 55),
@@ -430,7 +430,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venonat'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Venonat'), 6, 45);
 
--- Inserciï¿½n para Venomoth
+-- Inserción para Venomoth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venomoth'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Venomoth'), 2, 65),
@@ -439,7 +439,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venomoth'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Venomoth'), 6, 90);
 
--- Inserciï¿½n para Diglett
+-- Inserción para Diglett
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Diglett'), 1, 10),
 ((SELECT id FROM pokemones WHERE name = 'Diglett'), 2, 55),
@@ -448,7 +448,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Diglett'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Diglett'), 6, 95);
 
--- Inserciï¿½n para Dugtrio
+-- Inserción para Dugtrio
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dugtrio'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Dugtrio'), 2, 100),
@@ -457,7 +457,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dugtrio'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Dugtrio'), 6, 120);
 
--- Inserciï¿½n para Meowth
+-- Inserción para Meowth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meowth'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Meowth'), 2, 45),
@@ -466,7 +466,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meowth'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Meowth'), 6, 90);
 
--- Inserciï¿½n para Persian
+-- Inserción para Persian
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Persian'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Persian'), 2, 70),
@@ -475,7 +475,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Persian'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Persian'), 6, 115);
 
--- Inserciï¿½n para Psyduck
+-- Inserción para Psyduck
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Psyduck'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Psyduck'), 2, 52),
@@ -484,7 +484,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Psyduck'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Psyduck'), 6, 55);
 
--- Inserciï¿½n para Golduck
+-- Inserción para Golduck
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golduck'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Golduck'), 2, 82),
@@ -493,7 +493,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golduck'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Golduck'), 6, 85);
 
--- Inserciï¿½n para Mankey
+-- Inserción para Mankey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mankey'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Mankey'), 2, 80),
@@ -502,7 +502,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mankey'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Mankey'), 6, 70);
 
--- Inserciï¿½n para Primeape
+-- Inserción para Primeape
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Primeape'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Primeape'), 2, 105),
@@ -511,7 +511,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Primeape'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Primeape'), 6, 95);
 
--- Inserciï¿½n para Growlithe
+-- Inserción para Growlithe
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Growlithe'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Growlithe'), 2, 70),
@@ -520,7 +520,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Growlithe'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Growlithe'), 6, 60);
 
--- Inserciï¿½n para Arcanine
+-- Inserción para Arcanine
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arcanine'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Arcanine'), 2, 110),
@@ -529,7 +529,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arcanine'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Arcanine'), 6, 95);
 
--- Inserciï¿½n para Poliwag
+-- Inserción para Poliwag
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poliwag'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Poliwag'), 2, 50),
@@ -538,7 +538,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poliwag'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Poliwag'), 6, 90);
 
--- Inserciï¿½n para Poliwhirl
+-- Inserción para Poliwhirl
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poliwhirl'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Poliwhirl'), 2, 65),
@@ -547,7 +547,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poliwhirl'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Poliwhirl'), 6, 90);
 
--- Inserciï¿½n para Poliwrath
+-- Inserción para Poliwrath
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poliwrath'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Poliwrath'), 2, 95),
@@ -556,7 +556,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poliwrath'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Poliwrath'), 6, 70);
 
--- Inserciï¿½n para Abra
+-- Inserción para Abra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Abra'), 1, 25),
 ((SELECT id FROM pokemones WHERE name = 'Abra'), 2, 20),
@@ -565,7 +565,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Abra'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Abra'), 6, 90);
 
--- Inserciï¿½n para Kadabra
+-- Inserción para Kadabra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kadabra'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Kadabra'), 2, 35),
@@ -574,7 +574,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kadabra'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Kadabra'), 6, 105);
 
--- Inserciï¿½n para Alakazam
+-- Inserción para Alakazam
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Alakazam'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Alakazam'), 2, 50),
@@ -583,7 +583,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Alakazam'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Alakazam'), 6, 120);
 
--- Inserciï¿½n para Machop
+-- Inserción para Machop
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Machop'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Machop'), 2, 80),
@@ -592,7 +592,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Machop'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Machop'), 6, 35);
 
--- Inserciï¿½n para Machoke
+-- Inserción para Machoke
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Machoke'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Machoke'), 2, 100),
@@ -601,7 +601,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Machoke'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Machoke'), 6, 45);
 
--- Inserciï¿½n para Machamp
+-- Inserción para Machamp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Machamp'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Machamp'), 2, 130),
@@ -610,7 +610,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Machamp'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Machamp'), 6, 55);
 
--- Inserciï¿½n para Bellsprout
+-- Inserción para Bellsprout
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bellsprout'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Bellsprout'), 2, 75),
@@ -619,7 +619,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bellsprout'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Bellsprout'), 6, 40);
 
--- Inserciï¿½n para Weepinbell
+-- Inserción para Weepinbell
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weepinbell'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Weepinbell'), 2, 90),
@@ -628,7 +628,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weepinbell'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Weepinbell'), 6, 55);
 
--- Inserciï¿½n para Victreebel
+-- Inserción para Victreebel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Victreebel'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Victreebel'), 2, 105),
@@ -637,7 +637,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Victreebel'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Victreebel'), 6, 70);
 
--- Inserciï¿½n para Tentacool
+-- Inserción para Tentacool
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tentacool'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Tentacool'), 2, 40),
@@ -646,7 +646,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tentacool'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Tentacool'), 6, 70);
 
--- Inserciï¿½n para Tentacruel
+-- Inserción para Tentacruel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tentacruel'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Tentacruel'), 2, 70),
@@ -655,7 +655,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tentacruel'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Tentacruel'), 6, 100);
 
--- Inserciï¿½n para Geodude
+-- Inserción para Geodude
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Geodude'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Geodude'), 2, 80),
@@ -664,7 +664,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Geodude'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Geodude'), 6, 20);
 
--- Inserciï¿½n para Graveler
+-- Inserción para Graveler
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Graveler'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Graveler'), 2, 95),
@@ -673,7 +673,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Graveler'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Graveler'), 6, 35);
 
--- Inserciï¿½n para Golem
+-- Inserción para Golem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golem'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Golem'), 2, 120),
@@ -682,7 +682,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golem'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Golem'), 6, 45);
 
--- Inserciï¿½n para Ponyta
+-- Inserción para Ponyta
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ponyta'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Ponyta'), 2, 85),
@@ -691,7 +691,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ponyta'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Ponyta'), 6, 90);
 
--- Inserciï¿½n para Rapidash
+-- Inserción para Rapidash
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rapidash'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Rapidash'), 2, 100),
@@ -700,7 +700,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rapidash'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Rapidash'), 6, 105);
 
--- Inserciï¿½n para Slowpoke
+-- Inserción para Slowpoke
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slowpoke'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Slowpoke'), 2, 65),
@@ -709,7 +709,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slowpoke'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Slowpoke'), 6, 15);
 
--- Inserciï¿½n para Slowbro
+-- Inserción para Slowbro
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slowbro'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Slowbro'), 2, 75),
@@ -718,7 +718,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slowbro'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Slowbro'), 6, 30);
 
--- Inserciï¿½n para Magnemite
+-- Inserción para Magnemite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magnemite'), 1, 25),
 ((SELECT id FROM pokemones WHERE name = 'Magnemite'), 2, 35),
@@ -727,7 +727,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magnemite'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Magnemite'), 6, 45);
 
--- Inserciï¿½n para Magneton
+-- Inserción para Magneton
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magneton'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Magneton'), 2, 60),
@@ -736,7 +736,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magneton'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Magneton'), 6, 70);
 
--- Inserciï¿½n para Farfetchd
+-- Inserción para Farfetchd
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Farfetchd'), 1, 52),
 ((SELECT id FROM pokemones WHERE name = 'Farfetchd'), 2, 90),
@@ -745,7 +745,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Farfetchd'), 5, 62),
 ((SELECT id FROM pokemones WHERE name = 'Farfetchd'), 6, 60);
 
--- Inserciï¿½n para Doduo
+-- Inserción para Doduo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Doduo'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Doduo'), 2, 85),
@@ -754,7 +754,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Doduo'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Doduo'), 6, 75);
 
--- Inserciï¿½n para Dodrio
+-- Inserción para Dodrio
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dodrio'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Dodrio'), 2, 110),
@@ -763,7 +763,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dodrio'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Dodrio'), 6, 110);
 
--- Inserciï¿½n para Seel
+-- Inserción para Seel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seel'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Seel'), 2, 45),
@@ -772,7 +772,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seel'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Seel'), 6, 45);
 
--- Inserciï¿½n para Dewgong
+-- Inserción para Dewgong
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dewgong'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dewgong'), 2, 70),
@@ -781,7 +781,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dewgong'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Dewgong'), 6, 70);
 
--- Inserciï¿½n para Grimer
+-- Inserción para Grimer
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grimer'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Grimer'), 2, 80),
@@ -790,7 +790,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grimer'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Grimer'), 6, 25);
 
--- Inserciï¿½n para Muk
+-- Inserción para Muk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Muk'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Muk'), 2, 105),
@@ -799,7 +799,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Muk'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Muk'), 6, 50);
 
--- Inserciï¿½n para Shellder
+-- Inserción para Shellder
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shellder'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Shellder'), 2, 65),
@@ -808,7 +808,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shellder'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Shellder'), 6, 40);
 
--- Inserciï¿½n para Cloyster
+-- Inserción para Cloyster
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cloyster'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cloyster'), 2, 95),
@@ -817,7 +817,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cloyster'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Cloyster'), 6, 70);
 
--- Inserciï¿½n para Gastly
+-- Inserción para Gastly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gastly'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Gastly'), 2, 35),
@@ -826,7 +826,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gastly'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Gastly'), 6, 80);
 
--- Inserciï¿½n para Haunter
+-- Inserción para Haunter
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Haunter'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Haunter'), 2, 50),
@@ -835,7 +835,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Haunter'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Haunter'), 6, 95);
 
--- Inserciï¿½n para Gengar
+-- Inserción para Gengar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gengar'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Gengar'), 2, 65),
@@ -844,7 +844,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gengar'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Gengar'), 6, 110);
 
--- Inserciï¿½n para Onix
+-- Inserción para Onix
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Onix'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Onix'), 2, 45),
@@ -853,7 +853,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Onix'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Onix'), 6, 70);
 
--- Inserciï¿½n para Drowzee
+-- Inserción para Drowzee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drowzee'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Drowzee'), 2, 48),
@@ -862,7 +862,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drowzee'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Drowzee'), 6, 42);
 
--- Inserciï¿½n para Hypno
+-- Inserción para Hypno
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hypno'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Hypno'), 2, 73),
@@ -871,7 +871,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hypno'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Hypno'), 6, 67);
 
--- Inserciï¿½n para Krabby
+-- Inserción para Krabby
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Krabby'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Krabby'), 2, 105),
@@ -880,7 +880,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Krabby'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Krabby'), 6, 50);
 
--- Inserciï¿½n para Kingler
+-- Inserción para Kingler
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kingler'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Kingler'), 2, 130),
@@ -889,7 +889,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kingler'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Kingler'), 6, 75);
 
--- Inserciï¿½n para Voltorb
+-- Inserción para Voltorb
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Voltorb'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Voltorb'), 2, 30),
@@ -898,7 +898,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Voltorb'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Voltorb'), 6, 100);
 
--- Inserciï¿½n para Electrode
+-- Inserción para Electrode
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electrode'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Electrode'), 2, 50),
@@ -907,7 +907,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electrode'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Electrode'), 6, 150);
 
--- Inserciï¿½n para Exeggcute
+-- Inserción para Exeggcute
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Exeggcute'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Exeggcute'), 2, 40),
@@ -916,7 +916,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Exeggcute'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Exeggcute'), 6, 40);
 
--- Inserciï¿½n para Exeggutor
+-- Inserción para Exeggutor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Exeggutor'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Exeggutor'), 2, 95),
@@ -925,7 +925,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Exeggutor'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Exeggutor'), 6, 55);
 
--- Inserciï¿½n para Cubone
+-- Inserción para Cubone
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cubone'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cubone'), 2, 50),
@@ -934,7 +934,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cubone'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cubone'), 6, 35);
 
--- Inserciï¿½n para Marowak
+-- Inserción para Marowak
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marowak'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Marowak'), 2, 80),
@@ -943,7 +943,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marowak'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Marowak'), 6, 45);
 
--- Inserciï¿½n para Hitmonlee
+-- Inserción para Hitmonlee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hitmonlee'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Hitmonlee'), 2, 120),
@@ -952,7 +952,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hitmonlee'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Hitmonlee'), 6, 87);
 
--- Inserciï¿½n para Hitmonchan
+-- Inserción para Hitmonchan
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hitmonchan'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Hitmonchan'), 2, 105),
@@ -961,7 +961,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hitmonchan'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Hitmonchan'), 6, 76);
 
--- Inserciï¿½n para Lickitung
+-- Inserción para Lickitung
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lickitung'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Lickitung'), 2, 55),
@@ -970,7 +970,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lickitung'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Lickitung'), 6, 30);
 
--- Inserciï¿½n para Koffing
+-- Inserción para Koffing
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Koffing'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Koffing'), 2, 65),
@@ -979,7 +979,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Koffing'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Koffing'), 6, 35);
 
--- Inserciï¿½n para Weezing
+-- Inserción para Weezing
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weezing'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Weezing'), 2, 90),
@@ -988,7 +988,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weezing'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Weezing'), 6, 60);
 
--- Inserciï¿½n para Rhyhorn
+-- Inserción para Rhyhorn
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rhyhorn'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Rhyhorn'), 2, 85),
@@ -997,7 +997,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rhyhorn'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Rhyhorn'), 6, 25);
 
--- Inserciï¿½n para Rhydon
+-- Inserción para Rhydon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rhydon'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Rhydon'), 2, 130),
@@ -1006,7 +1006,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rhydon'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Rhydon'), 6, 40);
 
--- Inserciï¿½n para Chansey
+-- Inserción para Chansey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chansey'), 1, 250),
 ((SELECT id FROM pokemones WHERE name = 'Chansey'), 2, 5),
@@ -1015,7 +1015,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chansey'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Chansey'), 6, 50);
 
--- Inserciï¿½n para Tangela
+-- Inserción para Tangela
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tangela'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Tangela'), 2, 55),
@@ -1024,7 +1024,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tangela'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Tangela'), 6, 60);
 
--- Inserciï¿½n para Kangaskhan
+-- Inserción para Kangaskhan
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kangaskhan'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Kangaskhan'), 2, 95),
@@ -1033,7 +1033,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kangaskhan'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Kangaskhan'), 6, 90);
 
--- Inserciï¿½n para Horsea
+-- Inserción para Horsea
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Horsea'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Horsea'), 2, 40),
@@ -1042,7 +1042,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Horsea'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Horsea'), 6, 60);
 
--- Inserciï¿½n para Seadra
+-- Inserción para Seadra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seadra'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Seadra'), 2, 65),
@@ -1051,7 +1051,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seadra'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Seadra'), 6, 85);
 
--- Inserciï¿½n para Goldeen
+-- Inserción para Goldeen
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Goldeen'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Goldeen'), 2, 67),
@@ -1060,7 +1060,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Goldeen'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Goldeen'), 6, 63);
 
--- Inserciï¿½n para Seaking
+-- Inserción para Seaking
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seaking'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Seaking'), 2, 92),
@@ -1069,7 +1069,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seaking'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Seaking'), 6, 68);
 
--- Inserciï¿½n para Staryu
+-- Inserción para Staryu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Staryu'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Staryu'), 2, 45),
@@ -1078,7 +1078,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Staryu'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Staryu'), 6, 85);
 
--- Inserciï¿½n para Starmie
+-- Inserción para Starmie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Starmie'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Starmie'), 2, 75),
@@ -1087,7 +1087,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Starmie'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Starmie'), 6, 115);
 
--- Inserciï¿½n para Mr-mime
+-- Inserción para Mr-mime
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mr-mime'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Mr-mime'), 2, 45),
@@ -1096,7 +1096,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mr-mime'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Mr-mime'), 6, 90);
 
--- Inserciï¿½n para Scyther
+-- Inserción para Scyther
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scyther'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Scyther'), 2, 110),
@@ -1105,7 +1105,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scyther'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Scyther'), 6, 105);
 
--- Inserciï¿½n para Jynx
+-- Inserción para Jynx
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jynx'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Jynx'), 2, 50),
@@ -1114,7 +1114,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jynx'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Jynx'), 6, 95);
 
--- Inserciï¿½n para Electabuzz
+-- Inserción para Electabuzz
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electabuzz'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Electabuzz'), 2, 83),
@@ -1123,7 +1123,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electabuzz'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Electabuzz'), 6, 105);
 
--- Inserciï¿½n para Magmar
+-- Inserción para Magmar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magmar'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Magmar'), 2, 95),
@@ -1132,7 +1132,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magmar'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Magmar'), 6, 93);
 
--- Inserciï¿½n para Pinsir
+-- Inserción para Pinsir
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pinsir'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Pinsir'), 2, 125),
@@ -1141,7 +1141,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pinsir'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Pinsir'), 6, 85);
 
--- Inserciï¿½n para Tauros
+-- Inserción para Tauros
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tauros'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Tauros'), 2, 100),
@@ -1150,7 +1150,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tauros'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Tauros'), 6, 110);
 
--- Inserciï¿½n para Magikarp
+-- Inserción para Magikarp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magikarp'), 1, 20),
 ((SELECT id FROM pokemones WHERE name = 'Magikarp'), 2, 10),
@@ -1159,7 +1159,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magikarp'), 5, 20),
 ((SELECT id FROM pokemones WHERE name = 'Magikarp'), 6, 80);
 
--- Inserciï¿½n para Gyarados
+-- Inserción para Gyarados
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gyarados'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Gyarados'), 2, 125),
@@ -1168,7 +1168,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gyarados'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Gyarados'), 6, 81);
 
--- Inserciï¿½n para Lapras
+-- Inserción para Lapras
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lapras'), 1, 130),
 ((SELECT id FROM pokemones WHERE name = 'Lapras'), 2, 85),
@@ -1177,7 +1177,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lapras'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Lapras'), 6, 60);
 
--- Inserciï¿½n para Ditto
+-- Inserción para Ditto
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ditto'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Ditto'), 2, 48),
@@ -1186,7 +1186,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ditto'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Ditto'), 6, 48);
 
--- Inserciï¿½n para Eevee
+-- Inserción para Eevee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eevee'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Eevee'), 2, 55),
@@ -1195,7 +1195,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eevee'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Eevee'), 6, 55);
 
--- Inserciï¿½n para Vaporeon
+-- Inserción para Vaporeon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vaporeon'), 1, 130),
 ((SELECT id FROM pokemones WHERE name = 'Vaporeon'), 2, 65),
@@ -1204,7 +1204,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vaporeon'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Vaporeon'), 6, 65);
 
--- Inserciï¿½n para Jolteon
+-- Inserción para Jolteon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jolteon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Jolteon'), 2, 65),
@@ -1213,7 +1213,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jolteon'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Jolteon'), 6, 130);
 
--- Inserciï¿½n para Flareon
+-- Inserción para Flareon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flareon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Flareon'), 2, 130),
@@ -1222,7 +1222,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flareon'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Flareon'), 6, 65);
 
--- Inserciï¿½n para Porygon
+-- Inserción para Porygon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Porygon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Porygon'), 2, 60),
@@ -1231,7 +1231,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Porygon'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Porygon'), 6, 40);
 
--- Inserciï¿½n para Omanyte
+-- Inserción para Omanyte
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Omanyte'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Omanyte'), 2, 40),
@@ -1240,7 +1240,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Omanyte'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Omanyte'), 6, 35);
 
--- Inserciï¿½n para Omastar
+-- Inserción para Omastar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Omastar'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Omastar'), 2, 60),
@@ -1249,7 +1249,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Omastar'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Omastar'), 6, 55);
 
--- Inserciï¿½n para Kabuto
+-- Inserción para Kabuto
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kabuto'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Kabuto'), 2, 80),
@@ -1258,7 +1258,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kabuto'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Kabuto'), 6, 55);
 
--- Inserciï¿½n para Kabutops
+-- Inserción para Kabutops
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kabutops'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Kabutops'), 2, 115),
@@ -1267,7 +1267,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kabutops'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Kabutops'), 6, 80);
 
--- Inserciï¿½n para Aerodactyl
+-- Inserción para Aerodactyl
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aerodactyl'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Aerodactyl'), 2, 105),
@@ -1276,7 +1276,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aerodactyl'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Aerodactyl'), 6, 130);
 
--- Inserciï¿½n para Snorlax
+-- Inserción para Snorlax
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snorlax'), 1, 160),
 ((SELECT id FROM pokemones WHERE name = 'Snorlax'), 2, 110),
@@ -1285,7 +1285,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snorlax'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Snorlax'), 6, 30);
 
--- Inserciï¿½n para Articuno
+-- Inserción para Articuno
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Articuno'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Articuno'), 2, 85),
@@ -1294,7 +1294,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Articuno'), 5, 125),
 ((SELECT id FROM pokemones WHERE name = 'Articuno'), 6, 85);
 
--- Inserciï¿½n para Zapdos
+-- Inserción para Zapdos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zapdos'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Zapdos'), 2, 90),
@@ -1303,7 +1303,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zapdos'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Zapdos'), 6, 100);
 
--- Inserciï¿½n para Moltres
+-- Inserción para Moltres
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Moltres'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Moltres'), 2, 100),
@@ -1312,7 +1312,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Moltres'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Moltres'), 6, 90);
 
--- Inserciï¿½n para Dratini
+-- Inserción para Dratini
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dratini'), 1, 41),
 ((SELECT id FROM pokemones WHERE name = 'Dratini'), 2, 64),
@@ -1321,7 +1321,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dratini'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Dratini'), 6, 50);
 
--- Inserciï¿½n para Dragonair
+-- Inserción para Dragonair
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragonair'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Dragonair'), 2, 84),
@@ -1330,7 +1330,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragonair'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Dragonair'), 6, 70);
 
--- Inserciï¿½n para Dragonite
+-- Inserción para Dragonite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragonite'), 1, 91),
 ((SELECT id FROM pokemones WHERE name = 'Dragonite'), 2, 134),
@@ -1339,7 +1339,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragonite'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Dragonite'), 6, 80);
 
--- Inserciï¿½n para Mewtwo
+-- Inserción para Mewtwo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mewtwo'), 1, 106),
 ((SELECT id FROM pokemones WHERE name = 'Mewtwo'), 2, 110),
@@ -1348,7 +1348,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mewtwo'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Mewtwo'), 6, 130);
 
--- Inserciï¿½n para Mew
+-- Inserción para Mew
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mew'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Mew'), 2, 100),
@@ -1357,7 +1357,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mew'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Mew'), 6, 100);
 
--- Inserciï¿½n para Chikorita
+-- Inserción para Chikorita
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chikorita'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Chikorita'), 2, 49),
@@ -1366,7 +1366,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chikorita'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Chikorita'), 6, 45);
 
--- Inserciï¿½n para Bayleef
+-- Inserción para Bayleef
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bayleef'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Bayleef'), 2, 62),
@@ -1375,7 +1375,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bayleef'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Bayleef'), 6, 60);
 
--- Inserciï¿½n para Meganium
+-- Inserción para Meganium
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meganium'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Meganium'), 2, 82),
@@ -1384,7 +1384,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meganium'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Meganium'), 6, 80);
 
--- Inserciï¿½n para Cyndaquil
+-- Inserción para Cyndaquil
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cyndaquil'), 1, 39),
 ((SELECT id FROM pokemones WHERE name = 'Cyndaquil'), 2, 52),
@@ -1393,7 +1393,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cyndaquil'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cyndaquil'), 6, 65);
 
--- Inserciï¿½n para Quilava
+-- Inserción para Quilava
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quilava'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Quilava'), 2, 64),
@@ -1402,7 +1402,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quilava'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Quilava'), 6, 80);
 
--- Inserciï¿½n para Typhlosion
+-- Inserción para Typhlosion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Typhlosion'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Typhlosion'), 2, 84),
@@ -1411,7 +1411,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Typhlosion'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Typhlosion'), 6, 100);
 
--- Inserciï¿½n para Totodile
+-- Inserción para Totodile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Totodile'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Totodile'), 2, 65),
@@ -1420,7 +1420,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Totodile'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Totodile'), 6, 43);
 
--- Inserciï¿½n para Croconaw
+-- Inserción para Croconaw
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Croconaw'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Croconaw'), 2, 80),
@@ -1429,7 +1429,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Croconaw'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Croconaw'), 6, 58);
 
--- Inserciï¿½n para Feraligatr
+-- Inserción para Feraligatr
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Feraligatr'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Feraligatr'), 2, 105),
@@ -1438,7 +1438,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Feraligatr'), 5, 83),
 ((SELECT id FROM pokemones WHERE name = 'Feraligatr'), 6, 78);
 
--- Inserciï¿½n para Sentret
+-- Inserción para Sentret
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sentret'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Sentret'), 2, 46),
@@ -1447,7 +1447,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sentret'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Sentret'), 6, 20);
 
--- Inserciï¿½n para Furret
+-- Inserción para Furret
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Furret'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Furret'), 2, 76),
@@ -1456,7 +1456,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Furret'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Furret'), 6, 90);
 
--- Inserciï¿½n para Hoothoot
+-- Inserción para Hoothoot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hoothoot'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Hoothoot'), 2, 30),
@@ -1465,7 +1465,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hoothoot'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Hoothoot'), 6, 50);
 
--- Inserciï¿½n para Noctowl
+-- Inserción para Noctowl
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Noctowl'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Noctowl'), 2, 50),
@@ -1474,7 +1474,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Noctowl'), 5, 96),
 ((SELECT id FROM pokemones WHERE name = 'Noctowl'), 6, 70);
 
--- Inserciï¿½n para Ledyba
+-- Inserción para Ledyba
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ledyba'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Ledyba'), 2, 20),
@@ -1483,7 +1483,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ledyba'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Ledyba'), 6, 55);
 
--- Inserciï¿½n para Ledian
+-- Inserción para Ledian
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ledian'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Ledian'), 2, 35),
@@ -1492,7 +1492,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ledian'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Ledian'), 6, 85);
 
--- Inserciï¿½n para Spinarak
+-- Inserción para Spinarak
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spinarak'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Spinarak'), 2, 60),
@@ -1501,7 +1501,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spinarak'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Spinarak'), 6, 30);
 
--- Inserciï¿½n para Ariados
+-- Inserción para Ariados
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ariados'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Ariados'), 2, 90),
@@ -1510,7 +1510,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ariados'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Ariados'), 6, 40);
 
--- Inserciï¿½n para Crobat
+-- Inserción para Crobat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crobat'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Crobat'), 2, 90),
@@ -1519,7 +1519,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crobat'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Crobat'), 6, 130);
 
--- Inserciï¿½n para Chinchou
+-- Inserción para Chinchou
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chinchou'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Chinchou'), 2, 38),
@@ -1528,7 +1528,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chinchou'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Chinchou'), 6, 67);
 
--- Inserciï¿½n para Lanturn
+-- Inserción para Lanturn
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lanturn'), 1, 125),
 ((SELECT id FROM pokemones WHERE name = 'Lanturn'), 2, 58),
@@ -1537,7 +1537,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lanturn'), 5, 76),
 ((SELECT id FROM pokemones WHERE name = 'Lanturn'), 6, 67);
 
--- Inserciï¿½n para Pichu
+-- Inserción para Pichu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pichu'), 1, 20),
 ((SELECT id FROM pokemones WHERE name = 'Pichu'), 2, 40),
@@ -1546,7 +1546,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pichu'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Pichu'), 6, 60);
 
--- Inserciï¿½n para Cleffa
+-- Inserción para Cleffa
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cleffa'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cleffa'), 2, 25),
@@ -1555,7 +1555,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cleffa'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Cleffa'), 6, 15);
 
--- Inserciï¿½n para Igglybuff
+-- Inserción para Igglybuff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Igglybuff'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Igglybuff'), 2, 30),
@@ -1564,7 +1564,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Igglybuff'), 5, 20),
 ((SELECT id FROM pokemones WHERE name = 'Igglybuff'), 6, 15);
 
--- Inserciï¿½n para Togepi
+-- Inserción para Togepi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togepi'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Togepi'), 2, 20),
@@ -1573,7 +1573,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togepi'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Togepi'), 6, 20);
 
--- Inserciï¿½n para Togetic
+-- Inserción para Togetic
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togetic'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Togetic'), 2, 40),
@@ -1582,7 +1582,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togetic'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Togetic'), 6, 40);
 
--- Inserciï¿½n para Natu
+-- Inserción para Natu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Natu'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Natu'), 2, 50),
@@ -1591,7 +1591,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Natu'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Natu'), 6, 70);
 
--- Inserciï¿½n para Xatu
+-- Inserción para Xatu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Xatu'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Xatu'), 2, 75),
@@ -1600,7 +1600,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Xatu'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Xatu'), 6, 95);
 
--- Inserciï¿½n para Mareep
+-- Inserción para Mareep
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mareep'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Mareep'), 2, 40),
@@ -1609,7 +1609,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mareep'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Mareep'), 6, 35);
 
--- Inserciï¿½n para Flaaffy
+-- Inserción para Flaaffy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flaaffy'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Flaaffy'), 2, 55),
@@ -1618,7 +1618,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flaaffy'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Flaaffy'), 6, 45);
 
--- Inserciï¿½n para Ampharos
+-- Inserción para Ampharos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ampharos'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Ampharos'), 2, 75),
@@ -1627,7 +1627,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ampharos'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Ampharos'), 6, 55);
 
--- Inserciï¿½n para Bellossom
+-- Inserción para Bellossom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bellossom'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Bellossom'), 2, 80),
@@ -1636,7 +1636,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bellossom'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Bellossom'), 6, 50);
 
--- Inserciï¿½n para Marill
+-- Inserción para Marill
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marill'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Marill'), 2, 20),
@@ -1645,7 +1645,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marill'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Marill'), 6, 40);
 
--- Inserciï¿½n para Azumarill
+-- Inserción para Azumarill
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Azumarill'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Azumarill'), 2, 50),
@@ -1654,7 +1654,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Azumarill'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Azumarill'), 6, 50);
 
--- Inserciï¿½n para Sudowoodo
+-- Inserción para Sudowoodo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sudowoodo'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Sudowoodo'), 2, 100),
@@ -1663,7 +1663,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sudowoodo'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Sudowoodo'), 6, 30);
 
--- Inserciï¿½n para Politoed
+-- Inserción para Politoed
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Politoed'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Politoed'), 2, 75),
@@ -1672,7 +1672,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Politoed'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Politoed'), 6, 70);
 
--- Inserciï¿½n para Hoppip
+-- Inserción para Hoppip
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hoppip'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Hoppip'), 2, 35),
@@ -1681,7 +1681,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hoppip'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Hoppip'), 6, 50);
 
--- Inserciï¿½n para Skiploom
+-- Inserción para Skiploom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skiploom'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Skiploom'), 2, 45),
@@ -1690,7 +1690,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skiploom'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Skiploom'), 6, 80);
 
--- Inserciï¿½n para Jumpluff
+-- Inserción para Jumpluff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jumpluff'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Jumpluff'), 2, 55),
@@ -1699,7 +1699,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jumpluff'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Jumpluff'), 6, 110);
 
--- Inserciï¿½n para Aipom
+-- Inserción para Aipom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aipom'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Aipom'), 2, 70),
@@ -1708,7 +1708,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aipom'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Aipom'), 6, 85);
 
--- Inserciï¿½n para Sunkern
+-- Inserción para Sunkern
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sunkern'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Sunkern'), 2, 30),
@@ -1717,7 +1717,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sunkern'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Sunkern'), 6, 30);
 
--- Inserciï¿½n para Sunflora
+-- Inserción para Sunflora
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sunflora'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Sunflora'), 2, 75),
@@ -1726,7 +1726,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sunflora'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Sunflora'), 6, 30);
 
--- Inserciï¿½n para Yanma
+-- Inserción para Yanma
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yanma'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Yanma'), 2, 65),
@@ -1735,7 +1735,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yanma'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Yanma'), 6, 95);
 
--- Inserciï¿½n para Wooper
+-- Inserción para Wooper
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wooper'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Wooper'), 2, 45),
@@ -1744,7 +1744,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wooper'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Wooper'), 6, 15);
 
--- Inserciï¿½n para Quagsire
+-- Inserción para Quagsire
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quagsire'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Quagsire'), 2, 85),
@@ -1753,7 +1753,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quagsire'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Quagsire'), 6, 35);
 
--- Inserciï¿½n para Espeon
+-- Inserción para Espeon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Espeon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Espeon'), 2, 65),
@@ -1762,7 +1762,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Espeon'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Espeon'), 6, 110);
 
--- Inserciï¿½n para Umbreon
+-- Inserción para Umbreon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Umbreon'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Umbreon'), 2, 65),
@@ -1771,7 +1771,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Umbreon'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Umbreon'), 6, 65);
 
--- Inserciï¿½n para Murkrow
+-- Inserción para Murkrow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Murkrow'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Murkrow'), 2, 85),
@@ -1780,7 +1780,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Murkrow'), 5, 42),
 ((SELECT id FROM pokemones WHERE name = 'Murkrow'), 6, 91);
 
--- Inserciï¿½n para Slowking
+-- Inserción para Slowking
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slowking'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Slowking'), 2, 75),
@@ -1789,7 +1789,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slowking'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Slowking'), 6, 30);
 
--- Inserciï¿½n para Misdreavus
+-- Inserción para Misdreavus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Misdreavus'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Misdreavus'), 2, 60),
@@ -1798,7 +1798,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Misdreavus'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Misdreavus'), 6, 85);
 
--- Inserciï¿½n para Unown
+-- Inserción para Unown
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Unown'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Unown'), 2, 72),
@@ -1807,7 +1807,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Unown'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Unown'), 6, 48);
 
--- Inserciï¿½n para Wobbuffet
+-- Inserción para Wobbuffet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wobbuffet'), 1, 190),
 ((SELECT id FROM pokemones WHERE name = 'Wobbuffet'), 2, 33),
@@ -1816,7 +1816,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wobbuffet'), 5, 58),
 ((SELECT id FROM pokemones WHERE name = 'Wobbuffet'), 6, 33);
 
--- Inserciï¿½n para Girafarig
+-- Inserción para Girafarig
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Girafarig'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Girafarig'), 2, 80),
@@ -1825,7 +1825,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Girafarig'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Girafarig'), 6, 85);
 
--- Inserciï¿½n para Pineco
+-- Inserción para Pineco
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pineco'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Pineco'), 2, 65),
@@ -1834,7 +1834,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pineco'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Pineco'), 6, 15);
 
--- Inserciï¿½n para Forretress
+-- Inserción para Forretress
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Forretress'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Forretress'), 2, 90),
@@ -1843,7 +1843,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Forretress'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Forretress'), 6, 40);
 
--- Inserciï¿½n para Dunsparce
+-- Inserción para Dunsparce
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dunsparce'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Dunsparce'), 2, 70),
@@ -1852,7 +1852,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dunsparce'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Dunsparce'), 6, 45);
 
--- Inserciï¿½n para Gligar
+-- Inserción para Gligar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gligar'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Gligar'), 2, 75),
@@ -1861,7 +1861,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gligar'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Gligar'), 6, 85);
 
--- Inserciï¿½n para Steelix
+-- Inserción para Steelix
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Steelix'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Steelix'), 2, 85),
@@ -1870,7 +1870,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Steelix'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Steelix'), 6, 30);
 
--- Inserciï¿½n para Snubbull
+-- Inserción para Snubbull
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snubbull'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Snubbull'), 2, 80),
@@ -1879,7 +1879,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snubbull'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Snubbull'), 6, 30);
 
--- Inserciï¿½n para Granbull
+-- Inserción para Granbull
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Granbull'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Granbull'), 2, 120),
@@ -1888,7 +1888,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Granbull'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Granbull'), 6, 45);
 
--- Inserciï¿½n para Qwilfish
+-- Inserción para Qwilfish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Qwilfish'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Qwilfish'), 2, 95),
@@ -1897,7 +1897,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Qwilfish'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Qwilfish'), 6, 85);
 
--- Inserciï¿½n para Scizor
+-- Inserción para Scizor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scizor'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Scizor'), 2, 130),
@@ -1906,7 +1906,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scizor'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Scizor'), 6, 65);
 
--- Inserciï¿½n para Shuckle
+-- Inserción para Shuckle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shuckle'), 1, 20),
 ((SELECT id FROM pokemones WHERE name = 'Shuckle'), 2, 10),
@@ -1915,7 +1915,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shuckle'), 5, 230),
 ((SELECT id FROM pokemones WHERE name = 'Shuckle'), 6, 5);
 
--- Inserciï¿½n para Heracross
+-- Inserción para Heracross
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heracross'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Heracross'), 2, 125),
@@ -1924,7 +1924,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heracross'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Heracross'), 6, 85);
 
--- Inserciï¿½n para Sneasel
+-- Inserción para Sneasel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sneasel'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Sneasel'), 2, 95),
@@ -1933,7 +1933,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sneasel'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Sneasel'), 6, 115);
 
--- Inserciï¿½n para Teddiursa
+-- Inserción para Teddiursa
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Teddiursa'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Teddiursa'), 2, 80),
@@ -1942,7 +1942,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Teddiursa'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Teddiursa'), 6, 40);
 
--- Inserciï¿½n para Ursaring
+-- Inserción para Ursaring
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ursaring'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Ursaring'), 2, 130),
@@ -1951,7 +1951,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ursaring'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Ursaring'), 6, 55);
 
--- Inserciï¿½n para Slugma
+-- Inserción para Slugma
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slugma'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Slugma'), 2, 40),
@@ -1960,7 +1960,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slugma'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Slugma'), 6, 20);
 
--- Inserciï¿½n para Magcargo
+-- Inserción para Magcargo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magcargo'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Magcargo'), 2, 50),
@@ -1969,7 +1969,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magcargo'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Magcargo'), 6, 30);
 
--- Inserciï¿½n para Swinub
+-- Inserción para Swinub
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swinub'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Swinub'), 2, 50),
@@ -1978,7 +1978,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swinub'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Swinub'), 6, 50);
 
--- Inserciï¿½n para Piloswine
+-- Inserción para Piloswine
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Piloswine'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Piloswine'), 2, 100),
@@ -1987,7 +1987,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Piloswine'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Piloswine'), 6, 50);
 
--- Inserciï¿½n para Corsola
+-- Inserción para Corsola
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corsola'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Corsola'), 2, 55),
@@ -1996,7 +1996,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corsola'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Corsola'), 6, 35);
 
--- Inserciï¿½n para Remoraid
+-- Inserción para Remoraid
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Remoraid'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Remoraid'), 2, 65),
@@ -2005,7 +2005,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Remoraid'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Remoraid'), 6, 65);
 
--- Inserciï¿½n para Octillery
+-- Inserción para Octillery
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Octillery'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Octillery'), 2, 105),
@@ -2014,7 +2014,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Octillery'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Octillery'), 6, 45);
 
--- Inserciï¿½n para Delibird
+-- Inserción para Delibird
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Delibird'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Delibird'), 2, 55),
@@ -2023,7 +2023,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Delibird'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Delibird'), 6, 75);
 
--- Inserciï¿½n para Mantine
+-- Inserción para Mantine
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mantine'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Mantine'), 2, 40),
@@ -2032,7 +2032,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mantine'), 5, 140),
 ((SELECT id FROM pokemones WHERE name = 'Mantine'), 6, 70);
 
--- Inserciï¿½n para Skarmory
+-- Inserción para Skarmory
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skarmory'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Skarmory'), 2, 80),
@@ -2041,7 +2041,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skarmory'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Skarmory'), 6, 70);
 
--- Inserciï¿½n para Houndour
+-- Inserción para Houndour
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Houndour'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Houndour'), 2, 60),
@@ -2050,7 +2050,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Houndour'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Houndour'), 6, 65);
 
--- Inserciï¿½n para Houndoom
+-- Inserción para Houndoom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Houndoom'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Houndoom'), 2, 90),
@@ -2059,7 +2059,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Houndoom'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Houndoom'), 6, 95);
 
--- Inserciï¿½n para Kingdra
+-- Inserción para Kingdra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kingdra'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Kingdra'), 2, 95),
@@ -2068,7 +2068,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kingdra'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Kingdra'), 6, 85);
 
--- Inserciï¿½n para Phanpy
+-- Inserción para Phanpy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Phanpy'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Phanpy'), 2, 60),
@@ -2077,7 +2077,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Phanpy'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Phanpy'), 6, 40);
 
--- Inserciï¿½n para Donphan
+-- Inserción para Donphan
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Donphan'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Donphan'), 2, 120),
@@ -2086,7 +2086,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Donphan'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Donphan'), 6, 50);
 
--- Inserciï¿½n para Porygon2
+-- Inserción para Porygon2
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Porygon2'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Porygon2'), 2, 80),
@@ -2095,7 +2095,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Porygon2'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Porygon2'), 6, 60);
 
--- Inserciï¿½n para Stantler
+-- Inserción para Stantler
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stantler'), 1, 73),
 ((SELECT id FROM pokemones WHERE name = 'Stantler'), 2, 95),
@@ -2104,7 +2104,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stantler'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Stantler'), 6, 85);
 
--- Inserciï¿½n para Smeargle
+-- Inserción para Smeargle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Smeargle'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Smeargle'), 2, 20),
@@ -2113,7 +2113,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Smeargle'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Smeargle'), 6, 75);
 
--- Inserciï¿½n para Tyrogue
+-- Inserción para Tyrogue
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyrogue'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Tyrogue'), 2, 35),
@@ -2122,7 +2122,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyrogue'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Tyrogue'), 6, 35);
 
--- Inserciï¿½n para Hitmontop
+-- Inserción para Hitmontop
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hitmontop'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Hitmontop'), 2, 95),
@@ -2131,7 +2131,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hitmontop'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Hitmontop'), 6, 70);
 
--- Inserciï¿½n para Smoochum
+-- Inserción para Smoochum
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Smoochum'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Smoochum'), 2, 30),
@@ -2140,7 +2140,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Smoochum'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Smoochum'), 6, 65);
 
--- Inserciï¿½n para Elekid
+-- Inserción para Elekid
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Elekid'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Elekid'), 2, 63),
@@ -2149,7 +2149,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Elekid'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Elekid'), 6, 95);
 
--- Inserciï¿½n para Magby
+-- Inserción para Magby
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magby'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Magby'), 2, 75),
@@ -2158,7 +2158,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magby'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Magby'), 6, 83);
 
--- Inserciï¿½n para Miltank
+-- Inserción para Miltank
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Miltank'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Miltank'), 2, 80),
@@ -2167,7 +2167,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Miltank'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Miltank'), 6, 100);
 
--- Inserciï¿½n para Blissey
+-- Inserción para Blissey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blissey'), 1, 255),
 ((SELECT id FROM pokemones WHERE name = 'Blissey'), 2, 10),
@@ -2176,7 +2176,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blissey'), 5, 135),
 ((SELECT id FROM pokemones WHERE name = 'Blissey'), 6, 55);
 
--- Inserciï¿½n para Raikou
+-- Inserción para Raikou
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raikou'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Raikou'), 2, 85),
@@ -2185,7 +2185,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raikou'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Raikou'), 6, 115);
 
--- Inserciï¿½n para Entei
+-- Inserción para Entei
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Entei'), 1, 115),
 ((SELECT id FROM pokemones WHERE name = 'Entei'), 2, 115),
@@ -2194,7 +2194,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Entei'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Entei'), 6, 100);
 
--- Inserciï¿½n para Suicune
+-- Inserción para Suicune
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Suicune'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Suicune'), 2, 75),
@@ -2203,7 +2203,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Suicune'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Suicune'), 6, 85);
 
--- Inserciï¿½n para Larvitar
+-- Inserción para Larvitar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Larvitar'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Larvitar'), 2, 64),
@@ -2212,7 +2212,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Larvitar'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Larvitar'), 6, 41);
 
--- Inserciï¿½n para Pupitar
+-- Inserción para Pupitar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pupitar'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Pupitar'), 2, 84),
@@ -2221,7 +2221,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pupitar'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Pupitar'), 6, 51);
 
--- Inserciï¿½n para Tyranitar
+-- Inserción para Tyranitar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyranitar'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Tyranitar'), 2, 134),
@@ -2230,7 +2230,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyranitar'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Tyranitar'), 6, 61);
 
--- Inserciï¿½n para Lugia
+-- Inserción para Lugia
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lugia'), 1, 106),
 ((SELECT id FROM pokemones WHERE name = 'Lugia'), 2, 90),
@@ -2239,7 +2239,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lugia'), 5, 154),
 ((SELECT id FROM pokemones WHERE name = 'Lugia'), 6, 110);
 
--- Inserciï¿½n para Ho-oh
+-- Inserción para Ho-oh
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ho-oh'), 1, 106),
 ((SELECT id FROM pokemones WHERE name = 'Ho-oh'), 2, 130),
@@ -2248,7 +2248,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ho-oh'), 5, 154),
 ((SELECT id FROM pokemones WHERE name = 'Ho-oh'), 6, 90);
 
--- Inserciï¿½n para Celebi
+-- Inserción para Celebi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Celebi'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Celebi'), 2, 100),
@@ -2257,7 +2257,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Celebi'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Celebi'), 6, 100);
 
--- Inserciï¿½n para Treecko
+-- Inserción para Treecko
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Treecko'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Treecko'), 2, 45),
@@ -2266,7 +2266,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Treecko'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Treecko'), 6, 70);
 
--- Inserciï¿½n para Grovyle
+-- Inserción para Grovyle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grovyle'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Grovyle'), 2, 65),
@@ -2275,7 +2275,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grovyle'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Grovyle'), 6, 95);
 
--- Inserciï¿½n para Sceptile
+-- Inserción para Sceptile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sceptile'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Sceptile'), 2, 85),
@@ -2284,7 +2284,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sceptile'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Sceptile'), 6, 120);
 
--- Inserciï¿½n para Torchic
+-- Inserción para Torchic
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torchic'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Torchic'), 2, 60),
@@ -2293,7 +2293,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torchic'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Torchic'), 6, 45);
 
--- Inserciï¿½n para Combusken
+-- Inserción para Combusken
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Combusken'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Combusken'), 2, 85),
@@ -2302,7 +2302,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Combusken'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Combusken'), 6, 55);
 
--- Inserciï¿½n para Blaziken
+-- Inserción para Blaziken
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blaziken'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Blaziken'), 2, 120),
@@ -2311,7 +2311,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blaziken'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Blaziken'), 6, 80);
 
--- Inserciï¿½n para Mudkip
+-- Inserción para Mudkip
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mudkip'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Mudkip'), 2, 70),
@@ -2320,7 +2320,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mudkip'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Mudkip'), 6, 40);
 
--- Inserciï¿½n para Marshtomp
+-- Inserción para Marshtomp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marshtomp'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Marshtomp'), 2, 85),
@@ -2329,7 +2329,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marshtomp'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Marshtomp'), 6, 50);
 
--- Inserciï¿½n para Swampert
+-- Inserción para Swampert
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swampert'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Swampert'), 2, 110),
@@ -2338,7 +2338,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swampert'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Swampert'), 6, 60);
 
--- Inserciï¿½n para Poochyena
+-- Inserción para Poochyena
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poochyena'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Poochyena'), 2, 55),
@@ -2347,7 +2347,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poochyena'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Poochyena'), 6, 35);
 
--- Inserciï¿½n para Mightyena
+-- Inserción para Mightyena
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mightyena'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Mightyena'), 2, 90),
@@ -2356,7 +2356,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mightyena'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Mightyena'), 6, 70);
 
--- Inserciï¿½n para Zigzagoon
+-- Inserción para Zigzagoon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zigzagoon'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Zigzagoon'), 2, 30),
@@ -2365,7 +2365,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zigzagoon'), 5, 41),
 ((SELECT id FROM pokemones WHERE name = 'Zigzagoon'), 6, 60);
 
--- Inserciï¿½n para Linoone
+-- Inserción para Linoone
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Linoone'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Linoone'), 2, 70),
@@ -2374,7 +2374,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Linoone'), 5, 61),
 ((SELECT id FROM pokemones WHERE name = 'Linoone'), 6, 100);
 
--- Inserciï¿½n para Wurmple
+-- Inserción para Wurmple
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wurmple'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Wurmple'), 2, 45),
@@ -2383,7 +2383,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wurmple'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Wurmple'), 6, 20);
 
--- Inserciï¿½n para Silcoon
+-- Inserción para Silcoon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Silcoon'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Silcoon'), 2, 35),
@@ -2392,7 +2392,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Silcoon'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Silcoon'), 6, 15);
 
--- Inserciï¿½n para Beautifly
+-- Inserción para Beautifly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beautifly'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Beautifly'), 2, 70),
@@ -2401,7 +2401,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beautifly'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Beautifly'), 6, 65);
 
--- Inserciï¿½n para Cascoon
+-- Inserción para Cascoon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cascoon'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cascoon'), 2, 35),
@@ -2410,7 +2410,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cascoon'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Cascoon'), 6, 15);
 
--- Inserciï¿½n para Dustox
+-- Inserción para Dustox
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dustox'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Dustox'), 2, 50),
@@ -2419,7 +2419,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dustox'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dustox'), 6, 65);
 
--- Inserciï¿½n para Lotad
+-- Inserción para Lotad
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lotad'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Lotad'), 2, 30),
@@ -2428,7 +2428,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lotad'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Lotad'), 6, 30);
 
--- Inserciï¿½n para Lombre
+-- Inserción para Lombre
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lombre'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Lombre'), 2, 50),
@@ -2437,7 +2437,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lombre'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Lombre'), 6, 50);
 
--- Inserciï¿½n para Ludicolo
+-- Inserción para Ludicolo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ludicolo'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Ludicolo'), 2, 70),
@@ -2446,7 +2446,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ludicolo'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Ludicolo'), 6, 70);
 
--- Inserciï¿½n para Seedot
+-- Inserción para Seedot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seedot'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Seedot'), 2, 40),
@@ -2455,7 +2455,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seedot'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Seedot'), 6, 30);
 
--- Inserciï¿½n para Nuzleaf
+-- Inserción para Nuzleaf
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nuzleaf'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Nuzleaf'), 2, 70),
@@ -2464,7 +2464,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nuzleaf'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Nuzleaf'), 6, 60);
 
--- Inserciï¿½n para Shiftry
+-- Inserción para Shiftry
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shiftry'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Shiftry'), 2, 100),
@@ -2473,7 +2473,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shiftry'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Shiftry'), 6, 80);
 
--- Inserciï¿½n para Taillow
+-- Inserción para Taillow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Taillow'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Taillow'), 2, 55),
@@ -2482,7 +2482,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Taillow'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Taillow'), 6, 85);
 
--- Inserciï¿½n para Swellow
+-- Inserción para Swellow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swellow'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Swellow'), 2, 85),
@@ -2491,7 +2491,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swellow'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Swellow'), 6, 125);
 
--- Inserciï¿½n para Wingull
+-- Inserción para Wingull
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wingull'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Wingull'), 2, 30),
@@ -2500,7 +2500,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wingull'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Wingull'), 6, 85);
 
--- Inserciï¿½n para Pelipper
+-- Inserción para Pelipper
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pelipper'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Pelipper'), 2, 50),
@@ -2509,7 +2509,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pelipper'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Pelipper'), 6, 65);
 
--- Inserciï¿½n para Ralts
+-- Inserción para Ralts
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ralts'), 1, 28),
 ((SELECT id FROM pokemones WHERE name = 'Ralts'), 2, 25),
@@ -2518,7 +2518,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ralts'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Ralts'), 6, 40);
 
--- Inserciï¿½n para Kirlia
+-- Inserción para Kirlia
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kirlia'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Kirlia'), 2, 35),
@@ -2527,7 +2527,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kirlia'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Kirlia'), 6, 50);
 
--- Inserciï¿½n para Gardevoir
+-- Inserción para Gardevoir
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gardevoir'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Gardevoir'), 2, 65),
@@ -2536,7 +2536,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gardevoir'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Gardevoir'), 6, 80);
 
--- Inserciï¿½n para Surskit
+-- Inserción para Surskit
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Surskit'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Surskit'), 2, 30),
@@ -2545,7 +2545,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Surskit'), 5, 52),
 ((SELECT id FROM pokemones WHERE name = 'Surskit'), 6, 65);
 
--- Inserciï¿½n para Masquerain
+-- Inserción para Masquerain
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Masquerain'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Masquerain'), 2, 60),
@@ -2554,7 +2554,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Masquerain'), 5, 82),
 ((SELECT id FROM pokemones WHERE name = 'Masquerain'), 6, 80);
 
--- Inserciï¿½n para Shroomish
+-- Inserción para Shroomish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shroomish'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Shroomish'), 2, 40),
@@ -2563,7 +2563,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shroomish'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Shroomish'), 6, 35);
 
--- Inserciï¿½n para Breloom
+-- Inserción para Breloom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Breloom'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Breloom'), 2, 130),
@@ -2572,7 +2572,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Breloom'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Breloom'), 6, 70);
 
--- Inserciï¿½n para Slakoth
+-- Inserción para Slakoth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slakoth'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Slakoth'), 2, 60),
@@ -2581,7 +2581,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slakoth'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Slakoth'), 6, 30);
 
--- Inserciï¿½n para Vigoroth
+-- Inserción para Vigoroth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vigoroth'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Vigoroth'), 2, 80),
@@ -2590,7 +2590,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vigoroth'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Vigoroth'), 6, 90);
 
--- Inserciï¿½n para Slaking
+-- Inserción para Slaking
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slaking'), 1, 150),
 ((SELECT id FROM pokemones WHERE name = 'Slaking'), 2, 160),
@@ -2599,7 +2599,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slaking'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Slaking'), 6, 100);
 
--- Inserciï¿½n para Nincada
+-- Inserción para Nincada
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nincada'), 1, 31),
 ((SELECT id FROM pokemones WHERE name = 'Nincada'), 2, 45),
@@ -2608,7 +2608,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nincada'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Nincada'), 6, 40);
 
--- Inserciï¿½n para Ninjask
+-- Inserción para Ninjask
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ninjask'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Ninjask'), 2, 90),
@@ -2617,7 +2617,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ninjask'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Ninjask'), 6, 160);
 
--- Inserciï¿½n para Shedinja
+-- Inserción para Shedinja
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shedinja'), 1, 1),
 ((SELECT id FROM pokemones WHERE name = 'Shedinja'), 2, 90),
@@ -2626,7 +2626,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shedinja'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Shedinja'), 6, 40);
 
--- Inserciï¿½n para Whismur
+-- Inserción para Whismur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whismur'), 1, 64),
 ((SELECT id FROM pokemones WHERE name = 'Whismur'), 2, 51),
@@ -2635,7 +2635,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whismur'), 5, 23),
 ((SELECT id FROM pokemones WHERE name = 'Whismur'), 6, 28);
 
--- Inserciï¿½n para Loudred
+-- Inserción para Loudred
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Loudred'), 1, 84),
 ((SELECT id FROM pokemones WHERE name = 'Loudred'), 2, 71),
@@ -2644,7 +2644,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Loudred'), 5, 43),
 ((SELECT id FROM pokemones WHERE name = 'Loudred'), 6, 48);
 
--- Inserciï¿½n para Exploud
+-- Inserción para Exploud
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Exploud'), 1, 104),
 ((SELECT id FROM pokemones WHERE name = 'Exploud'), 2, 91),
@@ -2653,7 +2653,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Exploud'), 5, 73),
 ((SELECT id FROM pokemones WHERE name = 'Exploud'), 6, 68);
 
--- Inserciï¿½n para Makuhita
+-- Inserción para Makuhita
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Makuhita'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Makuhita'), 2, 60),
@@ -2662,7 +2662,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Makuhita'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Makuhita'), 6, 25);
 
--- Inserciï¿½n para Hariyama
+-- Inserción para Hariyama
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hariyama'), 1, 144),
 ((SELECT id FROM pokemones WHERE name = 'Hariyama'), 2, 120),
@@ -2671,7 +2671,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hariyama'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Hariyama'), 6, 50);
 
--- Inserciï¿½n para Azurill
+-- Inserción para Azurill
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Azurill'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Azurill'), 2, 20),
@@ -2680,7 +2680,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Azurill'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Azurill'), 6, 20);
 
--- Inserciï¿½n para Nosepass
+-- Inserción para Nosepass
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nosepass'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Nosepass'), 2, 45),
@@ -2689,7 +2689,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nosepass'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Nosepass'), 6, 30);
 
--- Inserciï¿½n para Skitty
+-- Inserción para Skitty
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skitty'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Skitty'), 2, 45),
@@ -2698,7 +2698,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skitty'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Skitty'), 6, 50);
 
--- Inserciï¿½n para Delcatty
+-- Inserción para Delcatty
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Delcatty'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Delcatty'), 2, 65),
@@ -2707,7 +2707,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Delcatty'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Delcatty'), 6, 90);
 
--- Inserciï¿½n para Sableye
+-- Inserción para Sableye
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sableye'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Sableye'), 2, 75),
@@ -2716,7 +2716,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sableye'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Sableye'), 6, 50);
 
--- Inserciï¿½n para Mawile
+-- Inserción para Mawile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mawile'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Mawile'), 2, 85),
@@ -2725,7 +2725,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mawile'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Mawile'), 6, 50);
 
--- Inserciï¿½n para Aron
+-- Inserción para Aron
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aron'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Aron'), 2, 70),
@@ -2734,7 +2734,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aron'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Aron'), 6, 30);
 
--- Inserciï¿½n para Lairon
+-- Inserción para Lairon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lairon'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Lairon'), 2, 90),
@@ -2743,7 +2743,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lairon'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Lairon'), 6, 40);
 
--- Inserciï¿½n para Aggron
+-- Inserción para Aggron
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aggron'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Aggron'), 2, 110),
@@ -2752,7 +2752,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aggron'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Aggron'), 6, 50);
 
--- Inserciï¿½n para Meditite
+-- Inserción para Meditite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meditite'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Meditite'), 2, 40),
@@ -2761,7 +2761,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meditite'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Meditite'), 6, 60);
 
--- Inserciï¿½n para Medicham
+-- Inserción para Medicham
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Medicham'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Medicham'), 2, 60),
@@ -2770,7 +2770,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Medicham'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Medicham'), 6, 80);
 
--- Inserciï¿½n para Electrike
+-- Inserción para Electrike
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electrike'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Electrike'), 2, 45),
@@ -2779,7 +2779,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electrike'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Electrike'), 6, 65);
 
--- Inserciï¿½n para Manectric
+-- Inserción para Manectric
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Manectric'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Manectric'), 2, 75),
@@ -2788,7 +2788,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Manectric'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Manectric'), 6, 105);
 
--- Inserciï¿½n para Plusle
+-- Inserción para Plusle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Plusle'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Plusle'), 2, 50),
@@ -2797,7 +2797,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Plusle'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Plusle'), 6, 95);
 
--- Inserciï¿½n para Minun
+-- Inserción para Minun
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Minun'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Minun'), 2, 40),
@@ -2806,7 +2806,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Minun'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Minun'), 6, 95);
 
--- Inserciï¿½n para Volbeat
+-- Inserción para Volbeat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Volbeat'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Volbeat'), 2, 73),
@@ -2815,7 +2815,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Volbeat'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Volbeat'), 6, 85);
 
--- Inserciï¿½n para Illumise
+-- Inserción para Illumise
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Illumise'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Illumise'), 2, 47),
@@ -2824,7 +2824,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Illumise'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Illumise'), 6, 85);
 
--- Inserciï¿½n para Roselia
+-- Inserción para Roselia
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roselia'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Roselia'), 2, 60),
@@ -2833,7 +2833,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roselia'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Roselia'), 6, 65);
 
--- Inserciï¿½n para Gulpin
+-- Inserción para Gulpin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gulpin'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Gulpin'), 2, 43),
@@ -2842,7 +2842,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gulpin'), 5, 53),
 ((SELECT id FROM pokemones WHERE name = 'Gulpin'), 6, 40);
 
--- Inserciï¿½n para Swalot
+-- Inserción para Swalot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swalot'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Swalot'), 2, 73),
@@ -2851,7 +2851,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swalot'), 5, 83),
 ((SELECT id FROM pokemones WHERE name = 'Swalot'), 6, 55);
 
--- Inserciï¿½n para Carvanha
+-- Inserción para Carvanha
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carvanha'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Carvanha'), 2, 90),
@@ -2860,7 +2860,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carvanha'), 5, 20),
 ((SELECT id FROM pokemones WHERE name = 'Carvanha'), 6, 65);
 
--- Inserciï¿½n para Sharpedo
+-- Inserción para Sharpedo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sharpedo'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Sharpedo'), 2, 120),
@@ -2869,7 +2869,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sharpedo'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Sharpedo'), 6, 95);
 
--- Inserciï¿½n para Wailmer
+-- Inserción para Wailmer
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wailmer'), 1, 130),
 ((SELECT id FROM pokemones WHERE name = 'Wailmer'), 2, 70),
@@ -2878,7 +2878,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wailmer'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Wailmer'), 6, 60);
 
--- Inserciï¿½n para Wailord
+-- Inserción para Wailord
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wailord'), 1, 170),
 ((SELECT id FROM pokemones WHERE name = 'Wailord'), 2, 90),
@@ -2887,7 +2887,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wailord'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Wailord'), 6, 60);
 
--- Inserciï¿½n para Numel
+-- Inserción para Numel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Numel'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Numel'), 2, 60),
@@ -2896,7 +2896,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Numel'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Numel'), 6, 35);
 
--- Inserciï¿½n para Camerupt
+-- Inserción para Camerupt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Camerupt'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Camerupt'), 2, 100),
@@ -2905,7 +2905,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Camerupt'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Camerupt'), 6, 40);
 
--- Inserciï¿½n para Torkoal
+-- Inserción para Torkoal
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torkoal'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Torkoal'), 2, 85),
@@ -2914,7 +2914,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torkoal'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Torkoal'), 6, 20);
 
--- Inserciï¿½n para Spoink
+-- Inserción para Spoink
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spoink'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Spoink'), 2, 25),
@@ -2923,7 +2923,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spoink'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Spoink'), 6, 60);
 
--- Inserciï¿½n para Grumpig
+-- Inserción para Grumpig
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grumpig'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Grumpig'), 2, 45),
@@ -2932,7 +2932,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grumpig'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Grumpig'), 6, 80);
 
--- Inserciï¿½n para Spinda
+-- Inserción para Spinda
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spinda'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Spinda'), 2, 60),
@@ -2941,7 +2941,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spinda'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Spinda'), 6, 60);
 
--- Inserciï¿½n para Trapinch
+-- Inserción para Trapinch
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trapinch'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Trapinch'), 2, 100),
@@ -2950,7 +2950,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trapinch'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Trapinch'), 6, 10);
 
--- Inserciï¿½n para Vibrava
+-- Inserción para Vibrava
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vibrava'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Vibrava'), 2, 70),
@@ -2959,7 +2959,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vibrava'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Vibrava'), 6, 70);
 
--- Inserciï¿½n para Flygon
+-- Inserción para Flygon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flygon'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Flygon'), 2, 100),
@@ -2968,7 +2968,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flygon'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Flygon'), 6, 100);
 
--- Inserciï¿½n para Cacnea
+-- Inserción para Cacnea
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cacnea'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cacnea'), 2, 85),
@@ -2977,7 +2977,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cacnea'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Cacnea'), 6, 35);
 
--- Inserciï¿½n para Cacturne
+-- Inserción para Cacturne
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cacturne'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Cacturne'), 2, 115),
@@ -2986,7 +2986,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cacturne'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Cacturne'), 6, 55);
 
--- Inserciï¿½n para Swablu
+-- Inserción para Swablu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swablu'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Swablu'), 2, 40),
@@ -2995,7 +2995,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swablu'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Swablu'), 6, 50);
 
--- Inserciï¿½n para Altaria
+-- Inserción para Altaria
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Altaria'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Altaria'), 2, 70),
@@ -3004,7 +3004,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Altaria'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Altaria'), 6, 80);
 
--- Inserciï¿½n para Zangoose
+-- Inserción para Zangoose
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zangoose'), 1, 73),
 ((SELECT id FROM pokemones WHERE name = 'Zangoose'), 2, 115),
@@ -3013,7 +3013,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zangoose'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Zangoose'), 6, 90);
 
--- Inserciï¿½n para Seviper
+-- Inserción para Seviper
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seviper'), 1, 73),
 ((SELECT id FROM pokemones WHERE name = 'Seviper'), 2, 100),
@@ -3022,7 +3022,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seviper'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Seviper'), 6, 65);
 
--- Inserciï¿½n para Lunatone
+-- Inserción para Lunatone
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lunatone'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Lunatone'), 2, 55),
@@ -3031,7 +3031,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lunatone'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Lunatone'), 6, 70);
 
--- Inserciï¿½n para Solrock
+-- Inserción para Solrock
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Solrock'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Solrock'), 2, 95),
@@ -3040,7 +3040,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Solrock'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Solrock'), 6, 70);
 
--- Inserciï¿½n para Barboach
+-- Inserción para Barboach
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Barboach'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Barboach'), 2, 48),
@@ -3049,7 +3049,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Barboach'), 5, 41),
 ((SELECT id FROM pokemones WHERE name = 'Barboach'), 6, 60);
 
--- Inserciï¿½n para Whiscash
+-- Inserción para Whiscash
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whiscash'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Whiscash'), 2, 78),
@@ -3058,7 +3058,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whiscash'), 5, 71),
 ((SELECT id FROM pokemones WHERE name = 'Whiscash'), 6, 60);
 
--- Inserciï¿½n para Corphish
+-- Inserción para Corphish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corphish'), 1, 43),
 ((SELECT id FROM pokemones WHERE name = 'Corphish'), 2, 80),
@@ -3067,7 +3067,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corphish'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Corphish'), 6, 35);
 
--- Inserciï¿½n para Crawdaunt
+-- Inserción para Crawdaunt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crawdaunt'), 1, 63),
 ((SELECT id FROM pokemones WHERE name = 'Crawdaunt'), 2, 120),
@@ -3076,7 +3076,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crawdaunt'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Crawdaunt'), 6, 55);
 
--- Inserciï¿½n para Baltoy
+-- Inserción para Baltoy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Baltoy'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Baltoy'), 2, 40),
@@ -3085,7 +3085,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Baltoy'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Baltoy'), 6, 55);
 
--- Inserciï¿½n para Claydol
+-- Inserción para Claydol
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Claydol'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Claydol'), 2, 70),
@@ -3094,7 +3094,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Claydol'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Claydol'), 6, 75);
 
--- Inserciï¿½n para Lileep
+-- Inserción para Lileep
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lileep'), 1, 66),
 ((SELECT id FROM pokemones WHERE name = 'Lileep'), 2, 41),
@@ -3103,7 +3103,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lileep'), 5, 87),
 ((SELECT id FROM pokemones WHERE name = 'Lileep'), 6, 23);
 
--- Inserciï¿½n para Cradily
+-- Inserción para Cradily
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cradily'), 1, 86),
 ((SELECT id FROM pokemones WHERE name = 'Cradily'), 2, 81),
@@ -3112,7 +3112,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cradily'), 5, 107),
 ((SELECT id FROM pokemones WHERE name = 'Cradily'), 6, 43);
 
--- Inserciï¿½n para Anorith
+-- Inserción para Anorith
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Anorith'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Anorith'), 2, 95),
@@ -3121,7 +3121,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Anorith'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Anorith'), 6, 75);
 
--- Inserciï¿½n para Armaldo
+-- Inserción para Armaldo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Armaldo'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Armaldo'), 2, 125),
@@ -3130,7 +3130,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Armaldo'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Armaldo'), 6, 45);
 
--- Inserciï¿½n para Feebas
+-- Inserción para Feebas
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Feebas'), 1, 20),
 ((SELECT id FROM pokemones WHERE name = 'Feebas'), 2, 15),
@@ -3139,7 +3139,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Feebas'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Feebas'), 6, 80);
 
--- Inserciï¿½n para Milotic
+-- Inserción para Milotic
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Milotic'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Milotic'), 2, 60),
@@ -3148,7 +3148,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Milotic'), 5, 125),
 ((SELECT id FROM pokemones WHERE name = 'Milotic'), 6, 81);
 
--- Inserciï¿½n para Castform
+-- Inserción para Castform
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Castform'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Castform'), 2, 70),
@@ -3157,7 +3157,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Castform'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Castform'), 6, 70);
 
--- Inserciï¿½n para Kecleon
+-- Inserción para Kecleon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kecleon'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Kecleon'), 2, 90),
@@ -3166,7 +3166,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kecleon'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Kecleon'), 6, 40);
 
--- Inserciï¿½n para Shuppet
+-- Inserción para Shuppet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shuppet'), 1, 44),
 ((SELECT id FROM pokemones WHERE name = 'Shuppet'), 2, 75),
@@ -3175,7 +3175,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shuppet'), 5, 33),
 ((SELECT id FROM pokemones WHERE name = 'Shuppet'), 6, 45);
 
--- Inserciï¿½n para Banette
+-- Inserción para Banette
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Banette'), 1, 64),
 ((SELECT id FROM pokemones WHERE name = 'Banette'), 2, 115),
@@ -3184,7 +3184,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Banette'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Banette'), 6, 65);
 
--- Inserciï¿½n para Duskull
+-- Inserción para Duskull
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Duskull'), 1, 20),
 ((SELECT id FROM pokemones WHERE name = 'Duskull'), 2, 40),
@@ -3193,7 +3193,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Duskull'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Duskull'), 6, 25);
 
--- Inserciï¿½n para Dusclops
+-- Inserción para Dusclops
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dusclops'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Dusclops'), 2, 70),
@@ -3202,7 +3202,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dusclops'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Dusclops'), 6, 25);
 
--- Inserciï¿½n para Tropius
+-- Inserción para Tropius
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tropius'), 1, 99),
 ((SELECT id FROM pokemones WHERE name = 'Tropius'), 2, 68),
@@ -3211,7 +3211,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tropius'), 5, 87),
 ((SELECT id FROM pokemones WHERE name = 'Tropius'), 6, 51);
 
--- Inserciï¿½n para Chimecho
+-- Inserción para Chimecho
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chimecho'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Chimecho'), 2, 50),
@@ -3220,7 +3220,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chimecho'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Chimecho'), 6, 65);
 
--- Inserciï¿½n para Absol
+-- Inserción para Absol
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Absol'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Absol'), 2, 130),
@@ -3229,7 +3229,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Absol'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Absol'), 6, 75);
 
--- Inserciï¿½n para Wynaut
+-- Inserción para Wynaut
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wynaut'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Wynaut'), 2, 23),
@@ -3238,7 +3238,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wynaut'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Wynaut'), 6, 23);
 
--- Inserciï¿½n para Snorunt
+-- Inserción para Snorunt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snorunt'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Snorunt'), 2, 50),
@@ -3247,7 +3247,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snorunt'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Snorunt'), 6, 50);
 
--- Inserciï¿½n para Glalie
+-- Inserción para Glalie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glalie'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Glalie'), 2, 80),
@@ -3256,7 +3256,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glalie'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Glalie'), 6, 80);
 
--- Inserciï¿½n para Spheal
+-- Inserción para Spheal
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spheal'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Spheal'), 2, 40),
@@ -3265,7 +3265,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spheal'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Spheal'), 6, 25);
 
--- Inserciï¿½n para Sealeo
+-- Inserción para Sealeo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sealeo'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Sealeo'), 2, 60),
@@ -3274,7 +3274,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sealeo'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Sealeo'), 6, 45);
 
--- Inserciï¿½n para Walrein
+-- Inserción para Walrein
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Walrein'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Walrein'), 2, 80),
@@ -3283,7 +3283,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Walrein'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Walrein'), 6, 65);
 
--- Inserciï¿½n para Clamperl
+-- Inserción para Clamperl
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clamperl'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Clamperl'), 2, 64),
@@ -3292,7 +3292,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clamperl'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Clamperl'), 6, 32);
 
--- Inserciï¿½n para Huntail
+-- Inserción para Huntail
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Huntail'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Huntail'), 2, 104),
@@ -3301,7 +3301,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Huntail'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Huntail'), 6, 52);
 
--- Inserciï¿½n para Gorebyss
+-- Inserción para Gorebyss
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gorebyss'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Gorebyss'), 2, 84),
@@ -3310,7 +3310,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gorebyss'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Gorebyss'), 6, 52);
 
--- Inserciï¿½n para Relicanth
+-- Inserción para Relicanth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Relicanth'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Relicanth'), 2, 90),
@@ -3319,7 +3319,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Relicanth'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Relicanth'), 6, 55);
 
--- Inserciï¿½n para Luvdisc
+-- Inserción para Luvdisc
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Luvdisc'), 1, 43),
 ((SELECT id FROM pokemones WHERE name = 'Luvdisc'), 2, 30),
@@ -3328,7 +3328,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Luvdisc'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Luvdisc'), 6, 97);
 
--- Inserciï¿½n para Bagon
+-- Inserción para Bagon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bagon'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Bagon'), 2, 75),
@@ -3337,7 +3337,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bagon'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Bagon'), 6, 50);
 
--- Inserciï¿½n para Shelgon
+-- Inserción para Shelgon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shelgon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Shelgon'), 2, 95),
@@ -3346,7 +3346,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shelgon'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Shelgon'), 6, 50);
 
--- Inserciï¿½n para Salamence
+-- Inserción para Salamence
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Salamence'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Salamence'), 2, 135),
@@ -3355,7 +3355,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Salamence'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Salamence'), 6, 100);
 
--- Inserciï¿½n para Beldum
+-- Inserción para Beldum
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beldum'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Beldum'), 2, 55),
@@ -3364,7 +3364,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beldum'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Beldum'), 6, 30);
 
--- Inserciï¿½n para Metang
+-- Inserción para Metang
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Metang'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Metang'), 2, 75),
@@ -3373,7 +3373,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Metang'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Metang'), 6, 50);
 
--- Inserciï¿½n para Metagross
+-- Inserción para Metagross
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Metagross'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Metagross'), 2, 135),
@@ -3382,7 +3382,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Metagross'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Metagross'), 6, 70);
 
--- Inserciï¿½n para Regirock
+-- Inserción para Regirock
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regirock'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Regirock'), 2, 100),
@@ -3391,7 +3391,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regirock'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Regirock'), 6, 50);
 
--- Inserciï¿½n para Regice
+-- Inserción para Regice
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regice'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Regice'), 2, 50),
@@ -3400,7 +3400,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regice'), 5, 200),
 ((SELECT id FROM pokemones WHERE name = 'Regice'), 6, 50);
 
--- Inserciï¿½n para Registeel
+-- Inserción para Registeel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Registeel'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Registeel'), 2, 75),
@@ -3409,7 +3409,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Registeel'), 5, 150),
 ((SELECT id FROM pokemones WHERE name = 'Registeel'), 6, 50);
 
--- Inserciï¿½n para Latias
+-- Inserción para Latias
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Latias'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Latias'), 2, 80),
@@ -3418,7 +3418,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Latias'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Latias'), 6, 110);
 
--- Inserciï¿½n para Latios
+-- Inserción para Latios
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Latios'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Latios'), 2, 90),
@@ -3427,7 +3427,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Latios'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Latios'), 6, 110);
 
--- Inserciï¿½n para Kyogre
+-- Inserción para Kyogre
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kyogre'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Kyogre'), 2, 100),
@@ -3436,7 +3436,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kyogre'), 5, 140),
 ((SELECT id FROM pokemones WHERE name = 'Kyogre'), 6, 90);
 
--- Inserciï¿½n para Groudon
+-- Inserción para Groudon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Groudon'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Groudon'), 2, 150),
@@ -3445,7 +3445,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Groudon'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Groudon'), 6, 90);
 
--- Inserciï¿½n para Rayquaza
+-- Inserción para Rayquaza
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rayquaza'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Rayquaza'), 2, 150),
@@ -3454,7 +3454,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rayquaza'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Rayquaza'), 6, 95);
 
--- Inserciï¿½n para Jirachi
+-- Inserción para Jirachi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jirachi'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Jirachi'), 2, 100),
@@ -3463,7 +3463,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jirachi'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Jirachi'), 6, 100);
 
--- Inserciï¿½n para Deoxys
+-- Inserción para Deoxys
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Deoxys'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Deoxys'), 2, 150),
@@ -3472,7 +3472,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Deoxys'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Deoxys'), 6, 150);
 
--- Inserciï¿½n para Turtwig
+-- Inserción para Turtwig
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Turtwig'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Turtwig'), 2, 68),
@@ -3481,7 +3481,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Turtwig'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Turtwig'), 6, 31);
 
--- Inserciï¿½n para Grotle
+-- Inserción para Grotle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grotle'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Grotle'), 2, 89),
@@ -3490,7 +3490,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grotle'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Grotle'), 6, 36);
 
--- Inserciï¿½n para Torterra
+-- Inserción para Torterra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torterra'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Torterra'), 2, 109),
@@ -3499,7 +3499,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torterra'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Torterra'), 6, 56);
 
--- Inserciï¿½n para Chimchar
+-- Inserción para Chimchar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chimchar'), 1, 44),
 ((SELECT id FROM pokemones WHERE name = 'Chimchar'), 2, 58),
@@ -3508,7 +3508,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chimchar'), 5, 44),
 ((SELECT id FROM pokemones WHERE name = 'Chimchar'), 6, 61);
 
--- Inserciï¿½n para Monferno
+-- Inserción para Monferno
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Monferno'), 1, 64),
 ((SELECT id FROM pokemones WHERE name = 'Monferno'), 2, 78),
@@ -3517,7 +3517,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Monferno'), 5, 52),
 ((SELECT id FROM pokemones WHERE name = 'Monferno'), 6, 81);
 
--- Inserciï¿½n para Infernape
+-- Inserción para Infernape
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Infernape'), 1, 76),
 ((SELECT id FROM pokemones WHERE name = 'Infernape'), 2, 104),
@@ -3526,7 +3526,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Infernape'), 5, 71),
 ((SELECT id FROM pokemones WHERE name = 'Infernape'), 6, 108);
 
--- Inserciï¿½n para Piplup
+-- Inserción para Piplup
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Piplup'), 1, 53),
 ((SELECT id FROM pokemones WHERE name = 'Piplup'), 2, 51),
@@ -3535,7 +3535,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Piplup'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Piplup'), 6, 40);
 
--- Inserciï¿½n para Prinplup
+-- Inserción para Prinplup
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Prinplup'), 1, 64),
 ((SELECT id FROM pokemones WHERE name = 'Prinplup'), 2, 66),
@@ -3544,7 +3544,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Prinplup'), 5, 76),
 ((SELECT id FROM pokemones WHERE name = 'Prinplup'), 6, 50);
 
--- Inserciï¿½n para Empoleon
+-- Inserción para Empoleon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Empoleon'), 1, 84),
 ((SELECT id FROM pokemones WHERE name = 'Empoleon'), 2, 86),
@@ -3553,7 +3553,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Empoleon'), 5, 101),
 ((SELECT id FROM pokemones WHERE name = 'Empoleon'), 6, 60);
 
--- Inserciï¿½n para Starly
+-- Inserción para Starly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Starly'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Starly'), 2, 55),
@@ -3562,7 +3562,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Starly'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Starly'), 6, 60);
 
--- Inserciï¿½n para Staravia
+-- Inserción para Staravia
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Staravia'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Staravia'), 2, 75),
@@ -3571,7 +3571,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Staravia'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Staravia'), 6, 80);
 
--- Inserciï¿½n para Staraptor
+-- Inserción para Staraptor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Staraptor'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Staraptor'), 2, 120),
@@ -3580,7 +3580,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Staraptor'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Staraptor'), 6, 100);
 
--- Inserciï¿½n para Bidoof
+-- Inserción para Bidoof
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bidoof'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Bidoof'), 2, 45),
@@ -3589,7 +3589,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bidoof'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Bidoof'), 6, 31);
 
--- Inserciï¿½n para Bibarel
+-- Inserción para Bibarel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bibarel'), 1, 79),
 ((SELECT id FROM pokemones WHERE name = 'Bibarel'), 2, 85),
@@ -3598,7 +3598,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bibarel'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Bibarel'), 6, 71);
 
--- Inserciï¿½n para Kricketot
+-- Inserción para Kricketot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kricketot'), 1, 37),
 ((SELECT id FROM pokemones WHERE name = 'Kricketot'), 2, 25),
@@ -3607,7 +3607,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kricketot'), 5, 41),
 ((SELECT id FROM pokemones WHERE name = 'Kricketot'), 6, 25);
 
--- Inserciï¿½n para Kricketune
+-- Inserción para Kricketune
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kricketune'), 1, 77),
 ((SELECT id FROM pokemones WHERE name = 'Kricketune'), 2, 85),
@@ -3616,7 +3616,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kricketune'), 5, 51),
 ((SELECT id FROM pokemones WHERE name = 'Kricketune'), 6, 65);
 
--- Inserciï¿½n para Shinx
+-- Inserción para Shinx
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shinx'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Shinx'), 2, 65),
@@ -3625,7 +3625,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shinx'), 5, 34),
 ((SELECT id FROM pokemones WHERE name = 'Shinx'), 6, 45);
 
--- Inserciï¿½n para Luxio
+-- Inserción para Luxio
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Luxio'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Luxio'), 2, 85),
@@ -3634,7 +3634,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Luxio'), 5, 49),
 ((SELECT id FROM pokemones WHERE name = 'Luxio'), 6, 60);
 
--- Inserciï¿½n para Luxray
+-- Inserción para Luxray
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Luxray'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Luxray'), 2, 120),
@@ -3643,7 +3643,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Luxray'), 5, 79),
 ((SELECT id FROM pokemones WHERE name = 'Luxray'), 6, 70);
 
--- Inserciï¿½n para Budew
+-- Inserción para Budew
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Budew'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Budew'), 2, 30),
@@ -3652,7 +3652,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Budew'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Budew'), 6, 55);
 
--- Inserciï¿½n para Roserade
+-- Inserción para Roserade
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roserade'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Roserade'), 2, 70),
@@ -3661,7 +3661,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roserade'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Roserade'), 6, 90);
 
--- Inserciï¿½n para Cranidos
+-- Inserción para Cranidos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cranidos'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Cranidos'), 2, 125),
@@ -3670,7 +3670,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cranidos'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Cranidos'), 6, 58);
 
--- Inserciï¿½n para Rampardos
+-- Inserción para Rampardos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rampardos'), 1, 97),
 ((SELECT id FROM pokemones WHERE name = 'Rampardos'), 2, 165),
@@ -3679,7 +3679,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rampardos'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Rampardos'), 6, 58);
 
--- Inserciï¿½n para Shieldon
+-- Inserción para Shieldon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shieldon'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Shieldon'), 2, 42),
@@ -3688,7 +3688,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shieldon'), 5, 88),
 ((SELECT id FROM pokemones WHERE name = 'Shieldon'), 6, 30);
 
--- Inserciï¿½n para Bastiodon
+-- Inserción para Bastiodon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bastiodon'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Bastiodon'), 2, 52),
@@ -3697,7 +3697,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bastiodon'), 5, 138),
 ((SELECT id FROM pokemones WHERE name = 'Bastiodon'), 6, 30);
 
--- Inserciï¿½n para Burmy
+-- Inserción para Burmy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Burmy'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Burmy'), 2, 29),
@@ -3706,7 +3706,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Burmy'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Burmy'), 6, 36);
 
--- Inserciï¿½n para Wormadam
+-- Inserción para Wormadam
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wormadam'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Wormadam'), 2, 59),
@@ -3715,7 +3715,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wormadam'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Wormadam'), 6, 36);
 
--- Inserciï¿½n para Mothim
+-- Inserción para Mothim
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mothim'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Mothim'), 2, 94),
@@ -3724,7 +3724,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mothim'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Mothim'), 6, 66);
 
--- Inserciï¿½n para Combee
+-- Inserción para Combee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Combee'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Combee'), 2, 30),
@@ -3733,7 +3733,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Combee'), 5, 42),
 ((SELECT id FROM pokemones WHERE name = 'Combee'), 6, 70);
 
--- Inserciï¿½n para Vespiquen
+-- Inserción para Vespiquen
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vespiquen'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Vespiquen'), 2, 80),
@@ -3742,7 +3742,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vespiquen'), 5, 102),
 ((SELECT id FROM pokemones WHERE name = 'Vespiquen'), 6, 40);
 
--- Inserciï¿½n para Pachirisu
+-- Inserción para Pachirisu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pachirisu'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Pachirisu'), 2, 45),
@@ -3751,7 +3751,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pachirisu'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Pachirisu'), 6, 95);
 
--- Inserciï¿½n para Buizel
+-- Inserción para Buizel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Buizel'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Buizel'), 2, 65),
@@ -3760,7 +3760,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Buizel'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Buizel'), 6, 85);
 
--- Inserciï¿½n para Floatzel
+-- Inserción para Floatzel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Floatzel'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Floatzel'), 2, 105),
@@ -3769,7 +3769,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Floatzel'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Floatzel'), 6, 115);
 
--- Inserciï¿½n para Cherubi
+-- Inserción para Cherubi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cherubi'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Cherubi'), 2, 35),
@@ -3778,7 +3778,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cherubi'), 5, 53),
 ((SELECT id FROM pokemones WHERE name = 'Cherubi'), 6, 35);
 
--- Inserciï¿½n para Cherrim
+-- Inserción para Cherrim
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cherrim'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Cherrim'), 2, 60),
@@ -3787,7 +3787,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cherrim'), 5, 78),
 ((SELECT id FROM pokemones WHERE name = 'Cherrim'), 6, 85);
 
--- Inserciï¿½n para Shellos
+-- Inserción para Shellos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shellos'), 1, 76),
 ((SELECT id FROM pokemones WHERE name = 'Shellos'), 2, 48),
@@ -3796,7 +3796,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shellos'), 5, 62),
 ((SELECT id FROM pokemones WHERE name = 'Shellos'), 6, 34);
 
--- Inserciï¿½n para Gastrodon
+-- Inserción para Gastrodon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gastrodon'), 1, 111),
 ((SELECT id FROM pokemones WHERE name = 'Gastrodon'), 2, 83),
@@ -3805,7 +3805,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gastrodon'), 5, 82),
 ((SELECT id FROM pokemones WHERE name = 'Gastrodon'), 6, 39);
 
--- Inserciï¿½n para Ambipom
+-- Inserción para Ambipom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ambipom'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Ambipom'), 2, 100),
@@ -3814,7 +3814,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ambipom'), 5, 66),
 ((SELECT id FROM pokemones WHERE name = 'Ambipom'), 6, 115);
 
--- Inserciï¿½n para Drifloon
+-- Inserción para Drifloon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drifloon'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Drifloon'), 2, 50),
@@ -3823,7 +3823,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drifloon'), 5, 44),
 ((SELECT id FROM pokemones WHERE name = 'Drifloon'), 6, 70);
 
--- Inserciï¿½n para Drifblim
+-- Inserción para Drifblim
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drifblim'), 1, 150),
 ((SELECT id FROM pokemones WHERE name = 'Drifblim'), 2, 80),
@@ -3832,7 +3832,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drifblim'), 5, 54),
 ((SELECT id FROM pokemones WHERE name = 'Drifblim'), 6, 80);
 
--- Inserciï¿½n para Buneary
+-- Inserción para Buneary
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Buneary'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Buneary'), 2, 66),
@@ -3841,7 +3841,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Buneary'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Buneary'), 6, 85);
 
--- Inserciï¿½n para Lopunny
+-- Inserción para Lopunny
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lopunny'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Lopunny'), 2, 76),
@@ -3850,7 +3850,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lopunny'), 5, 96),
 ((SELECT id FROM pokemones WHERE name = 'Lopunny'), 6, 105);
 
--- Inserciï¿½n para Mismagius
+-- Inserción para Mismagius
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mismagius'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Mismagius'), 2, 60),
@@ -3859,7 +3859,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mismagius'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Mismagius'), 6, 105);
 
--- Inserciï¿½n para Honchkrow
+-- Inserción para Honchkrow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Honchkrow'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Honchkrow'), 2, 125),
@@ -3868,7 +3868,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Honchkrow'), 5, 52),
 ((SELECT id FROM pokemones WHERE name = 'Honchkrow'), 6, 71);
 
--- Inserciï¿½n para Glameow
+-- Inserción para Glameow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glameow'), 1, 49),
 ((SELECT id FROM pokemones WHERE name = 'Glameow'), 2, 55),
@@ -3877,7 +3877,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glameow'), 5, 37),
 ((SELECT id FROM pokemones WHERE name = 'Glameow'), 6, 85);
 
--- Inserciï¿½n para Purugly
+-- Inserción para Purugly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Purugly'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Purugly'), 2, 82),
@@ -3886,7 +3886,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Purugly'), 5, 59),
 ((SELECT id FROM pokemones WHERE name = 'Purugly'), 6, 112);
 
--- Inserciï¿½n para Chingling
+-- Inserción para Chingling
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chingling'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Chingling'), 2, 30),
@@ -3895,7 +3895,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chingling'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Chingling'), 6, 45);
 
--- Inserciï¿½n para Stunky
+-- Inserción para Stunky
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stunky'), 1, 63),
 ((SELECT id FROM pokemones WHERE name = 'Stunky'), 2, 63),
@@ -3904,7 +3904,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stunky'), 5, 41),
 ((SELECT id FROM pokemones WHERE name = 'Stunky'), 6, 74);
 
--- Inserciï¿½n para Skuntank
+-- Inserción para Skuntank
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skuntank'), 1, 103),
 ((SELECT id FROM pokemones WHERE name = 'Skuntank'), 2, 93),
@@ -3913,7 +3913,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skuntank'), 5, 61),
 ((SELECT id FROM pokemones WHERE name = 'Skuntank'), 6, 84);
 
--- Inserciï¿½n para Bronzor
+-- Inserción para Bronzor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bronzor'), 1, 57),
 ((SELECT id FROM pokemones WHERE name = 'Bronzor'), 2, 24),
@@ -3922,7 +3922,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bronzor'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Bronzor'), 6, 23);
 
--- Inserciï¿½n para Bronzong
+-- Inserción para Bronzong
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bronzong'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Bronzong'), 2, 89),
@@ -3931,7 +3931,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bronzong'), 5, 116),
 ((SELECT id FROM pokemones WHERE name = 'Bronzong'), 6, 33);
 
--- Inserciï¿½n para Bonsly
+-- Inserción para Bonsly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bonsly'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Bonsly'), 2, 80),
@@ -3940,7 +3940,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bonsly'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Bonsly'), 6, 10);
 
--- Inserciï¿½n para Mime-jr
+-- Inserción para Mime-jr
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mime-jr'), 1, 20),
 ((SELECT id FROM pokemones WHERE name = 'Mime-jr'), 2, 25),
@@ -3949,7 +3949,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mime-jr'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Mime-jr'), 6, 60);
 
--- Inserciï¿½n para Happiny
+-- Inserción para Happiny
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Happiny'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Happiny'), 2, 5),
@@ -3958,7 +3958,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Happiny'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Happiny'), 6, 30);
 
--- Inserciï¿½n para Chatot
+-- Inserción para Chatot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chatot'), 1, 76),
 ((SELECT id FROM pokemones WHERE name = 'Chatot'), 2, 65),
@@ -3967,7 +3967,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chatot'), 5, 42),
 ((SELECT id FROM pokemones WHERE name = 'Chatot'), 6, 91);
 
--- Inserciï¿½n para Spiritomb
+-- Inserción para Spiritomb
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spiritomb'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Spiritomb'), 2, 92),
@@ -3976,7 +3976,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spiritomb'), 5, 108),
 ((SELECT id FROM pokemones WHERE name = 'Spiritomb'), 6, 35);
 
--- Inserciï¿½n para Gible
+-- Inserción para Gible
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gible'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Gible'), 2, 70),
@@ -3985,7 +3985,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gible'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Gible'), 6, 42);
 
--- Inserciï¿½n para Gabite
+-- Inserción para Gabite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gabite'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Gabite'), 2, 90),
@@ -3994,7 +3994,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gabite'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Gabite'), 6, 82);
 
--- Inserciï¿½n para Garchomp
+-- Inserción para Garchomp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Garchomp'), 1, 108),
 ((SELECT id FROM pokemones WHERE name = 'Garchomp'), 2, 130),
@@ -4003,7 +4003,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Garchomp'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Garchomp'), 6, 102);
 
--- Inserciï¿½n para Munchlax
+-- Inserción para Munchlax
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Munchlax'), 1, 135),
 ((SELECT id FROM pokemones WHERE name = 'Munchlax'), 2, 85),
@@ -4012,7 +4012,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Munchlax'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Munchlax'), 6, 5);
 
--- Inserciï¿½n para Riolu
+-- Inserción para Riolu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Riolu'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Riolu'), 2, 70),
@@ -4021,7 +4021,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Riolu'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Riolu'), 6, 60);
 
--- Inserciï¿½n para Lucario
+-- Inserción para Lucario
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lucario'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Lucario'), 2, 110),
@@ -4030,7 +4030,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lucario'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Lucario'), 6, 90);
 
--- Inserciï¿½n para Hippopotas
+-- Inserción para Hippopotas
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hippopotas'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Hippopotas'), 2, 72),
@@ -4039,7 +4039,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hippopotas'), 5, 42),
 ((SELECT id FROM pokemones WHERE name = 'Hippopotas'), 6, 32);
 
--- Inserciï¿½n para Hippowdon
+-- Inserción para Hippowdon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hippowdon'), 1, 108),
 ((SELECT id FROM pokemones WHERE name = 'Hippowdon'), 2, 112),
@@ -4048,7 +4048,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hippowdon'), 5, 72),
 ((SELECT id FROM pokemones WHERE name = 'Hippowdon'), 6, 47);
 
--- Inserciï¿½n para Skorupi
+-- Inserción para Skorupi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skorupi'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Skorupi'), 2, 50),
@@ -4057,7 +4057,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skorupi'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Skorupi'), 6, 65);
 
--- Inserciï¿½n para Drapion
+-- Inserción para Drapion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drapion'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Drapion'), 2, 90),
@@ -4066,7 +4066,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drapion'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Drapion'), 6, 95);
 
--- Inserciï¿½n para Croagunk
+-- Inserción para Croagunk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Croagunk'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Croagunk'), 2, 61),
@@ -4075,7 +4075,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Croagunk'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Croagunk'), 6, 50);
 
--- Inserciï¿½n para Toxicroak
+-- Inserción para Toxicroak
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxicroak'), 1, 83),
 ((SELECT id FROM pokemones WHERE name = 'Toxicroak'), 2, 106),
@@ -4084,7 +4084,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxicroak'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Toxicroak'), 6, 85);
 
--- Inserciï¿½n para Carnivine
+-- Inserción para Carnivine
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carnivine'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Carnivine'), 2, 100),
@@ -4093,7 +4093,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carnivine'), 5, 72),
 ((SELECT id FROM pokemones WHERE name = 'Carnivine'), 6, 46);
 
--- Inserciï¿½n para Finneon
+-- Inserción para Finneon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Finneon'), 1, 49),
 ((SELECT id FROM pokemones WHERE name = 'Finneon'), 2, 49),
@@ -4102,7 +4102,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Finneon'), 5, 61),
 ((SELECT id FROM pokemones WHERE name = 'Finneon'), 6, 66);
 
--- Inserciï¿½n para Lumineon
+-- Inserción para Lumineon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lumineon'), 1, 69),
 ((SELECT id FROM pokemones WHERE name = 'Lumineon'), 2, 69),
@@ -4111,7 +4111,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lumineon'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Lumineon'), 6, 91);
 
--- Inserciï¿½n para Mantyke
+-- Inserción para Mantyke
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mantyke'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Mantyke'), 2, 20),
@@ -4120,7 +4120,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mantyke'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Mantyke'), 6, 50);
 
--- Inserciï¿½n para Snover
+-- Inserción para Snover
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snover'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Snover'), 2, 62),
@@ -4129,7 +4129,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snover'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Snover'), 6, 40);
 
--- Inserciï¿½n para Abomasnow
+-- Inserción para Abomasnow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Abomasnow'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Abomasnow'), 2, 92),
@@ -4138,7 +4138,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Abomasnow'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Abomasnow'), 6, 60);
 
--- Inserciï¿½n para Weavile
+-- Inserción para Weavile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weavile'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Weavile'), 2, 120),
@@ -4147,7 +4147,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Weavile'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Weavile'), 6, 125);
 
--- Inserciï¿½n para Magnezone
+-- Inserción para Magnezone
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magnezone'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Magnezone'), 2, 70),
@@ -4156,7 +4156,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magnezone'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Magnezone'), 6, 60);
 
--- Inserciï¿½n para Lickilicky
+-- Inserción para Lickilicky
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lickilicky'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Lickilicky'), 2, 85),
@@ -4165,7 +4165,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lickilicky'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Lickilicky'), 6, 50);
 
--- Inserciï¿½n para Rhyperior
+-- Inserción para Rhyperior
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rhyperior'), 1, 115),
 ((SELECT id FROM pokemones WHERE name = 'Rhyperior'), 2, 140),
@@ -4174,7 +4174,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rhyperior'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Rhyperior'), 6, 40);
 
--- Inserciï¿½n para Tangrowth
+-- Inserción para Tangrowth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tangrowth'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Tangrowth'), 2, 100),
@@ -4183,7 +4183,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tangrowth'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Tangrowth'), 6, 50);
 
--- Inserciï¿½n para Electivire
+-- Inserción para Electivire
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electivire'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Electivire'), 2, 123),
@@ -4192,7 +4192,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Electivire'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Electivire'), 6, 95);
 
--- Inserciï¿½n para Magmortar
+-- Inserción para Magmortar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magmortar'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Magmortar'), 2, 95),
@@ -4201,7 +4201,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magmortar'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Magmortar'), 6, 83);
 
--- Inserciï¿½n para Togekiss
+-- Inserción para Togekiss
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togekiss'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Togekiss'), 2, 50),
@@ -4210,7 +4210,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togekiss'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Togekiss'), 6, 80);
 
--- Inserciï¿½n para Yanmega
+-- Inserción para Yanmega
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yanmega'), 1, 86),
 ((SELECT id FROM pokemones WHERE name = 'Yanmega'), 2, 76),
@@ -4219,7 +4219,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yanmega'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Yanmega'), 6, 95);
 
--- Inserciï¿½n para Leafeon
+-- Inserción para Leafeon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Leafeon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Leafeon'), 2, 110),
@@ -4228,7 +4228,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Leafeon'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Leafeon'), 6, 95);
 
--- Inserciï¿½n para Glaceon
+-- Inserción para Glaceon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glaceon'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Glaceon'), 2, 60),
@@ -4237,7 +4237,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glaceon'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Glaceon'), 6, 65);
 
--- Inserciï¿½n para Gliscor
+-- Inserción para Gliscor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gliscor'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Gliscor'), 2, 95),
@@ -4246,7 +4246,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gliscor'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Gliscor'), 6, 95);
 
--- Inserciï¿½n para Mamoswine
+-- Inserción para Mamoswine
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mamoswine'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Mamoswine'), 2, 130),
@@ -4255,7 +4255,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mamoswine'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Mamoswine'), 6, 80);
 
--- Inserciï¿½n para Porygon-z
+-- Inserción para Porygon-z
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Porygon-z'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Porygon-z'), 2, 80),
@@ -4264,7 +4264,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Porygon-z'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Porygon-z'), 6, 90);
 
--- Inserciï¿½n para Gallade
+-- Inserción para Gallade
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gallade'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Gallade'), 2, 125),
@@ -4273,7 +4273,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gallade'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Gallade'), 6, 80);
 
--- Inserciï¿½n para Probopass
+-- Inserción para Probopass
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Probopass'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Probopass'), 2, 55),
@@ -4282,7 +4282,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Probopass'), 5, 150),
 ((SELECT id FROM pokemones WHERE name = 'Probopass'), 6, 40);
 
--- Inserciï¿½n para Dusknoir
+-- Inserción para Dusknoir
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dusknoir'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Dusknoir'), 2, 100),
@@ -4291,7 +4291,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dusknoir'), 5, 135),
 ((SELECT id FROM pokemones WHERE name = 'Dusknoir'), 6, 45);
 
--- Inserciï¿½n para Froslass
+-- Inserción para Froslass
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Froslass'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Froslass'), 2, 80),
@@ -4300,7 +4300,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Froslass'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Froslass'), 6, 110);
 
--- Inserciï¿½n para Rotom
+-- Inserción para Rotom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rotom'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Rotom'), 2, 50),
@@ -4309,7 +4309,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rotom'), 5, 77),
 ((SELECT id FROM pokemones WHERE name = 'Rotom'), 6, 91);
 
--- Inserciï¿½n para Uxie
+-- Inserción para Uxie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Uxie'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Uxie'), 2, 75),
@@ -4318,7 +4318,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Uxie'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Uxie'), 6, 95);
 
--- Inserciï¿½n para Mesprit
+-- Inserción para Mesprit
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mesprit'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Mesprit'), 2, 105),
@@ -4327,7 +4327,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mesprit'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Mesprit'), 6, 80);
 
--- Inserciï¿½n para Azelf
+-- Inserción para Azelf
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Azelf'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Azelf'), 2, 125),
@@ -4336,7 +4336,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Azelf'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Azelf'), 6, 115);
 
--- Inserciï¿½n para Dialga
+-- Inserción para Dialga
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dialga'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Dialga'), 2, 120),
@@ -4345,7 +4345,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dialga'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Dialga'), 6, 90);
 
--- Inserciï¿½n para Palkia
+-- Inserción para Palkia
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palkia'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Palkia'), 2, 120),
@@ -4354,7 +4354,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palkia'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Palkia'), 6, 100);
 
--- Inserciï¿½n para Heatran
+-- Inserción para Heatran
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heatran'), 1, 91),
 ((SELECT id FROM pokemones WHERE name = 'Heatran'), 2, 90),
@@ -4363,7 +4363,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heatran'), 5, 106),
 ((SELECT id FROM pokemones WHERE name = 'Heatran'), 6, 77);
 
--- Inserciï¿½n para Regigigas
+-- Inserción para Regigigas
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regigigas'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Regigigas'), 2, 160),
@@ -4372,7 +4372,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regigigas'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Regigigas'), 6, 100);
 
--- Inserciï¿½n para Giratina
+-- Inserción para Giratina
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Giratina'), 1, 150),
 ((SELECT id FROM pokemones WHERE name = 'Giratina'), 2, 100),
@@ -4381,7 +4381,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Giratina'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Giratina'), 6, 90);
 
--- Inserciï¿½n para Cresselia
+-- Inserción para Cresselia
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cresselia'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Cresselia'), 2, 70),
@@ -4390,7 +4390,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cresselia'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Cresselia'), 6, 85);
 
--- Inserciï¿½n para Phione
+-- Inserción para Phione
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Phione'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Phione'), 2, 80),
@@ -4399,7 +4399,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Phione'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Phione'), 6, 80);
 
--- Inserciï¿½n para Manaphy
+-- Inserción para Manaphy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Manaphy'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Manaphy'), 2, 100),
@@ -4408,7 +4408,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Manaphy'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Manaphy'), 6, 100);
 
--- Inserciï¿½n para Darkrai
+-- Inserción para Darkrai
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Darkrai'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Darkrai'), 2, 90),
@@ -4417,7 +4417,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Darkrai'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Darkrai'), 6, 125);
 
--- Inserciï¿½n para Shaymin
+-- Inserción para Shaymin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shaymin'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Shaymin'), 2, 100),
@@ -4426,7 +4426,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shaymin'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Shaymin'), 6, 100);
 
--- Inserciï¿½n para Arceus
+-- Inserción para Arceus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arceus'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Arceus'), 2, 120),
@@ -4435,7 +4435,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arceus'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Arceus'), 6, 120);
 
--- Inserciï¿½n para Victini
+-- Inserción para Victini
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Victini'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Victini'), 2, 100),
@@ -4444,7 +4444,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Victini'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Victini'), 6, 100);
 
--- Inserciï¿½n para Snivy
+-- Inserción para Snivy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snivy'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Snivy'), 2, 45),
@@ -4453,7 +4453,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snivy'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Snivy'), 6, 63);
 
--- Inserciï¿½n para Servine
+-- Inserción para Servine
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Servine'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Servine'), 2, 60),
@@ -4462,7 +4462,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Servine'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Servine'), 6, 83);
 
--- Inserciï¿½n para Serperior
+-- Inserción para Serperior
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Serperior'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Serperior'), 2, 75),
@@ -4471,7 +4471,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Serperior'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Serperior'), 6, 113);
 
--- Inserciï¿½n para Tepig
+-- Inserción para Tepig
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tepig'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Tepig'), 2, 63),
@@ -4480,7 +4480,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tepig'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Tepig'), 6, 45);
 
--- Inserciï¿½n para Pignite
+-- Inserción para Pignite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pignite'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Pignite'), 2, 93),
@@ -4489,7 +4489,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pignite'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Pignite'), 6, 55);
 
--- Inserciï¿½n para Emboar
+-- Inserción para Emboar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Emboar'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Emboar'), 2, 123),
@@ -4498,7 +4498,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Emboar'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Emboar'), 6, 65);
 
--- Inserciï¿½n para Oshawott
+-- Inserción para Oshawott
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oshawott'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Oshawott'), 2, 55),
@@ -4507,7 +4507,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oshawott'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Oshawott'), 6, 45);
 
--- Inserciï¿½n para Dewott
+-- Inserción para Dewott
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dewott'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Dewott'), 2, 75),
@@ -4516,7 +4516,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dewott'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Dewott'), 6, 60);
 
--- Inserciï¿½n para Samurott
+-- Inserción para Samurott
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Samurott'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Samurott'), 2, 100),
@@ -4525,7 +4525,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Samurott'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Samurott'), 6, 70);
 
--- Inserciï¿½n para Patrat
+-- Inserción para Patrat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Patrat'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Patrat'), 2, 55),
@@ -4534,7 +4534,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Patrat'), 5, 39),
 ((SELECT id FROM pokemones WHERE name = 'Patrat'), 6, 42);
 
--- Inserciï¿½n para Watchog
+-- Inserción para Watchog
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Watchog'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Watchog'), 2, 85),
@@ -4543,7 +4543,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Watchog'), 5, 69),
 ((SELECT id FROM pokemones WHERE name = 'Watchog'), 6, 77);
 
--- Inserciï¿½n para Lillipup
+-- Inserción para Lillipup
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lillipup'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Lillipup'), 2, 60),
@@ -4552,7 +4552,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lillipup'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Lillipup'), 6, 55);
 
--- Inserciï¿½n para Herdier
+-- Inserción para Herdier
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Herdier'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Herdier'), 2, 80),
@@ -4561,7 +4561,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Herdier'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Herdier'), 6, 60);
 
--- Inserciï¿½n para Stoutland
+-- Inserción para Stoutland
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stoutland'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Stoutland'), 2, 110),
@@ -4570,7 +4570,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stoutland'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Stoutland'), 6, 80);
 
--- Inserciï¿½n para Purrloin
+-- Inserción para Purrloin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Purrloin'), 1, 41),
 ((SELECT id FROM pokemones WHERE name = 'Purrloin'), 2, 50),
@@ -4579,7 +4579,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Purrloin'), 5, 37),
 ((SELECT id FROM pokemones WHERE name = 'Purrloin'), 6, 66);
 
--- Inserciï¿½n para Liepard
+-- Inserción para Liepard
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Liepard'), 1, 64),
 ((SELECT id FROM pokemones WHERE name = 'Liepard'), 2, 88),
@@ -4588,7 +4588,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Liepard'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Liepard'), 6, 106);
 
--- Inserciï¿½n para Pansage
+-- Inserción para Pansage
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pansage'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Pansage'), 2, 53),
@@ -4597,7 +4597,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pansage'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Pansage'), 6, 64);
 
--- Inserciï¿½n para Simisage
+-- Inserción para Simisage
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Simisage'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Simisage'), 2, 98),
@@ -4606,7 +4606,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Simisage'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Simisage'), 6, 101);
 
--- Inserciï¿½n para Pansear
+-- Inserción para Pansear
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pansear'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Pansear'), 2, 53),
@@ -4615,7 +4615,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pansear'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Pansear'), 6, 64);
 
--- Inserciï¿½n para Simisear
+-- Inserción para Simisear
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Simisear'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Simisear'), 2, 98),
@@ -4624,7 +4624,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Simisear'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Simisear'), 6, 101);
 
--- Inserciï¿½n para Panpour
+-- Inserción para Panpour
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Panpour'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Panpour'), 2, 53),
@@ -4633,7 +4633,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Panpour'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Panpour'), 6, 64);
 
--- Inserciï¿½n para Simipour
+-- Inserción para Simipour
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Simipour'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Simipour'), 2, 98),
@@ -4642,7 +4642,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Simipour'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Simipour'), 6, 101);
 
--- Inserciï¿½n para Munna
+-- Inserción para Munna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Munna'), 1, 76),
 ((SELECT id FROM pokemones WHERE name = 'Munna'), 2, 25),
@@ -4651,7 +4651,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Munna'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Munna'), 6, 24);
 
--- Inserciï¿½n para Musharna
+-- Inserción para Musharna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Musharna'), 1, 116),
 ((SELECT id FROM pokemones WHERE name = 'Musharna'), 2, 55),
@@ -4660,7 +4660,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Musharna'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Musharna'), 6, 29);
 
--- Inserciï¿½n para Pidove
+-- Inserción para Pidove
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidove'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Pidove'), 2, 55),
@@ -4669,7 +4669,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pidove'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Pidove'), 6, 43);
 
--- Inserciï¿½n para Tranquill
+-- Inserción para Tranquill
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tranquill'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Tranquill'), 2, 77),
@@ -4678,7 +4678,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tranquill'), 5, 42),
 ((SELECT id FROM pokemones WHERE name = 'Tranquill'), 6, 65);
 
--- Inserciï¿½n para Unfezant
+-- Inserción para Unfezant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Unfezant'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Unfezant'), 2, 115),
@@ -4687,7 +4687,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Unfezant'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Unfezant'), 6, 93);
 
--- Inserciï¿½n para Blitzle
+-- Inserción para Blitzle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blitzle'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Blitzle'), 2, 60),
@@ -4696,7 +4696,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blitzle'), 5, 32),
 ((SELECT id FROM pokemones WHERE name = 'Blitzle'), 6, 76);
 
--- Inserciï¿½n para Zebstrika
+-- Inserción para Zebstrika
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zebstrika'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Zebstrika'), 2, 100),
@@ -4705,7 +4705,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zebstrika'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Zebstrika'), 6, 116);
 
--- Inserciï¿½n para Roggenrola
+-- Inserción para Roggenrola
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roggenrola'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Roggenrola'), 2, 75),
@@ -4714,7 +4714,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roggenrola'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Roggenrola'), 6, 15);
 
--- Inserciï¿½n para Boldore
+-- Inserción para Boldore
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Boldore'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Boldore'), 2, 105),
@@ -4723,7 +4723,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Boldore'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Boldore'), 6, 20);
 
--- Inserciï¿½n para Gigalith
+-- Inserción para Gigalith
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gigalith'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Gigalith'), 2, 135),
@@ -4732,7 +4732,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gigalith'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Gigalith'), 6, 25);
 
--- Inserciï¿½n para Woobat
+-- Inserción para Woobat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Woobat'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Woobat'), 2, 45),
@@ -4741,7 +4741,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Woobat'), 5, 43),
 ((SELECT id FROM pokemones WHERE name = 'Woobat'), 6, 72);
 
--- Inserciï¿½n para Swoobat
+-- Inserción para Swoobat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swoobat'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Swoobat'), 2, 57),
@@ -4750,7 +4750,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swoobat'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Swoobat'), 6, 114);
 
--- Inserciï¿½n para Drilbur
+-- Inserción para Drilbur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drilbur'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Drilbur'), 2, 85),
@@ -4759,7 +4759,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drilbur'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Drilbur'), 6, 68);
 
--- Inserciï¿½n para Excadrill
+-- Inserción para Excadrill
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Excadrill'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Excadrill'), 2, 135),
@@ -4768,7 +4768,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Excadrill'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Excadrill'), 6, 88);
 
--- Inserciï¿½n para Audino
+-- Inserción para Audino
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Audino'), 1, 103),
 ((SELECT id FROM pokemones WHERE name = 'Audino'), 2, 60),
@@ -4777,7 +4777,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Audino'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Audino'), 6, 50);
 
--- Inserciï¿½n para Timburr
+-- Inserción para Timburr
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Timburr'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Timburr'), 2, 80),
@@ -4786,7 +4786,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Timburr'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Timburr'), 6, 35);
 
--- Inserciï¿½n para Gurdurr
+-- Inserción para Gurdurr
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gurdurr'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Gurdurr'), 2, 105),
@@ -4795,7 +4795,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gurdurr'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Gurdurr'), 6, 40);
 
--- Inserciï¿½n para Conkeldurr
+-- Inserción para Conkeldurr
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Conkeldurr'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Conkeldurr'), 2, 140),
@@ -4804,7 +4804,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Conkeldurr'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Conkeldurr'), 6, 45);
 
--- Inserciï¿½n para Tympole
+-- Inserción para Tympole
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tympole'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Tympole'), 2, 50),
@@ -4813,7 +4813,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tympole'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Tympole'), 6, 64);
 
--- Inserciï¿½n para Palpitoad
+-- Inserción para Palpitoad
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palpitoad'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Palpitoad'), 2, 65),
@@ -4822,7 +4822,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palpitoad'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Palpitoad'), 6, 69);
 
--- Inserciï¿½n para Seismitoad
+-- Inserción para Seismitoad
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seismitoad'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Seismitoad'), 2, 95),
@@ -4831,7 +4831,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Seismitoad'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Seismitoad'), 6, 74);
 
--- Inserciï¿½n para Throh
+-- Inserción para Throh
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Throh'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Throh'), 2, 100),
@@ -4840,7 +4840,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Throh'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Throh'), 6, 45);
 
--- Inserciï¿½n para Sawk
+-- Inserción para Sawk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sawk'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Sawk'), 2, 125),
@@ -4849,7 +4849,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sawk'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Sawk'), 6, 85);
 
--- Inserciï¿½n para Sewaddle
+-- Inserción para Sewaddle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sewaddle'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Sewaddle'), 2, 53),
@@ -4858,7 +4858,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sewaddle'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Sewaddle'), 6, 42);
 
--- Inserciï¿½n para Swadloon
+-- Inserción para Swadloon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swadloon'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Swadloon'), 2, 63),
@@ -4867,7 +4867,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swadloon'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Swadloon'), 6, 42);
 
--- Inserciï¿½n para Leavanny
+-- Inserción para Leavanny
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Leavanny'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Leavanny'), 2, 103),
@@ -4876,7 +4876,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Leavanny'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Leavanny'), 6, 92);
 
--- Inserciï¿½n para Venipede
+-- Inserción para Venipede
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venipede'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Venipede'), 2, 45),
@@ -4885,7 +4885,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Venipede'), 5, 39),
 ((SELECT id FROM pokemones WHERE name = 'Venipede'), 6, 57);
 
--- Inserciï¿½n para Whirlipede
+-- Inserción para Whirlipede
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whirlipede'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Whirlipede'), 2, 55),
@@ -4894,7 +4894,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whirlipede'), 5, 79),
 ((SELECT id FROM pokemones WHERE name = 'Whirlipede'), 6, 47);
 
--- Inserciï¿½n para Scolipede
+-- Inserción para Scolipede
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scolipede'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Scolipede'), 2, 100),
@@ -4903,7 +4903,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scolipede'), 5, 69),
 ((SELECT id FROM pokemones WHERE name = 'Scolipede'), 6, 112);
 
--- Inserciï¿½n para Cottonee
+-- Inserción para Cottonee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cottonee'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Cottonee'), 2, 27),
@@ -4912,7 +4912,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cottonee'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Cottonee'), 6, 66);
 
--- Inserciï¿½n para Whimsicott
+-- Inserción para Whimsicott
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whimsicott'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Whimsicott'), 2, 67),
@@ -4921,7 +4921,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Whimsicott'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Whimsicott'), 6, 116);
 
--- Inserciï¿½n para Petilil
+-- Inserción para Petilil
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Petilil'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Petilil'), 2, 35),
@@ -4930,7 +4930,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Petilil'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Petilil'), 6, 30);
 
--- Inserciï¿½n para Lilligant
+-- Inserción para Lilligant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lilligant'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Lilligant'), 2, 60),
@@ -4939,7 +4939,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lilligant'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Lilligant'), 6, 90);
 
--- Inserciï¿½n para Basculin
+-- Inserción para Basculin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Basculin'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Basculin'), 2, 92),
@@ -4948,7 +4948,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Basculin'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Basculin'), 6, 98);
 
--- Inserciï¿½n para Sandile
+-- Inserción para Sandile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandile'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Sandile'), 2, 72),
@@ -4957,7 +4957,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandile'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Sandile'), 6, 65);
 
--- Inserciï¿½n para Krokorok
+-- Inserción para Krokorok
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Krokorok'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Krokorok'), 2, 82),
@@ -4966,7 +4966,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Krokorok'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Krokorok'), 6, 74);
 
--- Inserciï¿½n para Krookodile
+-- Inserción para Krookodile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Krookodile'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Krookodile'), 2, 117),
@@ -4975,7 +4975,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Krookodile'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Krookodile'), 6, 92);
 
--- Inserciï¿½n para Darumaka
+-- Inserción para Darumaka
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Darumaka'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Darumaka'), 2, 90),
@@ -4984,7 +4984,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Darumaka'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Darumaka'), 6, 50);
 
--- Inserciï¿½n para Darmanitan
+-- Inserción para Darmanitan
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Darmanitan'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Darmanitan'), 2, 140),
@@ -4993,7 +4993,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Darmanitan'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Darmanitan'), 6, 95);
 
--- Inserciï¿½n para Maractus
+-- Inserción para Maractus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Maractus'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Maractus'), 2, 86),
@@ -5002,7 +5002,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Maractus'), 5, 67),
 ((SELECT id FROM pokemones WHERE name = 'Maractus'), 6, 60);
 
--- Inserciï¿½n para Dwebble
+-- Inserción para Dwebble
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dwebble'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Dwebble'), 2, 65),
@@ -5011,7 +5011,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dwebble'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Dwebble'), 6, 55);
 
--- Inserciï¿½n para Crustle
+-- Inserción para Crustle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crustle'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Crustle'), 2, 105),
@@ -5020,7 +5020,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crustle'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Crustle'), 6, 45);
 
--- Inserciï¿½n para Scraggy
+-- Inserción para Scraggy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scraggy'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Scraggy'), 2, 75),
@@ -5029,7 +5029,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scraggy'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Scraggy'), 6, 48);
 
--- Inserciï¿½n para Scrafty
+-- Inserción para Scrafty
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scrafty'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Scrafty'), 2, 90),
@@ -5038,7 +5038,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scrafty'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Scrafty'), 6, 58);
 
--- Inserciï¿½n para Sigilyph
+-- Inserción para Sigilyph
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sigilyph'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Sigilyph'), 2, 58),
@@ -5047,7 +5047,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sigilyph'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Sigilyph'), 6, 97);
 
--- Inserciï¿½n para Yamask
+-- Inserción para Yamask
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yamask'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Yamask'), 2, 30),
@@ -5056,7 +5056,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yamask'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Yamask'), 6, 30);
 
--- Inserciï¿½n para Cofagrigus
+-- Inserción para Cofagrigus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cofagrigus'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Cofagrigus'), 2, 50),
@@ -5065,7 +5065,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cofagrigus'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Cofagrigus'), 6, 30);
 
--- Inserciï¿½n para Tirtouga
+-- Inserción para Tirtouga
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tirtouga'), 1, 54),
 ((SELECT id FROM pokemones WHERE name = 'Tirtouga'), 2, 78),
@@ -5074,7 +5074,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tirtouga'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Tirtouga'), 6, 22);
 
--- Inserciï¿½n para Carracosta
+-- Inserción para Carracosta
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carracosta'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Carracosta'), 2, 108),
@@ -5083,7 +5083,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carracosta'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Carracosta'), 6, 32);
 
--- Inserciï¿½n para Archen
+-- Inserción para Archen
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Archen'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Archen'), 2, 112),
@@ -5092,7 +5092,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Archen'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Archen'), 6, 70);
 
--- Inserciï¿½n para Archeops
+-- Inserción para Archeops
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Archeops'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Archeops'), 2, 140),
@@ -5101,7 +5101,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Archeops'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Archeops'), 6, 110);
 
--- Inserciï¿½n para Trubbish
+-- Inserción para Trubbish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trubbish'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Trubbish'), 2, 50),
@@ -5110,7 +5110,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trubbish'), 5, 62),
 ((SELECT id FROM pokemones WHERE name = 'Trubbish'), 6, 65);
 
--- Inserciï¿½n para Garbodor
+-- Inserción para Garbodor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Garbodor'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Garbodor'), 2, 95),
@@ -5119,7 +5119,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Garbodor'), 5, 82),
 ((SELECT id FROM pokemones WHERE name = 'Garbodor'), 6, 75);
 
--- Inserciï¿½n para Zorua
+-- Inserción para Zorua
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zorua'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Zorua'), 2, 65),
@@ -5128,7 +5128,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zorua'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Zorua'), 6, 65);
 
--- Inserciï¿½n para Zoroark
+-- Inserción para Zoroark
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zoroark'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Zoroark'), 2, 105),
@@ -5137,7 +5137,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zoroark'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Zoroark'), 6, 105);
 
--- Inserciï¿½n para Minccino
+-- Inserción para Minccino
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Minccino'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Minccino'), 2, 50),
@@ -5146,7 +5146,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Minccino'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Minccino'), 6, 75);
 
--- Inserciï¿½n para Cinccino
+-- Inserción para Cinccino
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cinccino'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Cinccino'), 2, 95),
@@ -5155,7 +5155,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cinccino'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Cinccino'), 6, 115);
 
--- Inserciï¿½n para Gothita
+-- Inserción para Gothita
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gothita'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Gothita'), 2, 30),
@@ -5164,7 +5164,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gothita'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Gothita'), 6, 45);
 
--- Inserciï¿½n para Gothorita
+-- Inserción para Gothorita
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gothorita'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Gothorita'), 2, 45),
@@ -5173,7 +5173,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gothorita'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Gothorita'), 6, 55);
 
--- Inserciï¿½n para Gothitelle
+-- Inserción para Gothitelle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gothitelle'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Gothitelle'), 2, 55),
@@ -5182,7 +5182,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gothitelle'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Gothitelle'), 6, 65);
 
--- Inserciï¿½n para Solosis
+-- Inserción para Solosis
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Solosis'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Solosis'), 2, 30),
@@ -5191,7 +5191,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Solosis'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Solosis'), 6, 20);
 
--- Inserciï¿½n para Duosion
+-- Inserción para Duosion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Duosion'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Duosion'), 2, 40),
@@ -5200,7 +5200,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Duosion'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Duosion'), 6, 30);
 
--- Inserciï¿½n para Reuniclus
+-- Inserción para Reuniclus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Reuniclus'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Reuniclus'), 2, 65),
@@ -5209,7 +5209,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Reuniclus'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Reuniclus'), 6, 30);
 
--- Inserciï¿½n para Ducklett
+-- Inserción para Ducklett
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ducklett'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Ducklett'), 2, 44),
@@ -5218,7 +5218,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ducklett'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Ducklett'), 6, 55);
 
--- Inserciï¿½n para Swanna
+-- Inserción para Swanna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swanna'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Swanna'), 2, 87),
@@ -5227,7 +5227,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swanna'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Swanna'), 6, 98);
 
--- Inserciï¿½n para Vanillite
+-- Inserción para Vanillite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vanillite'), 1, 36),
 ((SELECT id FROM pokemones WHERE name = 'Vanillite'), 2, 50),
@@ -5236,7 +5236,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vanillite'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Vanillite'), 6, 44);
 
--- Inserciï¿½n para Vanillish
+-- Inserción para Vanillish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vanillish'), 1, 51),
 ((SELECT id FROM pokemones WHERE name = 'Vanillish'), 2, 65),
@@ -5245,7 +5245,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vanillish'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Vanillish'), 6, 59);
 
--- Inserciï¿½n para Vanilluxe
+-- Inserción para Vanilluxe
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vanilluxe'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Vanilluxe'), 2, 95),
@@ -5254,7 +5254,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vanilluxe'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Vanilluxe'), 6, 79);
 
--- Inserciï¿½n para Deerling
+-- Inserción para Deerling
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Deerling'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Deerling'), 2, 60),
@@ -5263,7 +5263,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Deerling'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Deerling'), 6, 75);
 
--- Inserciï¿½n para Sawsbuck
+-- Inserción para Sawsbuck
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sawsbuck'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Sawsbuck'), 2, 100),
@@ -5272,7 +5272,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sawsbuck'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Sawsbuck'), 6, 95);
 
--- Inserciï¿½n para Emolga
+-- Inserción para Emolga
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Emolga'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Emolga'), 2, 75),
@@ -5281,7 +5281,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Emolga'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Emolga'), 6, 103);
 
--- Inserciï¿½n para Karrablast
+-- Inserción para Karrablast
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Karrablast'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Karrablast'), 2, 75),
@@ -5290,7 +5290,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Karrablast'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Karrablast'), 6, 60);
 
--- Inserciï¿½n para Escavalier
+-- Inserción para Escavalier
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Escavalier'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Escavalier'), 2, 135),
@@ -5299,7 +5299,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Escavalier'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Escavalier'), 6, 20);
 
--- Inserciï¿½n para Foongus
+-- Inserción para Foongus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Foongus'), 1, 69),
 ((SELECT id FROM pokemones WHERE name = 'Foongus'), 2, 55),
@@ -5308,7 +5308,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Foongus'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Foongus'), 6, 15);
 
--- Inserciï¿½n para Amoonguss
+-- Inserción para Amoonguss
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Amoonguss'), 1, 114),
 ((SELECT id FROM pokemones WHERE name = 'Amoonguss'), 2, 85),
@@ -5317,7 +5317,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Amoonguss'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Amoonguss'), 6, 30);
 
--- Inserciï¿½n para Frillish
+-- Inserción para Frillish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frillish'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Frillish'), 2, 40),
@@ -5326,7 +5326,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frillish'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Frillish'), 6, 40);
 
--- Inserciï¿½n para Jellicent
+-- Inserción para Jellicent
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jellicent'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Jellicent'), 2, 60),
@@ -5335,7 +5335,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jellicent'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Jellicent'), 6, 60);
 
--- Inserciï¿½n para Alomomola
+-- Inserción para Alomomola
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Alomomola'), 1, 165),
 ((SELECT id FROM pokemones WHERE name = 'Alomomola'), 2, 75),
@@ -5344,7 +5344,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Alomomola'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Alomomola'), 6, 65);
 
--- Inserciï¿½n para Joltik
+-- Inserción para Joltik
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Joltik'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Joltik'), 2, 47),
@@ -5353,7 +5353,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Joltik'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Joltik'), 6, 65);
 
--- Inserciï¿½n para Galvantula
+-- Inserción para Galvantula
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Galvantula'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Galvantula'), 2, 77),
@@ -5362,7 +5362,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Galvantula'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Galvantula'), 6, 108);
 
--- Inserciï¿½n para Ferroseed
+-- Inserción para Ferroseed
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ferroseed'), 1, 44),
 ((SELECT id FROM pokemones WHERE name = 'Ferroseed'), 2, 50),
@@ -5371,7 +5371,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ferroseed'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Ferroseed'), 6, 10);
 
--- Inserciï¿½n para Ferrothorn
+-- Inserción para Ferrothorn
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ferrothorn'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Ferrothorn'), 2, 94),
@@ -5380,7 +5380,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ferrothorn'), 5, 116),
 ((SELECT id FROM pokemones WHERE name = 'Ferrothorn'), 6, 20);
 
--- Inserciï¿½n para Klink
+-- Inserción para Klink
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klink'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Klink'), 2, 55),
@@ -5389,7 +5389,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klink'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Klink'), 6, 30);
 
--- Inserciï¿½n para Klang
+-- Inserción para Klang
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klang'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Klang'), 2, 80),
@@ -5398,7 +5398,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klang'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Klang'), 6, 50);
 
--- Inserciï¿½n para Klinklang
+-- Inserción para Klinklang
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klinklang'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Klinklang'), 2, 100),
@@ -5407,7 +5407,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klinklang'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Klinklang'), 6, 90);
 
--- Inserciï¿½n para Tynamo
+-- Inserción para Tynamo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tynamo'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Tynamo'), 2, 55),
@@ -5416,7 +5416,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tynamo'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Tynamo'), 6, 60);
 
--- Inserciï¿½n para Eelektrik
+-- Inserción para Eelektrik
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eelektrik'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Eelektrik'), 2, 85),
@@ -5425,7 +5425,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eelektrik'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Eelektrik'), 6, 40);
 
--- Inserciï¿½n para Eelektross
+-- Inserción para Eelektross
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eelektross'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Eelektross'), 2, 115),
@@ -5434,7 +5434,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eelektross'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Eelektross'), 6, 50);
 
--- Inserciï¿½n para Elgyem
+-- Inserción para Elgyem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Elgyem'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Elgyem'), 2, 55),
@@ -5443,7 +5443,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Elgyem'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Elgyem'), 6, 30);
 
--- Inserciï¿½n para Beheeyem
+-- Inserción para Beheeyem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beheeyem'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Beheeyem'), 2, 75),
@@ -5452,7 +5452,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beheeyem'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Beheeyem'), 6, 40);
 
--- Inserciï¿½n para Litwick
+-- Inserción para Litwick
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Litwick'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Litwick'), 2, 30),
@@ -5461,7 +5461,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Litwick'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Litwick'), 6, 20);
 
--- Inserciï¿½n para Lampent
+-- Inserción para Lampent
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lampent'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Lampent'), 2, 40),
@@ -5470,7 +5470,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lampent'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Lampent'), 6, 55);
 
--- Inserciï¿½n para Chandelure
+-- Inserción para Chandelure
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chandelure'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Chandelure'), 2, 55),
@@ -5479,7 +5479,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chandelure'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Chandelure'), 6, 80);
 
--- Inserciï¿½n para Axew
+-- Inserción para Axew
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Axew'), 1, 46),
 ((SELECT id FROM pokemones WHERE name = 'Axew'), 2, 87),
@@ -5488,7 +5488,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Axew'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Axew'), 6, 57);
 
--- Inserciï¿½n para Fraxure
+-- Inserción para Fraxure
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fraxure'), 1, 66),
 ((SELECT id FROM pokemones WHERE name = 'Fraxure'), 2, 117),
@@ -5497,7 +5497,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fraxure'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Fraxure'), 6, 67);
 
--- Inserciï¿½n para Haxorus
+-- Inserción para Haxorus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Haxorus'), 1, 76),
 ((SELECT id FROM pokemones WHERE name = 'Haxorus'), 2, 147),
@@ -5506,7 +5506,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Haxorus'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Haxorus'), 6, 97);
 
--- Inserciï¿½n para Cubchoo
+-- Inserción para Cubchoo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cubchoo'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Cubchoo'), 2, 70),
@@ -5515,7 +5515,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cubchoo'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Cubchoo'), 6, 40);
 
--- Inserciï¿½n para Beartic
+-- Inserción para Beartic
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beartic'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Beartic'), 2, 130),
@@ -5524,7 +5524,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Beartic'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Beartic'), 6, 50);
 
--- Inserciï¿½n para Cryogonal
+-- Inserción para Cryogonal
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cryogonal'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Cryogonal'), 2, 50),
@@ -5533,7 +5533,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cryogonal'), 5, 135),
 ((SELECT id FROM pokemones WHERE name = 'Cryogonal'), 6, 105);
 
--- Inserciï¿½n para Shelmet
+-- Inserción para Shelmet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shelmet'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Shelmet'), 2, 40),
@@ -5542,7 +5542,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shelmet'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Shelmet'), 6, 25);
 
--- Inserciï¿½n para Accelgor
+-- Inserción para Accelgor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Accelgor'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Accelgor'), 2, 70),
@@ -5551,7 +5551,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Accelgor'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Accelgor'), 6, 145);
 
--- Inserciï¿½n para Stunfisk
+-- Inserción para Stunfisk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stunfisk'), 1, 109),
 ((SELECT id FROM pokemones WHERE name = 'Stunfisk'), 2, 66),
@@ -5560,7 +5560,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stunfisk'), 5, 99),
 ((SELECT id FROM pokemones WHERE name = 'Stunfisk'), 6, 32);
 
--- Inserciï¿½n para Mienfoo
+-- Inserción para Mienfoo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mienfoo'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Mienfoo'), 2, 85),
@@ -5569,7 +5569,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mienfoo'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Mienfoo'), 6, 65);
 
--- Inserciï¿½n para Mienshao
+-- Inserción para Mienshao
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mienshao'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Mienshao'), 2, 125),
@@ -5578,7 +5578,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mienshao'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Mienshao'), 6, 105);
 
--- Inserciï¿½n para Druddigon
+-- Inserción para Druddigon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Druddigon'), 1, 77),
 ((SELECT id FROM pokemones WHERE name = 'Druddigon'), 2, 120),
@@ -5587,7 +5587,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Druddigon'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Druddigon'), 6, 48);
 
--- Inserciï¿½n para Golett
+-- Inserción para Golett
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golett'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Golett'), 2, 74),
@@ -5596,7 +5596,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golett'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Golett'), 6, 35);
 
--- Inserciï¿½n para Golurk
+-- Inserción para Golurk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golurk'), 1, 89),
 ((SELECT id FROM pokemones WHERE name = 'Golurk'), 2, 124),
@@ -5605,7 +5605,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golurk'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Golurk'), 6, 55);
 
--- Inserciï¿½n para Pawniard
+-- Inserción para Pawniard
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawniard'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Pawniard'), 2, 85),
@@ -5614,7 +5614,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawniard'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Pawniard'), 6, 60);
 
--- Inserciï¿½n para Bisharp
+-- Inserción para Bisharp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bisharp'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Bisharp'), 2, 125),
@@ -5623,7 +5623,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bisharp'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Bisharp'), 6, 70);
 
--- Inserciï¿½n para Bouffalant
+-- Inserción para Bouffalant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bouffalant'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Bouffalant'), 2, 110),
@@ -5632,7 +5632,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bouffalant'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Bouffalant'), 6, 55);
 
--- Inserciï¿½n para Rufflet
+-- Inserción para Rufflet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rufflet'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Rufflet'), 2, 83),
@@ -5641,7 +5641,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rufflet'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Rufflet'), 6, 60);
 
--- Inserciï¿½n para Braviary
+-- Inserción para Braviary
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Braviary'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Braviary'), 2, 123),
@@ -5650,7 +5650,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Braviary'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Braviary'), 6, 80);
 
--- Inserciï¿½n para Vullaby
+-- Inserción para Vullaby
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vullaby'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Vullaby'), 2, 55),
@@ -5659,7 +5659,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vullaby'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Vullaby'), 6, 60);
 
--- Inserciï¿½n para Mandibuzz
+-- Inserción para Mandibuzz
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mandibuzz'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Mandibuzz'), 2, 65),
@@ -5668,7 +5668,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mandibuzz'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Mandibuzz'), 6, 80);
 
--- Inserciï¿½n para Heatmor
+-- Inserción para Heatmor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heatmor'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Heatmor'), 2, 97),
@@ -5677,7 +5677,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heatmor'), 5, 66),
 ((SELECT id FROM pokemones WHERE name = 'Heatmor'), 6, 65);
 
--- Inserciï¿½n para Durant
+-- Inserción para Durant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Durant'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Durant'), 2, 109),
@@ -5686,7 +5686,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Durant'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Durant'), 6, 109);
 
--- Inserciï¿½n para Deino
+-- Inserción para Deino
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Deino'), 1, 52),
 ((SELECT id FROM pokemones WHERE name = 'Deino'), 2, 65),
@@ -5695,7 +5695,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Deino'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Deino'), 6, 38);
 
--- Inserciï¿½n para Zweilous
+-- Inserción para Zweilous
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zweilous'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Zweilous'), 2, 85),
@@ -5704,7 +5704,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zweilous'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Zweilous'), 6, 58);
 
--- Inserciï¿½n para Hydreigon
+-- Inserción para Hydreigon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hydreigon'), 1, 92),
 ((SELECT id FROM pokemones WHERE name = 'Hydreigon'), 2, 105),
@@ -5713,7 +5713,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hydreigon'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Hydreigon'), 6, 98);
 
--- Inserciï¿½n para Larvesta
+-- Inserción para Larvesta
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Larvesta'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Larvesta'), 2, 85),
@@ -5722,7 +5722,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Larvesta'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Larvesta'), 6, 60);
 
--- Inserciï¿½n para Volcarona
+-- Inserción para Volcarona
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Volcarona'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Volcarona'), 2, 60),
@@ -5731,7 +5731,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Volcarona'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Volcarona'), 6, 100);
 
--- Inserciï¿½n para Cobalion
+-- Inserción para Cobalion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cobalion'), 1, 91),
 ((SELECT id FROM pokemones WHERE name = 'Cobalion'), 2, 90),
@@ -5740,7 +5740,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cobalion'), 5, 72),
 ((SELECT id FROM pokemones WHERE name = 'Cobalion'), 6, 108);
 
--- Inserciï¿½n para Terrakion
+-- Inserción para Terrakion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Terrakion'), 1, 91),
 ((SELECT id FROM pokemones WHERE name = 'Terrakion'), 2, 129),
@@ -5749,7 +5749,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Terrakion'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Terrakion'), 6, 108);
 
--- Inserciï¿½n para Virizion
+-- Inserción para Virizion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Virizion'), 1, 91),
 ((SELECT id FROM pokemones WHERE name = 'Virizion'), 2, 90),
@@ -5758,7 +5758,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Virizion'), 5, 129),
 ((SELECT id FROM pokemones WHERE name = 'Virizion'), 6, 108);
 
--- Inserciï¿½n para Tornadus
+-- Inserción para Tornadus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tornadus'), 1, 79),
 ((SELECT id FROM pokemones WHERE name = 'Tornadus'), 2, 115),
@@ -5767,7 +5767,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tornadus'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Tornadus'), 6, 111);
 
--- Inserciï¿½n para Thundurus
+-- Inserción para Thundurus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Thundurus'), 1, 79),
 ((SELECT id FROM pokemones WHERE name = 'Thundurus'), 2, 115),
@@ -5776,7 +5776,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Thundurus'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Thundurus'), 6, 111);
 
--- Inserciï¿½n para Reshiram
+-- Inserción para Reshiram
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Reshiram'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Reshiram'), 2, 120),
@@ -5785,7 +5785,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Reshiram'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Reshiram'), 6, 90);
 
--- Inserciï¿½n para Zekrom
+-- Inserción para Zekrom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zekrom'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Zekrom'), 2, 150),
@@ -5794,7 +5794,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zekrom'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Zekrom'), 6, 90);
 
--- Inserciï¿½n para Landorus
+-- Inserción para Landorus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Landorus'), 1, 89),
 ((SELECT id FROM pokemones WHERE name = 'Landorus'), 2, 125),
@@ -5803,7 +5803,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Landorus'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Landorus'), 6, 101);
 
--- Inserciï¿½n para Kyurem
+-- Inserción para Kyurem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kyurem'), 1, 125),
 ((SELECT id FROM pokemones WHERE name = 'Kyurem'), 2, 130),
@@ -5812,7 +5812,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kyurem'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Kyurem'), 6, 95);
 
--- Inserciï¿½n para Keldeo
+-- Inserción para Keldeo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Keldeo'), 1, 91),
 ((SELECT id FROM pokemones WHERE name = 'Keldeo'), 2, 72),
@@ -5821,7 +5821,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Keldeo'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Keldeo'), 6, 108);
 
--- Inserciï¿½n para Meloetta
+-- Inserción para Meloetta
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meloetta'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Meloetta'), 2, 77),
@@ -5830,7 +5830,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meloetta'), 5, 128),
 ((SELECT id FROM pokemones WHERE name = 'Meloetta'), 6, 90);
 
--- Inserciï¿½n para Genesect
+-- Inserción para Genesect
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Genesect'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Genesect'), 2, 120),
@@ -5839,7 +5839,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Genesect'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Genesect'), 6, 99);
 
--- Inserciï¿½n para Chespin
+-- Inserción para Chespin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chespin'), 1, 56),
 ((SELECT id FROM pokemones WHERE name = 'Chespin'), 2, 61),
@@ -5848,7 +5848,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chespin'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Chespin'), 6, 38);
 
--- Inserciï¿½n para Quilladin
+-- Inserción para Quilladin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quilladin'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Quilladin'), 2, 78),
@@ -5857,7 +5857,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quilladin'), 5, 58),
 ((SELECT id FROM pokemones WHERE name = 'Quilladin'), 6, 57);
 
--- Inserciï¿½n para Chesnaught
+-- Inserción para Chesnaught
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chesnaught'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Chesnaught'), 2, 107),
@@ -5866,7 +5866,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chesnaught'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Chesnaught'), 6, 64);
 
--- Inserciï¿½n para Fennekin
+-- Inserción para Fennekin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fennekin'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Fennekin'), 2, 45),
@@ -5875,7 +5875,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fennekin'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Fennekin'), 6, 60);
 
--- Inserciï¿½n para Braixen
+-- Inserción para Braixen
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Braixen'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Braixen'), 2, 59),
@@ -5884,7 +5884,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Braixen'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Braixen'), 6, 73);
 
--- Inserciï¿½n para Delphox
+-- Inserción para Delphox
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Delphox'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Delphox'), 2, 69),
@@ -5893,7 +5893,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Delphox'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Delphox'), 6, 104);
 
--- Inserciï¿½n para Froakie
+-- Inserción para Froakie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Froakie'), 1, 41),
 ((SELECT id FROM pokemones WHERE name = 'Froakie'), 2, 56),
@@ -5902,7 +5902,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Froakie'), 5, 44),
 ((SELECT id FROM pokemones WHERE name = 'Froakie'), 6, 71);
 
--- Inserciï¿½n para Frogadier
+-- Inserción para Frogadier
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frogadier'), 1, 54),
 ((SELECT id FROM pokemones WHERE name = 'Frogadier'), 2, 63),
@@ -5911,7 +5911,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frogadier'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Frogadier'), 6, 97);
 
--- Inserciï¿½n para Greninja
+-- Inserción para Greninja
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Greninja'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Greninja'), 2, 95),
@@ -5920,7 +5920,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Greninja'), 5, 71),
 ((SELECT id FROM pokemones WHERE name = 'Greninja'), 6, 122);
 
--- Inserciï¿½n para Bunnelby
+-- Inserción para Bunnelby
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bunnelby'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Bunnelby'), 2, 36),
@@ -5929,7 +5929,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bunnelby'), 5, 36),
 ((SELECT id FROM pokemones WHERE name = 'Bunnelby'), 6, 57);
 
--- Inserciï¿½n para Diggersby
+-- Inserción para Diggersby
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Diggersby'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Diggersby'), 2, 56),
@@ -5938,7 +5938,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Diggersby'), 5, 77),
 ((SELECT id FROM pokemones WHERE name = 'Diggersby'), 6, 78);
 
--- Inserciï¿½n para Fletchling
+-- Inserción para Fletchling
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fletchling'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Fletchling'), 2, 50),
@@ -5947,7 +5947,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fletchling'), 5, 38),
 ((SELECT id FROM pokemones WHERE name = 'Fletchling'), 6, 62);
 
--- Inserciï¿½n para Fletchinder
+-- Inserción para Fletchinder
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fletchinder'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Fletchinder'), 2, 73),
@@ -5956,7 +5956,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fletchinder'), 5, 52),
 ((SELECT id FROM pokemones WHERE name = 'Fletchinder'), 6, 84);
 
--- Inserciï¿½n para Talonflame
+-- Inserción para Talonflame
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Talonflame'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Talonflame'), 2, 81),
@@ -5965,7 +5965,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Talonflame'), 5, 69),
 ((SELECT id FROM pokemones WHERE name = 'Talonflame'), 6, 126);
 
--- Inserciï¿½n para Scatterbug
+-- Inserción para Scatterbug
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scatterbug'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Scatterbug'), 2, 35),
@@ -5974,7 +5974,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scatterbug'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Scatterbug'), 6, 35);
 
--- Inserciï¿½n para Spewpa
+-- Inserción para Spewpa
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spewpa'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Spewpa'), 2, 22),
@@ -5983,7 +5983,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spewpa'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Spewpa'), 6, 29);
 
--- Inserciï¿½n para Vivillon
+-- Inserción para Vivillon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vivillon'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Vivillon'), 2, 52),
@@ -5992,7 +5992,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vivillon'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Vivillon'), 6, 89);
 
--- Inserciï¿½n para Litleo
+-- Inserción para Litleo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Litleo'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Litleo'), 2, 50),
@@ -6001,7 +6001,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Litleo'), 5, 54),
 ((SELECT id FROM pokemones WHERE name = 'Litleo'), 6, 72);
 
--- Inserciï¿½n para Pyroar
+-- Inserción para Pyroar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pyroar'), 1, 86),
 ((SELECT id FROM pokemones WHERE name = 'Pyroar'), 2, 68),
@@ -6010,7 +6010,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pyroar'), 5, 66),
 ((SELECT id FROM pokemones WHERE name = 'Pyroar'), 6, 106);
 
--- Inserciï¿½n para Flabebe
+-- Inserción para Flabebe
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flabebe'), 1, 44),
 ((SELECT id FROM pokemones WHERE name = 'Flabebe'), 2, 38),
@@ -6019,7 +6019,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flabebe'), 5, 79),
 ((SELECT id FROM pokemones WHERE name = 'Flabebe'), 6, 42);
 
--- Inserciï¿½n para Floette
+-- Inserción para Floette
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Floette'), 1, 54),
 ((SELECT id FROM pokemones WHERE name = 'Floette'), 2, 45),
@@ -6028,7 +6028,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Floette'), 5, 98),
 ((SELECT id FROM pokemones WHERE name = 'Floette'), 6, 52);
 
--- Inserciï¿½n para Florges
+-- Inserción para Florges
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Florges'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Florges'), 2, 65),
@@ -6037,7 +6037,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Florges'), 5, 154),
 ((SELECT id FROM pokemones WHERE name = 'Florges'), 6, 75);
 
--- Inserciï¿½n para Skiddo
+-- Inserción para Skiddo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skiddo'), 1, 66),
 ((SELECT id FROM pokemones WHERE name = 'Skiddo'), 2, 65),
@@ -6046,7 +6046,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skiddo'), 5, 57),
 ((SELECT id FROM pokemones WHERE name = 'Skiddo'), 6, 52);
 
--- Inserciï¿½n para Gogoat
+-- Inserción para Gogoat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gogoat'), 1, 123),
 ((SELECT id FROM pokemones WHERE name = 'Gogoat'), 2, 100),
@@ -6055,7 +6055,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gogoat'), 5, 81),
 ((SELECT id FROM pokemones WHERE name = 'Gogoat'), 6, 68);
 
--- Inserciï¿½n para Pancham
+-- Inserción para Pancham
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pancham'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Pancham'), 2, 82),
@@ -6064,7 +6064,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pancham'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Pancham'), 6, 43);
 
--- Inserciï¿½n para Pangoro
+-- Inserción para Pangoro
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pangoro'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Pangoro'), 2, 124),
@@ -6073,7 +6073,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pangoro'), 5, 71),
 ((SELECT id FROM pokemones WHERE name = 'Pangoro'), 6, 58);
 
--- Inserciï¿½n para Furfrou
+-- Inserción para Furfrou
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Furfrou'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Furfrou'), 2, 80),
@@ -6082,7 +6082,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Furfrou'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Furfrou'), 6, 102);
 
--- Inserciï¿½n para Espurr
+-- Inserción para Espurr
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Espurr'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Espurr'), 2, 48),
@@ -6091,7 +6091,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Espurr'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Espurr'), 6, 68);
 
--- Inserciï¿½n para Meowstic
+-- Inserción para Meowstic
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meowstic'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Meowstic'), 2, 48),
@@ -6100,7 +6100,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meowstic'), 5, 81),
 ((SELECT id FROM pokemones WHERE name = 'Meowstic'), 6, 104);
 
--- Inserciï¿½n para Honedge
+-- Inserción para Honedge
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Honedge'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Honedge'), 2, 80),
@@ -6109,7 +6109,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Honedge'), 5, 37),
 ((SELECT id FROM pokemones WHERE name = 'Honedge'), 6, 28);
 
--- Inserciï¿½n para Doublade
+-- Inserción para Doublade
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Doublade'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Doublade'), 2, 110),
@@ -6118,7 +6118,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Doublade'), 5, 49),
 ((SELECT id FROM pokemones WHERE name = 'Doublade'), 6, 35);
 
--- Inserciï¿½n para Aegislash
+-- Inserción para Aegislash
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aegislash'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Aegislash'), 2, 50),
@@ -6127,7 +6127,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aegislash'), 5, 140),
 ((SELECT id FROM pokemones WHERE name = 'Aegislash'), 6, 60);
 
--- Inserciï¿½n para Spritzee
+-- Inserción para Spritzee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spritzee'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Spritzee'), 2, 52),
@@ -6136,7 +6136,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spritzee'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Spritzee'), 6, 23);
 
--- Inserciï¿½n para Aromatisse
+-- Inserción para Aromatisse
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aromatisse'), 1, 101),
 ((SELECT id FROM pokemones WHERE name = 'Aromatisse'), 2, 72),
@@ -6145,7 +6145,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aromatisse'), 5, 89),
 ((SELECT id FROM pokemones WHERE name = 'Aromatisse'), 6, 29);
 
--- Inserciï¿½n para Swirlix
+-- Inserción para Swirlix
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swirlix'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Swirlix'), 2, 48),
@@ -6154,7 +6154,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Swirlix'), 5, 57),
 ((SELECT id FROM pokemones WHERE name = 'Swirlix'), 6, 49);
 
--- Inserciï¿½n para Slurpuff
+-- Inserción para Slurpuff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slurpuff'), 1, 82),
 ((SELECT id FROM pokemones WHERE name = 'Slurpuff'), 2, 80),
@@ -6163,7 +6163,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slurpuff'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Slurpuff'), 6, 72);
 
--- Inserciï¿½n para Inkay
+-- Inserción para Inkay
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Inkay'), 1, 53),
 ((SELECT id FROM pokemones WHERE name = 'Inkay'), 2, 54),
@@ -6172,7 +6172,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Inkay'), 5, 46),
 ((SELECT id FROM pokemones WHERE name = 'Inkay'), 6, 45);
 
--- Inserciï¿½n para Malamar
+-- Inserción para Malamar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Malamar'), 1, 86),
 ((SELECT id FROM pokemones WHERE name = 'Malamar'), 2, 92),
@@ -6181,7 +6181,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Malamar'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Malamar'), 6, 73);
 
--- Inserciï¿½n para Binacle
+-- Inserción para Binacle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Binacle'), 1, 42),
 ((SELECT id FROM pokemones WHERE name = 'Binacle'), 2, 52),
@@ -6190,7 +6190,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Binacle'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Binacle'), 6, 50);
 
--- Inserciï¿½n para Barbaracle
+-- Inserción para Barbaracle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Barbaracle'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Barbaracle'), 2, 105),
@@ -6199,7 +6199,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Barbaracle'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Barbaracle'), 6, 68);
 
--- Inserciï¿½n para Skrelp
+-- Inserción para Skrelp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skrelp'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Skrelp'), 2, 60),
@@ -6208,7 +6208,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skrelp'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Skrelp'), 6, 30);
 
--- Inserciï¿½n para Dragalge
+-- Inserción para Dragalge
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragalge'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Dragalge'), 2, 75),
@@ -6217,7 +6217,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragalge'), 5, 123),
 ((SELECT id FROM pokemones WHERE name = 'Dragalge'), 6, 44);
 
--- Inserciï¿½n para Clauncher
+-- Inserción para Clauncher
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clauncher'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Clauncher'), 2, 53),
@@ -6226,7 +6226,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clauncher'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Clauncher'), 6, 44);
 
--- Inserciï¿½n para Clawitzer
+-- Inserción para Clawitzer
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clawitzer'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Clawitzer'), 2, 73),
@@ -6235,7 +6235,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clawitzer'), 5, 89),
 ((SELECT id FROM pokemones WHERE name = 'Clawitzer'), 6, 59);
 
--- Inserciï¿½n para Helioptile
+-- Inserción para Helioptile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Helioptile'), 1, 44),
 ((SELECT id FROM pokemones WHERE name = 'Helioptile'), 2, 38),
@@ -6244,7 +6244,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Helioptile'), 5, 43),
 ((SELECT id FROM pokemones WHERE name = 'Helioptile'), 6, 70);
 
--- Inserciï¿½n para Heliolisk
+-- Inserción para Heliolisk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heliolisk'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Heliolisk'), 2, 55),
@@ -6253,7 +6253,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Heliolisk'), 5, 94),
 ((SELECT id FROM pokemones WHERE name = 'Heliolisk'), 6, 109);
 
--- Inserciï¿½n para Tyrunt
+-- Inserción para Tyrunt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyrunt'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Tyrunt'), 2, 89),
@@ -6262,7 +6262,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyrunt'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Tyrunt'), 6, 48);
 
--- Inserciï¿½n para Tyrantrum
+-- Inserción para Tyrantrum
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyrantrum'), 1, 82),
 ((SELECT id FROM pokemones WHERE name = 'Tyrantrum'), 2, 121),
@@ -6271,7 +6271,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tyrantrum'), 5, 59),
 ((SELECT id FROM pokemones WHERE name = 'Tyrantrum'), 6, 71);
 
--- Inserciï¿½n para Amaura
+-- Inserción para Amaura
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Amaura'), 1, 77),
 ((SELECT id FROM pokemones WHERE name = 'Amaura'), 2, 59),
@@ -6280,7 +6280,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Amaura'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Amaura'), 6, 46);
 
--- Inserciï¿½n para Aurorus
+-- Inserción para Aurorus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aurorus'), 1, 123),
 ((SELECT id FROM pokemones WHERE name = 'Aurorus'), 2, 77),
@@ -6289,7 +6289,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Aurorus'), 5, 92),
 ((SELECT id FROM pokemones WHERE name = 'Aurorus'), 6, 58);
 
--- Inserciï¿½n para Sylveon
+-- Inserción para Sylveon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sylveon'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Sylveon'), 2, 65),
@@ -6298,7 +6298,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sylveon'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Sylveon'), 6, 60);
 
--- Inserciï¿½n para Hawlucha
+-- Inserción para Hawlucha
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hawlucha'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Hawlucha'), 2, 92),
@@ -6307,7 +6307,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hawlucha'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Hawlucha'), 6, 118);
 
--- Inserciï¿½n para Dedenne
+-- Inserción para Dedenne
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dedenne'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Dedenne'), 2, 58),
@@ -6316,7 +6316,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dedenne'), 5, 67),
 ((SELECT id FROM pokemones WHERE name = 'Dedenne'), 6, 101);
 
--- Inserciï¿½n para Carbink
+-- Inserción para Carbink
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carbink'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Carbink'), 2, 50),
@@ -6325,7 +6325,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carbink'), 5, 150),
 ((SELECT id FROM pokemones WHERE name = 'Carbink'), 6, 50);
 
--- Inserciï¿½n para Goomy
+-- Inserción para Goomy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Goomy'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Goomy'), 2, 50),
@@ -6334,7 +6334,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Goomy'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Goomy'), 6, 40);
 
--- Inserciï¿½n para Sliggoo
+-- Inserción para Sliggoo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sliggoo'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Sliggoo'), 2, 75),
@@ -6343,7 +6343,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sliggoo'), 5, 113),
 ((SELECT id FROM pokemones WHERE name = 'Sliggoo'), 6, 60);
 
--- Inserciï¿½n para Goodra
+-- Inserción para Goodra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Goodra'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Goodra'), 2, 100),
@@ -6352,7 +6352,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Goodra'), 5, 150),
 ((SELECT id FROM pokemones WHERE name = 'Goodra'), 6, 80);
 
--- Inserciï¿½n para Klefki
+-- Inserción para Klefki
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klefki'), 1, 57),
 ((SELECT id FROM pokemones WHERE name = 'Klefki'), 2, 80),
@@ -6361,7 +6361,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klefki'), 5, 87),
 ((SELECT id FROM pokemones WHERE name = 'Klefki'), 6, 75);
 
--- Inserciï¿½n para Phantump
+-- Inserción para Phantump
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Phantump'), 1, 43),
 ((SELECT id FROM pokemones WHERE name = 'Phantump'), 2, 70),
@@ -6370,7 +6370,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Phantump'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Phantump'), 6, 38);
 
--- Inserciï¿½n para Trevenant
+-- Inserción para Trevenant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trevenant'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Trevenant'), 2, 110),
@@ -6379,7 +6379,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trevenant'), 5, 82),
 ((SELECT id FROM pokemones WHERE name = 'Trevenant'), 6, 56);
 
--- Inserciï¿½n para Pumpkaboo
+-- Inserción para Pumpkaboo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pumpkaboo'), 1, 49),
 ((SELECT id FROM pokemones WHERE name = 'Pumpkaboo'), 2, 66),
@@ -6388,7 +6388,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pumpkaboo'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Pumpkaboo'), 6, 51);
 
--- Inserciï¿½n para Gourgeist
+-- Inserción para Gourgeist
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gourgeist'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Gourgeist'), 2, 90),
@@ -6397,7 +6397,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gourgeist'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Gourgeist'), 6, 84);
 
--- Inserciï¿½n para Bergmite
+-- Inserción para Bergmite
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bergmite'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Bergmite'), 2, 69),
@@ -6406,7 +6406,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bergmite'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Bergmite'), 6, 28);
 
--- Inserciï¿½n para Avalugg
+-- Inserción para Avalugg
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Avalugg'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Avalugg'), 2, 117),
@@ -6415,7 +6415,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Avalugg'), 5, 46),
 ((SELECT id FROM pokemones WHERE name = 'Avalugg'), 6, 28);
 
--- Inserciï¿½n para Noibat
+-- Inserción para Noibat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Noibat'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Noibat'), 2, 30),
@@ -6424,7 +6424,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Noibat'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Noibat'), 6, 55);
 
--- Inserciï¿½n para Noivern
+-- Inserción para Noivern
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Noivern'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Noivern'), 2, 70),
@@ -6433,7 +6433,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Noivern'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Noivern'), 6, 123);
 
--- Inserciï¿½n para Xerneas
+-- Inserción para Xerneas
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Xerneas'), 1, 126),
 ((SELECT id FROM pokemones WHERE name = 'Xerneas'), 2, 131),
@@ -6442,7 +6442,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Xerneas'), 5, 98),
 ((SELECT id FROM pokemones WHERE name = 'Xerneas'), 6, 99);
 
--- Inserciï¿½n para Yveltal
+-- Inserción para Yveltal
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yveltal'), 1, 126),
 ((SELECT id FROM pokemones WHERE name = 'Yveltal'), 2, 131),
@@ -6451,7 +6451,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yveltal'), 5, 98),
 ((SELECT id FROM pokemones WHERE name = 'Yveltal'), 6, 99);
 
--- Inserciï¿½n para Zygarde
+-- Inserción para Zygarde
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zygarde'), 1, 108),
 ((SELECT id FROM pokemones WHERE name = 'Zygarde'), 2, 100),
@@ -6460,7 +6460,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zygarde'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Zygarde'), 6, 95);
 
--- Inserciï¿½n para Diancie
+-- Inserción para Diancie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Diancie'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Diancie'), 2, 100),
@@ -6469,7 +6469,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Diancie'), 5, 150),
 ((SELECT id FROM pokemones WHERE name = 'Diancie'), 6, 50);
 
--- Inserciï¿½n para Hoopa
+-- Inserción para Hoopa
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hoopa'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Hoopa'), 2, 110),
@@ -6478,7 +6478,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hoopa'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Hoopa'), 6, 70);
 
--- Inserciï¿½n para Volcanion
+-- Inserción para Volcanion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Volcanion'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Volcanion'), 2, 110),
@@ -6487,7 +6487,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Volcanion'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Volcanion'), 6, 70);
 
--- Inserciï¿½n para Rowlet
+-- Inserción para Rowlet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rowlet'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Rowlet'), 2, 55),
@@ -6496,7 +6496,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rowlet'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Rowlet'), 6, 42);
 
--- Inserciï¿½n para Dartrix
+-- Inserción para Dartrix
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dartrix'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Dartrix'), 2, 75),
@@ -6505,7 +6505,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dartrix'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Dartrix'), 6, 52);
 
--- Inserciï¿½n para Decidueye
+-- Inserción para Decidueye
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Decidueye'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Decidueye'), 2, 107),
@@ -6514,7 +6514,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Decidueye'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Decidueye'), 6, 70);
 
--- Inserciï¿½n para Litten
+-- Inserción para Litten
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Litten'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Litten'), 2, 65),
@@ -6523,7 +6523,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Litten'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Litten'), 6, 70);
 
--- Inserciï¿½n para Torracat
+-- Inserción para Torracat
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torracat'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Torracat'), 2, 85),
@@ -6532,7 +6532,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Torracat'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Torracat'), 6, 90);
 
--- Inserciï¿½n para Incineroar
+-- Inserción para Incineroar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Incineroar'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Incineroar'), 2, 115),
@@ -6541,7 +6541,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Incineroar'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Incineroar'), 6, 60);
 
--- Inserciï¿½n para Popplio
+-- Inserción para Popplio
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Popplio'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Popplio'), 2, 54),
@@ -6550,7 +6550,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Popplio'), 5, 56),
 ((SELECT id FROM pokemones WHERE name = 'Popplio'), 6, 40);
 
--- Inserciï¿½n para Brionne
+-- Inserción para Brionne
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Brionne'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Brionne'), 2, 69),
@@ -6559,7 +6559,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Brionne'), 5, 81),
 ((SELECT id FROM pokemones WHERE name = 'Brionne'), 6, 50);
 
--- Inserciï¿½n para Primarina
+-- Inserción para Primarina
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Primarina'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Primarina'), 2, 74),
@@ -6568,7 +6568,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Primarina'), 5, 116),
 ((SELECT id FROM pokemones WHERE name = 'Primarina'), 6, 60);
 
--- Inserciï¿½n para Pikipek
+-- Inserción para Pikipek
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pikipek'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Pikipek'), 2, 75),
@@ -6577,7 +6577,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pikipek'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Pikipek'), 6, 65);
 
--- Inserciï¿½n para Trumbeak
+-- Inserción para Trumbeak
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trumbeak'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Trumbeak'), 2, 85),
@@ -6586,7 +6586,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Trumbeak'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Trumbeak'), 6, 75);
 
--- Inserciï¿½n para Toucannon
+-- Inserción para Toucannon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toucannon'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Toucannon'), 2, 120),
@@ -6595,7 +6595,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toucannon'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Toucannon'), 6, 60);
 
--- Inserciï¿½n para Yungoos
+-- Inserción para Yungoos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yungoos'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Yungoos'), 2, 70),
@@ -6604,7 +6604,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yungoos'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Yungoos'), 6, 45);
 
--- Inserciï¿½n para Gumshoos
+-- Inserción para Gumshoos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gumshoos'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Gumshoos'), 2, 110),
@@ -6613,7 +6613,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gumshoos'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Gumshoos'), 6, 45);
 
--- Inserciï¿½n para Grubbin
+-- Inserción para Grubbin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grubbin'), 1, 47),
 ((SELECT id FROM pokemones WHERE name = 'Grubbin'), 2, 62),
@@ -6622,7 +6622,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grubbin'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Grubbin'), 6, 46);
 
--- Inserciï¿½n para Charjabug
+-- Inserción para Charjabug
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charjabug'), 1, 57),
 ((SELECT id FROM pokemones WHERE name = 'Charjabug'), 2, 82),
@@ -6631,7 +6631,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charjabug'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Charjabug'), 6, 36);
 
--- Inserciï¿½n para Vikavolt
+-- Inserción para Vikavolt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vikavolt'), 1, 77),
 ((SELECT id FROM pokemones WHERE name = 'Vikavolt'), 2, 70),
@@ -6640,7 +6640,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Vikavolt'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Vikavolt'), 6, 43);
 
--- Inserciï¿½n para Crabrawler
+-- Inserción para Crabrawler
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crabrawler'), 1, 47),
 ((SELECT id FROM pokemones WHERE name = 'Crabrawler'), 2, 82),
@@ -6649,7 +6649,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crabrawler'), 5, 47),
 ((SELECT id FROM pokemones WHERE name = 'Crabrawler'), 6, 63);
 
--- Inserciï¿½n para Crabominable
+-- Inserción para Crabominable
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crabominable'), 1, 97),
 ((SELECT id FROM pokemones WHERE name = 'Crabominable'), 2, 132),
@@ -6658,7 +6658,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crabominable'), 5, 67),
 ((SELECT id FROM pokemones WHERE name = 'Crabominable'), 6, 43);
 
--- Inserciï¿½n para Oricorio
+-- Inserción para Oricorio
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oricorio'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Oricorio'), 2, 70),
@@ -6667,7 +6667,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oricorio'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Oricorio'), 6, 93);
 
--- Inserciï¿½n para Cutiefly
+-- Inserción para Cutiefly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cutiefly'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Cutiefly'), 2, 45),
@@ -6676,7 +6676,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cutiefly'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Cutiefly'), 6, 84);
 
--- Inserciï¿½n para Ribombee
+-- Inserción para Ribombee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ribombee'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Ribombee'), 2, 55),
@@ -6685,7 +6685,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ribombee'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Ribombee'), 6, 124);
 
--- Inserciï¿½n para Rockruff
+-- Inserción para Rockruff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rockruff'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Rockruff'), 2, 65),
@@ -6694,7 +6694,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rockruff'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Rockruff'), 6, 60);
 
--- Inserciï¿½n para Lycanroc
+-- Inserción para Lycanroc
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lycanroc'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Lycanroc'), 2, 115),
@@ -6703,7 +6703,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lycanroc'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Lycanroc'), 6, 112);
 
--- Inserciï¿½n para Wishiwashi
+-- Inserción para Wishiwashi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wishiwashi'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Wishiwashi'), 2, 20),
@@ -6712,7 +6712,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wishiwashi'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Wishiwashi'), 6, 40);
 
--- Inserciï¿½n para Mareanie
+-- Inserción para Mareanie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mareanie'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Mareanie'), 2, 53),
@@ -6721,7 +6721,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mareanie'), 5, 52),
 ((SELECT id FROM pokemones WHERE name = 'Mareanie'), 6, 45);
 
--- Inserciï¿½n para Toxapex
+-- Inserción para Toxapex
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxapex'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Toxapex'), 2, 63),
@@ -6730,7 +6730,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxapex'), 5, 142),
 ((SELECT id FROM pokemones WHERE name = 'Toxapex'), 6, 35);
 
--- Inserciï¿½n para Mudbray
+-- Inserción para Mudbray
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mudbray'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Mudbray'), 2, 100),
@@ -6739,7 +6739,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mudbray'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Mudbray'), 6, 45);
 
--- Inserciï¿½n para Mudsdale
+-- Inserción para Mudsdale
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mudsdale'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Mudsdale'), 2, 125),
@@ -6748,7 +6748,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mudsdale'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Mudsdale'), 6, 35);
 
--- Inserciï¿½n para Dewpider
+-- Inserción para Dewpider
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dewpider'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Dewpider'), 2, 40),
@@ -6757,7 +6757,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dewpider'), 5, 72),
 ((SELECT id FROM pokemones WHERE name = 'Dewpider'), 6, 27);
 
--- Inserciï¿½n para Araquanid
+-- Inserción para Araquanid
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Araquanid'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Araquanid'), 2, 70),
@@ -6766,7 +6766,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Araquanid'), 5, 132),
 ((SELECT id FROM pokemones WHERE name = 'Araquanid'), 6, 42);
 
--- Inserciï¿½n para Fomantis
+-- Inserción para Fomantis
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fomantis'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Fomantis'), 2, 55),
@@ -6775,7 +6775,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fomantis'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Fomantis'), 6, 35);
 
--- Inserciï¿½n para Lurantis
+-- Inserción para Lurantis
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lurantis'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Lurantis'), 2, 105),
@@ -6784,7 +6784,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lurantis'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Lurantis'), 6, 45);
 
--- Inserciï¿½n para Morelull
+-- Inserción para Morelull
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Morelull'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Morelull'), 2, 35),
@@ -6793,7 +6793,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Morelull'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Morelull'), 6, 15);
 
--- Inserciï¿½n para Shiinotic
+-- Inserción para Shiinotic
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shiinotic'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Shiinotic'), 2, 45),
@@ -6802,7 +6802,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shiinotic'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Shiinotic'), 6, 30);
 
--- Inserciï¿½n para Salandit
+-- Inserción para Salandit
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Salandit'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Salandit'), 2, 44),
@@ -6811,7 +6811,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Salandit'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Salandit'), 6, 77);
 
--- Inserciï¿½n para Salazzle
+-- Inserción para Salazzle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Salazzle'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Salazzle'), 2, 64),
@@ -6820,7 +6820,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Salazzle'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Salazzle'), 6, 117);
 
--- Inserciï¿½n para Stufful
+-- Inserción para Stufful
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stufful'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Stufful'), 2, 75),
@@ -6829,7 +6829,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stufful'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Stufful'), 6, 50);
 
--- Inserciï¿½n para Bewear
+-- Inserción para Bewear
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bewear'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Bewear'), 2, 125),
@@ -6838,7 +6838,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bewear'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Bewear'), 6, 60);
 
--- Inserciï¿½n para Bounsweet
+-- Inserción para Bounsweet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bounsweet'), 1, 42),
 ((SELECT id FROM pokemones WHERE name = 'Bounsweet'), 2, 30),
@@ -6847,7 +6847,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bounsweet'), 5, 38),
 ((SELECT id FROM pokemones WHERE name = 'Bounsweet'), 6, 32);
 
--- Inserciï¿½n para Steenee
+-- Inserción para Steenee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Steenee'), 1, 52),
 ((SELECT id FROM pokemones WHERE name = 'Steenee'), 2, 40),
@@ -6856,7 +6856,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Steenee'), 5, 48),
 ((SELECT id FROM pokemones WHERE name = 'Steenee'), 6, 62);
 
--- Inserciï¿½n para Tsareena
+-- Inserción para Tsareena
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tsareena'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Tsareena'), 2, 120),
@@ -6865,7 +6865,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tsareena'), 5, 98),
 ((SELECT id FROM pokemones WHERE name = 'Tsareena'), 6, 72);
 
--- Inserciï¿½n para Comfey
+-- Inserción para Comfey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Comfey'), 1, 51),
 ((SELECT id FROM pokemones WHERE name = 'Comfey'), 2, 52),
@@ -6874,7 +6874,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Comfey'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Comfey'), 6, 100);
 
--- Inserciï¿½n para Oranguru
+-- Inserción para Oranguru
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oranguru'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Oranguru'), 2, 60),
@@ -6883,7 +6883,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oranguru'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Oranguru'), 6, 60);
 
--- Inserciï¿½n para Passimian
+-- Inserción para Passimian
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Passimian'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Passimian'), 2, 120),
@@ -6892,7 +6892,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Passimian'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Passimian'), 6, 80);
 
--- Inserciï¿½n para Wimpod
+-- Inserción para Wimpod
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wimpod'), 1, 25),
 ((SELECT id FROM pokemones WHERE name = 'Wimpod'), 2, 35),
@@ -6901,7 +6901,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wimpod'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Wimpod'), 6, 80);
 
--- Inserciï¿½n para Golisopod
+-- Inserción para Golisopod
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golisopod'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Golisopod'), 2, 125),
@@ -6910,7 +6910,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Golisopod'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Golisopod'), 6, 40);
 
--- Inserciï¿½n para Sandygast
+-- Inserción para Sandygast
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandygast'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Sandygast'), 2, 55),
@@ -6919,7 +6919,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandygast'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Sandygast'), 6, 15);
 
--- Inserciï¿½n para Palossand
+-- Inserción para Palossand
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palossand'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Palossand'), 2, 75),
@@ -6928,7 +6928,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palossand'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Palossand'), 6, 35);
 
--- Inserciï¿½n para Pyukumuku
+-- Inserción para Pyukumuku
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pyukumuku'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Pyukumuku'), 2, 60),
@@ -6937,7 +6937,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pyukumuku'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Pyukumuku'), 6, 5);
 
--- Inserciï¿½n para Type-null
+-- Inserción para Type-null
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Type-null'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Type-null'), 2, 95),
@@ -6946,7 +6946,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Type-null'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Type-null'), 6, 59);
 
--- Inserciï¿½n para Silvally
+-- Inserción para Silvally
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Silvally'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Silvally'), 2, 95),
@@ -6955,7 +6955,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Silvally'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Silvally'), 6, 95);
 
--- Inserciï¿½n para Minior
+-- Inserción para Minior
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Minior'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Minior'), 2, 60),
@@ -6964,7 +6964,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Minior'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Minior'), 6, 60);
 
--- Inserciï¿½n para Komala
+-- Inserción para Komala
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Komala'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Komala'), 2, 115),
@@ -6973,7 +6973,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Komala'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Komala'), 6, 65);
 
--- Inserciï¿½n para Turtonator
+-- Inserción para Turtonator
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Turtonator'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Turtonator'), 2, 78),
@@ -6982,7 +6982,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Turtonator'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Turtonator'), 6, 36);
 
--- Inserciï¿½n para Togedemaru
+-- Inserción para Togedemaru
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togedemaru'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Togedemaru'), 2, 98),
@@ -6991,7 +6991,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Togedemaru'), 5, 73),
 ((SELECT id FROM pokemones WHERE name = 'Togedemaru'), 6, 96);
 
--- Inserciï¿½n para Mimikyu
+-- Inserción para Mimikyu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mimikyu'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Mimikyu'), 2, 90),
@@ -7000,7 +7000,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mimikyu'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Mimikyu'), 6, 96);
 
--- Inserciï¿½n para Bruxish
+-- Inserción para Bruxish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bruxish'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Bruxish'), 2, 105),
@@ -7009,7 +7009,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bruxish'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Bruxish'), 6, 92);
 
--- Inserciï¿½n para Drampa
+-- Inserción para Drampa
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drampa'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Drampa'), 2, 60),
@@ -7018,7 +7018,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drampa'), 5, 91),
 ((SELECT id FROM pokemones WHERE name = 'Drampa'), 6, 36);
 
--- Inserciï¿½n para Dhelmise
+-- Inserción para Dhelmise
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dhelmise'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Dhelmise'), 2, 131),
@@ -7027,7 +7027,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dhelmise'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dhelmise'), 6, 40);
 
--- Inserciï¿½n para Jangmo-o
+-- Inserción para Jangmo-o
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jangmo-o'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Jangmo-o'), 2, 55),
@@ -7036,7 +7036,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Jangmo-o'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Jangmo-o'), 6, 45);
 
--- Inserciï¿½n para Hakamo-o
+-- Inserción para Hakamo-o
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hakamo-o'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Hakamo-o'), 2, 75),
@@ -7045,7 +7045,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hakamo-o'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Hakamo-o'), 6, 65);
 
--- Inserciï¿½n para Kommo-o
+-- Inserción para Kommo-o
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kommo-o'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Kommo-o'), 2, 110),
@@ -7054,7 +7054,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kommo-o'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Kommo-o'), 6, 85);
 
--- Inserciï¿½n para Tapu-koko
+-- Inserción para Tapu-koko
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-koko'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-koko'), 2, 115),
@@ -7063,7 +7063,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-koko'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-koko'), 6, 130);
 
--- Inserciï¿½n para Tapu-lele
+-- Inserción para Tapu-lele
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-lele'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-lele'), 2, 85),
@@ -7072,7 +7072,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-lele'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-lele'), 6, 95);
 
--- Inserciï¿½n para Tapu-bulu
+-- Inserción para Tapu-bulu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-bulu'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-bulu'), 2, 130),
@@ -7081,7 +7081,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-bulu'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-bulu'), 6, 75);
 
--- Inserciï¿½n para Tapu-fini
+-- Inserción para Tapu-fini
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-fini'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-fini'), 2, 75),
@@ -7090,7 +7090,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tapu-fini'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Tapu-fini'), 6, 85);
 
--- Inserciï¿½n para Cosmog
+-- Inserción para Cosmog
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cosmog'), 1, 43),
 ((SELECT id FROM pokemones WHERE name = 'Cosmog'), 2, 29),
@@ -7099,7 +7099,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cosmog'), 5, 31),
 ((SELECT id FROM pokemones WHERE name = 'Cosmog'), 6, 37);
 
--- Inserciï¿½n para Cosmoem
+-- Inserción para Cosmoem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cosmoem'), 1, 43),
 ((SELECT id FROM pokemones WHERE name = 'Cosmoem'), 2, 29),
@@ -7108,7 +7108,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cosmoem'), 5, 131),
 ((SELECT id FROM pokemones WHERE name = 'Cosmoem'), 6, 37);
 
--- Inserciï¿½n para Solgaleo
+-- Inserción para Solgaleo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Solgaleo'), 1, 137),
 ((SELECT id FROM pokemones WHERE name = 'Solgaleo'), 2, 137),
@@ -7117,7 +7117,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Solgaleo'), 5, 89),
 ((SELECT id FROM pokemones WHERE name = 'Solgaleo'), 6, 97);
 
--- Inserciï¿½n para Lunala
+-- Inserción para Lunala
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lunala'), 1, 137),
 ((SELECT id FROM pokemones WHERE name = 'Lunala'), 2, 113),
@@ -7126,7 +7126,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lunala'), 5, 107),
 ((SELECT id FROM pokemones WHERE name = 'Lunala'), 6, 97);
 
--- Inserciï¿½n para Nihilego
+-- Inserción para Nihilego
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nihilego'), 1, 109),
 ((SELECT id FROM pokemones WHERE name = 'Nihilego'), 2, 53),
@@ -7135,7 +7135,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nihilego'), 5, 131),
 ((SELECT id FROM pokemones WHERE name = 'Nihilego'), 6, 103);
 
--- Inserciï¿½n para Buzzwole
+-- Inserción para Buzzwole
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Buzzwole'), 1, 107),
 ((SELECT id FROM pokemones WHERE name = 'Buzzwole'), 2, 139),
@@ -7144,7 +7144,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Buzzwole'), 5, 53),
 ((SELECT id FROM pokemones WHERE name = 'Buzzwole'), 6, 79);
 
--- Inserciï¿½n para Pheromosa
+-- Inserción para Pheromosa
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pheromosa'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Pheromosa'), 2, 137),
@@ -7153,7 +7153,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pheromosa'), 5, 37),
 ((SELECT id FROM pokemones WHERE name = 'Pheromosa'), 6, 151);
 
--- Inserciï¿½n para Xurkitree
+-- Inserción para Xurkitree
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Xurkitree'), 1, 83),
 ((SELECT id FROM pokemones WHERE name = 'Xurkitree'), 2, 89),
@@ -7162,7 +7162,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Xurkitree'), 5, 71),
 ((SELECT id FROM pokemones WHERE name = 'Xurkitree'), 6, 83);
 
--- Inserciï¿½n para Celesteela
+-- Inserción para Celesteela
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Celesteela'), 1, 97),
 ((SELECT id FROM pokemones WHERE name = 'Celesteela'), 2, 101),
@@ -7171,7 +7171,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Celesteela'), 5, 101),
 ((SELECT id FROM pokemones WHERE name = 'Celesteela'), 6, 61);
 
--- Inserciï¿½n para Kartana
+-- Inserción para Kartana
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kartana'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Kartana'), 2, 181),
@@ -7180,7 +7180,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kartana'), 5, 31),
 ((SELECT id FROM pokemones WHERE name = 'Kartana'), 6, 109);
 
--- Inserciï¿½n para Guzzlord
+-- Inserción para Guzzlord
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Guzzlord'), 1, 223),
 ((SELECT id FROM pokemones WHERE name = 'Guzzlord'), 2, 101),
@@ -7189,7 +7189,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Guzzlord'), 5, 53),
 ((SELECT id FROM pokemones WHERE name = 'Guzzlord'), 6, 43);
 
--- Inserciï¿½n para Necrozma
+-- Inserción para Necrozma
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Necrozma'), 1, 97),
 ((SELECT id FROM pokemones WHERE name = 'Necrozma'), 2, 107),
@@ -7198,7 +7198,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Necrozma'), 5, 89),
 ((SELECT id FROM pokemones WHERE name = 'Necrozma'), 6, 79);
 
--- Inserciï¿½n para Magearna
+-- Inserción para Magearna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magearna'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Magearna'), 2, 95),
@@ -7207,7 +7207,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Magearna'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Magearna'), 6, 65);
 
--- Inserciï¿½n para Marshadow
+-- Inserción para Marshadow
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marshadow'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Marshadow'), 2, 125),
@@ -7216,7 +7216,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Marshadow'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Marshadow'), 6, 125);
 
--- Inserciï¿½n para Poipole
+-- Inserción para Poipole
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poipole'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Poipole'), 2, 73),
@@ -7225,7 +7225,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poipole'), 5, 67),
 ((SELECT id FROM pokemones WHERE name = 'Poipole'), 6, 73);
 
--- Inserciï¿½n para Naganadel
+-- Inserción para Naganadel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Naganadel'), 1, 73),
 ((SELECT id FROM pokemones WHERE name = 'Naganadel'), 2, 73),
@@ -7234,7 +7234,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Naganadel'), 5, 73),
 ((SELECT id FROM pokemones WHERE name = 'Naganadel'), 6, 121);
 
--- Inserciï¿½n para Stakataka
+-- Inserción para Stakataka
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stakataka'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Stakataka'), 2, 131),
@@ -7243,7 +7243,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stakataka'), 5, 101),
 ((SELECT id FROM pokemones WHERE name = 'Stakataka'), 6, 13);
 
--- Inserciï¿½n para Blacephalon
+-- Inserción para Blacephalon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blacephalon'), 1, 53),
 ((SELECT id FROM pokemones WHERE name = 'Blacephalon'), 2, 127),
@@ -7252,7 +7252,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blacephalon'), 5, 79),
 ((SELECT id FROM pokemones WHERE name = 'Blacephalon'), 6, 107);
 
--- Inserciï¿½n para Zeraora
+-- Inserción para Zeraora
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zeraora'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Zeraora'), 2, 112),
@@ -7261,7 +7261,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zeraora'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Zeraora'), 6, 143);
 
--- Inserciï¿½n para Meltan
+-- Inserción para Meltan
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meltan'), 1, 46),
 ((SELECT id FROM pokemones WHERE name = 'Meltan'), 2, 65),
@@ -7270,7 +7270,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meltan'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Meltan'), 6, 34);
 
--- Inserciï¿½n para Melmetal
+-- Inserción para Melmetal
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Melmetal'), 1, 135),
 ((SELECT id FROM pokemones WHERE name = 'Melmetal'), 2, 143),
@@ -7279,7 +7279,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Melmetal'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Melmetal'), 6, 34);
 
--- Inserciï¿½n para Grookey
+-- Inserción para Grookey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grookey'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Grookey'), 2, 65),
@@ -7288,7 +7288,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grookey'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Grookey'), 6, 65);
 
--- Inserciï¿½n para Thwackey
+-- Inserción para Thwackey
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Thwackey'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Thwackey'), 2, 85),
@@ -7297,7 +7297,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Thwackey'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Thwackey'), 6, 80);
 
--- Inserciï¿½n para Rillaboom
+-- Inserción para Rillaboom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rillaboom'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Rillaboom'), 2, 125),
@@ -7306,7 +7306,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rillaboom'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Rillaboom'), 6, 85);
 
--- Inserciï¿½n para Scorbunny
+-- Inserción para Scorbunny
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scorbunny'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Scorbunny'), 2, 71),
@@ -7315,7 +7315,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scorbunny'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Scorbunny'), 6, 69);
 
--- Inserciï¿½n para Raboot
+-- Inserción para Raboot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raboot'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Raboot'), 2, 86),
@@ -7324,7 +7324,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raboot'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Raboot'), 6, 94);
 
--- Inserciï¿½n para Cinderace
+-- Inserción para Cinderace
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cinderace'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Cinderace'), 2, 116),
@@ -7333,7 +7333,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cinderace'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Cinderace'), 6, 119);
 
--- Inserciï¿½n para Sobble
+-- Inserción para Sobble
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sobble'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Sobble'), 2, 40),
@@ -7342,7 +7342,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sobble'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Sobble'), 6, 70);
 
--- Inserciï¿½n para Drizzile
+-- Inserción para Drizzile
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drizzile'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Drizzile'), 2, 60),
@@ -7351,7 +7351,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drizzile'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Drizzile'), 6, 90);
 
--- Inserciï¿½n para Inteleon
+-- Inserción para Inteleon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Inteleon'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Inteleon'), 2, 85),
@@ -7360,7 +7360,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Inteleon'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Inteleon'), 6, 120);
 
--- Inserciï¿½n para Skwovet
+-- Inserción para Skwovet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skwovet'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Skwovet'), 2, 55),
@@ -7369,7 +7369,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skwovet'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Skwovet'), 6, 25);
 
--- Inserciï¿½n para Greedent
+-- Inserción para Greedent
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Greedent'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Greedent'), 2, 95),
@@ -7378,7 +7378,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Greedent'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Greedent'), 6, 20);
 
--- Inserciï¿½n para Rookidee
+-- Inserción para Rookidee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rookidee'), 1, 38),
 ((SELECT id FROM pokemones WHERE name = 'Rookidee'), 2, 47),
@@ -7387,7 +7387,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rookidee'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Rookidee'), 6, 57);
 
--- Inserciï¿½n para Corvisquire
+-- Inserción para Corvisquire
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corvisquire'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Corvisquire'), 2, 67),
@@ -7396,7 +7396,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corvisquire'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Corvisquire'), 6, 77);
 
--- Inserciï¿½n para Corviknight
+-- Inserción para Corviknight
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corviknight'), 1, 98),
 ((SELECT id FROM pokemones WHERE name = 'Corviknight'), 2, 87),
@@ -7405,7 +7405,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Corviknight'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Corviknight'), 6, 67);
 
--- Inserciï¿½n para Blipbug
+-- Inserción para Blipbug
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blipbug'), 1, 25),
 ((SELECT id FROM pokemones WHERE name = 'Blipbug'), 2, 20),
@@ -7414,7 +7414,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Blipbug'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Blipbug'), 6, 45);
 
--- Inserciï¿½n para Dottler
+-- Inserción para Dottler
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dottler'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Dottler'), 2, 35),
@@ -7423,7 +7423,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dottler'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dottler'), 6, 30);
 
--- Inserciï¿½n para Orbeetle
+-- Inserción para Orbeetle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Orbeetle'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Orbeetle'), 2, 45),
@@ -7432,7 +7432,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Orbeetle'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Orbeetle'), 6, 90);
 
--- Inserciï¿½n para Nickit
+-- Inserción para Nickit
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nickit'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Nickit'), 2, 28),
@@ -7441,7 +7441,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nickit'), 5, 52),
 ((SELECT id FROM pokemones WHERE name = 'Nickit'), 6, 50);
 
--- Inserciï¿½n para Thievul
+-- Inserción para Thievul
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Thievul'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Thievul'), 2, 58),
@@ -7450,7 +7450,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Thievul'), 5, 92),
 ((SELECT id FROM pokemones WHERE name = 'Thievul'), 6, 90);
 
--- Inserciï¿½n para Gossifleur
+-- Inserción para Gossifleur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gossifleur'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Gossifleur'), 2, 40),
@@ -7459,7 +7459,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gossifleur'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Gossifleur'), 6, 10);
 
--- Inserciï¿½n para Eldegoss
+-- Inserción para Eldegoss
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eldegoss'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Eldegoss'), 2, 50),
@@ -7468,7 +7468,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eldegoss'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Eldegoss'), 6, 60);
 
--- Inserciï¿½n para Wooloo
+-- Inserción para Wooloo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wooloo'), 1, 42),
 ((SELECT id FROM pokemones WHERE name = 'Wooloo'), 2, 40),
@@ -7477,7 +7477,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wooloo'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Wooloo'), 6, 48);
 
--- Inserciï¿½n para Dubwool
+-- Inserción para Dubwool
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dubwool'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Dubwool'), 2, 80),
@@ -7486,7 +7486,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dubwool'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dubwool'), 6, 88);
 
--- Inserciï¿½n para Chewtle
+-- Inserción para Chewtle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chewtle'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Chewtle'), 2, 64),
@@ -7495,7 +7495,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chewtle'), 5, 38),
 ((SELECT id FROM pokemones WHERE name = 'Chewtle'), 6, 44);
 
--- Inserciï¿½n para Drednaw
+-- Inserción para Drednaw
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drednaw'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Drednaw'), 2, 115),
@@ -7504,7 +7504,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drednaw'), 5, 68),
 ((SELECT id FROM pokemones WHERE name = 'Drednaw'), 6, 74);
 
--- Inserciï¿½n para Yamper
+-- Inserción para Yamper
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yamper'), 1, 59),
 ((SELECT id FROM pokemones WHERE name = 'Yamper'), 2, 45),
@@ -7513,7 +7513,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Yamper'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Yamper'), 6, 26);
 
--- Inserciï¿½n para Boltund
+-- Inserción para Boltund
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Boltund'), 1, 69),
 ((SELECT id FROM pokemones WHERE name = 'Boltund'), 2, 90),
@@ -7522,7 +7522,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Boltund'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Boltund'), 6, 121);
 
--- Inserciï¿½n para Rolycoly
+-- Inserción para Rolycoly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rolycoly'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Rolycoly'), 2, 40),
@@ -7531,7 +7531,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rolycoly'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Rolycoly'), 6, 30);
 
--- Inserciï¿½n para Carkol
+-- Inserción para Carkol
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carkol'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Carkol'), 2, 60),
@@ -7540,7 +7540,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Carkol'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Carkol'), 6, 50);
 
--- Inserciï¿½n para Coalossal
+-- Inserción para Coalossal
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Coalossal'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Coalossal'), 2, 80),
@@ -7549,7 +7549,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Coalossal'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Coalossal'), 6, 30);
 
--- Inserciï¿½n para Applin
+-- Inserción para Applin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Applin'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Applin'), 2, 40),
@@ -7558,7 +7558,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Applin'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Applin'), 6, 20);
 
--- Inserciï¿½n para Flapple
+-- Inserción para Flapple
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flapple'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Flapple'), 2, 110),
@@ -7567,7 +7567,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flapple'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Flapple'), 6, 70);
 
--- Inserciï¿½n para Appletun
+-- Inserción para Appletun
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Appletun'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Appletun'), 2, 85),
@@ -7576,7 +7576,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Appletun'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Appletun'), 6, 30);
 
--- Inserciï¿½n para Silicobra
+-- Inserción para Silicobra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Silicobra'), 1, 52),
 ((SELECT id FROM pokemones WHERE name = 'Silicobra'), 2, 57),
@@ -7585,7 +7585,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Silicobra'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Silicobra'), 6, 46);
 
--- Inserciï¿½n para Sandaconda
+-- Inserción para Sandaconda
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandaconda'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Sandaconda'), 2, 107),
@@ -7594,7 +7594,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandaconda'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Sandaconda'), 6, 71);
 
--- Inserciï¿½n para Cramorant
+-- Inserción para Cramorant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cramorant'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Cramorant'), 2, 85),
@@ -7603,7 +7603,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cramorant'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Cramorant'), 6, 85);
 
--- Inserciï¿½n para Arrokuda
+-- Inserción para Arrokuda
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arrokuda'), 1, 41),
 ((SELECT id FROM pokemones WHERE name = 'Arrokuda'), 2, 63),
@@ -7612,7 +7612,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arrokuda'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Arrokuda'), 6, 66);
 
--- Inserciï¿½n para Barraskewda
+-- Inserción para Barraskewda
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Barraskewda'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Barraskewda'), 2, 123),
@@ -7621,7 +7621,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Barraskewda'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Barraskewda'), 6, 136);
 
--- Inserciï¿½n para Toxel
+-- Inserción para Toxel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxel'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Toxel'), 2, 38),
@@ -7630,7 +7630,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxel'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Toxel'), 6, 40);
 
--- Inserciï¿½n para Toxtricity
+-- Inserción para Toxtricity
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxtricity'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Toxtricity'), 2, 98),
@@ -7639,7 +7639,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toxtricity'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Toxtricity'), 6, 75);
 
--- Inserciï¿½n para Sizzlipede
+-- Inserción para Sizzlipede
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sizzlipede'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Sizzlipede'), 2, 65),
@@ -7648,7 +7648,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sizzlipede'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Sizzlipede'), 6, 45);
 
--- Inserciï¿½n para Centiskorch
+-- Inserción para Centiskorch
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Centiskorch'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Centiskorch'), 2, 115),
@@ -7657,7 +7657,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Centiskorch'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Centiskorch'), 6, 65);
 
--- Inserciï¿½n para Clobbopus
+-- Inserción para Clobbopus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clobbopus'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Clobbopus'), 2, 68),
@@ -7666,7 +7666,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clobbopus'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Clobbopus'), 6, 32);
 
--- Inserciï¿½n para Grapploct
+-- Inserción para Grapploct
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grapploct'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Grapploct'), 2, 118),
@@ -7675,7 +7675,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grapploct'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Grapploct'), 6, 42);
 
--- Inserciï¿½n para Sinistea
+-- Inserción para Sinistea
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sinistea'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Sinistea'), 2, 45),
@@ -7684,7 +7684,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sinistea'), 5, 54),
 ((SELECT id FROM pokemones WHERE name = 'Sinistea'), 6, 50);
 
--- Inserciï¿½n para Polteageist
+-- Inserción para Polteageist
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Polteageist'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Polteageist'), 2, 65),
@@ -7693,7 +7693,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Polteageist'), 5, 114),
 ((SELECT id FROM pokemones WHERE name = 'Polteageist'), 6, 70);
 
--- Inserciï¿½n para Hatenna
+-- Inserción para Hatenna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hatenna'), 1, 42),
 ((SELECT id FROM pokemones WHERE name = 'Hatenna'), 2, 30),
@@ -7702,7 +7702,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hatenna'), 5, 53),
 ((SELECT id FROM pokemones WHERE name = 'Hatenna'), 6, 39);
 
--- Inserciï¿½n para Hattrem
+-- Inserción para Hattrem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hattrem'), 1, 57),
 ((SELECT id FROM pokemones WHERE name = 'Hattrem'), 2, 40),
@@ -7711,7 +7711,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hattrem'), 5, 73),
 ((SELECT id FROM pokemones WHERE name = 'Hattrem'), 6, 49);
 
--- Inserciï¿½n para Hatterene
+-- Inserción para Hatterene
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hatterene'), 1, 57),
 ((SELECT id FROM pokemones WHERE name = 'Hatterene'), 2, 90),
@@ -7720,7 +7720,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hatterene'), 5, 103),
 ((SELECT id FROM pokemones WHERE name = 'Hatterene'), 6, 29);
 
--- Inserciï¿½n para Impidimp
+-- Inserción para Impidimp
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Impidimp'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Impidimp'), 2, 45),
@@ -7729,7 +7729,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Impidimp'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Impidimp'), 6, 50);
 
--- Inserciï¿½n para Morgrem
+-- Inserción para Morgrem
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Morgrem'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Morgrem'), 2, 60),
@@ -7738,7 +7738,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Morgrem'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Morgrem'), 6, 70);
 
--- Inserciï¿½n para Grimmsnarl
+-- Inserción para Grimmsnarl
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grimmsnarl'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Grimmsnarl'), 2, 120),
@@ -7747,7 +7747,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grimmsnarl'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Grimmsnarl'), 6, 60);
 
--- Inserciï¿½n para Obstagoon
+-- Inserción para Obstagoon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Obstagoon'), 1, 93),
 ((SELECT id FROM pokemones WHERE name = 'Obstagoon'), 2, 90),
@@ -7756,7 +7756,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Obstagoon'), 5, 81),
 ((SELECT id FROM pokemones WHERE name = 'Obstagoon'), 6, 95);
 
--- Inserciï¿½n para Perrserker
+-- Inserción para Perrserker
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Perrserker'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Perrserker'), 2, 110),
@@ -7765,7 +7765,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Perrserker'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Perrserker'), 6, 50);
 
--- Inserciï¿½n para Cursola
+-- Inserción para Cursola
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cursola'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Cursola'), 2, 95),
@@ -7774,7 +7774,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cursola'), 5, 130),
 ((SELECT id FROM pokemones WHERE name = 'Cursola'), 6, 30);
 
--- Inserciï¿½n para Sirfetchd
+-- Inserción para Sirfetchd
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sirfetchd'), 1, 62),
 ((SELECT id FROM pokemones WHERE name = 'Sirfetchd'), 2, 135),
@@ -7783,7 +7783,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sirfetchd'), 5, 82),
 ((SELECT id FROM pokemones WHERE name = 'Sirfetchd'), 6, 65);
 
--- Inserciï¿½n para Mr-rime
+-- Inserción para Mr-rime
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mr-rime'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Mr-rime'), 2, 85),
@@ -7792,7 +7792,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mr-rime'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Mr-rime'), 6, 70);
 
--- Inserciï¿½n para Runerigus
+-- Inserción para Runerigus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Runerigus'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Runerigus'), 2, 95),
@@ -7801,7 +7801,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Runerigus'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Runerigus'), 6, 30);
 
--- Inserciï¿½n para Milcery
+-- Inserción para Milcery
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Milcery'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Milcery'), 2, 40),
@@ -7810,7 +7810,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Milcery'), 5, 61),
 ((SELECT id FROM pokemones WHERE name = 'Milcery'), 6, 34);
 
--- Inserciï¿½n para Alcremie
+-- Inserción para Alcremie
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Alcremie'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Alcremie'), 2, 60),
@@ -7819,7 +7819,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Alcremie'), 5, 121),
 ((SELECT id FROM pokemones WHERE name = 'Alcremie'), 6, 64);
 
--- Inserciï¿½n para Falinks
+-- Inserción para Falinks
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Falinks'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Falinks'), 2, 100),
@@ -7828,7 +7828,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Falinks'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Falinks'), 6, 75);
 
--- Inserciï¿½n para Pincurchin
+-- Inserción para Pincurchin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pincurchin'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Pincurchin'), 2, 101),
@@ -7837,7 +7837,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pincurchin'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Pincurchin'), 6, 15);
 
--- Inserciï¿½n para Snom
+-- Inserción para Snom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snom'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Snom'), 2, 25),
@@ -7846,7 +7846,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Snom'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Snom'), 6, 20);
 
--- Inserciï¿½n para Frosmoth
+-- Inserción para Frosmoth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frosmoth'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Frosmoth'), 2, 65),
@@ -7855,7 +7855,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frosmoth'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Frosmoth'), 6, 65);
 
--- Inserciï¿½n para Stonjourner
+-- Inserción para Stonjourner
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stonjourner'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Stonjourner'), 2, 125),
@@ -7864,7 +7864,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Stonjourner'), 5, 20),
 ((SELECT id FROM pokemones WHERE name = 'Stonjourner'), 6, 70);
 
--- Inserciï¿½n para Eiscue
+-- Inserción para Eiscue
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eiscue'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Eiscue'), 2, 80),
@@ -7873,7 +7873,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eiscue'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Eiscue'), 6, 50);
 
--- Inserciï¿½n para Indeedee
+-- Inserción para Indeedee
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Indeedee'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Indeedee'), 2, 65),
@@ -7882,7 +7882,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Indeedee'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Indeedee'), 6, 95);
 
--- Inserciï¿½n para Morpeko
+-- Inserción para Morpeko
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Morpeko'), 1, 58),
 ((SELECT id FROM pokemones WHERE name = 'Morpeko'), 2, 95),
@@ -7891,7 +7891,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Morpeko'), 5, 58),
 ((SELECT id FROM pokemones WHERE name = 'Morpeko'), 6, 97);
 
--- Inserciï¿½n para Cufant
+-- Inserción para Cufant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cufant'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Cufant'), 2, 80),
@@ -7900,7 +7900,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cufant'), 5, 49),
 ((SELECT id FROM pokemones WHERE name = 'Cufant'), 6, 40);
 
--- Inserciï¿½n para Copperajah
+-- Inserción para Copperajah
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Copperajah'), 1, 122),
 ((SELECT id FROM pokemones WHERE name = 'Copperajah'), 2, 130),
@@ -7909,7 +7909,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Copperajah'), 5, 69),
 ((SELECT id FROM pokemones WHERE name = 'Copperajah'), 6, 30);
 
--- Inserciï¿½n para Dracozolt
+-- Inserción para Dracozolt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dracozolt'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dracozolt'), 2, 100),
@@ -7918,7 +7918,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dracozolt'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Dracozolt'), 6, 75);
 
--- Inserciï¿½n para Arctozolt
+-- Inserción para Arctozolt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arctozolt'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Arctozolt'), 2, 100),
@@ -7927,7 +7927,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arctozolt'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Arctozolt'), 6, 55);
 
--- Inserciï¿½n para Dracovish
+-- Inserción para Dracovish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dracovish'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Dracovish'), 2, 90),
@@ -7936,7 +7936,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dracovish'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Dracovish'), 6, 75);
 
--- Inserciï¿½n para Arctovish
+-- Inserción para Arctovish
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arctovish'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Arctovish'), 2, 90),
@@ -7945,7 +7945,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arctovish'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Arctovish'), 6, 55);
 
--- Inserciï¿½n para Duraludon
+-- Inserción para Duraludon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Duraludon'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Duraludon'), 2, 95),
@@ -7954,7 +7954,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Duraludon'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Duraludon'), 6, 85);
 
--- Inserciï¿½n para Dreepy
+-- Inserción para Dreepy
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dreepy'), 1, 28),
 ((SELECT id FROM pokemones WHERE name = 'Dreepy'), 2, 60),
@@ -7963,7 +7963,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dreepy'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Dreepy'), 6, 82);
 
--- Inserciï¿½n para Drakloak
+-- Inserción para Drakloak
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drakloak'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Drakloak'), 2, 80),
@@ -7972,7 +7972,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Drakloak'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Drakloak'), 6, 102);
 
--- Inserciï¿½n para Dragapult
+-- Inserción para Dragapult
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragapult'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Dragapult'), 2, 120),
@@ -7981,7 +7981,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dragapult'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Dragapult'), 6, 142);
 
--- Inserciï¿½n para Zacian
+-- Inserción para Zacian
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zacian'), 1, 92),
 ((SELECT id FROM pokemones WHERE name = 'Zacian'), 2, 120),
@@ -7990,7 +7990,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zacian'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Zacian'), 6, 138);
 
--- Inserciï¿½n para Zamazenta
+-- Inserción para Zamazenta
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zamazenta'), 1, 92),
 ((SELECT id FROM pokemones WHERE name = 'Zamazenta'), 2, 120),
@@ -7999,7 +7999,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zamazenta'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Zamazenta'), 6, 138);
 
--- Inserciï¿½n para Eternatus
+-- Inserción para Eternatus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eternatus'), 1, 140),
 ((SELECT id FROM pokemones WHERE name = 'Eternatus'), 2, 85),
@@ -8008,7 +8008,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Eternatus'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Eternatus'), 6, 130);
 
--- Inserciï¿½n para Kubfu
+-- Inserción para Kubfu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kubfu'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Kubfu'), 2, 90),
@@ -8017,7 +8017,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kubfu'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Kubfu'), 6, 72);
 
--- Inserciï¿½n para Urshifu
+-- Inserción para Urshifu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Urshifu'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Urshifu'), 2, 130),
@@ -8026,7 +8026,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Urshifu'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Urshifu'), 6, 97);
 
--- Inserciï¿½n para Zarude
+-- Inserción para Zarude
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zarude'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Zarude'), 2, 120),
@@ -8035,7 +8035,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Zarude'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Zarude'), 6, 105);
 
--- Inserciï¿½n para Regieleki
+-- Inserción para Regieleki
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regieleki'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Regieleki'), 2, 100),
@@ -8044,7 +8044,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regieleki'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Regieleki'), 6, 200);
 
--- Inserciï¿½n para Regidrago
+-- Inserción para Regidrago
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regidrago'), 1, 200),
 ((SELECT id FROM pokemones WHERE name = 'Regidrago'), 2, 100),
@@ -8053,7 +8053,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Regidrago'), 5, 50),
 ((SELECT id FROM pokemones WHERE name = 'Regidrago'), 6, 80);
 
--- Inserciï¿½n para Glastrier
+-- Inserción para Glastrier
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glastrier'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Glastrier'), 2, 145),
@@ -8062,7 +8062,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glastrier'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Glastrier'), 6, 30);
 
--- Inserciï¿½n para Spectrier
+-- Inserción para Spectrier
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spectrier'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Spectrier'), 2, 65),
@@ -8071,7 +8071,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spectrier'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Spectrier'), 6, 130);
 
--- Inserciï¿½n para Calyrex
+-- Inserción para Calyrex
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Calyrex'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Calyrex'), 2, 80),
@@ -8080,7 +8080,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Calyrex'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Calyrex'), 6, 80);
 
--- Inserciï¿½n para Wyrdeer
+-- Inserción para Wyrdeer
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wyrdeer'), 1, 103),
 ((SELECT id FROM pokemones WHERE name = 'Wyrdeer'), 2, 105),
@@ -8089,7 +8089,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wyrdeer'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Wyrdeer'), 6, 65);
 
--- Inserciï¿½n para Kleavor
+-- Inserción para Kleavor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kleavor'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Kleavor'), 2, 135),
@@ -8098,7 +8098,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kleavor'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Kleavor'), 6, 85);
 
--- Inserciï¿½n para Ursaluna
+-- Inserción para Ursaluna
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ursaluna'), 1, 130),
 ((SELECT id FROM pokemones WHERE name = 'Ursaluna'), 2, 140),
@@ -8107,7 +8107,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ursaluna'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Ursaluna'), 6, 50);
 
--- Inserciï¿½n para Basculegion
+-- Inserción para Basculegion
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Basculegion'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Basculegion'), 2, 112),
@@ -8116,7 +8116,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Basculegion'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Basculegion'), 6, 78);
 
--- Inserciï¿½n para Sneasler
+-- Inserción para Sneasler
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sneasler'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Sneasler'), 2, 130),
@@ -8125,7 +8125,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sneasler'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Sneasler'), 6, 120);
 
--- Inserciï¿½n para Overqwil
+-- Inserción para Overqwil
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Overqwil'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Overqwil'), 2, 115),
@@ -8134,7 +8134,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Overqwil'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Overqwil'), 6, 85);
 
--- Inserciï¿½n para Enamorus
+-- Inserción para Enamorus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Enamorus'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Enamorus'), 2, 115),
@@ -8143,7 +8143,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Enamorus'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Enamorus'), 6, 106);
 
--- Inserciï¿½n para Sprigatito
+-- Inserción para Sprigatito
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sprigatito'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Sprigatito'), 2, 61),
@@ -8152,7 +8152,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sprigatito'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Sprigatito'), 6, 65);
 
--- Inserciï¿½n para Floragato
+-- Inserción para Floragato
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Floragato'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Floragato'), 2, 80),
@@ -8161,7 +8161,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Floragato'), 5, 63),
 ((SELECT id FROM pokemones WHERE name = 'Floragato'), 6, 83);
 
--- Inserciï¿½n para Meowscarada
+-- Inserción para Meowscarada
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meowscarada'), 1, 76),
 ((SELECT id FROM pokemones WHERE name = 'Meowscarada'), 2, 110),
@@ -8170,7 +8170,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Meowscarada'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Meowscarada'), 6, 123);
 
--- Inserciï¿½n para Fuecoco
+-- Inserción para Fuecoco
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fuecoco'), 1, 67),
 ((SELECT id FROM pokemones WHERE name = 'Fuecoco'), 2, 45),
@@ -8179,7 +8179,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fuecoco'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Fuecoco'), 6, 36);
 
--- Inserciï¿½n para Crocalor
+-- Inserción para Crocalor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crocalor'), 1, 81),
 ((SELECT id FROM pokemones WHERE name = 'Crocalor'), 2, 55),
@@ -8188,7 +8188,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Crocalor'), 5, 58),
 ((SELECT id FROM pokemones WHERE name = 'Crocalor'), 6, 49);
 
--- Inserciï¿½n para Skeledirge
+-- Inserción para Skeledirge
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skeledirge'), 1, 104),
 ((SELECT id FROM pokemones WHERE name = 'Skeledirge'), 2, 75),
@@ -8197,7 +8197,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Skeledirge'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Skeledirge'), 6, 66);
 
--- Inserciï¿½n para Quaxly
+-- Inserción para Quaxly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quaxly'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Quaxly'), 2, 65),
@@ -8206,7 +8206,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quaxly'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Quaxly'), 6, 50);
 
--- Inserciï¿½n para Quaxwell
+-- Inserción para Quaxwell
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quaxwell'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Quaxwell'), 2, 85),
@@ -8215,7 +8215,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quaxwell'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Quaxwell'), 6, 65);
 
--- Inserciï¿½n para Quaquaval
+-- Inserción para Quaquaval
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quaquaval'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Quaquaval'), 2, 120),
@@ -8224,7 +8224,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Quaquaval'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Quaquaval'), 6, 85);
 
--- Inserciï¿½n para Lechonk
+-- Inserción para Lechonk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lechonk'), 1, 54),
 ((SELECT id FROM pokemones WHERE name = 'Lechonk'), 2, 45),
@@ -8233,7 +8233,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lechonk'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Lechonk'), 6, 35);
 
--- Inserciï¿½n para Oinkologne
+-- Inserción para Oinkologne
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oinkologne'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Oinkologne'), 2, 100),
@@ -8242,7 +8242,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Oinkologne'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Oinkologne'), 6, 65);
 
--- Inserciï¿½n para Tarountula
+-- Inserción para Tarountula
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tarountula'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Tarountula'), 2, 41),
@@ -8251,7 +8251,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tarountula'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Tarountula'), 6, 20);
 
--- Inserciï¿½n para Spidops
+-- Inserción para Spidops
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spidops'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Spidops'), 2, 79),
@@ -8260,7 +8260,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Spidops'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Spidops'), 6, 35);
 
--- Inserciï¿½n para Nymble
+-- Inserción para Nymble
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nymble'), 1, 33),
 ((SELECT id FROM pokemones WHERE name = 'Nymble'), 2, 46),
@@ -8269,7 +8269,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nymble'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Nymble'), 6, 45);
 
--- Inserciï¿½n para Lokix
+-- Inserción para Lokix
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lokix'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Lokix'), 2, 102),
@@ -8278,7 +8278,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Lokix'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Lokix'), 6, 92);
 
--- Inserciï¿½n para Pawmi
+-- Inserción para Pawmi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawmi'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Pawmi'), 2, 50),
@@ -8287,7 +8287,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawmi'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Pawmi'), 6, 60);
 
--- Inserciï¿½n para Pawmo
+-- Inserción para Pawmo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawmo'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Pawmo'), 2, 75),
@@ -8296,7 +8296,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawmo'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Pawmo'), 6, 85);
 
--- Inserciï¿½n para Pawmot
+-- Inserción para Pawmot
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawmot'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Pawmot'), 2, 115),
@@ -8305,7 +8305,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pawmot'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Pawmot'), 6, 105);
 
--- Inserciï¿½n para Tandemaus
+-- Inserción para Tandemaus
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tandemaus'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Tandemaus'), 2, 50),
@@ -8314,7 +8314,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tandemaus'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Tandemaus'), 6, 75);
 
--- Inserciï¿½n para Maushold
+-- Inserción para Maushold
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Maushold'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Maushold'), 2, 75),
@@ -8323,7 +8323,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Maushold'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Maushold'), 6, 111);
 
--- Inserciï¿½n para Fidough
+-- Inserción para Fidough
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fidough'), 1, 37),
 ((SELECT id FROM pokemones WHERE name = 'Fidough'), 2, 55),
@@ -8332,7 +8332,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fidough'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Fidough'), 6, 65);
 
--- Inserciï¿½n para Dachsbun
+-- Inserción para Dachsbun
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dachsbun'), 1, 57),
 ((SELECT id FROM pokemones WHERE name = 'Dachsbun'), 2, 80),
@@ -8341,7 +8341,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dachsbun'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Dachsbun'), 6, 95);
 
--- Inserciï¿½n para Smoliv
+-- Inserción para Smoliv
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Smoliv'), 1, 41),
 ((SELECT id FROM pokemones WHERE name = 'Smoliv'), 2, 35),
@@ -8350,7 +8350,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Smoliv'), 5, 51),
 ((SELECT id FROM pokemones WHERE name = 'Smoliv'), 6, 30);
 
--- Inserciï¿½n para Dolliv
+-- Inserción para Dolliv
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dolliv'), 1, 52),
 ((SELECT id FROM pokemones WHERE name = 'Dolliv'), 2, 53),
@@ -8359,7 +8359,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dolliv'), 5, 78),
 ((SELECT id FROM pokemones WHERE name = 'Dolliv'), 6, 33);
 
--- Inserciï¿½n para Arboliva
+-- Inserción para Arboliva
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arboliva'), 1, 78),
 ((SELECT id FROM pokemones WHERE name = 'Arboliva'), 2, 69),
@@ -8368,7 +8368,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arboliva'), 5, 109),
 ((SELECT id FROM pokemones WHERE name = 'Arboliva'), 6, 39);
 
--- Inserciï¿½n para Squawkabilly
+-- Inserción para Squawkabilly
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Squawkabilly'), 1, 82),
 ((SELECT id FROM pokemones WHERE name = 'Squawkabilly'), 2, 96),
@@ -8377,7 +8377,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Squawkabilly'), 5, 51),
 ((SELECT id FROM pokemones WHERE name = 'Squawkabilly'), 6, 92);
 
--- Inserciï¿½n para Nacli
+-- Inserción para Nacli
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nacli'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Nacli'), 2, 55),
@@ -8386,7 +8386,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Nacli'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Nacli'), 6, 25);
 
--- Inserciï¿½n para Naclstack
+-- Inserción para Naclstack
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Naclstack'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Naclstack'), 2, 60),
@@ -8395,7 +8395,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Naclstack'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Naclstack'), 6, 35);
 
--- Inserciï¿½n para Garganacl
+-- Inserción para Garganacl
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Garganacl'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Garganacl'), 2, 100),
@@ -8404,7 +8404,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Garganacl'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Garganacl'), 6, 35);
 
--- Inserciï¿½n para Charcadet
+-- Inserción para Charcadet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charcadet'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Charcadet'), 2, 50),
@@ -8413,7 +8413,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Charcadet'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Charcadet'), 6, 35);
 
--- Inserciï¿½n para Armarouge
+-- Inserción para Armarouge
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Armarouge'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Armarouge'), 2, 60),
@@ -8422,7 +8422,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Armarouge'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Armarouge'), 6, 75);
 
--- Inserciï¿½n para Ceruledge
+-- Inserción para Ceruledge
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ceruledge'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Ceruledge'), 2, 125),
@@ -8431,7 +8431,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ceruledge'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Ceruledge'), 6, 85);
 
--- Inserciï¿½n para Tadbulb
+-- Inserción para Tadbulb
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tadbulb'), 1, 61),
 ((SELECT id FROM pokemones WHERE name = 'Tadbulb'), 2, 31),
@@ -8440,7 +8440,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tadbulb'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Tadbulb'), 6, 45);
 
--- Inserciï¿½n para Bellibolt
+-- Inserción para Bellibolt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bellibolt'), 1, 109),
 ((SELECT id FROM pokemones WHERE name = 'Bellibolt'), 2, 64),
@@ -8449,7 +8449,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bellibolt'), 5, 83),
 ((SELECT id FROM pokemones WHERE name = 'Bellibolt'), 6, 45);
 
--- Inserciï¿½n para Wattrel
+-- Inserción para Wattrel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wattrel'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Wattrel'), 2, 40),
@@ -8458,7 +8458,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wattrel'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Wattrel'), 6, 70);
 
--- Inserciï¿½n para Kilowattrel
+-- Inserción para Kilowattrel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kilowattrel'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Kilowattrel'), 2, 70),
@@ -8467,7 +8467,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kilowattrel'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Kilowattrel'), 6, 125);
 
--- Inserciï¿½n para Maschiff
+-- Inserción para Maschiff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Maschiff'), 1, 60),
 ((SELECT id FROM pokemones WHERE name = 'Maschiff'), 2, 78),
@@ -8476,7 +8476,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Maschiff'), 5, 51),
 ((SELECT id FROM pokemones WHERE name = 'Maschiff'), 6, 51);
 
--- Inserciï¿½n para Mabosstiff
+-- Inserción para Mabosstiff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mabosstiff'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Mabosstiff'), 2, 120),
@@ -8485,7 +8485,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Mabosstiff'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Mabosstiff'), 6, 85);
 
--- Inserciï¿½n para Shroodle
+-- Inserción para Shroodle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shroodle'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Shroodle'), 2, 65),
@@ -8494,7 +8494,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Shroodle'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Shroodle'), 6, 75);
 
--- Inserciï¿½n para Grafaiai
+-- Inserción para Grafaiai
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grafaiai'), 1, 63),
 ((SELECT id FROM pokemones WHERE name = 'Grafaiai'), 2, 95),
@@ -8503,7 +8503,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Grafaiai'), 5, 72),
 ((SELECT id FROM pokemones WHERE name = 'Grafaiai'), 6, 110);
 
--- Inserciï¿½n para Bramblin
+-- Inserción para Bramblin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bramblin'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Bramblin'), 2, 65),
@@ -8512,7 +8512,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bramblin'), 5, 35),
 ((SELECT id FROM pokemones WHERE name = 'Bramblin'), 6, 60);
 
--- Inserciï¿½n para Brambleghast
+-- Inserción para Brambleghast
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Brambleghast'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Brambleghast'), 2, 115),
@@ -8521,7 +8521,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Brambleghast'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Brambleghast'), 6, 90);
 
--- Inserciï¿½n para Toedscool
+-- Inserción para Toedscool
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toedscool'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Toedscool'), 2, 40),
@@ -8530,7 +8530,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toedscool'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Toedscool'), 6, 70);
 
--- Inserciï¿½n para Toedscruel
+-- Inserción para Toedscruel
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toedscruel'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Toedscruel'), 2, 70),
@@ -8539,7 +8539,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Toedscruel'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Toedscruel'), 6, 100);
 
--- Inserciï¿½n para Klawf
+-- Inserción para Klawf
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klawf'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Klawf'), 2, 100),
@@ -8548,7 +8548,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Klawf'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Klawf'), 6, 75);
 
--- Inserciï¿½n para Capsakid
+-- Inserción para Capsakid
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Capsakid'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Capsakid'), 2, 62),
@@ -8557,7 +8557,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Capsakid'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Capsakid'), 6, 50);
 
--- Inserciï¿½n para Scovillain
+-- Inserción para Scovillain
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scovillain'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Scovillain'), 2, 108),
@@ -8566,7 +8566,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scovillain'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Scovillain'), 6, 75);
 
--- Inserciï¿½n para Rellor
+-- Inserción para Rellor
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rellor'), 1, 41),
 ((SELECT id FROM pokemones WHERE name = 'Rellor'), 2, 50),
@@ -8575,7 +8575,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rellor'), 5, 58),
 ((SELECT id FROM pokemones WHERE name = 'Rellor'), 6, 30);
 
--- Inserciï¿½n para Rabsca
+-- Inserción para Rabsca
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rabsca'), 1, 75),
 ((SELECT id FROM pokemones WHERE name = 'Rabsca'), 2, 50),
@@ -8584,7 +8584,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Rabsca'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Rabsca'), 6, 45);
 
--- Inserciï¿½n para Flittle
+-- Inserción para Flittle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flittle'), 1, 30),
 ((SELECT id FROM pokemones WHERE name = 'Flittle'), 2, 35),
@@ -8593,7 +8593,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flittle'), 5, 30),
 ((SELECT id FROM pokemones WHERE name = 'Flittle'), 6, 75);
 
--- Inserciï¿½n para Espathra
+-- Inserción para Espathra
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Espathra'), 1, 95),
 ((SELECT id FROM pokemones WHERE name = 'Espathra'), 2, 60),
@@ -8602,7 +8602,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Espathra'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Espathra'), 6, 105);
 
--- Inserciï¿½n para Tinkatink
+-- Inserción para Tinkatink
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tinkatink'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Tinkatink'), 2, 45),
@@ -8611,7 +8611,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tinkatink'), 5, 64),
 ((SELECT id FROM pokemones WHERE name = 'Tinkatink'), 6, 58);
 
--- Inserciï¿½n para Tinkatuff
+-- Inserción para Tinkatuff
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tinkatuff'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Tinkatuff'), 2, 55),
@@ -8620,7 +8620,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tinkatuff'), 5, 82),
 ((SELECT id FROM pokemones WHERE name = 'Tinkatuff'), 6, 78);
 
--- Inserciï¿½n para Tinkaton
+-- Inserción para Tinkaton
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tinkaton'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Tinkaton'), 2, 75),
@@ -8629,7 +8629,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tinkaton'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Tinkaton'), 6, 94);
 
--- Inserciï¿½n para Wiglett
+-- Inserción para Wiglett
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wiglett'), 1, 10),
 ((SELECT id FROM pokemones WHERE name = 'Wiglett'), 2, 55),
@@ -8638,7 +8638,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wiglett'), 5, 25),
 ((SELECT id FROM pokemones WHERE name = 'Wiglett'), 6, 95);
 
--- Inserciï¿½n para Wugtrio
+-- Inserción para Wugtrio
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wugtrio'), 1, 35),
 ((SELECT id FROM pokemones WHERE name = 'Wugtrio'), 2, 100),
@@ -8647,7 +8647,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wugtrio'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Wugtrio'), 6, 120);
 
--- Inserciï¿½n para Bombirdier
+-- Inserción para Bombirdier
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bombirdier'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Bombirdier'), 2, 103),
@@ -8656,7 +8656,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Bombirdier'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Bombirdier'), 6, 82);
 
--- Inserciï¿½n para Finizen
+-- Inserción para Finizen
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Finizen'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Finizen'), 2, 45),
@@ -8665,7 +8665,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Finizen'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Finizen'), 6, 75);
 
--- Inserciï¿½n para Palafin
+-- Inserción para Palafin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palafin'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Palafin'), 2, 70),
@@ -8674,7 +8674,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Palafin'), 5, 62),
 ((SELECT id FROM pokemones WHERE name = 'Palafin'), 6, 100);
 
--- Inserciï¿½n para Varoom
+-- Inserción para Varoom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Varoom'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Varoom'), 2, 70),
@@ -8683,7 +8683,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Varoom'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Varoom'), 6, 47);
 
--- Inserciï¿½n para Revavroom
+-- Inserción para Revavroom
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Revavroom'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Revavroom'), 2, 119),
@@ -8692,7 +8692,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Revavroom'), 5, 67),
 ((SELECT id FROM pokemones WHERE name = 'Revavroom'), 6, 90);
 
--- Inserciï¿½n para Cyclizar
+-- Inserción para Cyclizar
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cyclizar'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Cyclizar'), 2, 95),
@@ -8701,7 +8701,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cyclizar'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Cyclizar'), 6, 121);
 
--- Inserciï¿½n para Orthworm
+-- Inserción para Orthworm
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Orthworm'), 1, 70),
 ((SELECT id FROM pokemones WHERE name = 'Orthworm'), 2, 85),
@@ -8710,7 +8710,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Orthworm'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Orthworm'), 6, 65);
 
--- Inserciï¿½n para Glimmet
+-- Inserción para Glimmet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glimmet'), 1, 48),
 ((SELECT id FROM pokemones WHERE name = 'Glimmet'), 2, 35),
@@ -8719,7 +8719,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glimmet'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Glimmet'), 6, 60);
 
--- Inserciï¿½n para Glimmora
+-- Inserción para Glimmora
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glimmora'), 1, 83),
 ((SELECT id FROM pokemones WHERE name = 'Glimmora'), 2, 55),
@@ -8728,7 +8728,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Glimmora'), 5, 81),
 ((SELECT id FROM pokemones WHERE name = 'Glimmora'), 6, 86);
 
--- Inserciï¿½n para Greavard
+-- Inserción para Greavard
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Greavard'), 1, 50),
 ((SELECT id FROM pokemones WHERE name = 'Greavard'), 2, 61),
@@ -8737,7 +8737,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Greavard'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Greavard'), 6, 34);
 
--- Inserciï¿½n para Houndstone
+-- Inserción para Houndstone
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Houndstone'), 1, 72),
 ((SELECT id FROM pokemones WHERE name = 'Houndstone'), 2, 101),
@@ -8746,7 +8746,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Houndstone'), 5, 97),
 ((SELECT id FROM pokemones WHERE name = 'Houndstone'), 6, 68);
 
--- Inserciï¿½n para Flamigo
+-- Inserción para Flamigo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flamigo'), 1, 82),
 ((SELECT id FROM pokemones WHERE name = 'Flamigo'), 2, 115),
@@ -8755,7 +8755,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flamigo'), 5, 64),
 ((SELECT id FROM pokemones WHERE name = 'Flamigo'), 6, 90);
 
--- Inserciï¿½n para Cetoddle
+-- Inserción para Cetoddle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cetoddle'), 1, 108),
 ((SELECT id FROM pokemones WHERE name = 'Cetoddle'), 2, 68),
@@ -8764,7 +8764,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cetoddle'), 5, 40),
 ((SELECT id FROM pokemones WHERE name = 'Cetoddle'), 6, 43);
 
--- Inserciï¿½n para Cetitan
+-- Inserción para Cetitan
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cetitan'), 1, 170),
 ((SELECT id FROM pokemones WHERE name = 'Cetitan'), 2, 113),
@@ -8773,7 +8773,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Cetitan'), 5, 55),
 ((SELECT id FROM pokemones WHERE name = 'Cetitan'), 6, 73);
 
--- Inserciï¿½n para Veluza
+-- Inserción para Veluza
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Veluza'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Veluza'), 2, 102),
@@ -8782,7 +8782,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Veluza'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Veluza'), 6, 70);
 
--- Inserciï¿½n para Dondozo
+-- Inserción para Dondozo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dondozo'), 1, 150),
 ((SELECT id FROM pokemones WHERE name = 'Dondozo'), 2, 100),
@@ -8791,7 +8791,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dondozo'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Dondozo'), 6, 35);
 
--- Inserciï¿½n para Tatsugiri
+-- Inserción para Tatsugiri
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tatsugiri'), 1, 68),
 ((SELECT id FROM pokemones WHERE name = 'Tatsugiri'), 2, 50),
@@ -8800,7 +8800,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Tatsugiri'), 5, 95),
 ((SELECT id FROM pokemones WHERE name = 'Tatsugiri'), 6, 82);
 
--- Inserciï¿½n para Annihilape
+-- Inserción para Annihilape
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Annihilape'), 1, 110),
 ((SELECT id FROM pokemones WHERE name = 'Annihilape'), 2, 115),
@@ -8809,7 +8809,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Annihilape'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Annihilape'), 6, 90);
 
--- Inserciï¿½n para Clodsire
+-- Inserción para Clodsire
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clodsire'), 1, 130),
 ((SELECT id FROM pokemones WHERE name = 'Clodsire'), 2, 75),
@@ -8818,7 +8818,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Clodsire'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Clodsire'), 6, 20);
 
--- Inserciï¿½n para Farigiraf
+-- Inserción para Farigiraf
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Farigiraf'), 1, 120),
 ((SELECT id FROM pokemones WHERE name = 'Farigiraf'), 2, 90),
@@ -8827,7 +8827,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Farigiraf'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Farigiraf'), 6, 60);
 
--- Inserciï¿½n para Dudunsparce
+-- Inserción para Dudunsparce
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dudunsparce'), 1, 125),
 ((SELECT id FROM pokemones WHERE name = 'Dudunsparce'), 2, 100),
@@ -8836,7 +8836,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dudunsparce'), 5, 75),
 ((SELECT id FROM pokemones WHERE name = 'Dudunsparce'), 6, 55);
 
--- Inserciï¿½n para Kingambit
+-- Inserción para Kingambit
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kingambit'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Kingambit'), 2, 135),
@@ -8845,7 +8845,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Kingambit'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Kingambit'), 6, 50);
 
--- Inserciï¿½n para Great-tusk
+-- Inserción para Great-tusk
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Great-tusk'), 1, 115),
 ((SELECT id FROM pokemones WHERE name = 'Great-tusk'), 2, 131),
@@ -8854,7 +8854,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Great-tusk'), 5, 53),
 ((SELECT id FROM pokemones WHERE name = 'Great-tusk'), 6, 87);
 
--- Inserciï¿½n para Scream-tail
+-- Inserción para Scream-tail
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scream-tail'), 1, 115),
 ((SELECT id FROM pokemones WHERE name = 'Scream-tail'), 2, 65),
@@ -8863,7 +8863,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Scream-tail'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Scream-tail'), 6, 111);
 
--- Inserciï¿½n para Brute-bonnet
+-- Inserción para Brute-bonnet
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Brute-bonnet'), 1, 111),
 ((SELECT id FROM pokemones WHERE name = 'Brute-bonnet'), 2, 127),
@@ -8872,7 +8872,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Brute-bonnet'), 5, 99),
 ((SELECT id FROM pokemones WHERE name = 'Brute-bonnet'), 6, 55);
 
--- Inserciï¿½n para Flutter-mane
+-- Inserción para Flutter-mane
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flutter-mane'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Flutter-mane'), 2, 55),
@@ -8881,7 +8881,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Flutter-mane'), 5, 135),
 ((SELECT id FROM pokemones WHERE name = 'Flutter-mane'), 6, 135);
 
--- Inserciï¿½n para Slither-wing
+-- Inserción para Slither-wing
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slither-wing'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Slither-wing'), 2, 135),
@@ -8890,7 +8890,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Slither-wing'), 5, 105),
 ((SELECT id FROM pokemones WHERE name = 'Slither-wing'), 6, 81);
 
--- Inserciï¿½n para Sandy-shocks
+-- Inserción para Sandy-shocks
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandy-shocks'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Sandy-shocks'), 2, 81),
@@ -8899,7 +8899,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sandy-shocks'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Sandy-shocks'), 6, 101);
 
--- Inserciï¿½n para Iron-treads
+-- Inserción para Iron-treads
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-treads'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Iron-treads'), 2, 112),
@@ -8908,7 +8908,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-treads'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Iron-treads'), 6, 106);
 
--- Inserciï¿½n para Iron-bundle
+-- Inserción para Iron-bundle
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-bundle'), 1, 56),
 ((SELECT id FROM pokemones WHERE name = 'Iron-bundle'), 2, 80),
@@ -8917,7 +8917,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-bundle'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Iron-bundle'), 6, 136);
 
--- Inserciï¿½n para Iron-hands
+-- Inserción para Iron-hands
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-hands'), 1, 154),
 ((SELECT id FROM pokemones WHERE name = 'Iron-hands'), 2, 140),
@@ -8926,7 +8926,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-hands'), 5, 68),
 ((SELECT id FROM pokemones WHERE name = 'Iron-hands'), 6, 50);
 
--- Inserciï¿½n para Iron-jugulis
+-- Inserción para Iron-jugulis
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-jugulis'), 1, 94),
 ((SELECT id FROM pokemones WHERE name = 'Iron-jugulis'), 2, 80),
@@ -8935,7 +8935,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-jugulis'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Iron-jugulis'), 6, 108);
 
--- Inserciï¿½n para Iron-moth
+-- Inserción para Iron-moth
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-moth'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Iron-moth'), 2, 70),
@@ -8944,7 +8944,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-moth'), 5, 110),
 ((SELECT id FROM pokemones WHERE name = 'Iron-moth'), 6, 110);
 
--- Inserciï¿½n para Iron-thorns
+-- Inserción para Iron-thorns
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-thorns'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Iron-thorns'), 2, 134),
@@ -8953,7 +8953,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-thorns'), 5, 84),
 ((SELECT id FROM pokemones WHERE name = 'Iron-thorns'), 6, 72);
 
--- Inserciï¿½n para Frigibax
+-- Inserción para Frigibax
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frigibax'), 1, 65),
 ((SELECT id FROM pokemones WHERE name = 'Frigibax'), 2, 75),
@@ -8962,7 +8962,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Frigibax'), 5, 45),
 ((SELECT id FROM pokemones WHERE name = 'Frigibax'), 6, 55);
 
--- Inserciï¿½n para Arctibax
+-- Inserción para Arctibax
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arctibax'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Arctibax'), 2, 95),
@@ -8971,7 +8971,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Arctibax'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Arctibax'), 6, 62);
 
--- Inserciï¿½n para Baxcalibur
+-- Inserción para Baxcalibur
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Baxcalibur'), 1, 115),
 ((SELECT id FROM pokemones WHERE name = 'Baxcalibur'), 2, 145),
@@ -8980,7 +8980,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Baxcalibur'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Baxcalibur'), 6, 87);
 
--- Inserciï¿½n para Gimmighoul
+-- Inserción para Gimmighoul
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gimmighoul'), 1, 45),
 ((SELECT id FROM pokemones WHERE name = 'Gimmighoul'), 2, 30),
@@ -8989,7 +8989,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gimmighoul'), 5, 70),
 ((SELECT id FROM pokemones WHERE name = 'Gimmighoul'), 6, 10);
 
--- Inserciï¿½n para Gholdengo
+-- Inserción para Gholdengo
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gholdengo'), 1, 87),
 ((SELECT id FROM pokemones WHERE name = 'Gholdengo'), 2, 60),
@@ -8998,7 +8998,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gholdengo'), 5, 91),
 ((SELECT id FROM pokemones WHERE name = 'Gholdengo'), 6, 84);
 
--- Inserciï¿½n para Wo-chien
+-- Inserción para Wo-chien
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wo-chien'), 1, 85),
 ((SELECT id FROM pokemones WHERE name = 'Wo-chien'), 2, 85),
@@ -9007,7 +9007,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Wo-chien'), 5, 135),
 ((SELECT id FROM pokemones WHERE name = 'Wo-chien'), 6, 70);
 
--- Inserciï¿½n para Chien-pao
+-- Inserción para Chien-pao
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chien-pao'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Chien-pao'), 2, 120),
@@ -9016,7 +9016,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chien-pao'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Chien-pao'), 6, 135);
 
--- Inserciï¿½n para Ting-lu
+-- Inserción para Ting-lu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ting-lu'), 1, 155),
 ((SELECT id FROM pokemones WHERE name = 'Ting-lu'), 2, 110),
@@ -9025,7 +9025,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ting-lu'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Ting-lu'), 6, 45);
 
--- Inserciï¿½n para Chi-yu
+-- Inserción para Chi-yu
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chi-yu'), 1, 55),
 ((SELECT id FROM pokemones WHERE name = 'Chi-yu'), 2, 80),
@@ -9034,7 +9034,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Chi-yu'), 5, 120),
 ((SELECT id FROM pokemones WHERE name = 'Chi-yu'), 6, 100);
 
--- Inserciï¿½n para Roaring-moon
+-- Inserción para Roaring-moon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roaring-moon'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Roaring-moon'), 2, 139),
@@ -9043,7 +9043,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Roaring-moon'), 5, 101),
 ((SELECT id FROM pokemones WHERE name = 'Roaring-moon'), 6, 119);
 
--- Inserciï¿½n para Iron-valiant
+-- Inserción para Iron-valiant
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-valiant'), 1, 74),
 ((SELECT id FROM pokemones WHERE name = 'Iron-valiant'), 2, 130),
@@ -9052,7 +9052,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-valiant'), 5, 60),
 ((SELECT id FROM pokemones WHERE name = 'Iron-valiant'), 6, 116);
 
--- Inserciï¿½n para Koraidon
+-- Inserción para Koraidon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Koraidon'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Koraidon'), 2, 135),
@@ -9061,7 +9061,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Koraidon'), 5, 100),
 ((SELECT id FROM pokemones WHERE name = 'Koraidon'), 6, 135);
 
--- Inserciï¿½n para Miraidon
+-- Inserción para Miraidon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Miraidon'), 1, 100),
 ((SELECT id FROM pokemones WHERE name = 'Miraidon'), 2, 85),
@@ -9070,7 +9070,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Miraidon'), 5, 115),
 ((SELECT id FROM pokemones WHERE name = 'Miraidon'), 6, 135);
 
--- Inserciï¿½n para Walking-wake
+-- Inserción para Walking-wake
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Walking-wake'), 1, 99),
 ((SELECT id FROM pokemones WHERE name = 'Walking-wake'), 2, 83),
@@ -9079,7 +9079,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Walking-wake'), 5, 83),
 ((SELECT id FROM pokemones WHERE name = 'Walking-wake'), 6, 109);
 
--- Inserciï¿½n para Iron-leaves
+-- Inserción para Iron-leaves
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-leaves'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Iron-leaves'), 2, 130),
@@ -9088,7 +9088,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-leaves'), 5, 108),
 ((SELECT id FROM pokemones WHERE name = 'Iron-leaves'), 6, 104);
 
--- Inserciï¿½n para Dipplin
+-- Inserción para Dipplin
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dipplin'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Dipplin'), 2, 80),
@@ -9097,7 +9097,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Dipplin'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Dipplin'), 6, 40);
 
--- Inserciï¿½n para Poltchageist
+-- Inserción para Poltchageist
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poltchageist'), 1, 40),
 ((SELECT id FROM pokemones WHERE name = 'Poltchageist'), 2, 45),
@@ -9106,7 +9106,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Poltchageist'), 5, 54),
 ((SELECT id FROM pokemones WHERE name = 'Poltchageist'), 6, 50);
 
--- Inserciï¿½n para Sinistcha
+-- Inserción para Sinistcha
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sinistcha'), 1, 71),
 ((SELECT id FROM pokemones WHERE name = 'Sinistcha'), 2, 60),
@@ -9115,7 +9115,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Sinistcha'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Sinistcha'), 6, 70);
 
--- Inserciï¿½n para Okidogi
+-- Inserción para Okidogi
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Okidogi'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Okidogi'), 2, 128),
@@ -9124,7 +9124,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Okidogi'), 5, 86),
 ((SELECT id FROM pokemones WHERE name = 'Okidogi'), 6, 80);
 
--- Inserciï¿½n para Munkidori
+-- Inserción para Munkidori
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Munkidori'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Munkidori'), 2, 75),
@@ -9133,7 +9133,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Munkidori'), 5, 90),
 ((SELECT id FROM pokemones WHERE name = 'Munkidori'), 6, 106);
 
--- Inserciï¿½n para Fezandipiti
+-- Inserción para Fezandipiti
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fezandipiti'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Fezandipiti'), 2, 91),
@@ -9142,7 +9142,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Fezandipiti'), 5, 125),
 ((SELECT id FROM pokemones WHERE name = 'Fezandipiti'), 6, 99);
 
--- Inserciï¿½n para Ogerpon
+-- Inserción para Ogerpon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ogerpon'), 1, 80),
 ((SELECT id FROM pokemones WHERE name = 'Ogerpon'), 2, 120),
@@ -9151,7 +9151,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Ogerpon'), 5, 96),
 ((SELECT id FROM pokemones WHERE name = 'Ogerpon'), 6, 110);
 
--- Inserciï¿½n para Archaludon
+-- Inserción para Archaludon
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Archaludon'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Archaludon'), 2, 105),
@@ -9160,7 +9160,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Archaludon'), 5, 65),
 ((SELECT id FROM pokemones WHERE name = 'Archaludon'), 6, 85);
 
--- Inserciï¿½n para Hydrapple
+-- Inserción para Hydrapple
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hydrapple'), 1, 106),
 ((SELECT id FROM pokemones WHERE name = 'Hydrapple'), 2, 80),
@@ -9169,7 +9169,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Hydrapple'), 5, 80),
 ((SELECT id FROM pokemones WHERE name = 'Hydrapple'), 6, 44);
 
--- Inserciï¿½n para Gouging-fire
+-- Inserción para Gouging-fire
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gouging-fire'), 1, 105),
 ((SELECT id FROM pokemones WHERE name = 'Gouging-fire'), 2, 115),
@@ -9178,7 +9178,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Gouging-fire'), 5, 93),
 ((SELECT id FROM pokemones WHERE name = 'Gouging-fire'), 6, 91);
 
--- Inserciï¿½n para Raging-bolt
+-- Inserción para Raging-bolt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raging-bolt'), 1, 125),
 ((SELECT id FROM pokemones WHERE name = 'Raging-bolt'), 2, 73),
@@ -9187,7 +9187,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Raging-bolt'), 5, 89),
 ((SELECT id FROM pokemones WHERE name = 'Raging-bolt'), 6, 75);
 
--- Inserciï¿½n para Iron-boulder
+-- Inserción para Iron-boulder
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-boulder'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Iron-boulder'), 2, 120),
@@ -9196,7 +9196,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-boulder'), 5, 108),
 ((SELECT id FROM pokemones WHERE name = 'Iron-boulder'), 6, 124);
 
--- Inserciï¿½n para Iron-crown
+-- Inserción para Iron-crown
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-crown'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Iron-crown'), 2, 72),
@@ -9205,7 +9205,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Iron-crown'), 5, 108),
 ((SELECT id FROM pokemones WHERE name = 'Iron-crown'), 6, 98);
 
--- Inserciï¿½n para Terapagos
+-- Inserción para Terapagos
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Terapagos'), 1, 90),
 ((SELECT id FROM pokemones WHERE name = 'Terapagos'), 2, 65),
@@ -9214,7 +9214,7 @@ INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Terapagos'), 5, 85),
 ((SELECT id FROM pokemones WHERE name = 'Terapagos'), 6, 60);
 
--- Inserciï¿½n para Pecharunt
+-- Inserción para Pecharunt
 INSERT INTO stat_values (pokemon_id, stat_id, stat_value) VALUES
 ((SELECT id FROM pokemones WHERE name = 'Pecharunt'), 1, 88),
 ((SELECT id FROM pokemones WHERE name = 'Pecharunt'), 2, 88),
