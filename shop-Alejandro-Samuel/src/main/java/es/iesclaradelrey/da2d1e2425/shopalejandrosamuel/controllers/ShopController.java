@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
@@ -39,11 +40,12 @@ public class ShopController {
 
         Collection<Region> regiones = regionService.findAll();
         Collection<Pokemon> pokemones = pokemonService.findByRegion(id);
-
+        Collection<Type> types = typeService.findAll();
         ModelAndView modelAndView = new ModelAndView("shop");
         modelAndView.addObject("regiones", regiones);
         modelAndView.addObject("pokemones", pokemones);
         modelAndView.addObject("current", id);
+        modelAndView.addObject("types", types);
 
         return modelAndView;
     }
