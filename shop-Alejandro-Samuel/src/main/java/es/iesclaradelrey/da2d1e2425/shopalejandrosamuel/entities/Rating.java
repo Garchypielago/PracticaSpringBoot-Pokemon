@@ -9,19 +9,20 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name="ratings")
+@Table(name = "ratings", uniqueConstraints = @UniqueConstraint(columnNames = {"pokemon_id", "username"}))
 public class Rating {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "pokemon_id")
+    @JoinColumn(name = "pokemon_id", nullable = false)
     private Pokemon pokemon;
 
     @Column(nullable = false)
     private Float mark;
 
-    @Column(unique = true ,nullable = false)
+    @Column(name = "username", nullable = false)
     private String userName;
 
     @Column
