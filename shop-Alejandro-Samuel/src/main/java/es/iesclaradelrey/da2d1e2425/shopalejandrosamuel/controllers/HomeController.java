@@ -1,16 +1,33 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping({"/",""})
 public class HomeController {
 
+    private final PokemonService pokemonService;
+
+    public HomeController(PokemonService pokemonService) {
+        this.pokemonService = pokemonService;
+    }
+
     @GetMapping
-    public String indexPage() {
-        return "index";
+    public ModelAndView indexPage() {
+
+        Collection<Pokemon> pokemonesHome = getRandomPokemones(9);
+        ModelAndView modelAndView = new ModelAndView("index");
+        modelAndView.addObject("pokemonesHome", pokemonesHome);
+
+        return modelAndView;
     }
 
     @GetMapping
@@ -30,6 +47,26 @@ public class HomeController {
     public String cartPage() {
         return "cart";
     }
+
+    public Collection<Pokemon> getRandomPokemones(int count) {
+        Random random = new Random();
+        Set<Long> randomIds = new HashSet<>();
+
+        // Generar `count` números aleatorios únicos entre 1 y 1025, convertidos a Long
+        while (randomIds.size() < count) {
+            long randomId = (long) (random.nextInt(1025) + 1);
+            randomIds.add(randomId);
+        }
+
+        // Buscar los Pokémon por los IDs generados y filtrar los que no se encuentren
+        return randomIds.stream()
+                .map(pokemonService::findById)
+                .filter(Optional::isPresent) // Filtrar los Optional que están presentes
+                .map(Optional::get) // Obtener el valor de los Optional presentes
+                .collect(Collectors.toList());
+    }
+
+
 
 
 }

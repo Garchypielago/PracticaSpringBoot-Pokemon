@@ -101,131 +101,20 @@
         <div class="products-catagories-area clearfix">
             <div class="amado-pro-catagory clearfix container_index_products imagenes_modificar">
 
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondofuego.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/1.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charmander.gif" alt="" style="width: auto;">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Charmander</h4>
-                            <p>From P¥180</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondofuego.jpg);">
-                    <a href="shop.html">
+                <div th:each="pokemon : ${pokemonesHome}"  class="single-products-catagory clearfix" th:style="'background-image: url(' + ${pokemon.getType1().getBackground()} + ');'" >
+                    <a th:href="'../../product-details/pokemon/' + ${pokemon.getId()} ">
                         <!-- <img src="img/bg-img/2.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charmeleon.gif" alt="" style="width: auto;" >
+                        <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
+                        <!--                                    <img th:src="'https://projectpokemon.org/images/normal-sprite/' + ${pokemon.getName().toLowerCase()} + '.gif'" alt="" style="width: auto;" >-->
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
-                            <h4>Charmeleon</h4>
+                            <h4 th:text="${pokemon.getName()}">Charmeleon</h4>
                             <p>From P¥180</p>
                         </div>
                     </a>
                 </div>
 
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondofuego.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/3.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charizard.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Charizard</h4>
-                            <p>From P¥180</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondoarbol.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/4.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/bulbasaur.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Bulbasaur</h4>
-                            <p>From P¥180</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondoarbol.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/5.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/ivysaur.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Ivysaur</h4>
-                            <p>From P¥18</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondoarbol.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/6.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/venusaur.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Venasaur</h4>
-                            <p>From P¥320</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondomar.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/7.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/squirtle.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Squirtle</h4>
-                            <p>From P¥318</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondomar.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/8.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/wartortle.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Wartortle</h4>
-                            <p>From P¥318</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix" style=" background-image: url(/shopedex/fondomar.jpg);">
-                    <a href="shop.html">
-                        <!-- <img src="img/bg-img/9.jpg" alt=""> -->
-                        <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/blastoise.gif" alt="" style="width: auto;" >
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <h4>Blastoise</h4>
-                            <p>From P¥318</p>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
         <!-- Product Catagories Area End -->
