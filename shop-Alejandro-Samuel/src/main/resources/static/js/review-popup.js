@@ -3,7 +3,7 @@ let canReview=true;
 const openBtn = document.getElementById("open-review");
 const closeBtn =document.getElementById("close-review");
 const review =document.getElementById("review")
-const reviewinner =document.getElementById("inner-review")
+const reviewtext =document.getElementById("review-area")
 const pokemonJSId = document.getElementById("pokemonJSId")
 
 openBtn.addEventListener("click",()=>{
@@ -41,10 +41,12 @@ for(let star of stars){
 }
 
 function sendData(){
+    let reviewtxt = reviewtext.value
     let pokemonid=pokemonJSId.getAttribute('data-id')
-    let ratingArray={rating,pokemonid}
-    fetch("../templates/product-details",{
-        method:"POST", body:ratingArray
-    })
-        .then(text=>console.log(text))
+    let ratingArray={rating,pokemonid,reviewtxt}
+    console.log(ratingArray)
+    // fetch("../templates/product-details",{
+    //     method:"POST", body:ratingArray
+    // })
+    //     .then(text=>console.log(text))
 }
