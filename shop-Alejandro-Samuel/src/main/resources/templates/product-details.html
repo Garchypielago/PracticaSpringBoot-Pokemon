@@ -102,12 +102,17 @@
                                 </a>
                                 <!-- Ratings & Review -->
                                 <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
+                                    <p th:text="${pokemonRating}"></p>
                                     <div class="ratings">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
+                                        <span class="fa-solid fa-star-half rated-star half"></span>
+                                        <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
+                                        <span class="fa-solid fa-star-half rated-star half"></span>
+                                        <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
+                                        <span class="fa-solid fa-star-half rated-star half"></span>
+                                        <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
+                                        <span class="fa-solid fa-star-half rated-star half" ></span>
+                                        <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
                                     </div>
                                     <button id="open-review">Write A Review</button>
                                     <div class="review" id="review">
@@ -134,7 +139,6 @@
                             </div>
 
                             <div class="short_overview my-5">
-<!--                                <p th:text="${pokemonRating}"></p>-->
                                 <p th:text="${pokemon.getDescripcion()}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quae eveniet culpa officia quidem mollitia impedit iste asperiores nisi reprehenderit consequatur, autem, nostrum pariatur enim?</p>
                             </div>
 
