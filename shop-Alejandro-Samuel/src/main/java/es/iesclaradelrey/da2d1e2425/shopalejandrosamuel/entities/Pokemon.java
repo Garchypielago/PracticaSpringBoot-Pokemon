@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Collection;
-import java.util.Map;
-import java.util.Optional;
 
 @Getter
 @Setter
@@ -28,6 +26,10 @@ public class Pokemon {
 
     @OneToMany(mappedBy = "pokemon")
     private Collection<StatValue> stats;
+
+    @OneToMany
+    @JoinColumn(name="product_in_cart")
+    private Collection<ProductInCart> productInCart;
 
     @ManyToOne
     @JoinColumn(name="type1", nullable = false)

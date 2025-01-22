@@ -21,4 +21,5 @@ public class Type{
 
     @Column
     private String background;
+
 }
