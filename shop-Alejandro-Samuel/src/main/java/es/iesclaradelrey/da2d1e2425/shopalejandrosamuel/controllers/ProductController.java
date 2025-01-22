@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Collection;
 import java.util.Optional;
 
 @Controller
@@ -21,6 +22,7 @@ public class ProductController extends  BaseController{
     private final PokemonRepository pokemonRepository;
 
     public ProductController(PokemonService pokemonService, PokemonRepository pokemonRepository) {
+        super(pokemonService);
         this.pokemonService = pokemonService;
         this.pokemonRepository = pokemonRepository;
     }
@@ -44,7 +46,10 @@ public class ProductController extends  BaseController{
             modelAndView.addObject("pokemon", pokemon);
         }
 
+        Collection<Pokemon> pokemones = getRandomPokemones(4);
+
         modelAndView.addObject("pokemonRating", pokemonRepository.avgRatingsFromPokemon(id));
+        modelAndView.addObject("pokemones", pokemones);
 
         return modelAndView;
     }

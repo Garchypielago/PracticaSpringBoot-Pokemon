@@ -1,0 +1,40 @@
+<!-- src/main/resources/templates/pokemonFragments.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Amado - Furniture Ecommerce Template</title>
+    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="stylesheet" href="/css/core-style.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ImagesPokemonList Fragment -->
+<div th:fragment="imagesPokemonList" th:each="pokemon : ${pokemones}"  class="single-products-catagory clearfix" th:style="'background-image: url(' + ${pokemon.getType1().getBackground()} + ');'" >
+    <a th:href="'../../product-details/pokemon/' + ${pokemon.getId()} ">
+        <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
+        <div class="hover-content">
+            <div class="line"></div>
+            <h4 th:text="${pokemon.getName()}">Charmeleon</h4>
+            <p>From P¥180</p>
+        </div>
+    </a>
+</div>
+
+<!-- CarruselPokemon Fragment -->
+<li th:fragment="carrusel" th:each="pokemon : ${pokemones}" th:style="'background-image: url(' + ${pokemon.getType1().getBackground()} + ');'" >
+    <a th:href="'../../product-details/pokemon/' + ${pokemon.getId()} ">
+        <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
+    </a>
+</li>
+
+<!--<li th:fragment="carrusel" th:each="pokemon : ${pokemones}" data-target="#product_details_slider" data-slide-to="0" th:style="'background-image: url(https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png);'" >-->
+<!--</li>-->
+
+
+</body>
+</html>

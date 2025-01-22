@@ -24,6 +24,7 @@ public class ShopController extends  BaseController{
     private final TypeService typeService;
 
     public ShopController(PokemonService pokemonService, RegionService regionService, TypeService typeService) {
+        super(pokemonService);
         this.pokemonService = pokemonService;
         this.regionService = regionService;
         this.typeService = typeService;

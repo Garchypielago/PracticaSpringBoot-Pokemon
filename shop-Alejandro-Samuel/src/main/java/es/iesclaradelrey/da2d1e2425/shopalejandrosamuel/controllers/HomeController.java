@@ -17,6 +17,7 @@ public class HomeController extends BaseController{
     private final PokemonService pokemonService;
 
     public HomeController(PokemonService pokemonService) {
+        super(pokemonService);
         this.pokemonService = pokemonService;
     }
 
@@ -28,9 +29,9 @@ public class HomeController extends BaseController{
     @GetMapping
     public ModelAndView indexPage() {
 
-        Collection<Pokemon> pokemonesHome = getRandomPokemones(9);
+        Collection<Pokemon> pokemones = getRandomPokemones(9);
         ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("pokemonesHome", pokemonesHome);
+        modelAndView.addObject("pokemones", pokemones);
 
         return modelAndView;
     }
@@ -53,23 +54,7 @@ public class HomeController extends BaseController{
         return "cart";
     }
 
-    public Collection<Pokemon> getRandomPokemones(int count) {
-        Random random = new Random();
-        Set<Long> randomIds = new HashSet<>();
 
-        // Generar `count` números aleatorios únicos entre 1 y 1025, convertidos a Long
-        while (randomIds.size() < count) {
-            long randomId = (long) (random.nextInt(1025) + 1);
-            randomIds.add(randomId);
-        }
-
-        // Buscar los Pokémon por los IDs generados y filtrar los que no se encuentren
-        return randomIds.stream()
-                .map(pokemonService::findById)
-                .filter(Optional::isPresent) // Filtrar los Optional que están presentes
-                .map(Optional::get) // Obtener el valor de los Optional presentes
-                .collect(Collectors.toList());
-    }
 
 
 
