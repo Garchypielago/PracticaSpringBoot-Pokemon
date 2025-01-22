@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Controller
 @RequestMapping({"/product-details",})
-public class ProductController {
+public class ProductController extends  BaseController{
     private final PokemonService pokemonService;
     public ProductController(PokemonService pokemonService) {
         this.pokemonService = pokemonService;

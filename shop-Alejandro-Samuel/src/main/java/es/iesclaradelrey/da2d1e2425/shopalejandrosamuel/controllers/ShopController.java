@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Controller
 @RequestMapping({"/shop"})
-public class ShopController {
+public class ShopController extends  BaseController{
 
     private final PokemonService pokemonService;
     private final RegionService regionService;

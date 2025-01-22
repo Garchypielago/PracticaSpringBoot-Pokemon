@@ -11,14 +11,19 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping({"/",""})
-public class HomeController {
+@RequestMapping({"/","","/index"})
+public class HomeController extends BaseController{
 
     private final PokemonService pokemonService;
 
     public HomeController(PokemonService pokemonService) {
         this.pokemonService = pokemonService;
     }
+
+//    @GetMapping
+//    public String home() {
+//        return "redirect:/index";
+//    }
 
     @GetMapping
     public ModelAndView indexPage() {
