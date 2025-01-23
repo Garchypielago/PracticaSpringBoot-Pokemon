@@ -22,6 +22,7 @@ public class BaseController {
     @ModelAttribute(name="activeSection")
     public String addUrl(HttpServletRequest request) {
         String url = request.getRequestURI();
+
         System.out.println(url);
         return url.equals("/") ? "index" : url.split("/")[1];
     }

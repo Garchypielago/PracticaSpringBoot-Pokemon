@@ -64,3 +64,13 @@
         background-size: cover;
         background-position: center;
         }
+
+    .single-products-catagoryPD > a {
+        height: 80%;
+        width: 80%;
+    }
+
+    .single-products-catagoryPD img {
+        height: 100%;
+        width: 100%;
+    }
