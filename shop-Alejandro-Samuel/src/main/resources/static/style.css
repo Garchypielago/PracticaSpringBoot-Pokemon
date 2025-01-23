@@ -52,3 +52,15 @@
     .main-content-wrapper .header-area .logo{
         margin-bottom: 10px;
     }
+
+    .carousel-indicators li{
+        display: flex;
+
+    }
+
+    .single-products-catagoryPD {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        }
