@@ -3,7 +3,8 @@
     transition: color.2s, transform .2s;
 }
 .half{
-    margin-left: 30px;
+    position: relative;
+    left: 10%;
 }
 .ratings span:hover{
     color: #dcbb0f;
