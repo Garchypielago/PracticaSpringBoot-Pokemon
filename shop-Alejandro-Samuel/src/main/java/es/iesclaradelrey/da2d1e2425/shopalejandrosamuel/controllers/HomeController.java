@@ -47,13 +47,7 @@ public class HomeController extends BaseController{
 //    public String productDetailsPage() {
 //        return "product-details";
 //    }
-
-    @GetMapping
-    @RequestMapping("/cart")
-    public String cartPage() {
-        return "cart";
-    }
-
+    
 
 
 
