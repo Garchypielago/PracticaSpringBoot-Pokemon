@@ -50,8 +50,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="cart_product_img">
+                                    <tr th:each="productInCart : ${ProductInCarts}">
+                                        <td th:text="${productInCart.getId}" class="cart_product_img">
+                                            <a href="#"><img src="./img/bg-img/cart1.jpg" alt="Product"></a>
+                                        </td>
+                                        <td th:text="${productInCart.getAddedTime}" class="cart_product_img">
+                                            <a href="#"><img src="./img/bg-img/cart1.jpg" alt="Product"></a>
+                                        </td>
+                                        <td th:text="${productInCart.getModifiedTime}" class="cart_product_img">
                                             <a href="#"><img src="./img/bg-img/cart1.jpg" alt="Product"></a>
                                         </td>
                                         <td class="cart_product_desc">
