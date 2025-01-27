@@ -21,17 +21,22 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     }
 
     @Override
-    public Optional<ProductInCart> findById(int id) {return productInCartRepository.findById((long) id);
+    public Optional<ProductInCart> findById(Long id) {return productInCartRepository.findById((long) id);
     }
 
     @Override
     public ProductInCart save(ProductInCart productInCart) {
-        return null;
+        return productInCartRepository.save(productInCart);
     }
 
     @Override
     public void delete(ProductInCart productInCart) {
 
+    }
+
+    @Override
+    public Optional<ProductInCart> findByPokemon(Long pokemonId){
+        return productInCartRepository.findByPokemon_Id(pokemonId);
     }
 
 }

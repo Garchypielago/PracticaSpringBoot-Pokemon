@@ -8,7 +8,8 @@ import java.util.Optional;
 
 public interface ProductInCartService {
     Collection<ProductInCart> findAll();
-    Optional<ProductInCart> findById(int id);
+    Optional<ProductInCart> findById(Long id);
     ProductInCart save(ProductInCart productInCart);
     void delete(ProductInCart productInCart);
+    Optional<ProductInCart> findByPokemon(Long pokemonId);
 }

@@ -17,14 +17,27 @@ public class ProductInCart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @ManyToOne
     @JoinColumn(name = "pokemon_id", nullable = false)
     private Pokemon pokemon;
+
     @Column
     private int productNumber;
-    @Column
+
+    @Column(columnDefinition = "timestamp default current_timestamp()", nullable = false, insertable = false, updatable = false )
     private LocalDateTime addedTime;
-    @Column
+    @Column(columnDefinition = "timestamp default current_timestamp() on update current_timestamp()", nullable = false, insertable = false, updatable = false )
     private LocalDateTime modifiedTime;
+
+
+    public ProductInCart(Pokemon pokemon, int productNumber) {
+        this.pokemon = pokemon;
+        this.productNumber = productNumber;
+    }
+
+    public void sumar(){
+        this.productNumber = this.productNumber + 1;
+    }
 
 }
