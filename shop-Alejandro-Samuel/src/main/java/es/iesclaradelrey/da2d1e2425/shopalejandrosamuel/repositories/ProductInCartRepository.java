@@ -8,4 +8,5 @@ import java.util.Optional;
 
 public interface ProductInCartRepository extends JpaRepository<ProductInCart, Long> {
     Optional<ProductInCart> findByPokemon_Id(Long pokemonId);
+
 }

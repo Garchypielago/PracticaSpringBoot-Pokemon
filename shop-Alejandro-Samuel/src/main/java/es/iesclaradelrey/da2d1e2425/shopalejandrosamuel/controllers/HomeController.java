@@ -46,17 +46,7 @@ public class HomeController extends BaseController{
     @GetMapping
     @RequestMapping("/addtocart/{id}")
     public String addToCart(@PathVariable Long id) {
-        Pokemon pokemon = pokemonService.findById(id).orElse(null);
-        LocalDateTime now = LocalDateTime.now();
-        ProductInCart productInCart = productInCartService.findByPokemon(id).orElse(null);
-
-        if(productInCart == null){
-            ProductInCart pc = new ProductInCart(pokemon, 1);
-            productInCartService.save(pc);
-        } else {
-            productInCart.sumar();
-            productInCartService.save(productInCart);
-        }
+        productInCartService.createOrUpdateProductInCart(id, 1);
 
         return "redirect:/product-details/pokemon/"+id;
     }
