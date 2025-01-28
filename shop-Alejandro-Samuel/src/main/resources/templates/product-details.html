@@ -108,12 +108,19 @@
                                             <p></p>
                                             <textarea class="review-area" id="review-area" placeholder="Write your review here"></textarea>
                                             <p></p>
-                                            <button class="btn amado-btn" id="close-review">Send Review</button>
 
-                                            <div  class="reviewstexts" >
+                                            <div class="group-btn-review">
+                                                <button class="btn amado-btn" id="close-review">Close</button>
+                                                <button class="btn amado-btn" id="send-review">Send Review</button>
+                                            </div>
+
+                                            <div  class="reviewsContainer" >
+                                                <div th:if="${ratings.empty}">
+                                                    <p>No hay reviews disponibles en este momento.</p>
+                                                </div>
                                                 <div th:each="rating : ${ratings}">
-                                                    <p th:text="${rating.getUserName()}"></p>
-                                                    <p th:text="${rating.getReview()}"></p>
+                                                    <p th:text="${rating.getUserName()}" class="reviewUser"></p>
+                                                    <p th:text="${rating.getReview()}" class="reviewText"></p>
                                                 </div>
                                             </div>
 
