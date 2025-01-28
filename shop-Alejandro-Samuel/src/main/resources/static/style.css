@@ -74,3 +74,11 @@
         height: 100%;
         width: 100%;
     }
+
+    div.reviewstexts {
+        height: 10rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px;
+        box-sizing: border-box;
+    }

@@ -92,7 +92,7 @@
                                         <span data-rating="1"  class="fa-solid fa-star rated-star"></span>
                                         <span data-rating="0.5" class="fa-solid fa-star-half rated-star half" ></span>
                                     </div>
-                                    <button id="open-review">Write A Review</button>
+                                    <button class="btn amado-btn" id="open-review">Write A Review</button>
                                     <div class="review" id="review">
                                         <div class="inner-review">
                                             <h2>Write your Review</h2>
@@ -108,7 +108,17 @@
                                             <p></p>
                                             <textarea class="review-area" id="review-area" placeholder="Write your review here"></textarea>
                                             <p></p>
-                                            <button id="close-review">Send Review</button>
+                                            <button class="btn amado-btn" id="close-review">Send Review</button>
+
+                                            <div  class="reviewstexts" >
+                                                <div th:each="rating : ${ratings}">
+                                                    <p th:text="${rating.getUserName()}"></p>
+                                                    <p th:text="${rating.getReview()}"></p>
+                                                </div>
+                                            </div>
+
+
+
                                         </div>
                                     </div>
                                 </div>

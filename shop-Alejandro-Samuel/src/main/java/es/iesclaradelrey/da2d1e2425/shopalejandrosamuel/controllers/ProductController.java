@@ -2,6 +2,7 @@ package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Rating;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RatingService;
@@ -20,11 +21,13 @@ public class ProductController extends  BaseController{
 
     private final PokemonService pokemonService;
     private final PokemonRepository pokemonRepository;
+    private final RatingService ratingService;
 
-    public ProductController(PokemonService pokemonService, PokemonRepository pokemonRepository) {
+    public ProductController(PokemonService pokemonService, PokemonRepository pokemonRepository, RatingService ratingService) {
         super(pokemonService);
         this.pokemonService = pokemonService;
         this.pokemonRepository = pokemonRepository;
+        this.ratingService = ratingService;
     }
 
     @GetMapping
@@ -50,6 +53,9 @@ public class ProductController extends  BaseController{
 
         modelAndView.addObject("pokemonRating", pokemonRepository.avgRatingsFromPokemon(id));
         modelAndView.addObject("pokemones", pokemones);
+
+        Collection<Rating> ratings = ratingService.findByPokemon_Id(id);
+        modelAndView.addObject("ratings", ratings);
 
         return modelAndView;
     }
