@@ -19,7 +19,7 @@ public class ProductInCart {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "pokemon_id", nullable = false)
+    @JoinColumn(name = "product_in_cart", nullable = false)
     private Pokemon pokemon;
 
     @Column
