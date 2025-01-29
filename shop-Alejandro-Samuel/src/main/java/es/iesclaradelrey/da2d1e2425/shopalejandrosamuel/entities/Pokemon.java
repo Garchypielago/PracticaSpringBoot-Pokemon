@@ -50,4 +50,30 @@ public class Pokemon {
         this.id = id;
         this.name = nombre;
     }
+    public double getPrice() {
+
+        double total=0;
+        Collection<StatValue>stats = this.getStats();
+        for (StatValue statValue : stats) {
+            total+=statValue.getStatValue();
+        }
+        if(this.isLegendary()){
+            total+=1250;
+        }
+        else if(total>=500){
+            total+=300;
+        }
+        else if(total>=415){
+            total+=100;
+        }
+        else if(total<=320 && total>300){
+            total-=50;
+        }
+        else if(total<=300){
+            total-=100;
+        }
+        total=total/4;
+        total = (double) Math.round(total * 100) / 100;
+        return total;
+    }
 }
