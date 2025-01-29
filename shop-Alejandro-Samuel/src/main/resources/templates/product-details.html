@@ -12,13 +12,13 @@
     <title>Shopedex</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="icon" th:href="@{/img/core-img/favicon.ico}">
 
     <!-- Core Style CSS -->
-    <link rel="stylesheet" href="/css/core-style.css">
-    <link rel="stylesheet" href="/css/review-popup.css">
-    <link rel="stylesheet" href="/css/rated-stars.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" th:href="@{/css/core-style.css}">
+    <link rel="stylesheet" th:href="@{/css/review-popup.css}">
+    <link rel="stylesheet" th:href="@{/css/rated-stars.css}">
+    <link rel="stylesheet" th:href="@{/style.css}">
 
 </head>
 
@@ -41,9 +41,9 @@
                     <div class="col-12">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mt-50">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Furniture</a></li>
-                                <li class="breadcrumb-item"><a href="#">Chairs</a></li>
+                                <li class="breadcrumb-item"><a th:href="@{#}">Home</a></li>
+                                <li class="breadcrumb-item"><a th:href="@{#}">Furniture</a></li>
+                                <li class="breadcrumb-item"><a th:href="@{#}">Chairs</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">white modern chair</li>
                             </ol>
                         </nav>
@@ -58,8 +58,8 @@
                                     <li th:replace="pokemonFragments :: carrusel"></li>
                                 </ol>
                                 <div class="carousel-inner">
-                                    <div class="single-products-catagory clearfix carousel-item active"  th:style="'background-image: url(' + ${pokemon.getType1().getBackground()} + ');'">
-<!--                                        <a class="gallery_img" href="/img/product-img/pro-big-1.jpg">-->
+                                    <div class="single-products-catagory clearfix carousel-item active"  th:style="|background-image: url('@{${pokemon.getType1().getBackground()}}');|">
+<!--                                        <a class="gallery_img" th:href="@{/img/product-img/pro-big-1.jpg}">-->
                                         <a class="gallery_img" th:href="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;">
                                             <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
                                         </a>
@@ -74,7 +74,7 @@
                             <div class="product-meta-data">
                                 <div class="line"></div>
                                 <p class="product-price">P¥180</p>
-                                <a href="/product-details">
+                                <a th:href="@{/product-details}">
                                     <h6 th:text="${pokemon.getName()}">White Modern Chair</h6>
                                 </a>
                                 <!-- Ratings & Review -->
@@ -164,18 +164,18 @@
     <footer th:replace="~{fragments :: footer}"></footer>
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
-    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
+    <script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
     <!-- Popper js -->
-    <script src="/js/popper.min.js"></script>
+    <script th:src="@{/js/popper.min.js}"></script>
     <!-- Bootstrap js -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
     <!-- Plugins js -->
-    <script src="/js/plugins.js"></script>
+    <script th:src="@{/js/plugins.js}"></script>
     <!-- Active js -->
-    <script src="/js/active.js"></script>
+    <script th:src="@{/js/active.js}"></script>
 
-    <script src="/js/review-popup.js"></script>
-<script src="/js/rated-stars.js"></script>
+    <script th:src="@{/js/review-popup.js}"></script>
+<script th:src="@{/js/rated-stars.js}"></script>
     <script src="https://kit.fontawesome.com/c892b143ac.js" crossorigin="anonymous"></script>
 </body>
 
