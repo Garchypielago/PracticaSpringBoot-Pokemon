@@ -12,7 +12,7 @@
     <title>Shopedex</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="icon" href="@/img/core-img/favicon.ico">
 
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="/css/core-style.css">
@@ -22,14 +22,14 @@
 
 <body>
 
-<div th:replace="fragments :: startBody"></div>
+<div th:replace="~{fragments :: startBody}"></div>
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
 
-        <div th:replace="fragments :: mobileNav"></div>
+        <div th:replace="~{fragments :: mobileNav}"></div>
 
-        <header th:replace="fragments :: header"></header>
+        <header th:replace="~{fragments :: header}"></header>
 
         <div class="cart-table-area section-padding-100">
             <div class="container-fluid">
@@ -130,9 +130,9 @@
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
 
-<section th:replace="fragments :: newsletter"></section>
+<section th:replace="~{fragments :: newsletter}"></section>
 
-    <footer th:replace="fragments :: footer"></footer>
+    <footer th:replace="~{fragments :: footer}"></footer>
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <script src="/js/jquery/jquery-2.2.4.min.js"></script>

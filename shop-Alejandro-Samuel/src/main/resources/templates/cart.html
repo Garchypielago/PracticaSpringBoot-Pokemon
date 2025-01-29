@@ -22,14 +22,14 @@
 
 <body>
 
-<div th:replace="fragments :: startBody"></div>
+<div th:replace="~{fragments :: startBody}"></div>
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
 
-        <div th:replace="fragments :: mobileNav"></div>
+        <div th:replace="~{fragments :: mobileNav}"></div>
 
-        <header th:replace="fragments :: header"></header>
+        <header th:replace="~{fragments :: header}"></header>
 
         <div class="cart-table-area section-padding-100">
             <div class="container-fluid">
@@ -95,9 +95,9 @@
 
 <section th:replace="fragments :: newsletter"></section>
 
-    <footer th:replace="fragments :: footer"></footer>
+    <footth:replace="~{fragments :: newsletter}"</footer>
 
-    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <!-- ###th:replace="~{fragments :: footer}"aScript Plugins) ##### -->
     <script src="/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
     <script src="/js/popper.min.js"></script>

@@ -1,0 +1,6 @@
+pokemon		X	stat_value 	|Onetomany
+pokemon		X	product_in_cart	|Onetomany
+pokemon		X	type 		|Manytoone
+pokemon		X	region 		|Manytoone
+pokemon		X	rating 		|Onetomany
+stat_value	X	stat 		|Manytoone

@@ -22,14 +22,14 @@
 
 <body>
 
-<div th:replace="fragments :: startBody"></div>
+<div th:replace="~{fragments :: startBody}"></div>
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
 
-        <div th:replace="fragments :: mobileNav"></div>
+        <div th:replace="~{fragments :: mobileNav}"></div>
 
-        <header th:replace="fragments :: header"></header>
+        <header th:replace="~{fragments :: header}"></header>
 
         <div class="shop_sidebar_area">
 
@@ -171,9 +171,9 @@
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
 
-<section th:replace="fragments :: newsletter"></section>
+<section th:replace="~{fragments :: newsletter}"></section>
 
-    <footer th:replace="fragments :: footer"></footer>
+    <footer th:replace="~{fragments :: footer}"></footer>
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <script src="../static/js/jquery/jquery-2.2.4.min.js"></script>
