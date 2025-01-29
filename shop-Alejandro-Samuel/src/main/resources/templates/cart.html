@@ -43,10 +43,13 @@
                             <table class="table table-responsive">
                                 <thead>
                                     <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Price</th>
+                                        <th>Product ID</th>
+                                        <th>Pokemon ID</th>
+                                        <th>Stats</th>
+                                        <th>Pokemon Name</th>
                                         <th>Quantity</th>
+                                        <th>Added Time</th>
+                                        <th>Last Modified Time</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -54,23 +57,18 @@
                                         <td th:text="${product.getId()}" >
                                             id
                                         </td>
+                                        <td th:text="${product.getPokemon().getId()}"></td>
+                                        <td th:text="${product.getPokemon().getName()}"></td>
+                                        <td th:text="${product.getProductNumber()}" class="qty">
+                                            cantidad
+                                        </td>
                                         <td th:text="${product.getAddedTime()}" >
                                             addedtime
                                         </td>
                                         <td th:text="${product.getModifiedTime()}" >
                                             modtime
                                         </td>
-                                        <td class="price">
-                                          price
-                                        </td>
-                                        <td class="qty">
-                                            <div class="qty-btn d-flex">
-                                                <p>Qty</p>
-                                                <div th:text="${product.getProductNumber()}">
-                                                    cantidad
-                                                </div>
-                                            </div>
-                                        </td>
+
                                     </tr>
                                 </tbody>
                             </table>
