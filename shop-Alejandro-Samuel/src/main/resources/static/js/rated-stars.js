@@ -1,5 +1,7 @@
 let starrated = document.querySelectorAll(".ratings span")
-let rated = document.getElementById("avgRating").innerText
+let ratedAux = document.getElementById("avgRating").innerText
+let rated = parseFloat(ratedAux.replace(",", "."));
+
 if (rated<=0){
 
 }

@@ -79,8 +79,8 @@
                                 </a>
                                 <!-- Ratings & Review -->
                                 <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
-                                    <p th:if="${ratings.size() != 0}" th:id="avgRating" th:text="${#numbers.formatDecimal(pokemonRating, 0, 2)} + '/5'"></p>
-                                    <p th:if="${ratings.size() == 0}" th:id="avgRating" th:text="'-/5'"></p>
+                                    <p th:if="${ratings.size() == 0}" th:text="'-'"></p>
+                                    <p th:unless="${ratings.size() == 0}" id="avgRating" th:text="${#numbers.formatDecimal(pokemonRating, 0, 2)}"></p>
                                     <div class="ratings">
                                         <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
                                         <span data-rating="4.5" class="fa-solid fa-star-half rated-star half"></span>
