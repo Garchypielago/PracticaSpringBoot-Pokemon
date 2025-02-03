@@ -45,13 +45,17 @@
                                     <tr>
                                         <th>Product ID</th>
                                         <th>Pokemon ID</th>
-                                        <th>Stats</th>
                                         <th>Pokemon Name</th>
                                         <th>Quantity</th>
                                         <th>Added Time</th>
                                         <th>Last Modified Time</th>
+                                        <th>Unit Price</th>
+                                        <th>Total Price</th>
                                     </tr>
                                 </thead>
+                                <tbody th:if="${products.isEmpty()}">
+                                    <p>No hay productos añadidos a tu carrito.</p>
+                                </tbody>
                                 <tbody>
                                     <tr th:each="product : ${products}">
                                         <td th:text="${product.getId()}" >
@@ -68,7 +72,12 @@
                                         <td th:text="${product.getModifiedTime()}" >
                                             modtime
                                         </td>
-
+                                        <td th:text="${product.getPokemon().getPrice()}" >
+                                            unit
+                                        </td>
+                                        <td class="total-price" th:text="${product.getPokemon().getPrice()*product.getProductNumber()}" >
+                                            total
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -78,9 +87,9 @@
                         <div class="cart-summary">
                             <h5>Cart Total</h5>
                             <ul class="summary-table">
-                                <li><span>subtotal:</span> <span>P¥140.00</span></li>
+                                <li><span>subtotal:</span> <span id="subtotal">P¥140.00</span></li>
                                 <li><span>delivery:</span> <span>Free</span></li>
-                                <li><span>total:</span> <span>P¥140.00</span></li>
+                                <li><span>total:</span> <span id="total">P¥140.00</span></li>
                             </ul>
                             <div class="cart-btn mt-100">
                                 <a th:href="@{/car}" class="btn amado-btn w-100">Checkout</a>
@@ -107,6 +116,7 @@
     <script th:src="@{/js/plugins.js}"></script>
     <!-- Active js -->
     <script th:src="@{/js/active.js}"></script>
+    <script th:src="@{/js/cart-price.js}"></script>
 
 </body>
 

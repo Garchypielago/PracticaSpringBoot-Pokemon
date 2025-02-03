@@ -73,7 +73,7 @@
                             <!-- Product Meta Data -->
                             <div class="product-meta-data">
                                 <div class="line"></div>
-                                <p class="product-price">P¥180</p>
+                                <p th:text="'P¥' +${#numbers.formatDecimal(pokemon.getPrice(), 1, 2, 'COMMA')}" class="product-price">P¥180</p>
                                 <a th:href="@{/product-details}">
                                     <h6 th:text="${pokemon.getName()}">White Modern Chair</h6>
                                 </a>
@@ -115,7 +115,7 @@
                                             </div>
 
                                             <div  class="reviewsContainer" >
-                                                <div th:if="${ratings.empty}">
+                                                <div th:if="${ratings.isEmpty()}">
                                                     <p>No hay reviews disponibles en este momento.</p>
                                                 </div>
                                                 <div th:each="rating : ${ratings}">
@@ -147,7 +147,7 @@
                                         <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
                                     </div>
                                 </div>
-                                <a th:href="'/addtocart/' + ${pokemon.getId()}" name="addtocart" class="btn amado-btn">Add to cart</a>
+                                <a th:href="@{/addtocart/{id}(id=${pokemon.getId()})}" name="addtocart" class="btn amado-btn">Add to cart</a>
                             </form>
 
                         </div>
