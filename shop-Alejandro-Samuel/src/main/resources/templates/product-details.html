@@ -42,9 +42,9 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mt-50">
                                 <li class="breadcrumb-item"><a th:href="@{#}">Home</a></li>
-                                <li class="breadcrumb-item"><a th:href="@{#}">Furniture</a></li>
-                                <li class="breadcrumb-item"><a th:href="@{#}">Chairs</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">white modern chair</li>
+                                <li class="breadcrumb-item"><a th:href="@{#}">Pokemon</a></li>
+                                <li class="breadcrumb-item"><a th:text="${pokemon.getRegion().getName()}" th:href="@{#}">Chairs</a></li>
+                                <li th:text="${pokemon.getName()}" class="breadcrumb-item active" aria-current="page">white modern chair</li>
                             </ol>
                         </nav>
                     </div>
