@@ -72,10 +72,10 @@
                                         <td th:text="${product.getModifiedTime()}" >
                                             modtime
                                         </td>
-                                        <td th:text="${product.getPokemon().getPrice()}" >
+                                        <td th:text="${#numbers.formatDecimal(product.getPokemon().getPrice(), 1, 2)}" >
                                             unit
                                         </td>
-                                        <td class="total-price" th:text="${product.getPokemon().getPrice()*product.getProductNumber()}" >
+                                        <td class="total-price" th:text="${#numbers.formatDecimal(product.getPokemon().getPrice()*product.getProductNumber(), 1, 2)}" >
                                             total
                                         </td>
                                     </tr>
@@ -104,7 +104,7 @@
 
 <section th:replace="fragments :: newsletter"></section>
 
-    <footth:replace="~{fragments :: newsletter}"</footer>
+    <footer th:replace="~{fragments :: newsletter}"></footer>
 
     <!-- ###th:replace="~{fragments :: footer}"aScript Plugins) ##### -->
     <script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>

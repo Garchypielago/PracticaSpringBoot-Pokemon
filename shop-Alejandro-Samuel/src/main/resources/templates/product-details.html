@@ -73,13 +73,13 @@
                             <!-- Product Meta Data -->
                             <div class="product-meta-data">
                                 <div class="line"></div>
-                                <p th:text="'P¥' +${#numbers.formatDecimal(pokemon.getPrice(), 1, 2, 'COMMA')}" class="product-price">P¥180</p>
+                                <p th:text="'P¥' +${#numbers.formatDecimal(pokemon.getPrice(), 1, 2)}" class="product-price">P¥180</p>
                                 <a th:href="@{/product-details}">
                                     <h6 th:text="${pokemon.getName()}">White Modern Chair</h6>
                                 </a>
                                 <!-- Ratings & Review -->
                                 <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
-                                    <p id="avgRating" th:text="${pokemonRating}"></p>
+                                    <p id="avgRating" th:text="${#numbers.formatDecimal(pokemonRating, 1, 2)}"></p>
                                     <div class="ratings">
                                         <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
                                         <span data-rating="4.5" class="fa-solid fa-star-half rated-star half"></span>

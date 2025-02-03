@@ -22,7 +22,7 @@
         <div class="hover-content">
             <div class="line"></div>
             <h4 th:text="${pokemon.getName()}">Charmeleon</h4>
-            <p th:text="'From P¥' +${#numbers.formatDecimal(pokemon.getPrice(), 1, 2, 'COMMA')}">From P¥180</p>
+            <p th:text="'From P¥' +${#numbers.formatDecimal(pokemon.getPrice(), 1, 2)}">From P¥180</p>
         </div>
     </a>
 </div>
