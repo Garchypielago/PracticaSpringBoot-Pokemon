@@ -11,6 +11,7 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
     Collection<Pokemon> findByRegion_Id(Long region);
     Collection<Pokemon> findPokemonByType1_IdOrType2_Id(Long type1_id, Long type2_id);
+
     @Query(value = "select avg(mark) from pokemones p\n" +
             "inner join ratings r on  r.pokemon_id=p.id\n" +
             "where p.id = :id", nativeQuery = true)

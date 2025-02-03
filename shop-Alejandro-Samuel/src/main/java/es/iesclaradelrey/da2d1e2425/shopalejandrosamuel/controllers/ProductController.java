@@ -20,13 +20,11 @@ import java.util.Optional;
 public class ProductController extends  BaseController{
 
     private final PokemonService pokemonService;
-    private final PokemonRepository pokemonRepository;
     private final RatingService ratingService;
 
-    public ProductController(PokemonService pokemonService, PokemonRepository pokemonRepository, RatingService ratingService) {
+    public ProductController(PokemonService pokemonService, RatingService ratingService) {
         super(pokemonService);
         this.pokemonService = pokemonService;
-        this.pokemonRepository = pokemonRepository;
         this.ratingService = ratingService;
     }
 
@@ -51,7 +49,7 @@ public class ProductController extends  BaseController{
 
         Collection<Pokemon> pokemones = getRandomPokemones(4);
 
-        modelAndView.addObject("pokemonRating", pokemonRepository.avgRatingsFromPokemon(id));
+        modelAndView.addObject("pokemonRating", pokemonService.avgRatingsFromPokemon(id));
         modelAndView.addObject("pokemones", pokemones);
 
         Collection<Rating> ratings = ratingService.findByPokemon_Id(id);

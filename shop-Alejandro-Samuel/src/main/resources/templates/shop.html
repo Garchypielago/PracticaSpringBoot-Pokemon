@@ -41,7 +41,9 @@
                 <!--  Catagories  -->
                 <div class="catagories-menu">
                     <ul >
-
+                        <li th:classappend="${0 == current ? 'active' : ''}">
+                            <a th:href="0" th:text="ALL">Pokemon</a>
+                        </li>
                         <li th:each="region : ${regiones}" th:classappend="${region.getId() == current ? 'active' : ''}">
                             <a th:href="@{${region.getId()}}" th:text="${region.getName()}">Pokemon</a>
                         </li>

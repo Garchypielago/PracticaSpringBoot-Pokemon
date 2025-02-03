@@ -40,4 +40,9 @@ public class PokemonServiceImpl implements PokemonService {
     public Collection<Pokemon> findByType(Long typeId){
         return pokemonRepository.findPokemonByType1_IdOrType2_Id(typeId, typeId);
     }
+
+    @Override
+    public Double avgRatingsFromPokemon(Long pokemon_id) {
+        return pokemonRepository.avgRatingsFromPokemon(pokemon_id);
+    }
 }

@@ -33,23 +33,31 @@ public class ShopController extends  BaseController{
 
     @GetMapping
     public String home() {
-        return "redirect:/shop/category/1";
+        return "redirect:/shop/category/0";
     }
 
     @GetMapping("/category/{id}")
     public ModelAndView getAllCategories(@PathVariable Long id) {
-
-        Collection<Region> regiones = regionService.findAll();
-        Collection<Pokemon> pokemones = pokemonService.findByRegion(id);
-        Collection<Type> types = typeService.findAll();
+        Collection<Pokemon> pokemones = null;
         ModelAndView modelAndView = new ModelAndView("shop");
+        Collection<Region> regiones = regionService.findAll();
+
+        if(id==0){
+            pokemones = pokemonService.findAll();
+        } else{
+            pokemones = pokemonService.findByRegion(id);
+        }
+
         modelAndView.addObject("regiones", regiones);
+        Collection<Type> types = typeService.findAll();
         modelAndView.addObject("pokemones", pokemones);
         modelAndView.addObject("current", id);
         modelAndView.addObject("types", types);
 
         return modelAndView;
     }
+
+
 
 
 }
