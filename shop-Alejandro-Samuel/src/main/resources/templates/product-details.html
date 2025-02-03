@@ -60,7 +60,7 @@
                                 <div class="carousel-inner">
                                     <div class="single-products-catagory clearfix carousel-item active"  th:style="|background-image: url('@{${pokemon.getType1().getBackground()}}');|">
 <!--                                        <a class="gallery_img" th:href="@{/img/product-img/pro-big-1.jpg}">-->
-                                        <a class="gallery_img" th:href="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;">
+                                        <a class="gallery_img" th:href="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="img" style="width: auto;">
                                             <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
                                         </a>
                                     </div>
@@ -79,7 +79,8 @@
                                 </a>
                                 <!-- Ratings & Review -->
                                 <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
-                                    <p id="avgRating" th:text="${#numbers.formatDecimal(pokemonRating, 1, 2)}"></p>
+                                    <p th:if="${ratings.size() == 0}" th:text="'-'"></p>
+                                    <p th:unless="${ratings.size() == 0}" id="avgRating" th:text="${#numbers.formatDecimal(pokemonRating, 0, 2)}"></p>
                                     <div class="ratings">
                                         <span data-rating="5"  class="fa-solid fa-star rated-star"></span>
                                         <span data-rating="4.5" class="fa-solid fa-star-half rated-star half"></span>

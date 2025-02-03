@@ -62,7 +62,11 @@
     </div>
     <!-- Logo -->
     <div class="logo">
-      <a th:href="@{/}"><img th:src="@{/img/core-img/logo.png}" alt=""></a>
+      <a th:href="@{/}">
+          <img th:if="@{/img/core-img/logo.png}" th:src="@{/img/core-img/logo.png}" alt="">
+          <img th:unless="@{/img/core-img/logo.png}" th:src="@{/shopedex/pokebola.png}" alt="">
+
+      </a>
     </div>
     <!-- Amado Nav -->
     <nav class="amado-nav">
