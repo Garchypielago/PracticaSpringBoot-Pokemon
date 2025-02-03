@@ -12,6 +12,7 @@ public interface ProductInCartService {
     Optional<ProductInCart> findById(Long id);
     ProductInCart save(ProductInCart productInCart);
     void delete(ProductInCart productInCart);
+    void deleteAll();
     Optional<ProductInCart> findByPokemon(Long pokemonId);
     void createOrUpdateProductInCart(Long pokemonId, int quantity);
 }

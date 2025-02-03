@@ -34,12 +34,17 @@ public class ProductInCartServiceImpl implements ProductInCartService {
 
     @Override
     public void delete(ProductInCart productInCart) {
-
+        productInCartRepository.delete(productInCart);
     }
 
     @Override
     public Optional<ProductInCart> findByPokemon(Long pokemonId){
         return productInCartRepository.findByPokemon_Id(pokemonId);
+    }
+    @Override
+    public void deleteAll(){
+        productInCartRepository.deleteAll(findAll());
+
     }
 
     @Override

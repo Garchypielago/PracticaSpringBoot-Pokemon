@@ -50,5 +50,20 @@ public class HomeController extends BaseController{
 
         return "redirect:/product-details/pokemon/"+id;
     }
+    @GetMapping
+    @RequestMapping("/deletefromcart/{id}")
+    public String deleteFromCart(@PathVariable Long id) {
+        productInCartService.delete(productInCartService.findById(id).orElse(null));
+
+        return "redirect:/cart";
+    }
+    @GetMapping
+    @RequestMapping("/deleteAll")
+    public String deleteAll() {
+        productInCartService.deleteAll();
+
+        return "redirect:/cart";
+    }
+
 
 }
