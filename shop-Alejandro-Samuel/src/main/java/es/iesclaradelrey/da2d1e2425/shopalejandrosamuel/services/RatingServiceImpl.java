@@ -34,4 +34,9 @@ public class RatingServiceImpl implements RatingService {
     public Collection<Rating> findByPokemon_Id(Long pokemonId) {
         return this.ratingRepository.findByPokemon_Id(pokemonId);
     }
+
+//    @Override
+//    public Collection<Rating> findRatingsByPokemon_Region_Id(Long regionId) {
+//        return this.ratingRepository.findRatingsByPokemon_Region_Id(regionId);
+//    }
 }

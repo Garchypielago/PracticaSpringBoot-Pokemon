@@ -8,4 +8,5 @@ import java.util.Collection;
 public interface RatingRepository extends JpaRepository<Rating, Long> {
 
     Collection<Rating> findByPokemon_Id(Long pokemonId);
+//    Collection<Rating> findRatingsByPokemon_Region_Id(Long regionId);
 }
