@@ -25,6 +25,12 @@ public class Pokemon {
     @Column(nullable = false, length = 200)
     private String descripcion;
 
+    @Column
+    private Double price;
+
+    @Column(nullable = false, columnDefinition = "bigint default 5")
+    private Long stock;
+
     @OneToMany(mappedBy = "pokemon")
     private Collection<StatValue> stats;
 
@@ -50,7 +56,7 @@ public class Pokemon {
         this.id = id;
         this.name = nombre;
     }
-    public double getPrice() {
+    public double calcPrice() {
 
         double total=0;
         Collection<StatValue>stats = this.getStats();

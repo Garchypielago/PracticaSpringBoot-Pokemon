@@ -23,7 +23,7 @@ public class ProductInCart {
     private Pokemon pokemon;
 
     @Column
-    private int productNumber;
+    private Long productNumber;
 
     @Column(columnDefinition = "timestamp default current_timestamp()", nullable = false, insertable = false, updatable = false )
     private LocalDateTime addedTime;
@@ -31,7 +31,7 @@ public class ProductInCart {
     private LocalDateTime modifiedTime;
 
 
-    public ProductInCart(Pokemon pokemon, int productNumber) {
+    public ProductInCart(Pokemon pokemon, Long productNumber) {
         this.pokemon = pokemon;
         this.productNumber = productNumber;
     }

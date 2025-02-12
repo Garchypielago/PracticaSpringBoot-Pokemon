@@ -52,7 +52,7 @@ public class ProductInCartServiceImpl implements ProductInCartService {
         ProductInCart productInCart = this.findByPokemon(pokemonId).orElse(null);
 
         if(productInCart == null){
-            ProductInCart pc = new ProductInCart(pokemonService.findById(pokemonId).orElse(null), 1);
+            ProductInCart pc = new ProductInCart(pokemonService.findById(pokemonId).orElse(null), 1L);
             this.save(pc);
         } else {
             productInCart.sumar();
