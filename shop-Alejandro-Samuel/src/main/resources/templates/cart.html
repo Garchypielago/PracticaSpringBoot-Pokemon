@@ -79,7 +79,7 @@
                                         <td class="total-price" th:text="${#numbers.formatDecimal(product.getPokemon().getPrice()*product.getProductNumber(), 1, 2)}" >
                                             total
                                         </td>
-                                        <td><a th:href="@{/deletefromcart/{id}(id=${product.getId()})} " class="fa-solid fa-trash-can"></a></td>
+                                        <td><a th:href="@{/cart/deletefromcart/{id}(id=${product.getId()})} " class="fa-solid fa-trash-can"></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -94,10 +94,10 @@
                                 <li><span>total:</span> <span id="total">P¥140.00</span></li>
                             </ul>
                             <div class="cart-btn mt-100">
-                                <a th:href="@{/cart}" class="btn amado-btn w-100">Checkout</a>
+                                <a th:href="@{/checkout}" class="btn amado-btn w-100">Checkout</a>
                             </div>
                             <div class="cart-btn mt-100">
-                                <a th:href="@{/deleteAll}" class="btn amado-btn w-100">Borrar Todos</a>
+                                <a th:href="@{/cart/deleteAll}" class="btn amado-btn w-100">Borrar Todos</a>
                             </div>
                         </div>
                     </div>

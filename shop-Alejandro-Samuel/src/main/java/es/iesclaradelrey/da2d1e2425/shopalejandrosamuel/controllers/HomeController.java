@@ -43,27 +43,5 @@ public class HomeController extends BaseController{
         return "checkout";
     }
 
-    @GetMapping
-    @RequestMapping("/addtocart/{id}")
-    public String addToCart(@PathVariable Long id) {
-        productInCartService.createOrUpdateProductInCart(id, 1);
-
-        return "redirect:/product-details/pokemon/"+id;
-    }
-    @GetMapping
-    @RequestMapping("/deletefromcart/{id}")
-    public String deleteFromCart(@PathVariable Long id) {
-        productInCartService.delete(productInCartService.findById(id).orElse(null));
-
-        return "redirect:/cart";
-    }
-    @GetMapping
-    @RequestMapping("/deleteAll")
-    public String deleteAll() {
-        productInCartService.deleteAll();
-
-        return "redirect:/cart";
-    }
-
 
 }

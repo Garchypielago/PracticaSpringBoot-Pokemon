@@ -60,4 +60,13 @@ public class ProductInCartServiceImpl implements ProductInCartService {
         }
     }
 
+    @Override
+    public long getQuantityByPokemonId(Long pokemonId) {
+        if(productInCartRepository.findByPokemon_Id(pokemonId).isPresent()){
+            return productInCartRepository.findById(pokemonId).get().getProductNumber();
+        }
+
+        return 0;
+    }
+
 }

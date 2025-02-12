@@ -1,7 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.ProductInCart;
 
 import java.util.Collection;
@@ -15,4 +14,6 @@ public interface ProductInCartService {
     void deleteAll();
     Optional<ProductInCart> findByPokemon(Long pokemonId);
     void createOrUpdateProductInCart(Long pokemonId, int quantity);
+
+    long getQuantityByPokemonId(Long pokemonId);
 }
