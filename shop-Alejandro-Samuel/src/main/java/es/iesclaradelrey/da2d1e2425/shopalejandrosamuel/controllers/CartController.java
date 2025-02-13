@@ -38,6 +38,7 @@ public class CartController extends BaseController {
 //
 //        return "redirect:/product-details/pokemon/"+id;
 //    }
+
     @GetMapping
     @RequestMapping("/deletefromcart/{id}")
     public String deleteFromCart(@PathVariable Long id) {

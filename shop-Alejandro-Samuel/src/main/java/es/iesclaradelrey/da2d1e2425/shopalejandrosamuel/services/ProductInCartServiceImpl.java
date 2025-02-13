@@ -1,6 +1,5 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.ProductInCart;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.ProductInCartRepository;
 import org.springframework.stereotype.Service;
@@ -48,14 +47,14 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     }
 
     @Override
-    public void createOrUpdateProductInCart(Long pokemonId, int quantity){
+    public void createOrUpdateProductInCart(Long pokemonId, Long quantity){
         ProductInCart productInCart = this.findByPokemon(pokemonId).orElse(null);
 
         if(productInCart == null){
-            ProductInCart pc = new ProductInCart(pokemonService.findById(pokemonId).orElse(null), 1L);
+            ProductInCart pc = new ProductInCart(pokemonService.findById(pokemonId).orElse(null), quantity);
             this.save(pc);
         } else {
-            productInCart.sumar();
+            productInCart.sumar(quantity);
             this.save(productInCart);
         }
     }

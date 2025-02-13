@@ -62,8 +62,8 @@
                     <div class="form-check">
                         <ul>
                             <li th:each="type : ${types}">
-                                <input class="form-check-input type" type="checkbox" value="" th:id="${type.getId()}">
-                                <label class="form-check-label" th:for="${type.getId()}" th:text="${type.getName()}">Artdeco</label>
+                                <input class="form-check-input type" type="radio" name="type1" th:value="${type.getId()}" th:id="'tipo' + ${type.getId()}">
+                                <label class="form-check-label" th:for="'tipo' +${type.getId()}" th:text="${type.getName()}">Artdeco</label>
                             </li>
                         </ul>
                         <button id="search-button">Search</button>

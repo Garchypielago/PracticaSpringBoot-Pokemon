@@ -36,8 +36,8 @@ public class ProductInCart {
         this.productNumber = productNumber;
     }
 
-    public void sumar(){
-        this.productNumber = this.productNumber + 1;
+    public void sumar(Long quantity){
+        this.productNumber = this.productNumber + quantity;
     }
 
 }

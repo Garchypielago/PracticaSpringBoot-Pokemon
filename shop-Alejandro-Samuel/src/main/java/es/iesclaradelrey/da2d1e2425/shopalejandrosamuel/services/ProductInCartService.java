@@ -13,7 +13,7 @@ public interface ProductInCartService {
     void delete(ProductInCart productInCart);
     void deleteAll();
     Optional<ProductInCart> findByPokemon(Long pokemonId);
-    void createOrUpdateProductInCart(Long pokemonId, int quantity);
+    void createOrUpdateProductInCart(Long pokemonId, Long quantity);
 
     long getQuantityByPokemonId(Long pokemonId);
 }

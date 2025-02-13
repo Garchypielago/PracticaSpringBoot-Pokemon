@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonNoQuantityAvalaible;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import org.springframework.stereotype.Service;
@@ -50,7 +51,7 @@ public class PokemonServiceImpl implements PokemonService {
     @Override
     public void existsById(Long pokemon_id) {
         if (pokemonRepository.findById(pokemon_id).isEmpty()){
-            throw new PokemonNoQuantityAvalaible(String.format("No existe producto con código "+ pokemon_id));
+            throw new PokemonDontExist(String.format("No existe producto con código "+ pokemon_id));
         }
     }
 
