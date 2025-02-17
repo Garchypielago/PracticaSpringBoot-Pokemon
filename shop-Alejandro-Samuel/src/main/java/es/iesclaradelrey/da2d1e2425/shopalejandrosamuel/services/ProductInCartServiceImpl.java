@@ -38,7 +38,7 @@ public class ProductInCartServiceImpl implements ProductInCartService {
 
     @Override
     public Optional<ProductInCart> findByPokemon(Long pokemonId){
-        return productInCartRepository.findByPokemon_Id(pokemonId);
+        return productInCartRepository.findProductInCartByPokemon_Id(pokemonId);
     }
     @Override
     public void deleteAll(){
@@ -48,7 +48,7 @@ public class ProductInCartServiceImpl implements ProductInCartService {
 
     @Override
     public void createOrUpdateProductInCart(Long pokemonId, Long quantity){
-        ProductInCart productInCart = this.findByPokemon(pokemonId).orElse(null);
+        ProductInCart productInCart = productInCartRepository.findProductInCartByPokemon_Id(pokemonId).orElse(null);
 
         if(productInCart == null){
             ProductInCart pc = new ProductInCart(pokemonService.findById(pokemonId).orElse(null), quantity);
@@ -61,7 +61,7 @@ public class ProductInCartServiceImpl implements ProductInCartService {
 
     @Override
     public long getQuantityByPokemonId(Long pokemonId) {
-        if(productInCartRepository.findByPokemon_Id(pokemonId).isPresent()){
+        if(productInCartRepository.findProductInCartByPokemon_Id(pokemonId).isPresent()){
             return productInCartRepository.findById(pokemonId).get().getProductNumber();
         }
 

@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface ProductInCartRepository extends JpaRepository<ProductInCart, Long> {
-    Optional<ProductInCart> findByPokemon_Id(Long pokemonId);
+    Optional<ProductInCart> findProductInCartByPokemon_Id(Long pokemonId);
 
 }
