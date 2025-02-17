@@ -66,7 +66,7 @@
                                 <label class="form-check-label" th:for="'tipo' +${type.getId()}" th:text="${type.getName()}">Artdeco</label>
                             </li>
                         </ul>
-                        <button id="search-button">Search</button>
+                        <button id="empty-button">Empty Selection</button>
                     </div>
                 </div>
             </div>
@@ -179,16 +179,17 @@
     <footer th:replace="~{fragments :: footer}"></footer>
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
-    <script th:src="@{../static/js/jquery/jquery-2.2.4.min.js}"></script>
+    <script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
     <!-- Popper js -->
-    <script th:src="@{../static/js/popper.min.js}"></script>
+    <script th:src="@{/js/popper.min.js}"></script>
     <!-- Bootstrap js -->
-    <script th:src="@{../static/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
     <!-- Plugins js -->
-    <script th:src="@{../static/js/plugins.js}"></script>
+    <script th:src="@{/js/plugins.js}"></script>
     <!-- Active js -->
-    <script th:src="@{../static/js/active.js}"></script>
-    <script th:src="@{../static/js/shop-search.js}"></script>
+    <script th:src="@{/js/active.js}"></script>
+
+    <script th:src="@{/js/shop-search.js}"></script>
 </body>
 
 </html>
