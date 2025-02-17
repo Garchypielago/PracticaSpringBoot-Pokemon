@@ -16,17 +16,20 @@ btnAddToCart.addEventListener("click", () => {
             "Content-type": "application/json; charset=UTF-8"
         }
     })
-        .then(value => {
-            fetch("/contextpath/api/v1/pokemones")
-                .then(response => {
-                    response.text().then(text => {
-                            const productos = JSON.parse(text);
-                            console.table(productos);
-                        }
-                    );
+        .then(response => {
 
-                });
-            console.log("ok")
+            response.ok
+
+            // fetch("/contextpath/api/v1/pokemones")
+            //     .then(response => {
+            //         response.text().then(text => {
+            //                 const productos = JSON.parse(text);
+            //                 console.table(productos);
+            //             }
+            //         );
+            //
+            //     });
+            // console.log("ok")
 
         })
         .catch(reason => alert("Error"))

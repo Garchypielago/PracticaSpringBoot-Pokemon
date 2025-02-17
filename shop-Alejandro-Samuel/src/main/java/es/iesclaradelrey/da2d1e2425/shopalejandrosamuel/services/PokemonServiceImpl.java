@@ -48,22 +48,4 @@ public class PokemonServiceImpl implements PokemonService {
         return pokemonRepository.avgRatingsFromPokemon(pokemon_id);
     }
 
-    @Override
-    public void existsById(Long pokemon_id) {
-        if (pokemonRepository.findById(pokemon_id).isEmpty()){
-            throw new PokemonDontExist(String.format("No existe producto con código "+ pokemon_id));
-        }
-    }
-
-    @Override
-    public void quantityAvalaible(Long pokemon_id, Long quantityCart) {
-        long newQuantity = pokemonRepository.findById(pokemon_id).get().getStock() - quantityCart;
-        if(newQuantity < 0){
-//            pokemonRepository.findById(pokemon_id).get().setStock(newQuantity);
-            //        productInCartService.createOrUpdateProductInCart(id, 1);
-
-            throw new PokemonNoQuantityAvalaible(String.format("No hay suficientes unidades. Sólo hay "+
-                    pokemonRepository.findById(pokemon_id).get().getStock() +" en stock."));
-        }
-    }
 }

@@ -1,6 +1,10 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.ProductInCart;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonNoQuantityAvalaible;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.ProductInCartRepository;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +15,12 @@ import java.util.Optional;
 public class ProductInCartServiceImpl implements ProductInCartService {
     private final ProductInCartRepository productInCartRepository;
     private final PokemonService pokemonService;
+    private final PokemonRepository pokemonRepository;
 
-    public ProductInCartServiceImpl(ProductInCartRepository productInCartRepository, PokemonService pokemonService) {
+    public ProductInCartServiceImpl(ProductInCartRepository productInCartRepository, PokemonService pokemonService, PokemonRepository pokemonRepository) {
         this.productInCartRepository = productInCartRepository;
         this.pokemonService = pokemonService;
+        this.pokemonRepository = pokemonRepository;
     }
 
     @Override
@@ -48,15 +54,19 @@ public class ProductInCartServiceImpl implements ProductInCartService {
 
     @Override
     public void createOrUpdateProductInCart(Long pokemonId, Long quantity){
-        ProductInCart productInCart = productInCartRepository.findProductInCartByPokemon_Id(pokemonId).orElse(null);
+        Pokemon pokemon = pokemonRepository
+                .findById(pokemonId)
+                .orElseThrow(() -> new PokemonDontExist("No existe producto con código "+ pokemonId));
+//
+        ProductInCart productInCart = productInCartRepository
+                .findProductInCartByPokemon_Id(pokemonId)
+                .orElse( new ProductInCart(pokemon, 0L));
 
-        if(productInCart == null){
-            ProductInCart pc = new ProductInCart(pokemonService.findById(pokemonId).orElse(null), quantity);
-            this.save(pc);
-        } else {
-            productInCart.sumar(quantity);
-            this.save(productInCart);
-        }
+        productInCart.sumar(quantity);
+        if (productInCart.getProductNumber()>pokemon.getStock())
+            throw new PokemonNoQuantityAvalaible(String.format("No hay suficientes unidades. Sólo hay "+ pokemon.getStock() +" en stock."));
+
+        this.save(productInCart);
     }
 
     @Override

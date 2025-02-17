@@ -14,7 +14,5 @@ public interface PokemonService {
     Collection<Pokemon> findByRegion(Long id);
     Collection<Pokemon> findByType(Long id);
     Double avgRatingsFromPokemon(Long pokemon_id);
-    void existsById(Long pokemon_id);
-    void quantityAvalaible(Long pokemon_id, Long quantityCart);
 
 }
