@@ -19,6 +19,7 @@
     <link rel="stylesheet" th:href="@{/css/review-popup.css}">
     <link rel="stylesheet" th:href="@{/css/rated-stars.css}">
     <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" th:href="@{/css/error-popup.css}">
 
 </head>
 
@@ -130,7 +131,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Avaiable -->
+<!--                                Error Popup-->
+                                <div class="error-out" id="error">
+                                <div id="error-addtocart" class="error-popup">
+                                    <div id="errorTitle" class="error">a</div>
+                                    <div id="errorDesc">a</div>
+                                    <button id="errorCloseBtn">Close</button>
+                                </div>
+                                    </div>
+                                <!-- Available -->
                                 <p class="avaibility"><i class="fa fa-circle"></i> In Stock</p>
                             </div>
                             <div class="short_overview my-5">
@@ -177,6 +186,7 @@
     <script th:src="@{/js/review-popup.js}"></script>
 <script th:src="@{/js/rated-stars.js}"></script>
 <script th:src="@{/js/btn-add-to-cart.js}"></script>
+<script th:src="@{/js/error-popup.js}"></script>
     <script src="https://kit.fontawesome.com/c892b143ac.js" crossorigin="anonymous"></script>
 </body>
 
