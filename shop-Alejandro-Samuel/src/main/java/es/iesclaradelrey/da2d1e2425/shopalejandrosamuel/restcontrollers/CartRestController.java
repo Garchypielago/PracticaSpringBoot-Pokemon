@@ -35,19 +35,9 @@ public class CartRestController {
     @PostMapping
     public ResponseEntity<String> checkAvailable(@RequestBody PokemonDTO pokemonDTO){
 //        return ResponseEntity.ok("ok");
-        long cartQuantity = productInCartService.getQuantityByPokemonId(pokemonDTO.getId()) + pokemonDTO.getProductNumber();
-
-        try{
-            pokemonService.existsById(pokemonDTO.getId());
-            pokemonService.quantityAvalaible(pokemonDTO.getId(),cartQuantity);
+//        long cartQuantity = productInCartService.getQuantityByPokemonId(pokemonDTO.getId()) + pokemonDTO.getProductNumber();
             productInCartService.createOrUpdateProductInCart(pokemonDTO.getId(), pokemonDTO.getProductNumber());
-
             return ResponseEntity.created(null).body("Producto añadido correctamente.");
-        } catch (PokemonDontExist e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
-        } catch (PokemonNoQuantityAvalaible e){
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
-        }
     }
 
 
