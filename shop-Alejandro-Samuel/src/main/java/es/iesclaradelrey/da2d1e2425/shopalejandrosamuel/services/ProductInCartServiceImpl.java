@@ -14,12 +14,10 @@ import java.util.Optional;
 @Service
 public class ProductInCartServiceImpl implements ProductInCartService {
     private final ProductInCartRepository productInCartRepository;
-    private final PokemonService pokemonService;
     private final PokemonRepository pokemonRepository;
 
-    public ProductInCartServiceImpl(ProductInCartRepository productInCartRepository, PokemonService pokemonService, PokemonRepository pokemonRepository) {
+    public ProductInCartServiceImpl(ProductInCartRepository productInCartRepository, PokemonRepository pokemonRepository) {
         this.productInCartRepository = productInCartRepository;
-        this.pokemonService = pokemonService;
         this.pokemonRepository = pokemonRepository;
     }
 
@@ -43,13 +41,19 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     }
 
     @Override
+    public void delete(Long pokemonId) {
+        productInCartRepository.delete(productInCartRepository
+                .findProductInCartByPokemon_Id(pokemonId)
+                .orElseThrow(() -> new PokemonDontExist("No existe producto con código "+ pokemonId)));
+    }
+
+    @Override
     public Optional<ProductInCart> findByPokemon(Long pokemonId){
         return productInCartRepository.findProductInCartByPokemon_Id(pokemonId);
     }
     @Override
     public void deleteAll(){
         productInCartRepository.deleteAll(findAll());
-
     }
 
     @Override
@@ -57,7 +61,7 @@ public class ProductInCartServiceImpl implements ProductInCartService {
         Pokemon pokemon = pokemonRepository
                 .findById(pokemonId)
                 .orElseThrow(() -> new PokemonDontExist("No existe producto con código "+ pokemonId));
-//
+
         ProductInCart productInCart = productInCartRepository
                 .findProductInCartByPokemon_Id(pokemonId)
                 .orElse( new ProductInCart(pokemon, 0L));
@@ -71,9 +75,8 @@ public class ProductInCartServiceImpl implements ProductInCartService {
 
     @Override
     public long getQuantityByPokemonId(Long pokemonId) {
-        if(productInCartRepository.findProductInCartByPokemon_Id(pokemonId).isPresent()){
+        if(productInCartRepository.findProductInCartByPokemon_Id(pokemonId).isPresent())
             return productInCartRepository.findById(pokemonId).get().getProductNumber();
-        }
 
         return 0;
     }

@@ -1,11 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.restcontrollers;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers.CartController;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.PokemonDTO;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.ProductInCart;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonNoQuantityAvalaible;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.ProductInCartService;
 import org.springframework.http.HttpStatus;
@@ -27,17 +22,22 @@ public class CartRestController {
         this.productInCartService = productInCartService;
     }
 
-//    @GetMapping
-//    public ResponseEntity<Collection<ProductInCart>> okGet() {
-//        return ResponseEntity.ok(productInCartService.findAll());
-//    }
-
     @PostMapping
     public ResponseEntity<String> checkAvailable(@RequestBody PokemonDTO pokemonDTO){
-//        return ResponseEntity.ok("ok");
-//        long cartQuantity = productInCartService.getQuantityByPokemonId(pokemonDTO.getId()) + pokemonDTO.getProductNumber();
             productInCartService.createOrUpdateProductInCart(pokemonDTO.getId(), pokemonDTO.getProductNumber());
             return ResponseEntity.created(null).body("Producto añadido correctamente.");
+    }
+
+    @DeleteMapping
+    public ResponseEntity<String> deleteAll(@RequestBody PokemonDTO pokemonDTO){
+        productInCartService.deleteAll();
+        return ResponseEntity.ok(null);
+    }
+
+    @DeleteMapping("/{pokemonId}")
+    public ResponseEntity<String> deletePokemon(@PathVariable("pokemonId") Long pokemonId){
+        productInCartService.delete(pokemonId);
+        return ResponseEntity.ok(null);
     }
 
 

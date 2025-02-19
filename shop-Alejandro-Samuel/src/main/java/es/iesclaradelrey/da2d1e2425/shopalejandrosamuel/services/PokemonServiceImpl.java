@@ -1,8 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonNoQuantityAvalaible;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import org.springframework.stereotype.Service;
 
@@ -39,6 +37,7 @@ public class PokemonServiceImpl implements PokemonService {
     public Collection<Pokemon> findByRegion(Long regId){
         return pokemonRepository.findByRegion_Id(regId);
     }
+
     public Collection<Pokemon> findByType(Long typeId){
         return pokemonRepository.findPokemonByType1_IdOrType2_Id(typeId, typeId);
     }

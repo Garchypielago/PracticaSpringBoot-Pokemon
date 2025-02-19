@@ -5,12 +5,11 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RatingRepos
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 
 @Service
 public class RatingServiceImpl implements RatingService {
-    private RatingRepository ratingRepository;
+    private final RatingRepository ratingRepository;
 
     public RatingServiceImpl(RatingRepository ratingRepository) {this.ratingRepository = ratingRepository;}
 
@@ -34,9 +33,4 @@ public class RatingServiceImpl implements RatingService {
     public Collection<Rating> findByPokemon_Id(Long pokemonId) {
         return this.ratingRepository.findByPokemon_Id(pokemonId);
     }
-
-//    @Override
-//    public Collection<Rating> findRatingsByPokemon_Region_Id(Long regionId) {
-//        return this.ratingRepository.findRatingsByPokemon_Region_Id(regionId);
-//    }
 }
