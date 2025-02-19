@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear una nueva categoría</title>
+</head>
+<body>
+<h1>Crear una nueva categoría</h1>
+<form method="post" th:object="${category}">
+
+    <div>
+        <label for="select-type">Category</label>
+    </div>
+    <div>
+        <select id="select-type" th:field="*{categoryType}">
+            <option value="" selected>Selecciona uno</option>
+            <option value="1">Region</option>
+            <option value="2">Type</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="txt-name">Category name</label>
+    </div>
+    <div>
+        <input type="text" id="txt-name" th:field="*{name}">
+    </div>
+    <div>
+        <label for="txt-background">Background (if you have one)</label>
+    </div>
+    <div>
+        <input type="text" id="txt-background" th:field="*{background}">
+    </div>
+    <button type="submit">Send request</button>
+</form>
+</body>
+</html>

@@ -12,10 +12,15 @@ import java.util.Set;
 @Table(name="regions")
 public class Region{
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
     private String name;
 
     @OneToMany(mappedBy = "region")
     Set<Pokemon> pokemonSet;
+
+    public Region(String name){
+        this.name = name;
+    }
 }

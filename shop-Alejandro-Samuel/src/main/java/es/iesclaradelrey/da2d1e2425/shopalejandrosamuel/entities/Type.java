@@ -1,9 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @NoArgsConstructor
@@ -14,6 +11,7 @@ import lombok.*;
 @Table(name="types")
 public class Type{
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
@@ -21,5 +19,9 @@ public class Type{
 
     @Column
     private String background;
+
+    public Type(String name){
+        this.name = name;
+    }
 
 }
