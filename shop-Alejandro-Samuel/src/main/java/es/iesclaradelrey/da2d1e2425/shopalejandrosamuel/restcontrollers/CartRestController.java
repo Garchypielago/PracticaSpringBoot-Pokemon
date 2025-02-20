@@ -1,13 +1,10 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.restcontrollers;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.PokemonDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.PokemonToCartDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.ProductInCartService;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Collection;
 
 
 @RestController
@@ -23,13 +20,13 @@ public class CartRestController {
     }
 
     @PostMapping
-    public ResponseEntity<String> checkAvailable(@RequestBody PokemonDTO pokemonDTO){
+    public ResponseEntity<String> checkAvailable(@RequestBody PokemonToCartDTO pokemonDTO){
             productInCartService.createOrUpdateProductInCart(pokemonDTO.getId(), pokemonDTO.getProductNumber());
             return ResponseEntity.created(null).body("Producto añadido correctamente.");
     }
 
     @DeleteMapping
-    public ResponseEntity<String> deleteAll(@RequestBody PokemonDTO pokemonDTO){
+    public ResponseEntity<String> deleteAll(@RequestBody PokemonToCartDTO pokemonDTO){
         productInCartService.deleteAll();
         return ResponseEntity.ok(null);
     }
