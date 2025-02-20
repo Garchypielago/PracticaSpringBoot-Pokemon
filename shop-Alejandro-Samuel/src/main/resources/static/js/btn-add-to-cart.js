@@ -2,7 +2,6 @@ const errorCloseBtn = document.getElementById("errorCloseBtn");
 const error = document.getElementById("error")
 const errorDesc = document.getElementById("errorDesc")
 const errorTitle = document.getElementById("errorTitle")
-let currentStatus
 
 
 errorCloseBtn.addEventListener("click", () => {
@@ -42,6 +41,7 @@ btnAddToCart.addEventListener("click", () => {
         })
         .then(data => {
             //     toast
+
         })
         .catch(error => {
             if (error === 409) {
