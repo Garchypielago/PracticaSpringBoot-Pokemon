@@ -41,7 +41,7 @@ btnAddToCart.addEventListener("click", () => {
         })
         .then(data => {
             //     toast
-
+            showToast()
         })
         .catch(error => {
             if (error === 409) {

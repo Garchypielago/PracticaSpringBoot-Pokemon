@@ -20,10 +20,23 @@
     <link rel="stylesheet" th:href="@{/css/rated-stars.css}">
     <link rel="stylesheet" th:href="@{/style.css}">
     <link rel="stylesheet" th:href="@{/css/error-popup.css}">
+    <link rel="stylesheet" th:href="@{/css/toast.css}">
 
 </head>
 
 <body>
+
+<!-- Contenedor del Toast -->
+<div id="toastContainer" class="toast-container">
+    <div id="myToast" class="toast">
+        <div class="toast-body" th:text=" 'Se ha añadido '  + ${pokemon.getName()} + ' al carrito.'">
+            Producto añadido al carrito.
+        </div>
+        <button id="closeToast" type="button" class="close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
 
 <div th:replace="~{fragments :: startBody}"></div>
 
@@ -185,6 +198,7 @@
 
     <script th:src="@{/js/review-popup.js}"></script>
 <script th:src="@{/js/rated-stars.js}"></script>
+<script th:src="@{/js/toast.js}"></script>
 <script th:src="@{/js/btn-add-to-cart.js}"></script>
 <script th:src="@{/js/error-popup.js}"></script>
     <script src="https://kit.fontawesome.com/c892b143ac.js" crossorigin="anonymous"></script>
