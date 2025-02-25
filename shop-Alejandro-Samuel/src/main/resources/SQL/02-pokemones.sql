@@ -1,4 +1,4 @@
-INSERT INTO pokemones (id, name, descripcion, type1, type2, region, legendary) VALUES 
+INSERT INTO pokemones (id, name, description, type1, type2, region, legendary) VALUES
  (1, 'Bulbasaur', 'Bulbasaur is a Pokemon with a height of 0.7m, a weight of 6.9kg, and its Pokedex number is 1.', (SELECT id FROM types WHERE name = 'GRASS'), (SELECT id FROM types WHERE name = 'POISON'), (SELECT id FROM regions WHERE name = 'KANTO'), false),
  (2, 'Ivysaur', 'Ivysaur is a Pokemon with a height of 1.0m, a weight of 13.0kg, and its Pokedex number is 2.', (SELECT id FROM types WHERE name = 'GRASS'), (SELECT id FROM types WHERE name = 'POISON'), (SELECT id FROM regions WHERE name = 'KANTO'), false),
  (3, 'Venusaur', 'Venusaur is a Pokemon with a height of 2.0m, a weight of 100.0kg, and its Pokedex number is 3.', (SELECT id FROM types WHERE name = 'GRASS'), (SELECT id FROM types WHERE name = 'POISON'), (SELECT id FROM regions WHERE name = 'KANTO'), false),

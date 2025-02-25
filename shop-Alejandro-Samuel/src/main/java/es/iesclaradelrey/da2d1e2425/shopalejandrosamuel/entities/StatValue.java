@@ -27,4 +27,10 @@ public class StatValue {
 
     @Column(nullable = false)
     private int statValue;
+
+    public StatValue(Pokemon pokemon, Stat stat, int statValue) {
+        this.pokemon = pokemon;
+        this.stat = stat;
+        this.statValue = statValue;
+    }
 }

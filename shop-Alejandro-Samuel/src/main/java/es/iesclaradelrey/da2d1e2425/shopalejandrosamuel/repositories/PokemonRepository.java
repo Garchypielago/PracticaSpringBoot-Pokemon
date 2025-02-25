@@ -16,4 +16,7 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
             "inner join ratings r on  r.pokemon_id=p.id\n" +
             "where p.id = :id", nativeQuery = true)
     Double avgRatingsFromPokemon(@Param("id") Long pokemon_id);
+
+    @Query(value = "select max(id) from pokemones", nativeQuery = true)
+    Long findMaxId();
 }

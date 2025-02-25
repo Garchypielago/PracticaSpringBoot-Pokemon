@@ -3,6 +3,7 @@ package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Set;
 
@@ -23,7 +24,7 @@ public class Pokemon {
     private String name;
 
     @Column(nullable = false, length = 200)
-    private String descripcion;
+    private String description;
 
     @Column
     private Double price;
@@ -31,8 +32,8 @@ public class Pokemon {
     @Column(nullable = false, columnDefinition = "bigint default 5")
     private Long stock;
 
-    @OneToMany(mappedBy = "pokemon")
-    private Collection<StatValue> stats;
+    @OneToMany(mappedBy = "pokemon", fetch = FetchType.EAGER)
+    private Collection<StatValue> stats = new ArrayList<>();
 
     @OneToMany(mappedBy ="pokemon")
     private Set<ProductInCart> productInCart;
@@ -56,6 +57,18 @@ public class Pokemon {
         this.id = id;
         this.name = nombre;
     }
+
+    public Pokemon(Long id, String nombre, String description, Type tipo1, Type tipo2, Region region, boolean legendary, Long stock) {
+        this.id = id;
+        this.name = nombre;
+        this.description = description;
+        this.type1 = tipo1;
+        this.type2 = tipo2;
+        this.region = region;
+        this.legendary = legendary;
+        this.stock = stock;
+    }
+
     public double calcPrice() {
 
         double total=0;
