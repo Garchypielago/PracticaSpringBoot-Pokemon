@@ -1,37 +1,28 @@
-const selectTypeCategory = document.getElementById("select-type")
 const textName = document.getElementById("txt-name")
-const textBackground = document.getElementById("txt-background")
-const btnSendNewCategory = document.getElementById("btn-new-category")
+const textDescription = document.getElementById("txt-description")
+
+const selectRegion = document.getElementById("select-region")
+const selectType1 = document.getElementById("select-type1")
+const selectType2 = document.getElementById("select-type2")
+
+const numberStock = document.getElementById("number-stock")
+const checkLegendary = document.getElementById("flexCheck-legendary")
+
+const dataListReference = document.getElementById("dataList-reference")
+
+const btnSendNewCategory = document.getElementById("btn-new-poke")
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    textName.setAttribute("disabled", "")
-    textBackground.setAttribute("disabled", "")
-    btnSendNewCategory.setAttribute("disabled", "")
+    // textName.setAttribute("disabled", "")
+    // textName.removeAttribute("disabled")
+    selectType2.setAttribute("disabled", "")
+    dataListReference.setAttribute("disabled", "")
 })
 
 selectTypeCategory.addEventListener("change", ()=>{
-    if(selectTypeCategory.value == "1"){
-        btnSendNewCategory.removeAttribute("disabled")
-        textBackground.setAttribute("disabled", "")
-        textName.removeAttribute("disabled")
-        clearAll()
-    }
-    if(selectTypeCategory.value == "2"){
-        btnSendNewCategory.removeAttribute("disabled")
-        textBackground.removeAttribute("disabled")
-        textName.removeAttribute("disabled")
-        clearAll()
-    }
-    if(selectTypeCategory.value == ""){
-        textName.setAttribute("disabled", "")
-        textBackground.setAttribute("disabled", "")
-        btnSendNewCategory.setAttribute("disabled", "")
-        clearAll()
-    }
+
 })
 
 function clearAll(){
-    textName.value = ""
-    textBackground.value = ""
 }
 

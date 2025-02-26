@@ -12,59 +12,90 @@
 <!--    fuck gringos-->
     <form method="post" th:object="${pokemon}">
 
-        <div class="mb-3">
-            <label class="form-label" for="txt-name">Category name</label>
-            <input class="form-control" type="text" id="txt-name" placeholder="Here goes the name" th:field="*{name}">
+        <div>
+            <p th:each="error: ${#fields.errors()}" th:text="${error}"></p>
         </div>
 
         <div class="mb-3">
-            <label class="form-label" for="txt-background">Description here...</label>
-            <textarea class="form-control" type="text" id="txt-background" placeholder="Here goes the decription" th:field="*{description}"></textarea>
+            <label class="form-label" for="txt-name">Pokemon name</label>
+            <input class="form-control" type="text" id="txt-name" placeholder="Here goes the name" th:field="*{name}" th:errorclass="is-invalid">
+            <div th:if="${#fields.hasErrors('name')}" class="invalid-feedback" th:text="${#fields.errors('name')}">
+                Error.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="txt-description">Description</label>
+            <textarea class="form-control" type="text" id="txt-description" placeholder="Here goes the decription" th:field="*{description}" th:errorclass="is-invalid"></textarea>
+            <div th:if="${#fields.hasErrors('description')}" class="invalid-feedback" th:text="${#fields.errors('description')}">
+                Error.
+            </div>
         </div>
 
         <div class="mb-3">
             <label class="form-label" for="select-region">Select Region</label>
             <select class="form-select form-control" id="select-region" th:field="*{region}">
                 <option value="" selected>Select One</option>
-                <option th:each="region : ${regions}" th:value="${region.getId()}" th:text="${region.getName()}">Region</option>
+                <option th:each="region : ${regions}" th:value="${region.getId()}" th:text="${region.getName()}" th:errorclass="is-invalid">Region</option>
             </select>
+            <div th:if="${#fields.hasErrors('region')}" class="invalid-feedback" th:text="${#fields.errors('region')}">
+                Error.
+            </div>
         </div>
+
         <div class="mb-3">
             <label class="form-label" for="select-type1">Select Type1</label>
             <select class="form-select form-control" id="select-type1" th:field="*{type1}">
                 <option value="" selected>Select One</option>
-                <option th:each="type : ${types}" th:value="${type.getId()}" th:text="${type.getName()}">Type</option>
+                <option th:each="type : ${types}" th:value="${type.getId()}" th:text="${type.getName()}" th:errorclass="is-invalid">Type</option>
             </select>
+            <div th:if="${#fields.hasErrors('type1')}" class="invalid-feedback" th:text="${#fields.errors('type1')}">
+                Error.
+            </div>
         </div>
+
         <div class="mb-3">
             <label class="form-label" for="select-type2">Select Type2</label>
             <select class="form-select form-control" id="select-type2" th:field="*{type2}">
                 <option value="0" selected>No second Type</option>
-                <option th:each="type : ${types}" th:value="${type.getId()}" th:text="${type.getName()}">Type</option>
+                <option th:each="type : ${types}" th:value="${type.getId()}" th:text="${type.getName()}" th:errorclass="is-invalid">Type</option>
             </select>
+            <div th:if="${#fields.hasErrors('type2')}" class="invalid-feedback" th:text="${#fields.errors('type2')}">
+                Error.
+            </div>
         </div>
 
         <div class="mb-3">
             <label class="form-label" for="number-stock">Stock</label>
-            <input class="form-control" type="number" id="number-stock" placeholder="Here goes the quantity" th:field="*{stock}">
+            <input class="form-control" type="number" id="number-stock" placeholder="Here goes the quantity" th:field="*{stock}" th:errorclass="is-invalid">
+            <div th:if="${#fields.hasErrors('stock')}" class="invalid-feedback" th:text="${#fields.errors('stock')}">
+                Error.
+            </div>
         </div>
 
         <div class="mb-3">
-            <input class="" type="checkbox" value="" id="flexCheck-legendary" th:field="*{legendary}">
+            <input class="" type="checkbox" value="" id="flexCheck-legendary" th:field="*{legendary}" th:errorclass="is-invalid">
             <label class="form-check-label" for="flexCheck-legendary" >
                 Is Legendary?🤷‍♀️
             </label>
+            <div th:if="${#fields.hasErrors('legendary')}" class="invalid-feedback" th:text="${#fields.errors('legendary')}">
+                Error.
+            </div>
         </div>
 
-        <label for="dataList-reference" class="form-label">Pokemon for refenrence</label>
-        <input class="form-control" list="datalistOptions-pokemon" id="dataList-reference" placeholder="Type to search Pokemons..." th:field="*{idReference}">
+        <div class="mb-3">
+        <label for="dataList-reference" class="form-label">Pokemon for reference</label>
+        <input class="form-control" list="datalistOptions-pokemon" id="dataList-reference" placeholder="Type to search Pokemons..." th:field="*{idReference}" th:errorclass="is-invalid">
         <datalist id="datalistOptions-pokemon">
-            <option value="1">
-            <option value="2">
+            <option th:each="poke : ${pokemons}" th:value="${poke.getId()}" th:text="${poke.getId()} + '- ' +${poke.getName()}">Pokemon</option>
         </datalist>
+            <div th:if="${#fields.hasErrors('idReference')}" class="invalid-feedback" th:text="${#fields.errors('idReference')}">
+                Error.
+            </div>
+        </div>
 
         <div class="mb-3">
-            <button class="btn btn-primary" type="submit" id="btn-new-category">Send request</button>
+            <button class="btn btn-primary" type="submit" id="btn-new-poke">Send request</button>
         </div>
     </form>
 </div>
