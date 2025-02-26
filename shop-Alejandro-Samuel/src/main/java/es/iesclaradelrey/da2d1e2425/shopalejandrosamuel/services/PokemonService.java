@@ -1,5 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreatePokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 
 import java.util.Collection;
@@ -13,5 +14,7 @@ public interface PokemonService {
     Collection<Pokemon> findByRegion(Long id);
     Collection<Pokemon> findByType(Long id);
     Double avgRatingsFromPokemon(Long pokemon_id);
+
+    void saveFromDTO(CreatePokemonDTO pokemonDTO);
 
 }

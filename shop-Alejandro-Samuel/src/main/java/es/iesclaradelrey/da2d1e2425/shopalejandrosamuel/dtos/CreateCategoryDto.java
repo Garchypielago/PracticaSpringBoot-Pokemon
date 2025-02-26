@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class CreateCategoryDto {
+public class CreateCategoryDTO {
     private Long categoryType;
     private String name;
     private String background;

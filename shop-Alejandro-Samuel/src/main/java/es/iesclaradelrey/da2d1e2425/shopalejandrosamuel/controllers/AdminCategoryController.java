@@ -1,6 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateCategoryDto;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateCategoryDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
@@ -14,12 +14,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/admin/categories")
-public class CategoryController {
+public class AdminCategoryController {
 
     private final TypeService typeService;
     private final RegionService regionService;
 
-    public CategoryController(TypeService typeService, RegionService regionService) {
+    public AdminCategoryController(TypeService typeService, RegionService regionService) {
         this.typeService = typeService;
         this.regionService = regionService;
     }
@@ -27,12 +27,12 @@ public class CategoryController {
     @GetMapping("/new")
     public ModelAndView newCategory() {
         ModelAndView modelAndView = new ModelAndView("administration/categories/new");
-        modelAndView.addObject("category", new CreateCategoryDto());
+        modelAndView.addObject("category", new CreateCategoryDTO());
         return modelAndView;
     }
 
     @PostMapping("/new")
-    public ModelAndView newCategory(@ModelAttribute CreateCategoryDto categoryDto) {
+    public ModelAndView newCategory(@ModelAttribute CreateCategoryDTO categoryDto) {
         if (categoryDto.getCategoryType() == 1)
             regionService.save(new Region(categoryDto.getName()));
 

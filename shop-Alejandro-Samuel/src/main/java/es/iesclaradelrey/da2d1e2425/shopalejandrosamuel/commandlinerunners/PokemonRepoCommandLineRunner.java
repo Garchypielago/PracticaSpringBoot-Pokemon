@@ -1,6 +1,5 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.commandlinerunners;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
