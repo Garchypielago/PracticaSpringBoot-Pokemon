@@ -1,5 +1,7 @@
 let types = document.getElementsByClassName("type");
 let typearray =[];
+let type1Checked
+let type2Checked
 let button = document.getElementById("empty-button");
 let t1 = true;
 for(let type of types){
@@ -25,11 +27,19 @@ function cambiar(){
             typesUnchecked[tu].setAttribute("name", "type1");
         }
     }
-    let type1Checked = document.querySelector('input[name="type1"]:checked')
-    let type2Checked = document.querySelector('input[name="type2"]:checked')
-
-    
-    if (type2Checked !=null){
-
-    }
+    type1Checked = document.querySelector('input[name="type1"]:checked')
+    type2Checked = document.querySelector('input[name="type2"]:checked')
 }
+
+btnAddToCart.addEventListener("click", () => {
+    fetch(appBasePath + "shop/shop/category/", {
+        method: "POST",
+        body: JSON.stringify({
+            type1: type1Checked,
+            type2: type2Checked
+
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })})

@@ -32,7 +32,8 @@ public class ShopController extends  BaseController{
 
     @GetMapping
     public String home() {
-        return "redirect:/shop/category/0";
+
+return "redirect:/shop/category/0";
     }
 
     @GetMapping("/category/{id}")
@@ -55,6 +56,7 @@ public class ShopController extends  BaseController{
 
         return modelAndView;
     }
+
 
 
 

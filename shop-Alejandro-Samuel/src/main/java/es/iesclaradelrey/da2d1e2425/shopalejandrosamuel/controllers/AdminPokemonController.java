@@ -49,13 +49,12 @@ public class AdminPokemonController {
 //    }
 
     @PostMapping("/new")
-    public ModelAndView newPokemonAdmin(@Valid @ModelAttribute CreatePokemonDTO pokemonDTO, BindingResult bindingResult) {
+    public ModelAndView newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreatePokemonDTO pokemonDTO, BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView("administration/pokemons/new");
         modelAndView.addObject("regions", regionService.findAll());
         modelAndView.addObject("pokemons", pokemonService.findAll());
         modelAndView.addObject("types", typeService.findAll());
-        modelAndView.addObject("pokemon", pokemonDTO);
-
+//        modelAndView.addObject("pokemon", pokemonDTO);
         if (bindingResult.hasErrors()) {
             return modelAndView;
         }
