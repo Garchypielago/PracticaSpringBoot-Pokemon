@@ -28,7 +28,7 @@ selectRegion.addEventListener("change", ()=>{
 
     dataListReference.removeAttribute("disabled")
 
-    //
+    //todo mostrar los pokemon de esa region solo
     fetch(appBasePath + "api/v1/pokemones", {
         method: "POST",
         body: JSON.stringify({

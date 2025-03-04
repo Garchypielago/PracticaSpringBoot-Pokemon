@@ -1,5 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import jakarta.persistence.*;
 import lombok.*;
 

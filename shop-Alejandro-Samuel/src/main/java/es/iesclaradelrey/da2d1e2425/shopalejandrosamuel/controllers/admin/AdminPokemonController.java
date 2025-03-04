@@ -1,4 +1,4 @@
-package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
+package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers.admin;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreatePokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
@@ -6,13 +6,10 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/admin/pokemons")
@@ -27,6 +24,28 @@ public class AdminPokemonController {
         this.typeService = typeService;
     }
 
+//    @GetMapping({"/", ""})
+//    public ModelAndView pokemonListAdmin() {
+//        ModelAndView modelAndView = new ModelAndView("administration/pokemons/list");
+//        modelAndView.addObject("pokemons", pokemonService.findAll());
+//        return modelAndView;
+//    }
+
+    @GetMapping({"/", ""})
+    public ModelAndView pokemonListAdmin(@RequestParam(defaultValue = "1") Integer pageNumber,
+                                         @RequestParam(defaultValue = "10")Integer pageSize,
+                                         @RequestParam(defaultValue = "id") String orderBy,
+                                         @RequestParam(defaultValue = "asc")String orderDir,
+                                         Model model) {
+
+        ModelAndView modelAndView = new ModelAndView("administration/pokemons/list");
+        modelAndView.addObject("orderBy", orderBy);
+        modelAndView.addObject("orderDir", orderDir);
+        modelAndView.addObject("pokemons", pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir));
+
+        return modelAndView;
+    }
+
     @GetMapping("/new")
     public ModelAndView newPokemonAdmin() {
         ModelAndView modelAndView = new ModelAndView("administration/pokemons/new");
@@ -37,16 +56,6 @@ public class AdminPokemonController {
 
         return modelAndView;
     }
-
-//        @PostMapping("/new")
-//    public String newPokemonAdmin(@Valid @ModelAttribute CreatePokemonDTO pokemonDTO, BindingResult bindingResult, Model model) {
-//        if (bindingResult.hasErrors()) {
-//            model.addAttribute("pokemon", pokemonDTO);
-//            return "administration/pokemons/new";
-//        }
-//        pokemonService.saveFromDTO(pokemonDTO);
-//        return "administration/pokemons/new";
-//    }
 
     @PostMapping("/new")
     public ModelAndView newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreatePokemonDTO pokemonDTO, BindingResult bindingResult) {

@@ -1,4 +1,4 @@
-package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
+package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers.admin;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateCategoryDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
