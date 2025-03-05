@@ -6,10 +6,7 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -24,6 +21,31 @@ public class AdminCategoryController {
         this.regionService = regionService;
     }
 
+    @GetMapping({"/region/list"})
+    public ModelAndView categoryList(@RequestParam(defaultValue = "1") Integer pageNumber,
+                                     @RequestParam(defaultValue = "10")Integer pageSize,
+                                     @RequestParam(defaultValue = "id") String orderBy,
+                                     @RequestParam(defaultValue = "asc")String orderDir){
+
+        ModelAndView modelAndView = new ModelAndView("administration/categories/region/list");
+        modelAndView.addObject("orderBy", orderBy);
+        modelAndView.addObject("orderDir", orderDir);
+        modelAndView.addObject("regions", regionService.findAll(pageNumber, pageSize, orderBy, orderDir));
+        return modelAndView;
+    }
+
+    @GetMapping({"/type/list"})
+    public ModelAndView typeList(@RequestParam(defaultValue = "1") Integer pageNumber,
+                                     @RequestParam(defaultValue = "10")Integer pageSize,
+                                     @RequestParam(defaultValue = "id") String orderBy,
+                                     @RequestParam(defaultValue = "asc")String orderDir){
+
+        ModelAndView modelAndView = new ModelAndView("administration/categories/type/list");
+        modelAndView.addObject("orderBy", orderBy);
+        modelAndView.addObject("orderDir", orderDir);
+        modelAndView.addObject("types", typeService.findAll(pageNumber, pageSize, orderBy, orderDir));
+        return modelAndView;
+    }
     @GetMapping("/new")
     public ModelAndView newCategory() {
         ModelAndView modelAndView = new ModelAndView("administration/categories/new");

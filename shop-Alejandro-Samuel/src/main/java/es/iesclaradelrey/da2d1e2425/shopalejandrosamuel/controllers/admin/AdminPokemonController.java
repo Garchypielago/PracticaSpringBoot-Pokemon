@@ -31,7 +31,7 @@ public class AdminPokemonController {
 //        return modelAndView;
 //    }
 
-    @GetMapping({"/", ""})
+    @GetMapping({"/list"})
     public ModelAndView pokemonListAdmin(@RequestParam(defaultValue = "1") Integer pageNumber,
                                          @RequestParam(defaultValue = "10")Integer pageSize,
                                          @RequestParam(defaultValue = "id") String orderBy,

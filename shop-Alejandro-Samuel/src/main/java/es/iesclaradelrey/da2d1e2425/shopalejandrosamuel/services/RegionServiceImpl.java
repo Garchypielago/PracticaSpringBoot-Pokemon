@@ -2,6 +2,9 @@ package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RegionRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -28,5 +31,13 @@ public class RegionServiceImpl implements RegionService {
     @Override
     public Region save(Region region) {
         return regionRepository.save(region);
+    }
+
+    @Override
+    public Page<Region> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir) {
+        Sort.Direction direction = orderDir.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
+        PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
+
+        return regionRepository.findAll(pageRequest);
     }
 }
