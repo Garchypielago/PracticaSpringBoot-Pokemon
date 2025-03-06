@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Controller
@@ -30,7 +31,7 @@ public class AdminCategoryController {
                                      @RequestParam(defaultValue = "id") String orderBy,
                                      @RequestParam(defaultValue = "asc")String orderDir){
 
-        Map<String, String> options = new HashMap<String, String>();
+        Map<String, String> options = new LinkedHashMap<String, String>();
         options.put("Id", "id");
         options.put("Name", "name");
 
@@ -47,9 +48,11 @@ public class AdminCategoryController {
                                      @RequestParam(defaultValue = "10")Integer pageSize,
                                      @RequestParam(defaultValue = "id") String orderBy,
                                      @RequestParam(defaultValue = "asc")String orderDir){
-        Map<String, String> options = new HashMap<String, String>();
+
+        Map<String, String> options = new LinkedHashMap<String, String>();
         options.put("Id", "id");
         options.put("Name", "name");
+
         ModelAndView modelAndView = new ModelAndView("administration/categories/type/list");
         modelAndView.addObject("orderBy", orderBy);
         modelAndView.addObject("orderDir", orderDir);

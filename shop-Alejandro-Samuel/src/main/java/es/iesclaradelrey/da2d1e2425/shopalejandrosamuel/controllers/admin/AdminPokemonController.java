@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Controller
@@ -41,7 +42,7 @@ public class AdminPokemonController {
                                          @RequestParam(defaultValue = "asc")String orderDir,
                                          Model model) {
 
-        Map<String, String> options = new HashMap<String, String>();
+        Map<String, String> options = new LinkedHashMap<String, String>();
         options.put("Id", "id");
         options.put("Name", "name");
         options.put("Region Id", "region.id");

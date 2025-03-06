@@ -81,15 +81,15 @@
             <div class="col-md-4">
                 <label for="select-orderby" class="form-label">Order by attribute</label>
                 <select id="select-orderby" class="form-select" name="orderBy">
-                    <option th:selected="${currentOrderBy.equals(opt.getValue())}" th:each="opt : ${options}" th:value="${opt.getValue()}" th:text="${opt.getKey()}"></option>
+                    <option th:selected="${currentOrderBy==opt.getValue()}" th:each="opt : ${options}" th:value="${opt.getValue()}" th:text="${opt.getKey()}"></option>
                 </select>
             </div>
 
             <div class="col-md-4">
                 <label for="order-dir" class="form-label">Order (asc/desc)</label>
                 <select id="order-dir" class="form-select" name="orderDir">
-                    <option th:selected="${currentOrderDir.equals('asc')}" value="asc" selected>Ascendant</option>
-                    <option th:selected="${currentOrderDir.equals('desc')}" value="desc" >Descendant</option>
+                    <option th:selected="${currentOrderDir=='asc'}" value="asc" selected>Ascendant</option>
+                    <option th:selected="${currentOrderDir=='desc'}" value="desc" >Descendant</option>
                 </select>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
