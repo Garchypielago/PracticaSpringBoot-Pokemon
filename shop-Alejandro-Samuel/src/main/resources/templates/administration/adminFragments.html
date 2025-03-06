@@ -63,5 +63,43 @@
     <!--    <p>Page <span th:text="${pokemons.number}+1">1</span> out of <span th:text="${pokemons.totalPages}"></span></p>-->
 </th:block>
 
+
+<th:block th:fragment="admin-form(options, currentPageSize, currentOrderBy, currentOrderDir)">
+
+    <form method="get">
+        <fieldset class="row g-3" >
+            <div class="col-md-4">
+                <label for="select-size" class="form-label">Size of page</label>
+                <select id="select-size" class="form-select"  name="pageSize">
+                    <option th:selected="${currentPageSize == 5}" value="5">5</option>
+                    <option th:selected="${currentPageSize == 10}" value="10">10</option>
+                    <option th:selected="${currentPageSize == 15}" value="15">15</option>
+                    <option th:selected="${currentPageSize == 20}" value="20">20</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="select-orderby" class="form-label">Order by attribute</label>
+                <select id="select-orderby" class="form-select" name="orderBy">
+                    <option th:selected="${currentOrderBy.equals(opt.getValue())}" th:each="opt : ${options}" th:value="${opt.getValue()}" th:text="${opt.getKey()}"></option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="order-dir" class="form-label">Order (asc/desc)</label>
+                <select id="order-dir" class="form-select" name="orderDir">
+                    <option th:selected="${currentOrderDir.equals('asc')}" value="asc" selected>Ascendant</option>
+                    <option th:selected="${currentOrderDir.equals('desc')}" value="desc" >Descendant</option>
+                </select>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <hr>
+
+</th:block>
+
 </body>
 </html>

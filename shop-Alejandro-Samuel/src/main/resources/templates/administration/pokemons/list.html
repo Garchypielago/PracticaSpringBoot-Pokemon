@@ -12,6 +12,8 @@
 <div class="container">
     <h1>POKEMON LIST</h1>
 
+    <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${pokemons.getSize()},${orderBy},${orderDir})}"></th:block>
+
     <table class="table">
         <thead>
         <tr>

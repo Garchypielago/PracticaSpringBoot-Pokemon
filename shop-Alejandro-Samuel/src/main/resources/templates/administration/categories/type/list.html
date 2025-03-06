@@ -12,6 +12,8 @@
 <div class="container">
     <h1>TYPE LIST</h1>
 
+    <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${types.getSize()},${orderBy},${orderDir})}"></th:block>
+
     <table class="table">
         <thead>
         <tr>

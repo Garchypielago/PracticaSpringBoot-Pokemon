@@ -33,4 +33,5 @@ public class StatValue {
         this.stat = stat;
         this.statValue = statValue;
     }
+
 }

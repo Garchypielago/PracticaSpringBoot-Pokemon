@@ -9,6 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Controller
 @RequestMapping("/admin/categories")
 public class AdminCategoryController {
@@ -27,9 +30,14 @@ public class AdminCategoryController {
                                      @RequestParam(defaultValue = "id") String orderBy,
                                      @RequestParam(defaultValue = "asc")String orderDir){
 
+        Map<String, String> options = new HashMap<String, String>();
+        options.put("Id", "id");
+        options.put("Name", "name");
+
         ModelAndView modelAndView = new ModelAndView("administration/categories/region/list");
         modelAndView.addObject("orderBy", orderBy);
         modelAndView.addObject("orderDir", orderDir);
+        modelAndView.addObject("options", options);
         modelAndView.addObject("regions", regionService.findAll(pageNumber, pageSize, orderBy, orderDir));
         return modelAndView;
     }
@@ -39,10 +47,13 @@ public class AdminCategoryController {
                                      @RequestParam(defaultValue = "10")Integer pageSize,
                                      @RequestParam(defaultValue = "id") String orderBy,
                                      @RequestParam(defaultValue = "asc")String orderDir){
-
+        Map<String, String> options = new HashMap<String, String>();
+        options.put("Id", "id");
+        options.put("Name", "name");
         ModelAndView modelAndView = new ModelAndView("administration/categories/type/list");
         modelAndView.addObject("orderBy", orderBy);
         modelAndView.addObject("orderDir", orderDir);
+        modelAndView.addObject("options", options);
         modelAndView.addObject("types", typeService.findAll(pageNumber, pageSize, orderBy, orderDir));
         return modelAndView;
     }
