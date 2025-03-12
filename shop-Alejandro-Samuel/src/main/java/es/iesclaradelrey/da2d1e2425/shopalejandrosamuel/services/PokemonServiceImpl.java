@@ -57,6 +57,13 @@ public class PokemonServiceImpl implements PokemonService {
     }
 
     @Override
+    public void deleteById(Long id) {
+        pokemonRepository.delete(findById(id).orElse(null
+        //Aqui poner exception posiblemente
+        ));
+    }
+
+    @Override
     public void saveFromDTO(CreatePokemonDTO pokemonDTO) {
         Pokemon pokeReference = pokemonRepository.findById(pokemonDTO.getIdReference()).orElseThrow(
                 () -> new PokemonDontExist("Pokemon not found")

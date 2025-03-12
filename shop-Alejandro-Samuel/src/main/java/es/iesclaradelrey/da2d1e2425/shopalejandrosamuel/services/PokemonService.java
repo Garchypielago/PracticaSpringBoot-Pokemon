@@ -15,7 +15,7 @@ public interface PokemonService {
     Collection<Pokemon> findByRegion(Long id);
     Collection<Pokemon> findByType(Long id);
     Double avgRatingsFromPokemon(Long pokemon_id);
-
+    void deleteById(Long id);
     void saveFromDTO(CreatePokemonDTO pokemonDTO);
 
     Page<Pokemon> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);

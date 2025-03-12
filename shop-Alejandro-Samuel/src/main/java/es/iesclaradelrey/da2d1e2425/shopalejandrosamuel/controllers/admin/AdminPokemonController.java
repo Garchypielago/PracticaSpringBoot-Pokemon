@@ -89,4 +89,20 @@ public class AdminPokemonController {
         return modelAndView;
     }
 
+    @GetMapping("/delete/{id}")
+    public ModelAndView deletePokemonAdmin(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("administration/pokemons/delete");
+        modelAndView.addObject("pokemon", pokemonService.findById(id).orElse(null));
+        return modelAndView;
+
+    }
+
+    @PostMapping("/delete/{id}")
+    public String DeletePokemonAdmin(@PathVariable Long id) {
+        pokemonService.deleteById(id);
+        return "administration/pokemons/delete";
+
+    }
+
+
 }
