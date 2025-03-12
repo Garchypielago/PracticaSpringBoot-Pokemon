@@ -100,8 +100,11 @@
                     <option th:selected="${currentOrderDir=='desc'}" value="desc">Descendant</option>
                 </select>
             </div>
+
+            <input type="hidden" name="pageNumber" value="1" />
+
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="submit" name="pageNumber" value="1">Submit</button>
+                <button class="btn btn-primary me-md-2" type="submit" >Submit</button>
             </div>
         </fieldset>
     </form>
