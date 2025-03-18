@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RegionRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -31,6 +32,13 @@ public class RegionServiceImpl implements RegionService {
     @Override
     public Region save(Region region) {
         return regionRepository.save(region);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        regionRepository.delete(regionRepository.findById(id).orElseThrow(
+                () -> new PokemonDontExist("Region not found")
+        ));
     }
 
     @Override

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -60,6 +59,7 @@ public class AdminCategoryController {
         modelAndView.addObject("types", typeService.findAll(pageNumber, pageSize, orderBy, orderDir));
         return modelAndView;
     }
+
     @GetMapping("/new")
     public ModelAndView newCategory() {
         ModelAndView modelAndView = new ModelAndView("administration/categories/new");
@@ -77,6 +77,53 @@ public class AdminCategoryController {
 
         return new ModelAndView("administration/categories/new", "category", categoryDto);
     }
+
+    @GetMapping("/region/delete/{id}")
+    public ModelAndView deleteRegionAdmin(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("administration/categories/region/delete");
+        modelAndView.addObject("category", regionService.findById(id).orElse(null));
+        return modelAndView;
+    }
+
+    @GetMapping("/type/delete/{id}")
+    public ModelAndView deleteTypeAdmin(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("administration/categories/type/delete");
+        modelAndView.addObject("category", typeService.findById(id).orElse(null));
+        return modelAndView;
+    }
+
+    @PostMapping("/region/delete/{id}")
+    public String deleteRegionAdminPost(@PathVariable Long id) {
+        regionService.deleteById(id);
+        return "redirect:/administration/categories/region/list";
+    }
+
+    @PostMapping("/type/delete/{id}")
+    public String deleteTypeAdminPost(@PathVariable Long id) {
+        typeService.deleteById(id);
+        return "redirect:/administration/categories/region/list";
+    }
+
+
+
+//    primero hacemos los pokemon
+//    @GetMapping("/edit/{id}")
+//    public ModelAndView editCategory(@PathVariable String id) {
+//        ModelAndView modelAndView = new ModelAndView("administration/categories/edit/");
+//        modelAndView.addObject("category", new CreateCategoryDTO());
+//        return modelAndView;
+//    }
+//
+//    @PostMapping("/edit/{id}")
+//    public ModelAndView editCategory(@ModelAttribute CreateCategoryDTO categoryDto, @PathVariable String id) {
+//        if (categoryDto.getCategoryType() == 1)
+//            regionService.save(new Region(categoryDto.getName()));
+//
+//        if (categoryDto.getCategoryType() == 2)
+//            typeService.save(new Type(categoryDto.getName()));
+//
+//        return new ModelAndView("administration/categories/new", "category", categoryDto);
+//    }
 
 
 }

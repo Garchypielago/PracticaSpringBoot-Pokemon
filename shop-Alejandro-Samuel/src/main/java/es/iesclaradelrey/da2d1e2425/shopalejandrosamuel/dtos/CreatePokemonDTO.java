@@ -1,4 +1,5 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
 import jakarta.validation.constraints.Digits;
@@ -35,4 +36,13 @@ public class CreatePokemonDTO {
     @NotNull(message = "Must have a pokemon for statistics and price reference.")
     private Long idReference;
 
+    public CreatePokemonDTO(Pokemon pokemon) {
+        this.name = pokemon.getName();
+        this.description = pokemon.getDescription();
+        this.type1 = pokemon.getType1();
+        this.type2 = pokemon.getType2();
+        this.region = pokemon.getRegion();
+        this.legendary = pokemon.isLegendary();
+        this.stock = pokemon.getStock();
+    }
 }

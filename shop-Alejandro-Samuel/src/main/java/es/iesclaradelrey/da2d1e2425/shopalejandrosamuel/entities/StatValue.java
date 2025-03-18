@@ -17,11 +17,11 @@ public class StatValue {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "pokemon_id")
     private Pokemon pokemon;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "stat_id")
     private Stat stat;
 

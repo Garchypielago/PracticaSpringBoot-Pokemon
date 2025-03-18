@@ -4,9 +4,11 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepo
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.Cascade;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -34,26 +36,29 @@ public class Pokemon {
     @Column(nullable = false, columnDefinition = "bigint default 5")
     private Long stock;
 
-    @OneToMany(mappedBy = "pokemon", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "pokemon", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private Collection<StatValue> stats = new ArrayList<>();
 
-    @OneToMany(mappedBy ="pokemon")
+    @OneToMany(mappedBy ="pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<ProductInCart> productInCart;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name="type1", nullable = false)
     private Type type1;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name="type2")
     private Type type2;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name="region", nullable = false)
     private Region region;
 
     @Column(nullable = false)
     private boolean legendary;
+
+    @OneToMany(mappedBy = "pokemon",cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Rating> ratings = new HashSet<>();
 
     public Pokemon(Long id, String nombre) {
         this.id = id;

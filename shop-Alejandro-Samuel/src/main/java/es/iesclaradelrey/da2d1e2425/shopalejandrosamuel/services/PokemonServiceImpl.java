@@ -5,22 +5,24 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.StatValue;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.StatValueRepository;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RatingRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+
 
 import java.util.*;
 
 @Service
 public class PokemonServiceImpl implements PokemonService {
     private final PokemonRepository pokemonRepository;
-    private final StatValueRepository statValueRepository;
+    private final RatingRepository ratingRepository;
 
-    public PokemonServiceImpl(PokemonRepository pokemonRepository, StatValueRepository statValueRepository) {
+    public PokemonServiceImpl(PokemonRepository pokemonRepository, RatingRepository ratingRepository) {
         this.pokemonRepository = pokemonRepository;
-        this.statValueRepository = statValueRepository;
+        this.ratingRepository = ratingRepository;
     }
 
     @Override
@@ -56,11 +58,14 @@ public class PokemonServiceImpl implements PokemonService {
         return pokemonRepository.avgRatingsFromPokemon(pokemon_id);
     }
 
+    @Transactional
     @Override
     public void deleteById(Long id) {
-        pokemonRepository.delete(findById(id).orElse(null
-        //Aqui poner exception posiblemente
+//        ratingRepository.deleteById(id);
+        pokemonRepository.delete(pokemonRepository.findById(id).orElseThrow(
+                () -> new PokemonDontExist("Pokemon not found")
         ));
+
     }
 
     @Override

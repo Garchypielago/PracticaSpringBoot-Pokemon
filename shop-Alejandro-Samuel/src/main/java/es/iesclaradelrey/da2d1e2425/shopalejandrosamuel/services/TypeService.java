@@ -12,4 +12,6 @@ public interface TypeService {
     Type save(Type type);
 
     Page<Type> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+
+    void deleteById(Long id);
 }

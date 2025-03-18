@@ -11,5 +11,6 @@ public interface RegionService {
     Optional<Region> findById(Long id);
     Region save(Region region);
 
+    void deleteById(Long id);
     Page<Region> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 }

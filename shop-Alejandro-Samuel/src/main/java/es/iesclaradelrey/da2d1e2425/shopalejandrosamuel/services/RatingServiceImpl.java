@@ -11,7 +11,8 @@ import java.util.Optional;
 public class RatingServiceImpl implements RatingService {
     private final RatingRepository ratingRepository;
 
-    public RatingServiceImpl(RatingRepository ratingRepository) {this.ratingRepository = ratingRepository;}
+    public RatingServiceImpl(RatingRepository ratingRepository, PokemonService pokemonService) {this.ratingRepository = ratingRepository;
+    }
 
     @Override
     public long count() {return this.ratingRepository.count();}
@@ -32,5 +33,15 @@ public class RatingServiceImpl implements RatingService {
     @Override
     public Collection<Rating> findByPokemon_Id(Long pokemonId) {
         return this.ratingRepository.findByPokemon_Id(pokemonId);
+    }
+
+    @Override
+    public void deleteByPokemonId(Long pokemonId) {
+//        this.ratingRepository.deleteAll(this.ratingRepository.findByPokemon_Id(pokemonId));
+
+        for (Rating rating : this.ratingRepository.findByPokemon_Id(pokemonId)) {
+            this.ratingRepository.delete(rating);
+        }
+//        ratingRepository.delete(findByPokemon_Id(pokemonId))
     }
 }

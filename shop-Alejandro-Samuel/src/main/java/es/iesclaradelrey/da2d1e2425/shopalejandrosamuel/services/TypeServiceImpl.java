@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.TypeRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -38,5 +39,12 @@ public class TypeServiceImpl implements TypeService {
         PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
 
         return typeRepository.findAll(pageRequest);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        typeRepository.delete(typeRepository.findById(id).orElseThrow(
+                () -> new PokemonDontExist("Region not found")
+        ));
     }
 }

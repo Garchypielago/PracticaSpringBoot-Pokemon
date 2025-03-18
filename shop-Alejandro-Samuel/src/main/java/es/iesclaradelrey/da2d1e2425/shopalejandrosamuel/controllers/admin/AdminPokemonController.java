@@ -5,6 +5,7 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import jakarta.validation.Valid;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -27,13 +28,6 @@ public class AdminPokemonController {
         this.regionService = regionService;
         this.typeService = typeService;
     }
-
-//    @GetMapping({"/", ""})
-//    public ModelAndView pokemonListAdmin() {
-//        ModelAndView modelAndView = new ModelAndView("administration/pokemons/list");
-//        modelAndView.addObject("pokemons", pokemonService.findAll());
-//        return modelAndView;
-//    }
 
     @GetMapping({"/list"})
     public ModelAndView pokemonListAdmin(@RequestParam(defaultValue = "1") Integer pageNumber,
@@ -80,7 +74,6 @@ public class AdminPokemonController {
         modelAndView.addObject("regions", regionService.findAll());
         modelAndView.addObject("pokemons", pokemonService.findAll());
         modelAndView.addObject("types", typeService.findAll());
-//        modelAndView.addObject("pokemon", pokemonDTO);
 
         if (bindingResult.hasErrors()) {
             return modelAndView;
@@ -94,13 +87,31 @@ public class AdminPokemonController {
         ModelAndView modelAndView = new ModelAndView("administration/pokemons/delete");
         modelAndView.addObject("pokemon", pokemonService.findById(id).orElse(null));
         return modelAndView;
-
     }
 
     @PostMapping("/delete/{id}")
     public String DeletePokemonAdmin(@PathVariable Long id) {
         pokemonService.deleteById(id);
-        return "administration/pokemons/delete";
+        return "redirect:/administration/pokemons/list";
+    }
+
+    @GetMapping("/edit/{id}")
+    public ModelAndView editPokemonAdmin(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("administration/pokemons/edit");
+        modelAndView.addObject("pokemonDTO", new CreatePokemonDTO(pokemonService.findById(id).orElse(null)));
+        modelAndView.addObject("regions", regionService.findAll());
+//        modelAndView.addObject("pokemons", pokemonService.findAll());
+        modelAndView.addObject("types", typeService.findAll());
+        modelAndView.addObject("id", id);
+
+//        modelAndView.addObject("pokemon", pokemonService.findById(id).orElse(null));
+        return modelAndView;
+    }
+
+    @PostMapping("/edit/{id}")
+    public String editPokemonAdmin(@Valid @ModelAttribute("pokemon") CreatePokemonDTO pokemonDTO, BindingResult bindingResult) {
+
+        return "redirect:/administration/pokemons/list";
 
     }
 

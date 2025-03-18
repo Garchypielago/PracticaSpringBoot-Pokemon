@@ -10,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class AdminController {
     @GetMapping({"/","","/home"})
     public String index() {
-        return "administration" +
-                "/home";
+        return "administration/home";
     }
 }

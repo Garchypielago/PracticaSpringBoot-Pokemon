@@ -11,4 +11,5 @@ public interface RatingService {
     Collection<Rating> findAll();
     Optional<Rating> findById(Long id);
     Collection<Rating> findByPokemon_Id(Long pokemonId);
+    void deleteByPokemonId(Long pokemonId);
 }
