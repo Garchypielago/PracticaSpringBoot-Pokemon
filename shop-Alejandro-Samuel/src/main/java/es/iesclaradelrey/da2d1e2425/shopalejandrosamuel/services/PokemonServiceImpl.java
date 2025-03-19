@@ -1,11 +1,12 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreatePokemonDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditPokemonDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateNewPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.StatValue;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDuplicated;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RatingRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -18,11 +19,10 @@ import java.util.*;
 @Service
 public class PokemonServiceImpl implements PokemonService {
     private final PokemonRepository pokemonRepository;
-    private final RatingRepository ratingRepository;
 
-    public PokemonServiceImpl(PokemonRepository pokemonRepository, RatingRepository ratingRepository) {
+    public PokemonServiceImpl(PokemonRepository pokemonRepository) {
         this.pokemonRepository = pokemonRepository;
-        this.ratingRepository = ratingRepository;
+
     }
 
     @Override
@@ -69,7 +69,30 @@ public class PokemonServiceImpl implements PokemonService {
     }
 
     @Override
-    public void saveFromDTO(CreatePokemonDTO pokemonDTO) {
+    public void editFromDTO(CreateEditPokemonDTO pokemonDTO) {
+        if (pokemonRepository.sameName(pokemonDTO.getId(),pokemonDTO.getName())>0){
+            throw new PokemonDuplicated("Pokemon name is duplicated");
+        }
+        Pokemon pokemon = pokemonRepository.findById(pokemonDTO.getId()).orElseThrow(
+                () -> new PokemonDontExist("Pokemon not found")
+        );
+
+                pokemon.setName(pokemonDTO.getName());
+                pokemon.setDescription(pokemonDTO.getDescription());
+                pokemon.setType1(pokemonDTO.getType1());
+                pokemon.setType2(pokemonDTO.getType2());
+                pokemon.setRegion( pokemonDTO.getRegion());
+                pokemon.setLegendary(pokemonDTO.isLegendary());
+                pokemon.setStock(pokemonDTO.getStock());
+                pokemon.setPrice(pokemonDTO.getPrice());
+
+        pokemonRepository.save(pokemon);
+    }
+
+
+
+    @Override
+    public void saveFromDTO(CreateNewPokemonDTO pokemonDTO) {
         Pokemon pokeReference = pokemonRepository.findById(pokemonDTO.getIdReference()).orElseThrow(
                 () -> new PokemonDontExist("Pokemon not found")
         );

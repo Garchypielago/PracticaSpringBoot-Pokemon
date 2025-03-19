@@ -11,6 +11,7 @@
 
 <div class="container">
     <h1>TYPE LIST</h1>
+    <div th:if="${editado}" th:text="'The Type '+${editedCategory.getName()}+' has been updated'" class="alert alert-success" role="alert"></div>
 
     <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${types.getSize()},${orderBy},${orderDir})}"></th:block>
 

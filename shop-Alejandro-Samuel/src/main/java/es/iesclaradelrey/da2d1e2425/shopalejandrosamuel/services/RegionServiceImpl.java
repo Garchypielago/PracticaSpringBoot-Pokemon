@@ -1,5 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditRegionDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RegionRepository;
@@ -47,5 +48,16 @@ public class RegionServiceImpl implements RegionService {
         PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
 
         return regionRepository.findAll(pageRequest);
+    }
+
+    @Override
+    public void editFromDTO(CreateEditRegionDTO regionDTO) {
+        Region region = regionRepository.findById(regionDTO.getId()).orElseThrow(
+                () -> new PokemonDontExist("region not found")
+        );
+
+        region.setName(regionDTO.getName());
+
+        regionRepository.save(region);
     }
 }

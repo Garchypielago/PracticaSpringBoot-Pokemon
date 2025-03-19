@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreatePokemonDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditPokemonDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateNewPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import org.springframework.data.domain.Page;
 
@@ -16,7 +17,7 @@ public interface PokemonService {
     Collection<Pokemon> findByType(Long id);
     Double avgRatingsFromPokemon(Long pokemon_id);
     void deleteById(Long id);
-    void saveFromDTO(CreatePokemonDTO pokemonDTO);
-
+    void saveFromDTO(CreateNewPokemonDTO pokemonDTO);
+    public void editFromDTO(CreateEditPokemonDTO pokemonDTO);
     Page<Pokemon> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 }

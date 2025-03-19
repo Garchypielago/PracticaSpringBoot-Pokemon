@@ -11,7 +11,8 @@
 
 <div class="container">
     <h1>POKEMON LIST</h1>
-
+    <div th:if="${editado}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'" class="alert alert-success" role="alert"></div>
+    <div th:if="${d}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'" class="alert alert-success" role="alert"></div>
     <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${pokemons.getSize()},${orderBy},${orderDir})}"></th:block>
 
     <table class="table">
@@ -55,6 +56,7 @@
     </table>
 
     <th:block th:replace="~{administration/adminFragments :: admin-pagination(${pokemons}, '/admin/pokemons/list', ${orderBy}, ${orderDir})}"></th:block>
+
 
 </div>
 <!--<script th:src="@{/js/admin-pokemon.js}"></script>-->

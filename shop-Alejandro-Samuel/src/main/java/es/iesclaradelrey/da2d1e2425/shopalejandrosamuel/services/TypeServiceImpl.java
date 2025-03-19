@@ -1,5 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditTypeDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.TypeRepository;
@@ -46,5 +47,17 @@ public class TypeServiceImpl implements TypeService {
         typeRepository.delete(typeRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("Region not found")
         ));
+    }
+
+    @Override
+    public void editFromDTO(CreateEditTypeDTO editTypeDTO) {
+        Type type = typeRepository.findById(editTypeDTO.getId()).orElseThrow(
+                () -> new PokemonDontExist("Type not found")
+        );
+
+        type.setName(editTypeDTO.getName());
+        type.setBackground(editTypeDTO.getBackground());
+
+        typeRepository.save(type);
     }
 }

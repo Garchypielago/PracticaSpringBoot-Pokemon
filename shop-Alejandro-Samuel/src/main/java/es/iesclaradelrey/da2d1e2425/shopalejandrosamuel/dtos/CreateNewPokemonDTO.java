@@ -12,7 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class CreatePokemonDTO {
+public class CreateNewPokemonDTO {
     @NotBlank(message = "New Pokemon must have name.")
     private String name;
 
@@ -36,7 +36,7 @@ public class CreatePokemonDTO {
     @NotNull(message = "Must have a pokemon for statistics and price reference.")
     private Long idReference;
 
-    public CreatePokemonDTO(Pokemon pokemon) {
+    public CreateNewPokemonDTO(Pokemon pokemon) {
         this.name = pokemon.getName();
         this.description = pokemon.getDescription();
         this.type1 = pokemon.getType1();

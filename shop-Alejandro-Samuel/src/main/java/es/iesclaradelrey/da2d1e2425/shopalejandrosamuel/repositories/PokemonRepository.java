@@ -19,4 +19,8 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
     @Query(value = "select max(id) from pokemones", nativeQuery = true)
     Long findMaxId();
+
+    @Query(value = "select count(id) from pokemones p where p.name = :name and p.id!=:id", nativeQuery = true)
+
+    Long sameName(@Param("id") Long id, @Param("name") String name );
 }
