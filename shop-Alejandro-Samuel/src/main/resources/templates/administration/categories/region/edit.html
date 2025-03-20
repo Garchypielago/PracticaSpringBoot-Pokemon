@@ -19,7 +19,6 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
-                <th scope="col">Actions</th>
             </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -31,19 +30,16 @@
                                th:placeholder="${categoryDTO.getName().toLowerCase()}" th:field="*{name}">
                     </div>
                 </td>
-                <td>
-                    <button class="btn fa-solid fa-pen-to-square"></button>
-                    <button class="btn fa-solid fa-trash-can"></button>
-                </td>
             </tr>
             </tbody>
         </table>
 
-        <button type="submit" class="btn btn-outline-danger d-block " th:text="'Yes, edit '+ ${categoryDTO.getName()}">
-            Yes, edit
-        </button>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-outline-danger d-block " th:text="'Yes, edit '+ ${categoryDTO.getName()}">Yes, edit</button>
+            <a class="btn btn-outline-success d-block " th:href="@{'/admin/categories/region/list'}" style="text-decoration: none;">No, return to the list</a>
+        </div>
+
     </form>
-    <button class="btn btn-outline-success d-block " th:href="@{/admin/categories/region/list}">No, go back</button>
 </div>
 <body>
 

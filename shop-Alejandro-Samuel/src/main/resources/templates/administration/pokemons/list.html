@@ -11,9 +11,12 @@
 
 <div class="container">
     <h1>POKEMON LIST</h1>
-    <div th:if="${editado}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'" class="alert alert-success" role="alert"></div>
-    <div th:if="${d}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'" class="alert alert-success" role="alert"></div>
-    <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${pokemons.getSize()},${orderBy},${orderDir})}"></th:block>
+    <div th:if="${editado}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'"
+         class="alert alert-success" role="alert"></div>
+    <div th:if="${d}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'"
+         class="alert alert-success" role="alert"></div>
+    <th:block
+            th:replace="~{administration/adminFragments :: admin-form(${options}, ${pokemons.getSize()},${orderBy},${orderDir})}"></th:block>
 
     <table class="table">
         <thead>
@@ -30,6 +33,14 @@
         </tr>
         </thead>
         <tbody class="table-group-divider">
+        <tr>
+            <td colspan="9" class="text-center">
+                <a th:href="@{/admin/pokemons/new}">
+                    <i class="fa-solid fa-plus"></i>
+                    <span class="sr-only" th:text="|Create new pokemon|"></span>
+                </a>
+            </td>
+        </tr>
         <tr th:each="pokemon : ${pokemons}">
             <td th:text="${pokemon.getId()}"></td>
             <td>
@@ -39,24 +50,34 @@
             <td th:text="${pokemon.getName()}"></td>
             <td th:text="${pokemon.getRegion().getName()}"></td>
             <td>
-                <div th:class="'type-icon type-'+${pokemon.getType1().getName().toLowerCase()}" th:text="${pokemon.getType1().getName().toLowerCase()}"></div>
+                <div th:class="'type-icon type-'+${pokemon.getType1().getName().toLowerCase()}"
+                     th:text="${pokemon.getType1().getName().toLowerCase()}"></div>
             </td>
             <td>
                 <div th:unless="${pokemon.getType2()}" th:class="'type-icon'" th:text="'-'"></div>
-                <div th:if="${pokemon.getType2()}" th:class="'type-icon type-'+${pokemon.getType2().getName().toLowerCase()}" th:text="${pokemon.getType2().getName().toLowerCase()}"></div>
+                <div th:if="${pokemon.getType2()}"
+                     th:class="'type-icon type-'+${pokemon.getType2().getName().toLowerCase()}"
+                     th:text="${pokemon.getType2().getName().toLowerCase()}"></div>
             </td>
             <td th:text="${pokemon.getStock()}"></td>
             <td th:text="${pokemon.getPrice()} + 'P¥'"></td>
             <td>
-                <button class="btn fa-solid fa-pen-to-square"></button>
-                <button class="btn fa-solid fa-trash-can"></button>
+                <a th:href="@{'/admin/pokemons/edit/' + ${pokemon.id}}" style="text-decoration: none;">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="sr-only" th:text="|Edit Pokemon ${pokemon.getName()}|"></span>
+                </a>
+                <a th:href="@{'/admin/pokemons/delete/' + ${pokemon.id}}">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span class="sr-only-focusable" th:text="|Delete Pokemon ${pokemon.getName()}|"></span></a>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <th:block th:replace="~{administration/adminFragments :: admin-pagination(${pokemons}, '/admin/pokemons/list', ${orderBy}, ${orderDir})}"></th:block>
+    <th:block
+            th:replace="~{administration/adminFragments :: admin-pagination(${pokemons}, '/admin/pokemons/list', ${orderBy}, ${orderDir})}"></th:block>
 
+    <a class="btn btn-primary" th:href="@{'/admin/home'}" style="text-decoration: none;">Go to admin home</a>
 
 </div>
 <!--<script th:src="@{/js/admin-pokemon.js}"></script>-->

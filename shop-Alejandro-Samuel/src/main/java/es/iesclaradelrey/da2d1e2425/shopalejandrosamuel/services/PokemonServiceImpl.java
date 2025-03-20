@@ -7,6 +7,7 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.StatValue;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDuplicated;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RatingRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -19,10 +20,11 @@ import java.util.*;
 @Service
 public class PokemonServiceImpl implements PokemonService {
     private final PokemonRepository pokemonRepository;
+    private final RatingRepository ratingRepository;
 
-    public PokemonServiceImpl(PokemonRepository pokemonRepository) {
+    public PokemonServiceImpl(PokemonRepository pokemonRepository, RatingRepository ratingRepository) {
         this.pokemonRepository = pokemonRepository;
-
+        this.ratingRepository = ratingRepository;
     }
 
     @Override
@@ -61,7 +63,7 @@ public class PokemonServiceImpl implements PokemonService {
     @Transactional
     @Override
     public void deleteById(Long id) {
-//        ratingRepository.deleteById(id);
+        ratingRepository.deleteByPokemon_Id(id);
         pokemonRepository.delete(pokemonRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("Pokemon not found")
         ));

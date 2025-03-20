@@ -44,7 +44,7 @@
     </tr>
     </tbody>
   </table>
-  <form th:action="@{/admin/pokemons/delete/1}" method="post">
+  <form th:action="@{'/admin/pokemons/delete/' + ${pokemon.id}}" method="post">
     <button  type="submit" class="btn btn-outline-danger d-block " th:text="'Yes, delete '+ ${pokemon.getName()}">Yes, delete</button>
   </form>
   <button class="btn btn-outline-success d-block " th:href="@{/admin/pokemons/list}">No, go back</button>

@@ -23,4 +23,8 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
     @Query(value = "select count(id) from pokemones p where p.name = :name and p.id!=:id", nativeQuery = true)
 
     Long sameName(@Param("id") Long id, @Param("name") String name );
+
+    void deleteByRegion_Id(Long regionId);
+
+    void deleteByType1_IdOrType2_Id(Long type1Id, Long type2Id);
 }

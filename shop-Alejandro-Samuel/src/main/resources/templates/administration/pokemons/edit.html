@@ -94,11 +94,13 @@
             </tbody>
         </table>
 
-        <button type="submit" class="btn btn-outline-danger d-block " th:text="'Yes, edit '+ ${pokemonDTO.getName()}">
-            Yes, edit
-        </button>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-outline-danger d-block " th:text="'Yes, edit '+ ${pokemonDTO.getName()}">Yes, edit</button>
+            <a class="btn btn-outline-success d-block " th:href="@{'/admin/pokemons/list'}" style="text-decoration: none;">No, return to the list</a>
+        </div>
+
     </form>
-    <button class="btn btn-outline-success d-block " th:href="@{/admin/pokemons/list}">No, go back</button>
+
 </div>
 <body>
 

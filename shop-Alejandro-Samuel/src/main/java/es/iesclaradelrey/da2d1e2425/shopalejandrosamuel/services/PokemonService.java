@@ -20,4 +20,5 @@ public interface PokemonService {
     void saveFromDTO(CreateNewPokemonDTO pokemonDTO);
     public void editFromDTO(CreateEditPokemonDTO pokemonDTO);
     Page<Pokemon> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+
 }
