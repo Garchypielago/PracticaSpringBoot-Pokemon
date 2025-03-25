@@ -10,6 +10,10 @@
 
 <div class="container">
     <h1>Crear una nueva categoría</h1>
+
+    <div th:if="${message}" th:text="${message}"
+         class="alert alert-success" role="alert"></div>
+
     <form method="post" th:object="${category}">
 
         <div class="mb-3">
@@ -23,12 +27,16 @@
 
         <div class="mb-3">
             <label class="form-label" for="txt-name">Category name</label>
-            <input class="form-control" type="text" id="txt-name" placeholder="Here the name" th:field="*{name}">
+            <input class="form-control" type="text" id="txt-name" placeholder="Here the name" th:field="*{name}" th:errorclass="is-invalid" >
+            <div th:if="${#fields.hasErrors('name')}" class="invalid-feedback" th:text="${#fields.errors('name')}">
+                Error.
+            </div>
         </div>
         <div class="mb-3">
             <label class="form-label" for="txt-background">Background (if you have one)</label>
             <input class="form-control" type="text" id="txt-background" placeholder="Background path"
                    th:field="*{background}">
+
         </div>
         <div class="mb-3">
             <button class="btn btn-primary" type="submit" id="btn-new-category">Send request</button>

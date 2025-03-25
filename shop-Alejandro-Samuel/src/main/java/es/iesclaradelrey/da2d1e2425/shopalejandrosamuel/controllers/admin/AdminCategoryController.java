@@ -8,8 +8,10 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -98,14 +100,23 @@ public class AdminCategoryController {
     }
 
     @PostMapping("/new")
-    public ModelAndView newCategory(@ModelAttribute CreateCategoryDTO categoryDto) {
-        if (categoryDto.getCategoryType() == 1)
+    public String newCategory(@Valid @ModelAttribute("category") CreateCategoryDTO categoryDto,BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
+
+        if (bindingResult.hasErrors()) {
+
+            return "administration/categories/new";
+        }
+        if (categoryDto.getCategoryType() == 1) {
             regionService.save(new Region(categoryDto.getName()));
+            redirectAttributes.addFlashAttribute("message", "Region saved succesfully");
+        }
 
-        if (categoryDto.getCategoryType() == 2)
+        if (categoryDto.getCategoryType() == 2) {
             typeService.save(new Type(categoryDto.getName()));
+            redirectAttributes.addFlashAttribute("message", "Type saved succesfully");
+        }
 
-        return new ModelAndView("administration/categories/new", "category", categoryDto);
+        return "redirect:/admin/categories/new";
     }
 
     @GetMapping("/region/delete/{id}")
