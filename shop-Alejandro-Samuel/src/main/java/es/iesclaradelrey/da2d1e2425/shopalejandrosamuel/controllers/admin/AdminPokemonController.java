@@ -88,13 +88,18 @@ public class AdminPokemonController {
         model.addAttribute("regions", regionService.findAll());
         model.addAttribute("pokemons", pokemonService.findAll());
         model.addAttribute("types", typeService.findAll());
-
-        if (bindingResult.hasErrors()) {
+        try {
+            if (bindingResult.hasErrors()) {
+                return "administration/pokemons/new";
+            }
+            pokemonService.saveFromDTO(pokemonDTO);
+            redirectAttributes.addFlashAttribute("message", "New Pokemon added successfully");
+        }
+        catch (PokemonDuplicated pd){
+            bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
             return "administration/pokemons/new";
         }
-        pokemonService.saveFromDTO(pokemonDTO);
 
-        redirectAttributes.addFlashAttribute("message", "New Pokemon added successfully");
         return "redirect:/admin/pokemons/new";
     }
 
