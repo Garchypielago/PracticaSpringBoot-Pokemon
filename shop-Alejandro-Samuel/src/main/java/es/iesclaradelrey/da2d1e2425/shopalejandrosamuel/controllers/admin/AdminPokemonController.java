@@ -92,27 +92,25 @@ public class AdminPokemonController {
     }
 
     @PostMapping("/new")
-    public String newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO,
-                                  BindingResult bindingResult,
-                                  RedirectAttributes redirectAttributes,
-                                  Model model) {
+        return "administration/pokemons/new";
+    public String newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO, BindingResult bindingResult, Model model,RedirectAttributes redirectAttributes) {
+//        ModelAndView modelAndView = new ModelAndView("administration/pokemons/new");
         model.addAttribute("regions", regionService.findAll());
         model.addAttribute("pokemons", pokemonService.findAll());
         model.addAttribute("types", typeService.findAll());
-
         try {
-            if (!bindingResult.hasErrors()) {
-                pokemonService.saveFromDTO(pokemonDTO);
-                redirectAttributes.addFlashAttribute("newPokemon", pokemonDTO);
-                return "redirect:/admin/pokemons/list";
+            if (bindingResult.hasErrors()) {
+                return "administration/pokemons/new";
             }
+            pokemonService.saveFromDTO(pokemonDTO);
+            redirectAttributes.addFlashAttribute("message", "New Pokemon added successfully");
         }
         catch (PokemonDuplicated pd){
             bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
+            return "administration/pokemons/new";
         }
 
-
-        return "administration/pokemons/new";
+        return "redirect:/admin/pokemons/new";
     }
 
     @GetMapping("/delete/{id}")

@@ -95,6 +95,9 @@ public class PokemonServiceImpl implements PokemonService {
 
     @Override
     public void saveFromDTO(CreateNewPokemonDTO pokemonDTO) {
+        if (pokemonRepository.sameName(0L,pokemonDTO.getName())>0){
+            throw new PokemonDuplicated("Pokemon name is duplicated");
+        }
         Pokemon pokeReference = pokemonRepository.findById(pokemonDTO.getIdReference()).orElseThrow(
                 () -> new PokemonDontExist("Pokemon not found")
         );

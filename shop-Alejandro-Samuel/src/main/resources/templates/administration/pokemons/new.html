@@ -10,6 +10,9 @@
 <div class="container">
     <h1>CREATE A NEW P0KEMON</h1>
 
+    <div th:if="${message}" th:text="${message}"
+         class="alert alert-success" role="alert"></div>
+
     <form method="post" id="pokeForm" th:object="${pokemon}" class="needs-validation" novalidate>
 
         <div class="mb-3">

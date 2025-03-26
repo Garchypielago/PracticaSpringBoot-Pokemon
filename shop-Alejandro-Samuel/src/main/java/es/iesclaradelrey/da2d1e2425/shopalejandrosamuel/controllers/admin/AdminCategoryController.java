@@ -119,30 +119,23 @@ public class AdminCategoryController {
     }
 
     @PostMapping("/new")
-    public String newCategory(@Valid @ModelAttribute("category") CreateCategoryDTO categoryDTO,
-                              BindingResult bindingResult,
-                              RedirectAttributes redirectAttributes,
-                              Model model) {
-//        try {
-        if (!bindingResult.hasErrors()) {
-            if (categoryDTO.getCategoryType() == 1) {
-                regionService.save(new Region(categoryDTO.getName()));
-                redirectAttributes.addFlashAttribute("newCategory", categoryDTO);
-                return "redirect:/admin/categories/region/list";
+    public String newCategory(@Valid @ModelAttribute("category") CreateCategoryDTO categoryDto,BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
 
-            }
+        if (bindingResult.hasErrors()) {
 
-            if (categoryDTO.getCategoryType() == 2) {
-                typeService.save(new Type(categoryDTO.getName()));
-                redirectAttributes.addFlashAttribute("newCategory", categoryDTO);
-                return "redirect:/admin/categories/type/list";
-            }
+            return "administration/categories/new";
         }
-//        catch (PokemonDuplicated pd){
-//            bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
-//        }
+        if (categoryDto.getCategoryType() == 1) {
+            regionService.save(new Region(categoryDto.getName()));
+            redirectAttributes.addFlashAttribute("message", "Region saved succesfully");
+        }
 
-        return "administration/categories/new";
+        if (categoryDto.getCategoryType() == 2) {
+            typeService.save(new Type(categoryDto.getName()));
+            redirectAttributes.addFlashAttribute("message", "Type saved succesfully");
+        }
+
+        return "redirect:/admin/categories/new";
     }
 
     @GetMapping("/region/delete/{id}")
