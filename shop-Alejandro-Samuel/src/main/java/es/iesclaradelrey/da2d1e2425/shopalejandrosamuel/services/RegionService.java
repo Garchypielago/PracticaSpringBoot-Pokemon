@@ -15,5 +15,5 @@ public interface RegionService {
     void deleteById(Long id);
     Page<Region> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
-    public void editFromDTO(CreateEditRegionDTO regionDTO);
+    public void editFromDTO(Long id, CreateEditRegionDTO regionDTO);
 }

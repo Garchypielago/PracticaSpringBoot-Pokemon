@@ -16,23 +16,23 @@ public class CreateEditPokemonDTO {
 
     private Long id;
 
-    @NotBlank(message = "New Pokemon must have name.")
+    @NotBlank(message = "Edit Pokemon must have name.")
     private String name;
 
-    @NotBlank(message = "New Pokemon must have description.")
+    @NotBlank(message = "Edit Pokemon must have description.")
     private String description;
 
-    @NotNull(message = "New Pokemon must have at least one type.")
+    @NotNull(message = "Edit Pokemon must have at least one type.")
     private Type type1;
 
     private Type type2;
 
-    @NotNull(message = "New Pokemon must have region.")
+    @NotNull(message = "Edit Pokemon must have region.")
     private Region region;
 
     private boolean legendary;
 
-    @NotNull(message = "New Pokemon must have the stock.")
+    @NotNull(message = "Edit Pokemon must have the stock.")
     @Digits(integer = 3, fraction = 0, message = "We only have space for 999 pokemons.")
     private Long stock;
 

@@ -62,8 +62,8 @@ public class RegionServiceImpl implements RegionService {
     }
 
     @Override
-    public void editFromDTO(CreateEditRegionDTO regionDTO) {
-        Region region = regionRepository.findById(regionDTO.getId()).orElseThrow(
+    public void editFromDTO(Long id, CreateEditRegionDTO regionDTO) {
+        Region region = regionRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("region not found")
         );
 

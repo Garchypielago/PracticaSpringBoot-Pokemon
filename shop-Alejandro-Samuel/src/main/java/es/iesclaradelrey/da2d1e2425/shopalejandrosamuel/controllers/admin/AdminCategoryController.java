@@ -5,11 +5,14 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditTypeDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditRegionDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Type;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDuplicated;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -33,13 +36,14 @@ public class AdminCategoryController {
 
     @GetMapping({"/region/list"})
     public ModelAndView regionList(@RequestParam(defaultValue = "1") Integer pageNumber,
-                                   @RequestParam(defaultValue = "10")Integer pageSize,
+                                   @RequestParam(defaultValue = "10") Integer pageSize,
                                    @RequestParam(defaultValue = "id") String orderBy,
-                                   @RequestParam(defaultValue = "asc")String orderDir,
+                                   @RequestParam(defaultValue = "asc") String orderDir,
                                    Model model,
                                    HttpServletRequest request) {
 
-        boolean editado=false;
+        boolean editado = false;
+        boolean creado = false;
         Map<String, ?> inputFlashMap = RequestContextUtils.getInputFlashMap(request);
 
         Map<String, String> options = new LinkedHashMap<String, String>();
@@ -52,23 +56,32 @@ public class AdminCategoryController {
         modelAndView.addObject("options", options);
         modelAndView.addObject("regions", regionService.findAll(pageNumber, pageSize, orderBy, orderDir));
         if (inputFlashMap != null) {
-            CreateEditRegionDTO editedCategory = (CreateEditRegionDTO) inputFlashMap.get("editedCategory");
-            editado=true;
-            modelAndView.addObject("editedCategory", editedCategory);
+            if (inputFlashMap.containsKey("editedCategory")) {
+                CreateEditRegionDTO editedCategory = (CreateEditRegionDTO) inputFlashMap.get("editedCategory");
+                editado = true;
+                modelAndView.addObject("editedCategory", editedCategory);
+            }
+            if (inputFlashMap.containsKey("newCategory")) {
+                CreateCategoryDTO newCategory = (CreateCategoryDTO) inputFlashMap.get("newCategory");
+                creado = true;
+                modelAndView.addObject("newCategory", newCategory);
+            }
         }
-        modelAndView.addObject("editado", editado);
+        modelAndView.addObject("edited", editado);
+        modelAndView.addObject("created", creado);
         return modelAndView;
     }
 
     @GetMapping({"/type/list"})
     public ModelAndView typeList(@RequestParam(defaultValue = "1") Integer pageNumber,
-                                 @RequestParam(defaultValue = "10")Integer pageSize,
+                                 @RequestParam(defaultValue = "10") Integer pageSize,
                                  @RequestParam(defaultValue = "id") String orderBy,
-                                 @RequestParam(defaultValue = "asc")String orderDir,
+                                 @RequestParam(defaultValue = "asc") String orderDir,
                                  Model model,
                                  HttpServletRequest request) {
 
         boolean editado=false;
+        boolean creado = false;
         Map<String, ?> inputFlashMap = RequestContextUtils.getInputFlashMap(request);
 
 
@@ -82,11 +95,19 @@ public class AdminCategoryController {
         modelAndView.addObject("options", options);
         modelAndView.addObject("types", typeService.findAll(pageNumber, pageSize, orderBy, orderDir));
         if (inputFlashMap != null) {
-            CreateEditTypeDTO editedCategory = (CreateEditTypeDTO) inputFlashMap.get("editedCategory");
-            editado=true;
-            modelAndView.addObject("editedCategory", editedCategory);
+            if (inputFlashMap.containsKey("editedCategory")) {
+                CreateEditTypeDTO editedCategory = (CreateEditTypeDTO) inputFlashMap.get("editedCategory");
+                editado = true;
+                modelAndView.addObject("editedCategory", editedCategory);
+            }
+            if (inputFlashMap.containsKey("newCategory")) {
+                CreateCategoryDTO newCategory = (CreateCategoryDTO) inputFlashMap.get("newCategory");
+                creado = true;
+                modelAndView.addObject("newCategory", newCategory);
+            }
         }
-        modelAndView.addObject("editado", editado);
+        modelAndView.addObject("edited", editado);
+        modelAndView.addObject("created", creado);
         return modelAndView;
     }
 
@@ -98,14 +119,30 @@ public class AdminCategoryController {
     }
 
     @PostMapping("/new")
-    public ModelAndView newCategory(@ModelAttribute CreateCategoryDTO categoryDto) {
-        if (categoryDto.getCategoryType() == 1)
-            regionService.save(new Region(categoryDto.getName()));
+    public String newCategory(@Valid @ModelAttribute("category") CreateCategoryDTO categoryDTO,
+                              BindingResult bindingResult,
+                              RedirectAttributes redirectAttributes,
+                              Model model) {
+//        try {
+        if (!bindingResult.hasErrors()) {
+            if (categoryDTO.getCategoryType() == 1) {
+                regionService.save(new Region(categoryDTO.getName()));
+                redirectAttributes.addFlashAttribute("newCategory", categoryDTO);
+                return "redirect:/admin/categories/region/list";
 
-        if (categoryDto.getCategoryType() == 2)
-            typeService.save(new Type(categoryDto.getName()));
+            }
 
-        return new ModelAndView("administration/categories/new", "category", categoryDto);
+            if (categoryDTO.getCategoryType() == 2) {
+                typeService.save(new Type(categoryDTO.getName()));
+                redirectAttributes.addFlashAttribute("newCategory", categoryDTO);
+                return "redirect:/admin/categories/type/list";
+            }
+        }
+//        catch (PokemonDuplicated pd){
+//            bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
+//        }
+
+        return "administration/categories/new";
     }
 
     @GetMapping("/region/delete/{id}")
@@ -138,13 +175,13 @@ public class AdminCategoryController {
     @GetMapping("/{category}/edit/{id}")
     public ModelAndView editCategory(@PathVariable Long id, @PathVariable String category) {
         ModelAndView modelAndView = new ModelAndView("administration/home");
+        modelAndView.addObject("id", id);
 
-        if (category.equals("type")){
+        if (category.equals("type")) {
             modelAndView = new ModelAndView("administration/categories/type/edit");
             modelAndView.addObject("categoryDTO", new CreateEditTypeDTO(typeService.findById(id).orElse(null)));
-            System.out.println("pasa por aqui");
         }
-        if (category.equals("region")){
+        if (category.equals("region")) {
             modelAndView = new ModelAndView("administration/categories/region/edit");
             modelAndView.addObject("categoryDTO", new CreateEditRegionDTO(regionService.findById(id).orElse(null)));
         }
@@ -153,16 +190,35 @@ public class AdminCategoryController {
     }
 
     @PostMapping("/type/edit/{id}")
-    public RedirectView editCategory(@ModelAttribute CreateEditTypeDTO categoryDto,  RedirectAttributes redirectAttributes) {
-        typeService.editFromDTO(categoryDto);
-        redirectAttributes.addFlashAttribute("editedCategory", categoryDto);
-        return new RedirectView("/admin/categories/type/list", true);
+    public String editCategory(@PathVariable Long id,
+                               @Valid @ModelAttribute("categoryDTO") CreateEditTypeDTO categoryDto,
+                               RedirectAttributes redirectAttributes,
+                               BindingResult bindingResult,
+                               Model model) {
+        model.addAttribute("id", id);
+
+        if (!bindingResult.hasErrors()) {
+            typeService.editFromDTO(id, categoryDto);
+            redirectAttributes.addFlashAttribute("editedCategory", categoryDto);
+            return "redirect:/admin/categories/type/list";
+        }
+        return "administration/categories/type/edit";
     }
+
     @PostMapping("/region/edit/{id}")
-    public RedirectView editCategory(@ModelAttribute CreateEditRegionDTO categoryDto,  RedirectAttributes redirectAttributes) {
-        regionService.editFromDTO(categoryDto);
-        redirectAttributes.addFlashAttribute("editedCategory", categoryDto);
-        return new RedirectView("/admin/categories/region/list", true);
+    public String editCategory(@PathVariable Long id,
+                               @Valid @ModelAttribute("categoryDTO") CreateEditRegionDTO categoryDto,
+                               RedirectAttributes redirectAttributes,
+                               BindingResult bindingResult,
+                               Model model) {
+        model.addAttribute("id", id);
+
+        if (!bindingResult.hasErrors()) {
+            regionService.editFromDTO(id, categoryDto);
+            redirectAttributes.addFlashAttribute("editedCategory", categoryDto);
+            return "redirect:/admin/categories/region/list";
+        }
+        return "administration/categories/region/edit";
     }
 
 

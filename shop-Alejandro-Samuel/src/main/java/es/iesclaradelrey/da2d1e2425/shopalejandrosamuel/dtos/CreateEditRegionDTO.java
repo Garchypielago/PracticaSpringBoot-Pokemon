@@ -1,8 +1,8 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Region;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-import org.hibernate.validator.constraints.NotBlank;
 
 @Getter
 @Setter
@@ -11,13 +11,10 @@ import org.hibernate.validator.constraints.NotBlank;
 @ToString
 public class CreateEditRegionDTO {
 
-    private Long id;
-
-    @NotBlank
+    @NotBlank(message = "Edit Type must have name.")
     private String name;
 
     public CreateEditRegionDTO(Region region) {
-        this.id = region.getId();
         this.name = region.getName();
     }
 }

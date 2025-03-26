@@ -44,6 +44,7 @@ public class AdminPokemonController {
 
 
         boolean editado=false;
+        boolean creado=false;
         Map<String, ?> inputFlashMap = RequestContextUtils.getInputFlashMap(request);
 
         Map<String, String> options = new LinkedHashMap<String, String>();
@@ -63,11 +64,19 @@ public class AdminPokemonController {
         modelAndView.addObject("options", options);
         modelAndView.addObject("pokemons", pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir));
         if (inputFlashMap != null) {
-            CreateEditPokemonDTO editedPokemon = (CreateEditPokemonDTO) inputFlashMap.get("editedPokemon");
-            editado=true;
-            modelAndView.addObject("editedPokemon", editedPokemon);
+            if(inputFlashMap.containsKey("editedPokemon")) {
+                CreateEditPokemonDTO editedPokemon = (CreateEditPokemonDTO) inputFlashMap.get("editedPokemon");
+                editado = true;
+                modelAndView.addObject("editedPokemon", editedPokemon);
+            }
+            if(inputFlashMap.containsKey("newPokemon")) {
+                CreateNewPokemonDTO newPokemon = (CreateNewPokemonDTO) inputFlashMap.get("newPokemon");
+                creado = true;
+                modelAndView.addObject("newPokemon", newPokemon);
+            }
         }
-        modelAndView.addObject("editado", editado);
+        modelAndView.addObject("edited", editado);
+        modelAndView.addObject("created", creado);
         return modelAndView;
     }
 
@@ -83,17 +92,27 @@ public class AdminPokemonController {
     }
 
     @PostMapping("/new")
-    public ModelAndView newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO, BindingResult bindingResult) {
-        ModelAndView modelAndView = new ModelAndView("administration/pokemons/new");
-        modelAndView.addObject("regions", regionService.findAll());
-        modelAndView.addObject("pokemons", pokemonService.findAll());
-        modelAndView.addObject("types", typeService.findAll());
+    public String newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO,
+                                  BindingResult bindingResult,
+                                  RedirectAttributes redirectAttributes,
+                                  Model model) {
+        model.addAttribute("regions", regionService.findAll());
+        model.addAttribute("pokemons", pokemonService.findAll());
+        model.addAttribute("types", typeService.findAll());
 
-        if (bindingResult.hasErrors()) {
-            return modelAndView;
+        try {
+            if (!bindingResult.hasErrors()) {
+                pokemonService.saveFromDTO(pokemonDTO);
+                redirectAttributes.addFlashAttribute("newPokemon", pokemonDTO);
+                return "redirect:/admin/pokemons/list";
+            }
         }
-        pokemonService.saveFromDTO(pokemonDTO);
-        return modelAndView;
+        catch (PokemonDuplicated pd){
+            bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
+        }
+
+
+        return "administration/pokemons/new";
     }
 
     @GetMapping("/delete/{id}")
@@ -126,18 +145,22 @@ public class AdminPokemonController {
                                    BindingResult bindingResult,
                                    RedirectAttributes redirectAttributes,
                                    Model model) {
+        model.addAttribute("regions", regionService.findAll());
+        model.addAttribute("types", typeService.findAll());
+        model.addAttribute("id", id);
+
         try {
-            pokemonService.editFromDTO(pokemonDTO);
-            redirectAttributes.addFlashAttribute("editedPokemon", pokemonDTO);
-            return "redirect:/admin/pokemons/list";
+            if (!bindingResult.hasErrors()) {
+                pokemonService.editFromDTO(pokemonDTO);
+                redirectAttributes.addFlashAttribute("editedPokemon", pokemonDTO);
+                return "redirect:/admin/pokemons/list";
+            }
+
         }
         catch (PokemonDuplicated pd){
             bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
         }
 
-        model.addAttribute("regions", regionService.findAll());
-        model.addAttribute("types", typeService.findAll());
-        model.addAttribute("id", id);
 
         return "administration/pokemons/edit";
     }

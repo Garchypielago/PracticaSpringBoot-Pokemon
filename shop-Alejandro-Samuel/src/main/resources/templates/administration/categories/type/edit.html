@@ -24,11 +24,14 @@
             </thead>
             <tbody class="table-group-divider">
             <tr>
-                <td th:text="${categoryDTO.getId()}"></td>
+                <td th:text="${id}"></td>
                 <td>
                     <div th:class="'type-icon type-'+${categoryDTO.getName().toLowerCase()}">
                         <input class="form-control" type="text" id="txt-name"
                                th:placeholder="${categoryDTO.getName().toLowerCase()}" th:field="*{name}">
+                    </div>
+                    <div th:if="${#fields.hasErrors('name')}" class="invalid-feedback" th:text="${#fields.errors('name')}">
+                        Error.
                     </div>
                 </td>
                 <td>

@@ -11,7 +11,10 @@
 
 <div class="container">
     <h1>REGION LIST</h1>
-    <div th:if="${editado}" th:text="'The Region '+${editedCategory.getName()}+' has been updated'" class="alert alert-success" role="alert"></div>
+    <div th:if="${edited}" th:text="'The Region '+${editedCategory.getName()}+' has been updated'"
+         class="alert alert-success" role="alert"></div>
+    <div th:if="${created}" th:text="'The Region '+${newCategory.getName()}+' has been created'"
+         class="alert alert-success" role="alert"></div>
 
     <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${regions.getSize()},${orderBy},${orderDir})}"></th:block>
 

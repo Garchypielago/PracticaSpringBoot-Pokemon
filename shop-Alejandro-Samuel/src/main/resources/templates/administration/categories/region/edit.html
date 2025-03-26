@@ -23,11 +23,15 @@
             </thead>
             <tbody class="table-group-divider">
             <tr>
-                <td th:text="${categoryDTO.getId()}"></td>
+                <td th:text="${id}"></td>
                 <td>
                     <div th:class="'type-icon type-'+${categoryDTO.getName().toLowerCase()}">
                         <input class="form-control" type="text" id="txt-name"
-                               th:placeholder="${categoryDTO.getName().toLowerCase()}" th:field="*{name}">
+                               th:placeholder="${categoryDTO.getName().toLowerCase()}" th:field="*{name}"  th:errorclass="is-invalid" required>
+                    </div>
+                    <div th:if="${#fields.hasErrors('name')}" class="invalid-feedback"
+                         th:text="${#fields.errors('name')}">
+                        Error.
                     </div>
                 </td>
             </tr>
@@ -35,8 +39,11 @@
         </table>
 
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn btn-outline-danger d-block " th:text="'Yes, edit '+ ${categoryDTO.getName()}">Yes, edit</button>
-            <a class="btn btn-outline-success d-block " th:href="@{'/admin/categories/region/list'}" style="text-decoration: none;">No, return to the list</a>
+            <button type="submit" class="btn btn-outline-danger d-block "
+                    th:text="'Yes, edit '+ ${categoryDTO.getName()}">Yes, edit
+            </button>
+            <a class="btn btn-outline-success d-block " th:href="@{'/admin/categories/region/list'}"
+               style="text-decoration: none;">No, return to the list</a>
         </div>
 
     </form>

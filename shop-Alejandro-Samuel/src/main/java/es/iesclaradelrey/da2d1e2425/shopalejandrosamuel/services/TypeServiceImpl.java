@@ -62,8 +62,8 @@ public class TypeServiceImpl implements TypeService {
     }
 
     @Override
-    public void editFromDTO(CreateEditTypeDTO editTypeDTO) {
-        Type type = typeRepository.findById(editTypeDTO.getId()).orElseThrow(
+    public void editFromDTO(Long id, CreateEditTypeDTO editTypeDTO) {
+        Type type = typeRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("Type not found")
         );
 

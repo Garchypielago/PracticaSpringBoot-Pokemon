@@ -83,7 +83,7 @@
             <label for="dataList-reference" class="form-label">Pokemon for reference</label>
             <select class="form-select" id="dataList-reference" th:field="*{idReference}" th:errorclass="is-invalid" required>
                 <option value="" selected disabled>Select a Pokemon</option>
-<!--                <option th:each="poke : ${pokemons}" th:value="${poke.getId()}" th:text="${poke.getId()} + '- ' + ${poke.getName()}">Pokemon</option>-->
+                <option th:each="poke : ${pokemons}" th:value="${poke.getId()}" th:text="${poke.getId()} + '- ' + ${poke.getName()}">Pokemon</option>
             </select>
             <div th:if="${#fields.hasErrors('idReference')}" class="invalid-feedback" th:text="${#fields.errors('idReference')}">
                 Error.

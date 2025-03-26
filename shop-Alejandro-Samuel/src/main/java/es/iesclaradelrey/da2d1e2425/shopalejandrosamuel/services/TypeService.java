@@ -15,5 +15,5 @@ public interface TypeService {
     Page<Type> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
     void deleteById(Long id);
-    public void editFromDTO(CreateEditTypeDTO editTypeDTO);
+    public void editFromDTO(Long id, CreateEditTypeDTO editTypeDTO);
 }
