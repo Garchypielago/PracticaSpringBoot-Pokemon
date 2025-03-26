@@ -92,7 +92,6 @@ public class AdminPokemonController {
     }
 
     @PostMapping("/new")
-        return "administration/pokemons/new";
     public String newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO, BindingResult bindingResult, Model model,RedirectAttributes redirectAttributes) {
 //        ModelAndView modelAndView = new ModelAndView("administration/pokemons/new");
         model.addAttribute("regions", regionService.findAll());
