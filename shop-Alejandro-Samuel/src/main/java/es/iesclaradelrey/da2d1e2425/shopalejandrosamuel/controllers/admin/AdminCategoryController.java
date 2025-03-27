@@ -21,6 +21,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Random;
 
 @Controller
 @RequestMapping("/admin/categories")
@@ -80,7 +81,7 @@ public class AdminCategoryController {
                                  Model model,
                                  HttpServletRequest request) {
 
-        boolean editado=false;
+        boolean editado = false;
         boolean creado = false;
         Map<String, ?> inputFlashMap = RequestContextUtils.getInputFlashMap(request);
 
@@ -119,23 +120,33 @@ public class AdminCategoryController {
     }
 
     @PostMapping("/new")
-    public String newCategory(@Valid @ModelAttribute("category") CreateCategoryDTO categoryDto,BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
+    public String newCategory(@Valid @ModelAttribute("category") CreateCategoryDTO categoryDto,
+                              BindingResult bindingResult,
+                              RedirectAttributes redirectAttributes,
+                              Model model) {
 
         if (bindingResult.hasErrors()) {
-
             return "administration/categories/new";
         }
+
+        try {
+            if (new Random().nextInt(10) > 5) {
+                throw new RuntimeException("Global random error");
+            }
+        } catch (Exception e) {
+            bindingResult.reject("globalError", e.getMessage());
+            return "administration/categories/new";
+        }
+
         if (categoryDto.getCategoryType() == 1) {
             regionService.save(new Region(categoryDto.getName()));
-            redirectAttributes.addFlashAttribute("message", "Region saved succesfully");
+            redirectAttributes.addFlashAttribute("message", "Region" + categoryDto.getName()+" saved succesfully");
+            return "redirect:/admin/categories/region/list";
         }
 
-        if (categoryDto.getCategoryType() == 2) {
-            typeService.save(new Type(categoryDto.getName()));
-            redirectAttributes.addFlashAttribute("message", "Type saved succesfully");
-        }
-
-        return "redirect:/admin/categories/new";
+        typeService.save(new Type(categoryDto.getName()));
+        redirectAttributes.addFlashAttribute("message", "Type" + categoryDto.getName()+"  saved succesfully");
+        return "redirect:/admin/categories/type/list";
     }
 
     @GetMapping("/region/delete/{id}")

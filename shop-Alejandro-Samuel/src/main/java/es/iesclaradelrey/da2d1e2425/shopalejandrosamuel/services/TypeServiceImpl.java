@@ -53,8 +53,8 @@ public class TypeServiceImpl implements TypeService {
     @Override
     @Transactional
     public void deleteById(Long id) {
-        ratingRepository.deleteByPokemon_Type1_IdOrPokemon_Type2_Id(id, id);
-        pokemonRepository.deleteByType1_IdOrType2_Id(id, id);
+            ratingRepository.deleteByPokemon_Type1_IdOrPokemon_Type2_Id(id, id);
+            pokemonRepository.deleteByType1_IdOrType2_Id(id, id);
 
         typeRepository.delete(typeRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("Region not found")

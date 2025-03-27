@@ -16,6 +16,11 @@
 
     <form method="post" th:object="${category}">
 
+        <div th:if="${#fields.hasGlobalErrors()}" class="alert alert-danger" role="alert">
+            <h3>Global Errors:</h3>
+            <div th:each="error : ${#fields.globalErrors()}" th:text="${error}"></div>
+        </div>
+
         <div class="mb-3">
             <label class="form-label" for="select-type">Category</label>
             <select class="form-select form-control" id="select-type" th:field="*{categoryType}">

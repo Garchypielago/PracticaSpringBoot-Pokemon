@@ -13,7 +13,7 @@
     <h1>POKEMON LIST</h1>
     <div th:if="${edited}" th:text="'The Pokemon '+${editedPokemon.getName()}+' has been updated'"
          class="alert alert-success" role="alert"></div>
-    <div th:if="${created}" th:text="'The Pokemon '+${newPokemon.getName()}+' has been created'"
+    <div th:if="${message}" th:text="${message}"
          class="alert alert-success" role="alert"></div>
     <th:block
             th:replace="~{administration/adminFragments :: admin-form(${options}, ${pokemons.getSize()},${orderBy},${orderDir})}"></th:block>

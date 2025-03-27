@@ -44,7 +44,6 @@ public class AdminPokemonController {
 
 
         boolean editado=false;
-        boolean creado=false;
         Map<String, ?> inputFlashMap = RequestContextUtils.getInputFlashMap(request);
 
         Map<String, String> options = new LinkedHashMap<String, String>();
@@ -69,14 +68,8 @@ public class AdminPokemonController {
                 editado = true;
                 modelAndView.addObject("editedPokemon", editedPokemon);
             }
-            if(inputFlashMap.containsKey("newPokemon")) {
-                CreateNewPokemonDTO newPokemon = (CreateNewPokemonDTO) inputFlashMap.get("newPokemon");
-                creado = true;
-                modelAndView.addObject("newPokemon", newPokemon);
-            }
         }
         modelAndView.addObject("edited", editado);
-        modelAndView.addObject("created", creado);
         return modelAndView;
     }
 
@@ -92,8 +85,10 @@ public class AdminPokemonController {
     }
 
     @PostMapping("/new")
-    public String newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO, BindingResult bindingResult, Model model,RedirectAttributes redirectAttributes) {
-//        ModelAndView modelAndView = new ModelAndView("administration/pokemons/new");
+    public String newPokemonAdmin(@Valid @ModelAttribute("pokemon") CreateNewPokemonDTO pokemonDTO,
+                                  BindingResult bindingResult,
+                                  Model model,
+                                  RedirectAttributes redirectAttributes) {
         model.addAttribute("regions", regionService.findAll());
         model.addAttribute("pokemons", pokemonService.findAll());
         model.addAttribute("types", typeService.findAll());
@@ -102,14 +97,14 @@ public class AdminPokemonController {
                 return "administration/pokemons/new";
             }
             pokemonService.saveFromDTO(pokemonDTO);
-            redirectAttributes.addFlashAttribute("message", "New Pokemon added successfully");
+            redirectAttributes.addFlashAttribute("message", "New Pokemon" + pokemonDTO.getName()+"  added successfully");
         }
         catch (PokemonDuplicated pd){
             bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
             return "administration/pokemons/new";
         }
 
-        return "redirect:/admin/pokemons/new";
+        return "redirect:/admin/pokemons/list";
     }
 
     @GetMapping("/delete/{id}")
