@@ -164,14 +164,16 @@ public class AdminCategoryController {
     }
 
     @PostMapping("/region/delete/{id}")
-    public String deleteRegionAdminPost(@PathVariable Long id) {
+    public String deleteRegionAdminPost(@PathVariable Long id, RedirectAttributes redirectAttributes) {
         regionService.deleteById(id);
+        redirectAttributes.addFlashAttribute("message", "Region deleted succesfully");
         return "redirect:/admin/categories/region/list";
     }
 
     @PostMapping("/type/delete/{id}")
-    public String deleteTypeAdminPost(@PathVariable Long id) {
+    public String deleteTypeAdminPost(@PathVariable Long id, RedirectAttributes redirectAttributes) {
         typeService.deleteById(id);
+        redirectAttributes.addFlashAttribute("message", "Type deleted succesfully");
         return "redirect:/admin/categories/type/list";
     }
 
