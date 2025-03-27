@@ -185,8 +185,8 @@ public class AdminCategoryController {
     @PostMapping("/type/edit/{id}")
     public String editCategory(@PathVariable Long id,
                                @Valid @ModelAttribute("categoryDTO") CreateEditTypeDTO categoryDto,
-                               RedirectAttributes redirectAttributes,
                                BindingResult bindingResult,
+                               RedirectAttributes redirectAttributes,
                                Model model) {
         model.addAttribute("id", id);
 
@@ -201,8 +201,8 @@ public class AdminCategoryController {
     @PostMapping("/region/edit/{id}")
     public String editCategory(@PathVariable Long id,
                                @Valid @ModelAttribute("categoryDTO") CreateEditRegionDTO categoryDto,
-                               RedirectAttributes redirectAttributes,
                                BindingResult bindingResult,
+                               RedirectAttributes redirectAttributes,
                                Model model) {
         model.addAttribute("id", id);
 
