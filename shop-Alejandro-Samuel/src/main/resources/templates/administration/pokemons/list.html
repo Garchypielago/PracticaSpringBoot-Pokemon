@@ -44,7 +44,7 @@
         <tr th:each="pokemon : ${pokemons}">
             <td th:text="${pokemon.getId()}"></td>
             <td>
-                <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'"
+                <img th:src="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + ${pokemon.getId()} + '.png'"
                      alt="" style="width: 2rem; height: 2rem;">
             </td>
             <td th:text="${pokemon.getName()}"></td>

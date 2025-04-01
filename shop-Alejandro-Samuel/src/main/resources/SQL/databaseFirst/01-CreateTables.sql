@@ -56,3 +56,13 @@ CREATE TABLE if not exists stat_values (
                             FOREIGN KEY (stat_id) REFERENCES stats(id),
                             UNIQUE (pokemon_id, stat_id) -- Evita duplicados de stats para un mismo pokemon
 );
+
+CREATE TABLE product_in_cart (
+                                 id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                                 product_in_cart BIGINT NOT NULL,
+                                 product_number BIGINT,
+                                 added_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                                 modified_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+                                 FOREIGN KEY (product_in_cart) REFERENCES pokemones(id)
+);

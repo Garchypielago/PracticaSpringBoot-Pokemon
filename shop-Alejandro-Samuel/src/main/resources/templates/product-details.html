@@ -74,8 +74,8 @@
                                 <div class="carousel-inner">
                                     <div class="single-products-catagory clearfix carousel-item active"  th:style="|background-image: url('@{${pokemon.getType1().getBackground()}}');|">
 <!--                                        <a class="gallery_img" th:href="@{/img/product-img/pro-big-1.jpg}">-->
-                                        <a class="gallery_img" th:href="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="img" style="width: auto;">
-                                            <img th:src="'https://img.pokemondb.net/sprites/home/normal/' + ${pokemon.getName().toLowerCase()} + '.png'" alt="" style="width: auto;" >
+                                        <a class="gallery_img" th:href="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + ${pokemon.getId()} + '.png'" alt="img" style="width: auto;">
+                                            <img th:src="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + ${pokemon.getId()} + '.png'" alt="" style="width: auto;" >
                                         </a>
                                     </div>
                                 </div>

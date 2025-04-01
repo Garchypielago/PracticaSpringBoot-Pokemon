@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name="ProductxCart")
+@Table(name="product_in_cart")
 public class ProductInCart {
 
     @Id
