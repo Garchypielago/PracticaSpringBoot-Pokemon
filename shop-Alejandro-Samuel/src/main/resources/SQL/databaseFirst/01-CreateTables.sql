@@ -1,26 +1,24 @@
-use shopedex;
-
 -- Tabla Region
-CREATE TABLE region (
+CREATE TABLE if not exists regions (
                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
                         name VARCHAR(255)
 );
 
 -- Tabla Type
-CREATE TABLE type (
+CREATE TABLE if not exists types (
                       id BIGINT AUTO_INCREMENT PRIMARY KEY,
                       name VARCHAR(255),
                       background VARCHAR(255)
 );
 
 -- Tabla Stat
-CREATE TABLE stat (
+CREATE TABLE if not exists stats (
                       id BIGINT PRIMARY KEY,
                       name VARCHAR(255) UNIQUE NOT NULL
 );
 
 -- Tabla Pokemon
-CREATE TABLE pokemon (
+CREATE TABLE if not exists pokemones (
                          id BIGINT PRIMARY KEY,
                          name VARCHAR(25) NOT NULL,
                          description VARCHAR(200) NOT NULL,
@@ -31,30 +29,30 @@ CREATE TABLE pokemon (
                          region BIGINT NOT NULL,
                          legendary BOOLEAN NOT NULL,
 
-                         FOREIGN KEY (type1) REFERENCES type(id),
-                         FOREIGN KEY (type2) REFERENCES type(id),
-                         FOREIGN KEY (region) REFERENCES region(id)
+                         FOREIGN KEY (type1) REFERENCES types(id),
+                         FOREIGN KEY (type2) REFERENCES types(id),
+                         FOREIGN KEY (region) REFERENCES regions(id)
 );
 
 -- Tabla Rating
-CREATE TABLE rating (
+CREATE TABLE if not exists ratings (
                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
                         pokemon_id BIGINT NOT NULL,
                         mark FLOAT NOT NULL,
                         username VARCHAR(255) NOT NULL,
                         review TEXT,
 
-                        FOREIGN KEY (pokemon_id) REFERENCES pokemon(id)
+                        FOREIGN KEY (pokemon_id) REFERENCES pokemones(id)
 );
 
 -- Tabla StatValue (relación many-to-many entre Pokemon y Stat)
-CREATE TABLE stat_value (
+CREATE TABLE if not exists stat_values (
                             id BIGINT AUTO_INCREMENT PRIMARY KEY,
                             pokemon_id BIGINT NOT NULL,
                             stat_id BIGINT NOT NULL,
                             stat_value INT NOT NULL,
 
-                            FOREIGN KEY (pokemon_id) REFERENCES pokemon(id),
-                            FOREIGN KEY (stat_id) REFERENCES stat(id),
+                            FOREIGN KEY (pokemon_id) REFERENCES pokemones(id),
+                            FOREIGN KEY (stat_id) REFERENCES stats(id),
                             UNIQUE (pokemon_id, stat_id) -- Evita duplicados de stats para un mismo pokemon
 );

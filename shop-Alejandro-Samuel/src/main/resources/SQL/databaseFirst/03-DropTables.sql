@@ -1,5 +1,3 @@
-use shopedex;
-
 drop table if exists rating;
 drop table if exists stat_value;
 drop table if exists stat;
