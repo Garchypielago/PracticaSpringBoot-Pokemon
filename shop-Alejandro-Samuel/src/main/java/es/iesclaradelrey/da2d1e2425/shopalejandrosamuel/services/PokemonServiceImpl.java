@@ -62,7 +62,7 @@ public class PokemonServiceImpl implements PokemonService {
 
     @Transactional
     @Override
-    public void deleteById(Long id) {
+    public void     deleteById(Long id) {
         ratingRepository.deleteByPokemon_Id(id);
         pokemonRepository.delete(pokemonRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("Pokemon not found")
