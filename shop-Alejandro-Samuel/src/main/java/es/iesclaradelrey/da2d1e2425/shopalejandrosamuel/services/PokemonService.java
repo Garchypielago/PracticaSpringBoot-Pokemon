@@ -1,5 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateNewPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
@@ -21,4 +22,5 @@ public interface PokemonService {
     public void editFromDTO(CreateEditPokemonDTO pokemonDTO);
     Page<Pokemon> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
+    Page<AppPokemonDTO> findByTypeId(Long cat, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 }

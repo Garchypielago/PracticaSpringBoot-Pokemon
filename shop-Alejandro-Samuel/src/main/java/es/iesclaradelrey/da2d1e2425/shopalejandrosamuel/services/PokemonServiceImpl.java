@@ -1,5 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateNewPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
@@ -131,6 +132,15 @@ public class PokemonServiceImpl implements PokemonService {
         PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
 
         return pokemonRepository.findAll(pageRequest);
+    }
+
+    @Override
+    public Page<AppPokemonDTO> findByTypeId(Long typeId, Integer pageNumber, Integer pageSize, String orderBy, String orderDir){
+    Sort.Direction direction = orderDir.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
+    PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
+
+
+    return pokemonRepository.findAllByType1_IdOrType2_Id(typeId, typeId, pageRequest);
     }
 
 }
