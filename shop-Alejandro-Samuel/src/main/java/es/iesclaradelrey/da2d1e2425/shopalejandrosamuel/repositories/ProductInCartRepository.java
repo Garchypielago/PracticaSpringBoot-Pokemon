@@ -15,4 +15,6 @@ public interface ProductInCartRepository extends JpaRepository<ProductInCart, Lo
 
     @Query(value = "SELECT new es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppProductInCartDTO(p.id, p.pokemon, p.productNumber) FROM ProductInCart p")
     Collection<AppProductInCartDTO> findAllDTO();
+
+    void deleteByPokemon_Id(Long pokemonId);
 }

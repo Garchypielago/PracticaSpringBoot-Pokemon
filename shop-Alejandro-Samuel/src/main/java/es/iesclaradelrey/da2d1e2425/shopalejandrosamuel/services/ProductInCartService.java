@@ -22,4 +22,6 @@ public interface ProductInCartService {
 
     List<AppProductInCartDTO> findAllDTO();
 
+    Double getTotalPrice();
+
 }

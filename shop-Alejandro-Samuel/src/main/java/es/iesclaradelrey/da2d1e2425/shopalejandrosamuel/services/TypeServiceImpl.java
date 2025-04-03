@@ -59,7 +59,7 @@ public class TypeServiceImpl implements TypeService {
             pokemonRepository.deleteByType1_IdOrType2_Id(id, id);
 
         typeRepository.delete(typeRepository.findById(id).orElseThrow(
-                () -> new PokemonDontExist("Region not found")
+                () -> new PokemonDontExist("Type not found")
         ));
     }
 

@@ -153,8 +153,6 @@ public class AdminPokemonController {
         catch (PokemonDuplicated pd){
             bindingResult.rejectValue("name", "admin.pokemon.name.duplicated", pd.getMessage());
         }
-
-
         return "administration/pokemons/edit";
     }
 

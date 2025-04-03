@@ -94,6 +94,14 @@ public class ProductInCartServiceImpl implements ProductInCartService {
         return productInCartRepository.findAllDTO().stream().toList();
     }
 
+    @Override
+    public Double getTotalPrice() {
+        double totalPrice = 0.0;
+        for (AppProductInCartDTO p : productInCartRepository.findAllDTO()){
+            totalPrice += p.getTotalPrice();
+        }
+        return totalPrice;
+    }
 
 
 }

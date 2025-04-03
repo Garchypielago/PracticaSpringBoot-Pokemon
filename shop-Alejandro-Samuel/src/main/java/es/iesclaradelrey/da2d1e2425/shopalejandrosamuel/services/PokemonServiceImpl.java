@@ -8,6 +8,7 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.StatValue;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDuplicated;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.ProductInCartRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RatingRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
@@ -22,10 +23,12 @@ import java.util.*;
 public class PokemonServiceImpl implements PokemonService {
     private final PokemonRepository pokemonRepository;
     private final RatingRepository ratingRepository;
+    private final ProductInCartRepository productInCartRepository;
 
-    public PokemonServiceImpl(PokemonRepository pokemonRepository, RatingRepository ratingRepository) {
+    public PokemonServiceImpl(PokemonRepository pokemonRepository, RatingRepository ratingRepository, ProductInCartRepository productInCartRepository) {
         this.pokemonRepository = pokemonRepository;
         this.ratingRepository = ratingRepository;
+        this.productInCartRepository = productInCartRepository;
     }
 
     @Override
@@ -65,6 +68,7 @@ public class PokemonServiceImpl implements PokemonService {
     @Override
     public void     deleteById(Long id) {
         ratingRepository.deleteByPokemon_Id(id);
+        productInCartRepository.deleteByPokemon_Id(id);
         pokemonRepository.delete(pokemonRepository.findById(id).orElseThrow(
                 () -> new PokemonDontExist("Pokemon not found")
         ));
