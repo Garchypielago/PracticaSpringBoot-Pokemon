@@ -117,7 +117,7 @@ public class AdminPokemonController {
     @PostMapping("/delete/{id}")
     public String DeletePokemonAdmin(@PathVariable Long id, RedirectAttributes redirectAttributes) {
         pokemonService.deleteById(id);
-        redirectAttributes.addFlashAttribute("message", "New Pokemon added successfully");
+        redirectAttributes.addFlashAttribute("message", "New Pokemon delete successfully");
         return "redirect:/admin/pokemons/list";
     }
 
