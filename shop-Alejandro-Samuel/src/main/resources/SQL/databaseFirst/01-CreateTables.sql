@@ -19,7 +19,7 @@ CREATE TABLE if not exists stats (
 
 -- Tabla Pokemon
 CREATE TABLE if not exists pokemones (
-                         id BIGINT PRIMARY KEY,
+                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
                          name VARCHAR(25) NOT NULL,
                          description VARCHAR(200) NOT NULL,
                          price DOUBLE PRECISION,
@@ -66,3 +66,13 @@ CREATE TABLE product_in_cart (
 
                                  FOREIGN KEY (product_in_cart) REFERENCES pokemones(id)
 );
+
+-- Tabla Pokemon
+CREATE TABLE if not exists app_users (
+                                         id BIGINT AUTO_INCREMENT PRIMARY KEY ,
+                                         first_name VARCHAR(200) NOT NULL,
+                                         last_name VARCHAR(200) NOT NULL,
+                                         email VARCHAR(200) NOT NULL UNIQUE,
+                                         password VARCHAR(200) NOT NULL
+);
+

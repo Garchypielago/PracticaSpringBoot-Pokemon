@@ -23,4 +23,6 @@ public interface PokemonService {
     Page<Pokemon> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
     Page<AppPokemonDTO> findByTypeId(Long cat, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+
+    Page<Pokemon> findWithCriteriaApi(String search, Long brandId, Long categoryId, String sortBy, String sortDirection, Integer pageNumber, Integer pageSize);
 }

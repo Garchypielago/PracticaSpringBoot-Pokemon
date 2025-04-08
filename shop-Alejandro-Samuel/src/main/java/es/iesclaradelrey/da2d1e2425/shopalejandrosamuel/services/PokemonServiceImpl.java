@@ -1,5 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.criteriaAPI.PokemonSpecification;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateNewPokemonDTO;
@@ -13,7 +14,9 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.RatingRepos
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 
@@ -145,6 +148,22 @@ public class PokemonServiceImpl implements PokemonService {
 
 
     return pokemonRepository.findAllByType1_IdOrType2_Id(typeId, typeId, pageRequest);
+    }
+
+    @Override
+    public Page<Pokemon> findWithCriteriaApi(String search, Long brandId, Long categoryId, String sortBy, String sortDirection, Integer pageNumber, Integer pageSize) {
+
+        Sort.Direction direction = sortDirection.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
+        Sort sort = Sort.by(direction, sortBy);
+
+        Pageable pageRequest = PageRequest.of(pageNumber, pageSize, sort);
+
+        PokemonSpecification pokemonSpecification = new PokemonSpecification(search
+//                , brandId, categoryId
+        );
+
+
+        return pokemonRepository.findAll(pokemonSpecification, pageRequest);
     }
 
 }
