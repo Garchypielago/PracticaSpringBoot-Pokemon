@@ -37,10 +37,6 @@ public class AppRestController {
                                                @RequestParam(defaultValue = "id") String orderBy,
                                                @RequestParam(defaultValue = "asc")String orderDir){
 
-
-
-
-
         Page<AppPokemonDTO> pokemons = pokemonService.findByTypeId(cat, pageNumber, pageSize, orderBy, orderDir);
       return ResponseEntity.ok(pokemons);
     }
