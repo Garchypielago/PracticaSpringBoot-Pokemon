@@ -9,7 +9,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Collection;
-import java.util.List;
 
 public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
@@ -32,6 +31,7 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
     void deleteByType1_IdOrType2_Id(Long type1Id, Long type2Id);
 
+    Page<Pokemon> findAll(Pageable pageable);
 
     Page<AppPokemonDTO> findAllByType1_IdOrType2_Id(Long type1_id, Long type2_id , Pageable pageable);
 

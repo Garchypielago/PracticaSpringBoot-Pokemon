@@ -16,15 +16,6 @@
     transition: opacity .4s
 }
 
-/*.type-icon:hover,.type-icon:active,.type-icon:focus {*/
-/*    color: #fff;*/
-/*    text-decoration: none*/
-/*}*/
-
-/*.type-icon:link:hover,.type-icon:link:active,.type-icon:link:focus {*/
-/*    opacity: .85*/
-/*}*/
-
 .type-normal {
     background-color: #aa9 !important;
 }

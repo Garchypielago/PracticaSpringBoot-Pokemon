@@ -20,7 +20,7 @@ public interface PokemonService {
     void deleteById(Long id);
     void saveFromDTO(CreateNewPokemonDTO pokemonDTO);
     public void editFromDTO(CreateEditPokemonDTO pokemonDTO);
-    Page<Pokemon> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+    Page<AppPokemonDTO> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
     Page<AppPokemonDTO> findByTypeId(Long cat, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 }
