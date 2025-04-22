@@ -32,17 +32,29 @@ public class AppRestController {
 
     @GetMapping("/products/find")
     public ResponseEntity<Page<AppPokemonDTO>> findProducts(@RequestParam(required = false) String search,
-                                                            @RequestParam(required = false) Long cat,
+                                                            @RequestParam(required = false) Long type,
+                                                            @RequestParam(required = false) Long region,
                                                             @RequestParam(defaultValue = "1") Integer pageNumber,
                                                             @RequestParam(defaultValue = "10") Integer pageSize,
                                                             @RequestParam(defaultValue = "id") String orderBy,
                                                             @RequestParam(defaultValue = "asc") String orderDir) {
 
-        if (cat == null) {
+        if (type == null && region == null) {
             Page<AppPokemonDTO> pokemons = pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir);
             return ResponseEntity.ok(pokemons);
         }
-        Page<AppPokemonDTO> pokemons = pokemonService.findByTypeId(cat, pageNumber, pageSize, orderBy, orderDir);
+
+        if(type == null){
+            Page<AppPokemonDTO> pokemons = pokemonService.findByRegionId(region, pageNumber, pageSize, orderBy, orderDir);
+            return ResponseEntity.ok(pokemons);
+        }
+
+        if(region == null){
+            Page<AppPokemonDTO> pokemons = pokemonService.findByTypeId(type, pageNumber, pageSize, orderBy, orderDir);
+            return ResponseEntity.ok(pokemons);
+        }
+
+        Page<AppPokemonDTO> pokemons = pokemonService.findByTypeIdAndRegionId(type, region, pageNumber, pageSize, orderBy, orderDir);
 
         return ResponseEntity.ok(pokemons);
     }

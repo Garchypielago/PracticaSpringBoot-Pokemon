@@ -5,12 +5,13 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Collection;
 
-public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
+public interface PokemonRepository extends JpaRepository<Pokemon, Long> , JpaSpecificationExecutor<Pokemon> {
 
     Collection<Pokemon> findByRegion_Id(Long region);
     Collection<Pokemon> findPokemonByType1_IdOrType2_Id(Long type1_id, Long type2_id);
@@ -35,4 +36,7 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> {
 
     Page<AppPokemonDTO> findAllByType1_IdOrType2_Id(Long type1_id, Long type2_id , Pageable pageable);
 
+    Page<AppPokemonDTO> findAllByRegion_Id(Long regionId, Pageable pageable);
+
+    Page<AppPokemonDTO> findAllByRegion_IdAndType1_IdOrRegion_IdAndType2_Id(Long regionId, Long type1Id, Long regionId1, Long type2Id, Pageable pageable);
 }
