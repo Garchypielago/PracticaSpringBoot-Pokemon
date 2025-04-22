@@ -31,53 +31,67 @@ public class AppRestController {
     }
     @GetMapping("/products/find")
     public ResponseEntity<Page<AppPokemonDTO>> findProducts(@RequestParam(required = false) String search,
-                                               @RequestParam(defaultValue = "1") Long cat,
-                                               @RequestParam(defaultValue = "1") Integer pageNumber,
-                                               @RequestParam(defaultValue = "10")Integer pageSize,
-                                               @RequestParam(defaultValue = "id") String orderBy,
-                                               @RequestParam(defaultValue = "asc")String orderDir){
+                                                            @RequestParam(required = false) Long cat,
+                                                            @RequestParam(defaultValue = "1") Integer pageNumber,
+                                                            @RequestParam(defaultValue = "10") Integer pageSize,
+                                                            @RequestParam(defaultValue = "id") String orderBy,
+                                                            @RequestParam(defaultValue = "asc") String orderDir) {
 
+        if (cat == null) {
+            Page<AppPokemonDTO> pokemons = pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir);
+            return ResponseEntity.ok(pokemons);
+        }
         Page<AppPokemonDTO> pokemons = pokemonService.findByTypeId(cat, pageNumber, pageSize, orderBy, orderDir);
-      return ResponseEntity.ok(pokemons);
+
+        return ResponseEntity.ok(pokemons);
     }
 
     @GetMapping("/cart")
-    public ResponseEntity<List<AppProductInCartDTO>> findProductsInCart(){
-        List<AppProductInCartDTO> products = productInCartService.findAllDTO();
-        return ResponseEntity.ok(products);
+    // public ResponseEntity<List<AppProductInCartDTO>> findProductsInCart(){
+    //     List<AppProductInCartDTO> products = productInCartService.findAllDTO();
+    //     return ResponseEntity.ok(products);
+    // }
+
+    // @PostMapping("/cart/{productId}")
+    // public ResponseEntity<List<AppProductInCartDTO>> addOneProduct(@PathVariable("productId") Long pokemonId){
+    public ResponseEntity<Map<String, Object>> findProductsInCart() {
+        return getMapResponseEntity();
     }
 
     @PostMapping("/cart/{productId}")
-    public ResponseEntity<List<AppProductInCartDTO>> addOneProduct(@PathVariable("productId") Long pokemonId){
+    public ResponseEntity<Map<String, Object>> addOneProduct(@PathVariable("productId") Long pokemonId) {
+        
         productInCartService.createOrUpdateProductInCart(pokemonId, 1L);
         List<AppProductInCartDTO> products = productInCartService.findAllDTO();
         return ResponseEntity.ok(products);
     }
 
     @PostMapping("/cart/{productId}/{count}")
-    public ResponseEntity<List<AppProductInCartDTO>> addNProduct(@PathVariable("productId") Long pokemonId,
-                                                                              @PathVariable("count") Long count){
+    // public ResponseEntity<List<AppProductInCartDTO>> addNProduct(@PathVariable("productId") Long pokemonId,
+    //                                                                           @PathVariable("count") Long count){
+    public ResponseEntity<Map<String, Object>> addNProduct(@PathVariable("productId") Long pokemonId,
+                                                            @PathVariable("count") Long count) {
         productInCartService.createOrUpdateProductInCart(pokemonId, count);
         List<AppProductInCartDTO> products = productInCartService.findAllDTO();
         return ResponseEntity.ok(products);
     }
 
     @DeleteMapping("/cart/{productId}")
-    public ResponseEntity<List<AppProductInCartDTO>> deleteOneProduct(@PathVariable("productId") Long pokemonId){
+    public ResponseEntity<List<AppProductInCartDTO>> deleteOneProduct(@PathVariable("productId") Long pokemonId) {
         productInCartService.delete(pokemonId);
         List<AppProductInCartDTO> products = productInCartService.findAllDTO();
         return ResponseEntity.ok(products);
     }
 
     @DeleteMapping("/cart")
-    public ResponseEntity<List<AppProductInCartDTO>> deleteCart(){
+    public ResponseEntity<List<AppProductInCartDTO>> deleteCart() {
         productInCartService.deleteAll();
         List<AppProductInCartDTO> products = productInCartService.findAllDTO();
         return ResponseEntity.ok(products);
     }
 
     @GetMapping("/categories")
-    public ResponseEntity<Map<String, List<?>>> getCategories(){
+    public ResponseEntity<Map<String, List<?>>> getCategories() {
         Map<String, List<?>> categories = new HashMap<>();
         categories.put("regions", regionService.findAllDTO());
         categories.put("types", typeService.findAllDTO());
@@ -86,13 +100,13 @@ public class AppRestController {
     }
 
     @GetMapping("/categories/regions")
-    public ResponseEntity<List<AppRegionDTO>> getCategoriesRegions(){
-        List<AppRegionDTO> regions= regionService.findAllDTO();
+    public ResponseEntity<List<AppRegionDTO>> getCategoriesRegions() {
+        List<AppRegionDTO> regions = regionService.findAllDTO();
         return ResponseEntity.ok(regions);
     }
     @GetMapping("/categories/types")
-    public ResponseEntity<List<AppTypeDTO>> getCategoriesTypes(){
-        List<AppTypeDTO> types= typeService.findAllDTO();
+    public ResponseEntity<List<AppTypeDTO>> getCategoriesTypes() {
+        List<AppTypeDTO> types = typeService.findAllDTO();
         return ResponseEntity.ok(types);
     }
 
