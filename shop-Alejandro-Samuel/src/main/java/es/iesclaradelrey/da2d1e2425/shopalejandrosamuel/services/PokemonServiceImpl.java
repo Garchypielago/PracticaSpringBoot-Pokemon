@@ -153,6 +153,24 @@ public class PokemonServiceImpl implements PokemonService {
     }
 
     @Override
+    public Page<AppPokemonDTO> findByRegionId(Long regionId, Integer pageNumber, Integer pageSize, String orderBy, String orderDir) {
+        Sort.Direction direction = orderDir.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
+        PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
+
+
+        return pokemonRepository.findAllByRegion_Id(regionId, pageRequest);
+    }
+
+    @Override
+    public Page<AppPokemonDTO> findByTypeIdAndRegionId(Long type, Long region, Integer pageNumber, Integer pageSize, String orderBy, String orderDir) {
+        Sort.Direction direction = orderDir.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
+        PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
+
+
+        return pokemonRepository.findAllByRegion_IdAndType1_IdOrRegion_IdAndType2_Id(region, type, region, type, pageRequest);
+    }
+
+    @Override
     public Page<Pokemon> findWithCriteriaApi(String search, Long brandId, Long categoryId, String sortBy, String sortDirection, Integer pageNumber, Integer pageSize) {
 
         Sort.Direction direction = sortDirection.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;

@@ -22,7 +22,9 @@ public interface PokemonService {
     public void editFromDTO(CreateEditPokemonDTO pokemonDTO);
     Page<AppPokemonDTO> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
-    Page<AppPokemonDTO> findByTypeId(Long cat, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+    Page<AppPokemonDTO> findByTypeId(Long type, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+    Page<AppPokemonDTO> findByRegionId(Long region, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+    Page<AppPokemonDTO> findByTypeIdAndRegionId(Long type, Long region, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
     Page<Pokemon> findWithCriteriaApi(String search, Long brandId, Long categoryId, String sortBy, String sortDirection, Integer pageNumber, Integer pageSize);
 }
