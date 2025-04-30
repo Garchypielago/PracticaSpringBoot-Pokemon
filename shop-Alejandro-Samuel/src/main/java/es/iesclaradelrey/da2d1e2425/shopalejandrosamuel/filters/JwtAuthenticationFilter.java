@@ -34,7 +34,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         String pathRequest = request.getRequestURI();
 
-        if (pathRequest.contains("/admin")) {
+        if (pathRequest.contains("/api/app")) {
             String authHeader = request.getHeader("Authorization");
 
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {

@@ -4,11 +4,13 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.RegisterUserDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.AppUser;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.UserNameAlreadyExistsException;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.AppUserRepository;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.restcontrollers.LoginUserDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.LoginUserDTO;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class AppUserServiceImpl implements AppUserService {
@@ -47,5 +49,10 @@ public class AppUserServiceImpl implements AppUserService {
 
         authenticationManager.authenticate(authenticationToken);
         return null;
+    }
+
+    @Override
+    public Optional<AppUser> findByEmail(String email) {
+        return appUserRepository.findByEmail(email);
     }
 }
