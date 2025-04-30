@@ -17,6 +17,8 @@ public class AppProductInCartDTO {
 
     private String pokemonName;
 
+    private String url;
+
     private Long productNumber;
 
     private Double unitPrice;
@@ -30,6 +32,7 @@ public class AppProductInCartDTO {
         this.pokemonName = pokemon.getName();
         this.productNumber = productNumber;
         this.unitPrice = pokemon.getPrice();
+        this.url = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + pokemon.getId() + ".png";
 
         updateTotalPrice();
     }

@@ -41,6 +41,7 @@ public class AppRestController {
 
         if (type == null && region == null) {
             Page<AppPokemonDTO> pokemons = pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir);
+            System.out.println("hola");
             return ResponseEntity.ok(pokemons);
         }
 
@@ -85,6 +86,7 @@ public class AppRestController {
     public ResponseEntity<Map<String, Object>> addNProduct(@PathVariable("productId") Long pokemonId,
                                                            @PathVariable("count") Long count) {
         productInCartService.createOrUpdateProductInCart(pokemonId, count);
+        System.out.println("agregados " + count);
         return getMapResponseEntity();
     }
 

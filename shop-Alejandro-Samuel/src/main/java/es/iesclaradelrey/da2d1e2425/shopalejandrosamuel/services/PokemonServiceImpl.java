@@ -1,6 +1,6 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.criteriaAPI.PokemonSpecification;
+//import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.criteriaAPI.PokemonSpecification;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateEditPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.CreateNewPokemonDTO;
@@ -178,12 +178,13 @@ public class PokemonServiceImpl implements PokemonService {
 
         Pageable pageRequest = PageRequest.of(pageNumber, pageSize, sort);
 
-        PokemonSpecification pokemonSpecification = new PokemonSpecification(search
-//                , brandId, categoryId
-        );
+//        PokemonSpecification pokemonSpecification = new PokemonSpecification(search
+//                , brandId, categoryId);
 
 
-        return pokemonRepository.findAll(pokemonSpecification, pageRequest);
+//        return pokemonRepository.findAll(pokemonSpecification, pageRequest);
+
+        return null;
     }
 
 }
