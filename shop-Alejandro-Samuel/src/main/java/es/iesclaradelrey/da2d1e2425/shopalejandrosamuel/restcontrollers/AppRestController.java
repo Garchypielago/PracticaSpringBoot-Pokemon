@@ -73,6 +73,7 @@ public class AppRestController {
 
     @GetMapping("/cart")
     public ResponseEntity<Map<String, Object>> findProductsInCart() {
+        System.out.println("cart");
         return getMapResponseEntity();
     }
 
@@ -92,6 +93,13 @@ public class AppRestController {
 
     @DeleteMapping("/cart/{productId}")
     public ResponseEntity<List<AppProductInCartDTO>> deleteOneProduct(@PathVariable("productId") Long pokemonId) {
+        productInCartService.delete(pokemonId);
+        List<AppProductInCartDTO> products = productInCartService.findAllDTO();
+        return ResponseEntity.ok(products);
+    }
+
+    @DeleteMapping("/cart/{productId}")
+    public ResponseEntity<List<AppProductInCartDTO>> deleteProduct(@PathVariable("productId") Long pokemonId) {
         productInCartService.delete(pokemonId);
         List<AppProductInCartDTO> products = productInCartService.findAllDTO();
         return ResponseEntity.ok(products);
