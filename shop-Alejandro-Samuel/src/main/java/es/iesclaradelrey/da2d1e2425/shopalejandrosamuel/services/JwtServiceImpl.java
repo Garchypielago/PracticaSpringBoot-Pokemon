@@ -63,7 +63,6 @@ public class JwtServiceImpl implements JwtService {
         if (type!=JwtTokenType.ACCESS) {
             throw new JwtException("Type of token not valid");
         }
-        throw new UnsupportedOperationException("Not supported yet.");
     }
     @Override
     public void validateRefreshToken(String token) {
@@ -72,7 +71,7 @@ public class JwtServiceImpl implements JwtService {
         if (type!=JwtTokenType.REFRESH) {
             throw new JwtException("Type of token not valid");
         }
-        throw new UnsupportedOperationException("Not supported yet.");
+
     }
 
     @Override

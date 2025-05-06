@@ -4,6 +4,7 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -32,6 +33,14 @@ public class HomeController extends BaseController{
     public String checkoutPage() {
         return "checkout";
     }
+
+
+    @GetMapping
+    @RequestMapping("/login")
+    public String loginPage() {
+        return "login";
+    }
+
 
 
 }

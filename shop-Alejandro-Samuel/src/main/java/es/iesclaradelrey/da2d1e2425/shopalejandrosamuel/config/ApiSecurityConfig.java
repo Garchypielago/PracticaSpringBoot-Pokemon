@@ -4,6 +4,7 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.filters.JwtAuthenticatio
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.AppUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.*;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,19 +15,20 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 
 @Configuration
-public class SecurityConfig {
+@Order(3)
+public class ApiSecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http, JwtAuthenticationFilter jwtAuthenticationFilter) throws Exception {
+        http.securityMatcher("/api/**");
+
         http.csrf(config -> config
                 .ignoringRequestMatchers("/api/**")
         );
 
-        http
-                .authorizeHttpRequests(auth ->
+        http.authorizeHttpRequests(auth ->
                         auth
                                 .requestMatchers("/api/app/**").authenticated()
-//                                .requestMatchers("/admin/**").authenticated()
                                 .anyRequest().permitAll()
                 );
 
@@ -35,18 +37,8 @@ public class SecurityConfig {
         return http.build();
     }
 
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        //CINE
-        return new BCryptPasswordEncoder();
-    }
 
-    @Bean
-    public AuthenticationManager authenticationManager(AppUserDetailsService appUserDetailsService, PasswordEncoder passwordEncoder) {
-        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();//DAO
-        authenticationProvider.setUserDetailsService(appUserDetailsService);
-        authenticationProvider.setPasswordEncoder(passwordEncoder);
 
-        return new ProviderManager(authenticationProvider);
-    }
+
+
 }
