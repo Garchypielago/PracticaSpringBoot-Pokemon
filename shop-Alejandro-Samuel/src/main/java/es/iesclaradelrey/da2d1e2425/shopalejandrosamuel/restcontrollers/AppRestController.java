@@ -92,8 +92,8 @@ public class AppRestController {
     }
 
     @DeleteMapping("/cart/{productId}")
-    public ResponseEntity<Map<String, Object>> deleteProduct(@PathVariable("productId") Long pokemonId) {
-        productInCartService.delete(pokemonId);
+    public ResponseEntity<Map<String, Object>> deleteProduct(@PathVariable("productId") Long productId) {
+        productInCartService.delete(productId);
         return getMapResponseEntity();
     }
 
