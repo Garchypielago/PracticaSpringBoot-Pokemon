@@ -92,24 +92,15 @@ public class AppRestController {
     }
 
     @DeleteMapping("/cart/{productId}")
-    public ResponseEntity<List<AppProductInCartDTO>> deleteOneProduct(@PathVariable("productId") Long pokemonId) {
+    public ResponseEntity<Map<String, Object>> deleteProduct(@PathVariable("productId") Long pokemonId) {
         productInCartService.delete(pokemonId);
-        List<AppProductInCartDTO> products = productInCartService.findAllDTO();
-        return ResponseEntity.ok(products);
+        return getMapResponseEntity();
     }
 
-//    @DeleteMapping("/cart/{productId}")
-//    public ResponseEntity<List<AppProductInCartDTO>> deleteProduct(@PathVariable("productId") Long pokemonId) {
-//        productInCartService.delete(pokemonId);
-//        List<AppProductInCartDTO> products = productInCartService.findAllDTO();
-//        return ResponseEntity.ok(products);
-//    }
-
     @DeleteMapping("/cart")
-    public ResponseEntity<List<AppProductInCartDTO>> deleteCart() {
+    public ResponseEntity<Map<String, Object>> deleteCart() {
         productInCartService.deleteAll();
-        List<AppProductInCartDTO> products = productInCartService.findAllDTO();
-        return ResponseEntity.ok(products);
+        return getMapResponseEntity();
     }
 
     @GetMapping("/categories")
