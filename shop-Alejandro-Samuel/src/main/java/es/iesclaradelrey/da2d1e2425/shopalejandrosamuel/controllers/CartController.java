@@ -25,6 +25,7 @@ public class CartController extends BaseController {
     @GetMapping
     public ModelAndView cartPage() {
         Collection<ProductInCart> productInCarts = productInCartService.findAll();
+
         ModelAndView mv = new ModelAndView("cart");
         mv.addObject("products", productInCarts);
         return mv;

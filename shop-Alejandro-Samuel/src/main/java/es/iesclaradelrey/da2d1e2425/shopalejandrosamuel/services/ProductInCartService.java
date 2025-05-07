@@ -14,7 +14,7 @@ public interface ProductInCartService {
     Optional<ProductInCart> findById(Long id);
     ProductInCart save(ProductInCart productInCart);
     void delete(ProductInCart productInCart);
-    void delete(Long pokemonId);
+    void delete(Long productId);
     void deleteAll();
     Optional<ProductInCart> findByPokemon(Long pokemonId);
     void createOrUpdateProductInCart(Long pokemonId, Long quantity);
@@ -23,5 +23,8 @@ public interface ProductInCartService {
     List<AppProductInCartDTO> findAllDTO();
 
     Double getTotalPrice();
+
+
+    Collection<ProductInCart> findByUserId(Long userId);
 
 }

@@ -3,6 +3,7 @@ package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.TokensDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.LoginUserDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.RegisterUserDTO;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.AppUser;
 
 /**
  * Interfaz que define los servicios de autenticación para la aplicación.
@@ -31,4 +32,9 @@ public interface AuthService {
     TokensDTO login(LoginUserDTO loginUserDto);
 
     TokensDTO refresh(String authHeader);
+
+    Long getCurrentAppUserId();
+
+    AppUser getCurrentAppUser();
+
 }

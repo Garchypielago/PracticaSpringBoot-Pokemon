@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -18,8 +19,9 @@ public class ProductInCart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "product_in_cart", nullable = false)
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "pokemon_id", nullable = false)
     private Pokemon pokemon;
 
     @Column
@@ -29,6 +31,12 @@ public class ProductInCart {
     private LocalDateTime addedTime;
     @Column(columnDefinition = "timestamp default current_timestamp() on update current_timestamp()", nullable = false, insertable = false, updatable = false )
     private LocalDateTime modifiedTime;
+
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "user_id", nullable = false)
+    private AppUser user;
+
 
 
     public ProductInCart(Pokemon pokemon, Long productNumber) {
