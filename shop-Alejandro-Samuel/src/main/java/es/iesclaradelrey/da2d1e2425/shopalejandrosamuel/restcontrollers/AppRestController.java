@@ -41,7 +41,6 @@ public class AppRestController {
 
         if (type == null && region == null) {
             Page<AppPokemonDTO> pokemons = pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir);
-            System.out.println("hola");
             return ResponseEntity.ok(pokemons);
         }
 

@@ -48,17 +48,27 @@
                      alt="" style="width: 2rem; height: 2rem;">
             </td>
             <td th:text="${pokemon.getName()}"></td>
-            <td th:text="${pokemon.getRegion().getName()}"></td>
             <td>
-                <div th:class="'type-icon type-'+${pokemon.getType1().getName().toLowerCase()}"
-                     th:text="${pokemon.getType1().getName().toLowerCase()}"></div>
+                <span th:each="region : ${regions}"
+                      th:if="${region.id == pokemon.region}"
+                      th:text="${region.name}"></span>
             </td>
             <td>
-                <div th:unless="${pokemon.getType2()}" th:class="'type-icon'" th:text="'-'"></div>
-                <div th:if="${pokemon.getType2()}"
-                     th:class="'type-icon type-'+${pokemon.getType2().getName().toLowerCase()}"
-                     th:text="${pokemon.getType2().getName().toLowerCase()}"></div>
+                <div th:each="type : ${types}"
+                     th:if="${type.id == pokemon.type1}"
+                     th:class="'type-icon type-' + ${type.name.toLowerCase()}"
+                     th:text="${type.name.toLowerCase()}">
+                </div>
             </td>
+            <td>
+                <div th:if="${pokemon.type2 == null}" class="type-icon">-</div>
+                <div th:each="type : ${types}"
+                     th:if="${type.id == pokemon.type2}"
+                     th:class="'type-icon type-' + ${type.name.toLowerCase()}"
+                     th:text="${type.name.toLowerCase()}">
+                </div>
+            </td>
+
             <td th:text="${pokemon.getStock()}"></td>
             <td th:text="${pokemon.getPrice()} + 'P¥'"></td>
             <td>

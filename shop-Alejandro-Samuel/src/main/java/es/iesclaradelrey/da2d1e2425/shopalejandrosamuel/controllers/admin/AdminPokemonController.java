@@ -62,6 +62,9 @@ public class AdminPokemonController {
         modelAndView.addObject("orderDir", orderDir);
         modelAndView.addObject("options", options);
         modelAndView.addObject("pokemons", pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir));
+        modelAndView.addObject("regions", regionService.findAll());
+        modelAndView.addObject("types", typeService.findAll());
+
         if (inputFlashMap != null) {
             if(inputFlashMap.containsKey("editedPokemon")) {
                 CreateEditPokemonDTO editedPokemon = (CreateEditPokemonDTO) inputFlashMap.get("editedPokemon");
