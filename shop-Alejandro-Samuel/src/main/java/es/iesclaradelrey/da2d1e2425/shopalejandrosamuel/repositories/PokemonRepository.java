@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Collection;
+import java.util.Optional;
 
 public interface PokemonRepository extends JpaRepository<Pokemon, Long> , JpaSpecificationExecutor<Pokemon> {
 
@@ -39,4 +40,5 @@ public interface PokemonRepository extends JpaRepository<Pokemon, Long> , JpaSpe
     Page<AppPokemonDTO> findAllByRegion_Id(Long regionId, Pageable pageable);
 
     Page<AppPokemonDTO> findAllByRegion_IdAndType1_IdOrRegion_IdAndType2_Id(Long regionId, Long type1Id, Long regionId1, Long type2Id, Pageable pageable);
+
 }

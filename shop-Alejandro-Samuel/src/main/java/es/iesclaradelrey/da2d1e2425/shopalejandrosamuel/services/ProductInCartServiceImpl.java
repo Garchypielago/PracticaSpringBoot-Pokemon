@@ -5,9 +5,9 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.Pokemon;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.ProductInCart;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonDontExist;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.exceptions.PokemonNoQuantityAvalaible;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.AppUserRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.PokemonRepository;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.repositories.ProductInCartRepository;
-import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -19,10 +19,14 @@ import java.util.Optional;
 public class ProductInCartServiceImpl implements ProductInCartService {
     private final ProductInCartRepository productInCartRepository;
     private final PokemonRepository pokemonRepository;
+    private final AppUserRepository appUserRepository;
+    private final AuthService authService;
 
-    public ProductInCartServiceImpl(ProductInCartRepository productInCartRepository, PokemonRepository pokemonRepository) {
+    public ProductInCartServiceImpl(ProductInCartRepository productInCartRepository, PokemonRepository pokemonRepository, AppUserRepository appUserRepository, AuthService authService) {
         this.productInCartRepository = productInCartRepository;
         this.pokemonRepository = pokemonRepository;
+        this.appUserRepository = appUserRepository;
+        this.authService = authService;
     }
 
     @Override
@@ -66,9 +70,9 @@ public class ProductInCartServiceImpl implements ProductInCartService {
                 .findById(pokemonId)
                 .orElseThrow(() -> new PokemonDontExist("No existe producto con código "+ pokemonId));
 
-        ProductInCart productInCart = productInCartRepository
-                .findProductInCartByPokemon_Id(pokemonId)
-                .orElse( new ProductInCart(pokemon, 0L));
+            ProductInCart productInCart = productInCartRepository
+                    .findProductInCartByPokemon_IdAndUser_Id(pokemonId, authService.getCurrentAppUserId())
+                    .orElse( new ProductInCart(pokemon, 0L, appUserRepository.findById(authService.getCurrentAppUserId()).get()));
 
         productInCart.sumar(quantity);
         if (productInCart.getProductNumber()>pokemon.getStock())

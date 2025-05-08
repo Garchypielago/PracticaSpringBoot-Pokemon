@@ -19,4 +19,6 @@ public interface ProductInCartRepository extends JpaRepository<ProductInCart, Lo
     void deleteByPokemon_Id(Long pokemonId);
 
     Collection<ProductInCart> findAllByUser_Id(Long userId);
+
+    Optional<ProductInCart> findProductInCartByPokemon_IdAndUser_Id(Long pokemonId, Long userId);
 }

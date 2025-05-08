@@ -39,9 +39,10 @@ public class ProductInCart {
 
 
 
-    public ProductInCart(Pokemon pokemon, Long productNumber) {
+    public ProductInCart(Pokemon pokemon, Long productNumber, AppUser user) {
         this.pokemon = pokemon;
         this.productNumber = productNumber;
+        this.user = user;
     }
 
     public void sumar(Long quantity){

@@ -1,6 +1,7 @@
 package es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.controllers;
 
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.entities.ProductInCart;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.AuthService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.ProductInCartService;
 import org.springframework.stereotype.Controller;
@@ -16,15 +17,17 @@ import java.util.Collection;
 public class CartController extends BaseController {
 
     private final ProductInCartService productInCartService;
+    private final AuthService authService;
 
-    public CartController(PokemonService pokemonService, ProductInCartService productInCartService) {
+    public CartController(PokemonService pokemonService, ProductInCartService productInCartService, AuthService authService) {
         super(pokemonService);
         this.productInCartService = productInCartService;
+        this.authService = authService;
     }
 
     @GetMapping
     public ModelAndView cartPage() {
-        Collection<ProductInCart> productInCarts = productInCartService.findAll();
+        Collection<ProductInCart> productInCarts = productInCartService.findByUserId(authService.getCurrentAppUserId());
 
         ModelAndView mv = new ModelAndView("cart");
         mv.addObject("products", productInCarts);
