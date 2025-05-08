@@ -1,7 +1,10 @@
 use shopedex;
+drop procedure if exists CalculatePokemonPrice;
+drop procedure if exists CalculateAllPokemonPrices;
 drop table if exists ratings;
 drop table if exists stat_values;
 drop table if exists stats;
 drop table if exists pokemones;
 drop table if exists types;
 drop table if exists regions;
+drop table if exists product_in_cart;

@@ -57,7 +57,7 @@ CREATE TABLE if not exists stat_values (
                             UNIQUE (pokemon_id, stat_id) -- Evita duplicados de stats para un mismo pokemon
 );
 
-CREATE TABLE product_in_cart (
+CREATE TABLE if not exists product_in_cart (
                                  id BIGINT AUTO_INCREMENT PRIMARY KEY,
                                  product_in_cart BIGINT NOT NULL,
                                  product_number BIGINT,
