@@ -10,6 +10,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -54,5 +55,15 @@ public class AppUserServiceImpl implements AppUserService {
     @Override
     public Optional<AppUser> findByEmail(String email) {
         return appUserRepository.findByEmail(email);
+    }
+
+    @Override
+    public List<AppUser> findAll() {
+        return appUserRepository.findAll();
+    }
+
+    @Override
+    public void save(AppUser appUser) {
+        appUserRepository.save(appUser);
     }
 }

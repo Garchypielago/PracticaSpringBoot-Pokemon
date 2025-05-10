@@ -86,7 +86,6 @@ public class AppRestController {
     public ResponseEntity<Map<String, Object>> addNProduct(@PathVariable("productId") Long pokemonId,
                                                            @PathVariable("count") Long count) {
         productInCartService.createOrUpdateProductInCart(pokemonId, count);
-        System.out.println("agregados " + count);
         return getMapResponseEntity();
     }
 
