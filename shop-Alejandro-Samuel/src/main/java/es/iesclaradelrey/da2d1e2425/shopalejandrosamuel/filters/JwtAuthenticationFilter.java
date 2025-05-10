@@ -30,7 +30,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     // Prefijo que precede al token JWT
     private static final String BEARER_PREFIX = "Bearer ";
     // Ruta que se desea proteger
-    private static final String PROTECTED_PATH = "/api";
+    private static final String PROTECTED_PATH = "/api/app/**";
     // Matcher para comprobar si una petición está en la ruta protegida
     private static final AntPathRequestMatcher protectedPathMatcher = new AntPathRequestMatcher(PROTECTED_PATH);
 
@@ -70,36 +70,5 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
 
         filterChain.doFilter(request, response);
-
-//        String pathRequest = request.getRequestURI();
-//        if (pathRequest.contains("/api/app")) {
-//            String authHeader = request.getHeader("Authorization");
-//
-//            if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-//                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-//                return;
-//            }
-//
-////            extraer token
-//            String token = authHeader.substring(7);
-//
-////            validar token
-//            try{
-//                jwtService.validateAccessToken(token);
-//
-//                String username = jwtService.extractUsername(token);
-//
-//                UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-//
-//                Authentication authentication = new UsernamePasswordAuthenticationToken(userDetails,null, userDetails.getAuthorities());
-//                SecurityContextHolder.getContext().setAuthentication(authentication);
-//
-//            } catch (Exception e) {
-//                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-//                return;
-//            }
-//        }
-//
-//        filterChain.doFilter(request, response);
     }
 }
