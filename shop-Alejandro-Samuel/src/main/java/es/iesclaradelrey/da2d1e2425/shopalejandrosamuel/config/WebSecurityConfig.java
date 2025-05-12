@@ -18,7 +18,11 @@ public class WebSecurityConfig {
                 .headers(heather ->
                         heather.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/css").permitAll()
+                        .requestMatchers("/").permitAll()
+                        .requestMatchers("/css/**").permitAll()
+                        .requestMatchers("/style.css").permitAll()
+                        .requestMatchers("/shopedex/**").permitAll()
+                        .requestMatchers("/scss/**").permitAll()
                         .requestMatchers("/login/**").permitAll()
                         .anyRequest().authenticated())
                 .formLogin(login -> login

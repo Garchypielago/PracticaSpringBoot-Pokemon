@@ -99,9 +99,9 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     }
 
     @Override
-    public Double getTotalPrice() {
+    public Double getTotalPrice(Long userId) {
         double totalPrice = 0.0;
-        for (AppProductInCartDTO p : productInCartRepository.findAllDTO()){
+        for (ProductInCart p : productInCartRepository.findAllByUser_Id(userId)){
             totalPrice += p.getTotalPrice();
         }
         return totalPrice;
@@ -110,6 +110,17 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     @Override
     public Collection<ProductInCart> findByUserId(Long userId) {
         return productInCartRepository.findAllByUser_Id(userId);
+    }
+
+    @Override
+    public List<AppProductInCartDTO> findByUserIdApp(Long userId) {
+        List<AppProductInCartDTO> productInCartDTOs = new ArrayList<>();
+
+        for (ProductInCart p : productInCartRepository.findAllByUser_Id(userId)){
+            productInCartDTOs.add(new AppProductInCartDTO(p.getId(), p.getPokemon(), p.getProductNumber()));
+        }
+
+        return productInCartDTOs;
     }
 
 

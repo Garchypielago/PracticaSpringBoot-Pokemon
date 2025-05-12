@@ -22,9 +22,9 @@ public interface ProductInCartService {
 
     List<AppProductInCartDTO> findAllDTO();
 
-    Double getTotalPrice();
-
+    Double getTotalPrice(Long userId);
 
     Collection<ProductInCart> findByUserId(Long userId);
+    List<AppProductInCartDTO> findByUserIdApp(Long userId);
 
 }

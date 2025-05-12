@@ -49,4 +49,7 @@ public class ProductInCart {
         this.productNumber = this.productNumber + quantity;
     }
 
+    public double getTotalPrice() {
+        return this.productNumber * this.pokemon.getPrice();
+    }
 }

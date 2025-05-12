@@ -4,11 +4,8 @@ import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppPokemonDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppProductInCartDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppRegionDTO;
 import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.dtos.AppTypeDTO;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.PokemonService;
+import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.*;
 
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.ProductInCartService;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.RegionService;
-import es.iesclaradelrey.da2d1e2425.shopalejandrosamuel.services.TypeService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,12 +19,14 @@ public class AppRestController {
     private final ProductInCartService productInCartService;
     private final PokemonService pokemonService;
     private final TypeService typeService;
+    private final AuthService authService;
 
-    AppRestController(PokemonService pokemonService, ProductInCartService productInCartService, RegionService regionService, TypeService typeService) {
+    AppRestController(PokemonService pokemonService, ProductInCartService productInCartService, RegionService regionService, TypeService typeService, AuthService authService) {
         this.pokemonService = pokemonService;
         this.productInCartService = productInCartService;
         this.regionService = regionService;
         this.typeService = typeService;
+        this.authService = authService;
     }
 
     @GetMapping("/products/find")
@@ -61,11 +60,11 @@ public class AppRestController {
 
     private ResponseEntity<Map<String, Object>> getMapResponseEntity() {
         Map<String, Object> cart = new HashMap<>();
-        List<AppProductInCartDTO> products = productInCartService.findAllDTO();
+        List<AppProductInCartDTO> products = productInCartService.findByUserIdApp(authService.getCurrentAppUserId());
         cart.put("products", products);
         int totalItems = products.size();
         cart.put("totalItems", totalItems);
-        double totalPrice = productInCartService.getTotalPrice();
+        double totalPrice = productInCartService.getTotalPrice(authService.getCurrentAppUserId());
         cart.put("totalPrice", totalPrice);
         return ResponseEntity.ok(cart);
     }
