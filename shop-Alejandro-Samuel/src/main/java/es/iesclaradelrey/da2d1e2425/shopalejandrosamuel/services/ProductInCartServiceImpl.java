@@ -49,10 +49,10 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     }
 
     @Override
-    public void delete(Long productId) {
+    public void delete(Long pokemonId) {
         productInCartRepository.delete(productInCartRepository
-                .findById(productId)
-                .orElseThrow(() -> new PokemonDontExist("No existe producto con código "+ productId)));
+                .findProductInCartByPokemon_IdAndUser_Id(pokemonId, authService.getCurrentAppUserId())
+                .orElseThrow(() -> new PokemonDontExist("No existe producto con código "+ pokemonId)));
     }
 
     @Override
@@ -61,7 +61,7 @@ public class ProductInCartServiceImpl implements ProductInCartService {
     }
     @Override
     public void deleteAll(){
-        productInCartRepository.deleteAll(findAll());
+        productInCartRepository.deleteAll(productInCartRepository.findAllByUser_Id(authService.getCurrentAppUserId()));
     }
 
     @Override

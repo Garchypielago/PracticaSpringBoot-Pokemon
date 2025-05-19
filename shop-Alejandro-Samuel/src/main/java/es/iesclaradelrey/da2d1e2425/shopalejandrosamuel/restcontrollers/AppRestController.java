@@ -38,8 +38,10 @@ public class AppRestController {
                                                             @RequestParam(defaultValue = "id") String orderBy,
                                                             @RequestParam(defaultValue = "asc") String orderDir) {
 
+
+
         if (type == null && region == null) {
-            Page<AppPokemonDTO> pokemons = pokemonService.findAll(pageNumber, pageSize, orderBy, orderDir);
+            Page<AppPokemonDTO> pokemons = pokemonService.findAll(search, pageNumber, pageSize, orderBy, orderDir);
             return ResponseEntity.ok(pokemons);
         }
 
@@ -75,22 +77,22 @@ public class AppRestController {
         return getMapResponseEntity();
     }
 
-    @PostMapping("/cart/{productId}")
-    public ResponseEntity<Map<String, Object>> addOneProduct(@PathVariable("productId") Long pokemonId) {
+    @PostMapping("/cart/{pokemonId}")
+    public ResponseEntity<Map<String, Object>> addOneProduct(@PathVariable("pokemonId") Long pokemonId) {
         productInCartService.createOrUpdateProductInCart(pokemonId, 1L);
         return getMapResponseEntity();
     }
 
-    @PostMapping("/cart/{productId}/{count}")
-    public ResponseEntity<Map<String, Object>> addNProduct(@PathVariable("productId") Long pokemonId,
+    @PostMapping("/cart/{pokemonId}/{count}")
+    public ResponseEntity<Map<String, Object>> addNProduct(@PathVariable("pokemonId") Long pokemonId,
                                                            @PathVariable("count") Long count) {
         productInCartService.createOrUpdateProductInCart(pokemonId, count);
         return getMapResponseEntity();
     }
 
-    @DeleteMapping("/cart/{productId}")
-    public ResponseEntity<Map<String, Object>> deleteProduct(@PathVariable("productId") Long productId) {
-        productInCartService.delete(productId);
+    @DeleteMapping("/cart/{pokemonId}")
+    public ResponseEntity<Map<String, Object>> deleteProduct(@PathVariable("pokemonId") Long pokemonId) {
+        productInCartService.delete(pokemonId);
         return getMapResponseEntity();
     }
 

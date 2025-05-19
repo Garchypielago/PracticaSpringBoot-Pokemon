@@ -21,6 +21,7 @@ public interface PokemonService {
     void saveFromDTO(CreateNewPokemonDTO pokemonDTO);
     public void editFromDTO(CreateEditPokemonDTO pokemonDTO);
     Page<AppPokemonDTO> findAll(Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
+    Page<AppPokemonDTO> findAll(String search, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
 
     Page<AppPokemonDTO> findByTypeId(Long type, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);
     Page<AppPokemonDTO> findByRegionId(Long region, Integer pageNumber, Integer pageSize, String orderBy, String orderDir);

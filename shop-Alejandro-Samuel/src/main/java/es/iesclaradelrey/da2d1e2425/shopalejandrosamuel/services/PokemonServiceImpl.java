@@ -142,6 +142,16 @@ public class PokemonServiceImpl implements PokemonService {
                 .map(AppPokemonDTO::new);
     }
 
+    @Override
+    public Page<AppPokemonDTO> findAll(String search, Integer pageNumber, Integer pageSize, String orderBy, String orderDir) {
+        Sort.Direction direction = orderDir.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
+        PageRequest pageRequest = PageRequest.of(pageNumber-1, pageSize, Sort.by(direction, orderBy));
+
+        PokemonSpecification pokemonSpecification = new PokemonSpecification(search);
+
+        return pokemonRepository.findAll(pokemonSpecification, pageRequest)
+                .map(AppPokemonDTO::new);
+    }
 
     @Override
     public Page<AppPokemonDTO> findByTypeId(Long typeId, Integer pageNumber, Integer pageSize, String orderBy, String orderDir){
