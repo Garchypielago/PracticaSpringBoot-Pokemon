@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/api/v1/pokemones")
+@RequestMapping("/cart/api")
 public class CartRestController {
 
     PokemonService pokemonService;
@@ -19,19 +19,21 @@ public class CartRestController {
         this.productInCartService = productInCartService;
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<String> checkAvailable(@RequestBody PokemonToCartDTO pokemonDTO){
+        System.out.println("Antes del pr");
             productInCartService.createOrUpdateProductInCart(pokemonDTO.getId(), pokemonDTO.getProductNumber());
+        System.out.println("Despues del pr");
             return ResponseEntity.created(null).body("Producto añadido correctamente.");
     }
 
-    @DeleteMapping
+    @DeleteMapping("/delete")
     public ResponseEntity<String> deleteAll(@RequestBody PokemonToCartDTO pokemonDTO){
         productInCartService.deleteAll();
         return ResponseEntity.ok(null);
     }
 
-    @DeleteMapping("/{pokemonId}")
+    @DeleteMapping("/delete/{pokemonId}")
     public ResponseEntity<String> deletePokemon(@PathVariable("pokemonId") Long pokemonId){
         productInCartService.delete(pokemonId);
         return ResponseEntity.ok(null);

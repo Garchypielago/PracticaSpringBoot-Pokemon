@@ -22,7 +22,7 @@ const pokemonQuantity = document.getElementById("pokemonQuantity")
 
 // btnAddToCart.removeEventListener()
 btnAddToCart.addEventListener("click", () => {
-    fetch(appBasePath + "api/v1/pokemones", {
+    fetch(appBasePath + "cart/api/add", {
         method: "POST",
         body: JSON.stringify({
             id: parseInt(btnAddToCart.getAttribute("data-pokemonid")),

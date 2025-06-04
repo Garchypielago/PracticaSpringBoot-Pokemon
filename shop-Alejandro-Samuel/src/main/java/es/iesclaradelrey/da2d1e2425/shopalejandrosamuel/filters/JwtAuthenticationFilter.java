@@ -34,7 +34,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     // Matcher para comprobar si una petición está en la ruta protegida
     private static final AntPathRequestMatcher protectedPathMatcher = new AntPathRequestMatcher(PROTECTED_PATH);
 
-
     public JwtAuthenticationFilter(JwtService jwtService,
                                    UserDetailsService userDetailsService) {
         this.jwtService = jwtService;
@@ -46,7 +45,10 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                                     @NonNull HttpServletResponse response,
                                     @NonNull FilterChain filterChain) throws ServletException, IOException {
 
+        System.out.println("Antes del if");
         if (protectedPathMatcher.matches(request)) {
+            System.out.println("Despues del if");
+
             try {
                 String authHeader = request.getHeader(AUTH_HEADER);
 
