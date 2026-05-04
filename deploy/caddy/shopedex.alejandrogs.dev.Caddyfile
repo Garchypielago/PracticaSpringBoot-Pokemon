@@ -1,0 +1,3 @@
+shopedex.alejandrogs.dev {
+    reverse_proxy shopedex-app:8080
+}

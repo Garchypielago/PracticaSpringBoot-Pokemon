@@ -1,0 +1,50 @@
+services:
+  shopedex-db:
+    image: mariadb:11.4
+    container_name: shopedex-db
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${MARIADB_DATABASE:?Set MARIADB_DATABASE in .env}
+      MARIADB_USER: ${MARIADB_USER:?Set MARIADB_USER in .env}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD:?Set MARIADB_PASSWORD in .env}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?Set MARIADB_ROOT_PASSWORD in .env}
+    volumes:
+      - shopedex_db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 -u$$MARIADB_USER -p$$MARIADB_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  shopedex-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shopedex-app
+    restart: unless-stopped
+    depends_on:
+      shopedex-db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://shopedex-db:3306/${MARIADB_DATABASE:?Set MARIADB_DATABASE in .env}
+      SPRING_DATASOURCE_USERNAME: ${MARIADB_USER:?Set MARIADB_USER in .env}
+      SPRING_DATASOURCE_PASSWORD: ${MARIADB_PASSWORD:?Set MARIADB_PASSWORD in .env}
+      SECURITY_JWT_SIGNING_KEY_SECRET: ${SECURITY_JWT_SIGNING_KEY_SECRET:?Set SECURITY_JWT_SIGNING_KEY_SECRET in .env}
+      SECURITY_JWT_ACCESS_TOKEN_TTL: ${SECURITY_JWT_ACCESS_TOKEN_TTL:?Set SECURITY_JWT_ACCESS_TOKEN_TTL in .env}
+      SECURITY_JWT_REFRESH_TOKEN_TTL: ${SECURITY_JWT_REFRESH_TOKEN_TTL:?Set SECURITY_JWT_REFRESH_TOKEN_TTL in .env}
+      SHOPEDEX_BOOTSTRAP_ADMIN_EMAIL: ${SHOPEDEX_BOOTSTRAP_ADMIN_EMAIL:?Set SHOPEDEX_BOOTSTRAP_ADMIN_EMAIL in .env}
+      SHOPEDEX_BOOTSTRAP_ADMIN_PASSWORD: ${SHOPEDEX_BOOTSTRAP_ADMIN_PASSWORD:?Set SHOPEDEX_BOOTSTRAP_ADMIN_PASSWORD in .env}
+      SHOPEDEX_BOOTSTRAP_ADMIN_FIRST_NAME: ${SHOPEDEX_BOOTSTRAP_ADMIN_FIRST_NAME:?Set SHOPEDEX_BOOTSTRAP_ADMIN_FIRST_NAME in .env}
+      SHOPEDEX_BOOTSTRAP_ADMIN_LAST_NAME: ${SHOPEDEX_BOOTSTRAP_ADMIN_LAST_NAME:?Set SHOPEDEX_BOOTSTRAP_ADMIN_LAST_NAME in .env}
+    ports:
+      - "127.0.0.1:18080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8080/actuator/health >/dev/null || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  shopedex_db_data:

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Type list</title>
+    <link rel="stylesheet" th:href="@{/admin/typesPokemon.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+</head>
+<body>
+
+<div class="container">
+    <h1>TYPE LIST</h1>
+
+    <div th:if="${edited}" th:text="'The Type '+${editedCategory.getName()}+' has been updated'"
+         class="alert alert-success" role="alert"></div>
+    <div th:if="${message}" th:text="${message}"
+         class="alert alert-success" role="alert"></div>
+
+    <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${types.getSize()},${orderBy},${orderDir})}"></th:block>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        <tr>
+            <td colspan="3" class="text-center">
+                <a th:href="@{/admin/categories/new}">
+                    <i class="fa fa-plus"></i>
+                    <span class="sr-only" th:text="|Create new type|"></span>
+                </a>
+            </td>
+        </tr>
+        <tr th:each="type : ${types}">
+            <td th:text="${type.getId()}"></td>
+            <td>
+                <div th:class="'type-icon type-'+${type.getName().toLowerCase()}" th:text="${type.getName().toLowerCase()}"></div>
+            </td>
+            <td>
+                <a th:href="@{'/admin/categories/type/edit/' + ${type.id}}" style="text-decoration: none;">
+                    <i class="fa fa-pencil-square-o"></i>
+                    <span class="sr-only" th:text="|Edit type ${type.getName()}|"></span>
+                </a>
+                <a th:href="@{'/admin/categories/type/delete/' + ${type.id}}">
+                    <i class="fa fa-trash-o"></i>
+                    <span class="sr-only" th:text="|Delete type ${type.getName()}|"></span></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <th:block th:replace="~{administration/adminFragments :: admin-pagination(${types}, '/admin/categories/type/list', ${orderBy}, ${orderDir})}"></th:block>
+
+    <a class="btn btn-primary" th:href="@{'/admin/home'}" style="text-decoration: none;">Go to admin home</a>
+</div>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>

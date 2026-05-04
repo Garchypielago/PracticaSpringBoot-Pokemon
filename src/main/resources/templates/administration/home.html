@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADMIN HOME</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body class="container py-4">
+<div class="text-center mb-4">
+    <h1 class="display-4">SHOPEDEX ADMIN HOME</h1>
+    <p class="text-muted">Solo accesible para usuarios con rol ADMIN.</p>
+</div>
+
+<div class="card mb-3">
+    <div class="card-header bg-primary text-white">POKEMON OPTIONS</div>
+    <div class="card-body">
+        <a th:href="@{/admin/pokemons/list}" class="btn btn-outline-primary d-block mb-2">ALL POKEMON LIST</a>
+        <a th:href="@{/admin/pokemons/new}" class="btn btn-outline-success d-block">CREATE NEW POKEMON</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-success text-white">CATEGORY OPTIONS</div>
+    <div class="card-body">
+        <a th:href="@{/admin/categories/region/list}" class="btn btn-outline-info d-block mb-2">ALL REGIONS LIST</a>
+        <a th:href="@{/admin/categories/type/list}" class="btn btn-outline-warning d-block mb-2">ALL TYPES LIST</a>
+        <a th:href="@{/admin/categories/new}" class="btn btn-outline-danger d-block">CREATE NEW CATEGORY</a>
+    </div>
+</div>
+
+<div class="mt-4 d-flex gap-2">
+    <a th:href="@{/}" class="btn btn-secondary">Volver a la tienda</a>
+    <form sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+        <button type="submit" class="btn btn-outline-dark">Logout</button>
+    </form>
+</div>
+
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>

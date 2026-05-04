@@ -1,0 +1,44 @@
+<!-- th:src/main/resources/templates/pokemonFragments.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shopedex</title>
+    <link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+    <link rel="stylesheet" th:href="@{/css/core-style.css}">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<!-- ImagesPokemonList Fragment -->
+<div th:fragment="imagesPokemonList" th:each="pokemon : ${pokemones}" class="single-products-catagory clearfix"
+     th:style="|background-image: url('@{${pokemon.getType1().getBackground()}}');|">
+    <a th:href="@{'/product-details/pokemon/' + ${pokemon.getId()} }">
+        <img th:src="@{|/img/pokemon/${pokemon.getId()}.png|}"
+             onerror="this.src='/img/pokemon/default.png'"
+             alt="" style="width: auto;">
+        <div class="hover-content">
+            <div class="line"></div>
+            <h4 th:text="${pokemon.getName()}">Charmeleon</h4>
+            <p th:text="'From PY' +${#numbers.formatDecimal(pokemon.getPrice(), 1, 2)}">From PY180</p>
+        </div>
+    </a>
+</div>
+
+<!-- CarruselPokemon Fragment -->
+<li th:fragment="carrusel" th:each="pokemon : ${pokemones}"  class="row clearfix container_index_products imagenes_modificar">
+    <div class="single-products-catagory clearfix single-products-catagoryPD"
+         th:style="|background-image: url('@{${pokemon.getType1().getBackground()}}');|">
+        <a th:href="@{'/product-details/pokemon/' + ${pokemon.getId()} }">
+            <img th:src="@{|/img/pokemon/${pokemon.getId()}.png|}"
+                 onerror="this.src='/img/pokemon/default.png'"
+                 alt="" style="width: auto;">
+        </a>
+    </div>
+</li>
+
+</body>
+</html>

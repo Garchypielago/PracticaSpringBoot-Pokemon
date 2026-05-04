@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Region list</title>
+    <link rel="stylesheet" th:href="@{/admin/typesPokemon.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+</head>
+<body>
+
+<div class="container">
+    <h1>REGION LIST</h1>
+    <div th:if="${edited}" th:text="'The Region '+${editedCategory.getName()}+' has been updated'"
+         class="alert alert-success" role="alert"></div>
+    <div th:if="${message}" th:text="${message}"
+         class="alert alert-success" role="alert"></div>
+
+    <th:block th:replace="~{administration/adminFragments :: admin-form(${options}, ${regions.getSize()},${orderBy},${orderDir})}"></th:block>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        <tr>
+            <td colspan="3" class="text-center">
+                <a th:href="@{/admin/categories/new}">
+                    <i class="fa fa-plus"></i>
+                    <span class="sr-only" th:text="|Create new region|"></span>
+                </a>
+            </td>
+        </tr>
+        <tr th:each="region : ${regions}">
+            <td th:text="${region.getId()}"></td>
+            <td th:text="${region.getName()}"></td>
+            <td>
+                <a th:href="@{'/admin/categories/region/edit/' + ${region.id}}" style="text-decoration: none;">
+                    <i class="fa fa-pencil-square-o"></i>
+                    <span class="sr-only" th:text="|Edit region ${region.getName()}|"></span>
+                </a>
+                <a th:href="@{'/admin/categories/region/delete/' + ${region.id}}">
+                    <i class="fa fa-trash-o"></i>
+                    <span class="sr-only" th:text="|Delete region ${region.getName()}|"></span>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <th:block th:replace="~{administration/adminFragments :: admin-pagination(${regions}, '/admin/categories/regions/list', ${orderBy}, ${orderDir})}"></th:block>
+
+    <a class="btn btn-primary" th:href="@{'/admin/home'}" style="text-decoration: none;">Go to admin home</a>
+</div>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
